@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>爱你的言言子</title>
+  
+  <subtitle>雁行</subtitle>
+  <link href="https://oxoyyzi.gitee.io/atom.xml" rel="self"/>
+  
+  <link href="https://oxoyyzi.gitee.io/"/>
+  <updated>2020-11-10T12:34:04.964Z</updated>
+  <id>https://oxoyyzi.gitee.io/</id>
+  
+  <author>
+    <name>言言子呀</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>_1</title>
+    <link href="https://oxoyyzi.gitee.io/Test/1/"/>
+    <id>https://oxoyyzi.gitee.io/Test/1/</id>
+    <published>2020-11-10T04:35:45.000Z</published>
+    <updated>2020-11-10T12:34:04.964Z</updated>
+    
+    
+    
+    
+    
+    <category term="Test" scheme="https://oxoyyzi.gitee.io/tags/Test/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://oxoyyzi.gitee.io/hello-world/"/>
+    <id>https://oxoyyzi.gitee.io/hello-world/</id>
+    <published>2020-11-09T14:50:36.387Z</published>
+    <updated>2020-11-09T14:50:36.388Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
