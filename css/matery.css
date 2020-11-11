@@ -318,9 +318,10 @@ header nav .brand-span {
 }
 
 header .brand-logo .logo-img {
-    height: 45px;
+    height: 55px;
     vertical-align: middle;
     padding-bottom: 6px;
+    border-radius: 17px;
 }
 
 header .brand-logo .logo-span {
@@ -609,10 +610,10 @@ header .go-back i {
 }
 
 .bg-cover .description { /*名言字体*/
-    font-weight: 300;
+    font-weight: 700;
     font-size: 1.25rem;
     line-height: 1.4em;
-    color: #1dd1a1;
+    color: #eb4d4b;
 }
 
 .bg-cover .post-title {
