@@ -463,7 +463,8 @@ readers do not read off random characters that represent icons */
   content: "\f02a"; }
 
 .fa-bars:before {
-  content: "\f0c9"; }
+  content: "\f0c9"; 
+  color: #ED4C67;}
 
 .fa-baseball-ball:before {
   content: "\f433"; }
@@ -1414,7 +1415,8 @@ readers do not read off random characters that represent icons */
   content: "\f0e0"; }
 
 .fa-envelope-open:before {
-  content: "\f2b6"; }
+  content: "\f2b6"; 
+  color: #55efc4;}
 
 .fa-envelope-open-text:before {
   content: "\f658"; }
@@ -1795,7 +1797,8 @@ readers do not read off random characters that represent icons */
   content: "\f1d2"; }
 
 .fa-github:before {
-  content: "\f09b"; }
+  content: "\f09b"; 
+  color: #55efc4;}
 
 .fa-github-alt:before {
   content: "\f113"; }
@@ -3040,7 +3043,8 @@ readers do not read off random characters that represent icons */
   content: "\f3e2"; }
 
 .fa-qq:before {
-  content: "\f1d6"; }
+  content: "\f1d6"; 
+  color:#55efc4;}
 
 .fa-qrcode:before {
   content: "\f029"; }
@@ -3262,7 +3266,8 @@ readers do not read off random characters that represent icons */
   content: "\f7c2"; }
 
 .fa-search:before {
-  content: "\f002"; }
+  content: "\f002"; 
+  color: #ED4C67;}
 
 .fa-search-dollar:before {
   content: "\f688"; }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>爱你的言言子</title>
+  <title>YanYanZi</title>
   
-  <subtitle>雁行</subtitle>
+  <subtitle>知我者</subtitle>
   <link href="https://oxoyyzi.gitee.io/atom.xml" rel="self"/>
   
   <link href="https://oxoyyzi.gitee.io/"/>
@@ -10,7 +10,7 @@
   <id>https://oxoyyzi.gitee.io/</id>
   
   <author>
-    <name>言言子呀</name>
+    <name>言言子哦</name>
     
   </author>
   
