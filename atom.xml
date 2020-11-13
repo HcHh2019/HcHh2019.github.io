@@ -6,7 +6,7 @@
   <link href="https://hchh2019.github.io/atom.xml" rel="self"/>
   
   <link href="https://hchh2019.github.io/"/>
-  <updated>2020-11-11T12:26:12.700Z</updated>
+  <updated>2020-11-12T14:12:57.903Z</updated>
   <id>https://hchh2019.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://hchh2019.github.io/posts/3eeb.html"/>
-    <id>https://hchh2019.github.io/posts/3eeb.html</id>
-    <published>2020-11-12T04:31:17.836Z</published>
-    <updated>2020-11-11T12:26:12.700Z</updated>
+    <title>hello</title>
+    <link href="https://hchh2019.github.io/posts/34d2.html"/>
+    <id>https://hchh2019.github.io/posts/34d2.html</id>
+    <published>2020-11-12T14:12:35.000Z</published>
+    <updated>2020-11-12T14:12:57.903Z</updated>
     
     
       
@@ -38,17 +38,29 @@
   </entry>
   
   <entry>
-    <title>_1</title>
-    <link href="https://hchh2019.github.io/posts/24f8.html"/>
-    <id>https://hchh2019.github.io/posts/24f8.html</id>
-    <published>2020-11-10T04:35:45.000Z</published>
-    <updated>2020-11-11T12:26:12.702Z</updated>
+    <title>Canvas知识点及初级使用技巧</title>
+    <link href="https://hchh2019.github.io/posts/d13f.html"/>
+    <id>https://hchh2019.github.io/posts/d13f.html</id>
+    <published>2020-11-12T12:01:49.000Z</published>
+    <updated>2020-11-13T00:54:25.197Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h1 id=&quot;Canvas知识点详解&quot;&gt;&lt;a href=&quot;#Canvas知识点详解&quot; class=&quot;headerlink&quot; title=&quot;Canvas知识点详解&quot;&gt;&lt;/a&gt;Canvas知识点详解&lt;/h1&gt;&lt;hr&gt;
+&lt;h2</summary>
+        
+      
     
     
     
+    <category term="Canvas" scheme="https://hchh2019.github.io/categories/Canvas/"/>
     
     
-    <category term="Test" scheme="https://hchh2019.github.io/tags/Test/"/>
+    <category term="Canvas" scheme="https://hchh2019.github.io/tags/Canvas/"/>
     
   </entry>
   

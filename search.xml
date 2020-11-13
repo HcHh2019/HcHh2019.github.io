@@ -4,9 +4,9 @@
   
     
     <entry>
-      <title>Hello World</title>
-      <link href="posts/3eeb.html"/>
-      <url>posts/3eeb.html</url>
+      <title>hello</title>
+      <link href="posts/34d2.html"/>
+      <url>posts/34d2.html</url>
       
         <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
       
@@ -17,17 +17,23 @@
     
     
     <entry>
-      <title>_1</title>
-      <link href="posts/24f8.html"/>
-      <url>posts/24f8.html</url>
+      <title>Canvas知识点及初级使用技巧</title>
+      <link href="posts/d13f.html"/>
+      <url>posts/d13f.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<a id="more"></a><h1 id="Canvas知识点详解"><a href="#Canvas知识点详解" class="headerlink" title="Canvas知识点详解"></a>Canvas知识点详解</h1><hr><h2 id="首先了解什么是Canvas？"><a href="#首先了解什么是Canvas？" class="headerlink" title="首先了解什么是Canvas？"></a>首先了解什么是Canvas？</h2><p>HTML5的canvas元素使用JavaScript在网页上绘制图像。canvas提供一个画布，可以控制其每一个像素。canvas拥有多种绘制路径、矩形、圆形、字符以及添加图像的方法。</p><hr><h3 id="基本创建方式"><a href="#基本创建方式" class="headerlink" title="基本创建方式:"></a>基本创建方式:</h3><p>注意:图形的位置确定是以画板左上角为原点(0,0)开始的,而不是浏览器的左上角</p><pre><code>&lt;body onload="draw()"&gt;    &lt;canvas id="canvas" width="800" height="600"&gt;&lt;/canvas&gt;    &lt;script&gt;         function draw(){ //封装一个函数            var canvas = document.getElementById("canvas");            var ctx = canvas.getContext("2d");            ctx.fillStyle='rgb(233,233,233)';//必须在填充矩形之前填写样式            ctx.fillRect(10,10,30,50);             ctx.fillStyle='rgb(100,41,200)';//添加第二个图形            ctx.fillRect(20,100,30,30);            ctx.strokeStyle='rgb(23,233,33)';//只有边框的矩形            ctx.strokeRect(45,15,30,50);         }    &lt;/script&gt;&lt;/body&gt;    </code></pre><hr><h3 id="绘制路径"><a href="#绘制路径" class="headerlink" title="绘制路径"></a>绘制路径</h3><p>1.创建起始路径<br>2.使用画图路径画出路径<br>3.把路径闭合<br>4.通过描边或填充绘制图形</p><pre><code>&lt;/head&gt;&lt;body onload="draw()"&gt;    &lt;canvas id="canvas" width="800" height="600"&gt;&lt;/canvas&gt;    &lt;script&gt;        function draw(){            var canvas = document.getElementById("canvas");            var ctx = canvas.getContext("2d");            ctx.beginPath();//开始绘制路径线路            ctx.moveTo(40,90);//起始点            ctx.lineTo(100,130);//第一个转移点            ctx.lineTo(200,500);//第二个转移点            ctx.closePath();//闭合路径,自动收尾相连            ctx.stroke();        }    &lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</code></pre><hr><h3 id="绘制圆形"><a href="#绘制圆形" class="headerlink" title="绘制圆形"></a>绘制圆形</h3><p>圆的组成：圆心(x,y) 半径 开始角度(0度三点钟方向) 结束角度 顺时针(false)/逆时针(true)<br>绘制多个图形时，若为开合线则要加上beginPath()，防止图形收尾相连。</p><pre><code>&lt;body onload="draw()"&gt;    &lt;canvas id="canvas" width="800" height="600"&gt;&lt;/canvas&gt;    &lt;script&gt;        function draw(){            var canvas = document.getElementById("canvas");            var ctx = canvas.getContext("2d");            ctx.beginPath();            ctx.strokeStyle ='orange';            ctx.lineWidth=10;            ctx.arc(100,100,50,0,Math.PI/2,false);            ctx.stroke();            ctx.beginPath();            ctx.strokeStyle ='blue';//注意顺时针与逆时针的不同            ctx.lineWidth=10;            ctx.arc(100,300,50,0,Math.PI/2,true);            ctx.stroke();        }    &lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</code></pre><hr><h3 id="线性渐变"><a href="#线性渐变" class="headerlink" title="线性渐变"></a>线性渐变</h3><p>参数1:起点1<br>参数2:终点1<br>参数3:起点2<br>参数4:终点2</p><p>addColorStop(参数1,参数2);<br>参数1:必须是0~1之间的数，述职表示颜色所在的相对位置<br>参数2:颜色，white #fff rgb(255,255,255)</p><pre><code>&lt;body onload="draw()"&gt;    &lt;canvas id="canvas" width="800" height="600"&gt;&lt;/canvas&gt;    &lt;script&gt;        function draw(){            var canvas = document.getElementById("canvas");            var ctx = canvas.getContext("2d");            var lingrad=ctx.createLinearGradient(0,0,100,100);            lingrad.addColorStop(0,'red');            lingrad.addColorStop(0.5,'blue');            lingrad.addColorStop(1,'black');            ctx.fillStyle=lingrad;            ctx.fillRect(0,0,100,100);        }    &lt;/script&gt;&lt;/body&gt;</code></pre>]]></content>
       
+      
+      <categories>
+          
+          <category> Canvas </category>
+          
+      </categories>
       
       
         <tags>
             
-            <tag> Test </tag>
+            <tag> Canvas </tag>
             
         </tags>
       
