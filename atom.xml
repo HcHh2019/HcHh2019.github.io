@@ -3,11 +3,11 @@
   <title>YanYanZi</title>
   
   <subtitle>知我者</subtitle>
-  <link href="https://hchh2019.github.io/atom.xml" rel="self"/>
+  <link href="https://yanyanzio.top/atom.xml" rel="self"/>
   
-  <link href="https://hchh2019.github.io/"/>
+  <link href="https://yanyanzio.top/"/>
   <updated>2020-11-13T06:14:46.948Z</updated>
-  <id>https://hchh2019.github.io/</id>
+  <id>https://yanyanzio.top/</id>
   
   <author>
     <name>言言子哦</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>hello</title>
-    <link href="https://hchh2019.github.io/posts/34d2.html"/>
-    <id>https://hchh2019.github.io/posts/34d2.html</id>
+    <link href="https://yanyanzio.top/posts/34d2.html"/>
+    <id>https://yanyanzio.top/posts/34d2.html</id>
     <published>2020-11-12T14:12:35.000Z</published>
     <updated>2020-11-13T06:14:46.948Z</updated>
     
@@ -39,8 +39,8 @@
   
   <entry>
     <title>Canvas知识点及初级使用技巧</title>
-    <link href="https://hchh2019.github.io/posts/d13f.html"/>
-    <id>https://hchh2019.github.io/posts/d13f.html</id>
+    <link href="https://yanyanzio.top/posts/d13f.html"/>
+    <id>https://yanyanzio.top/posts/d13f.html</id>
     <published>2020-11-12T12:01:49.000Z</published>
     <updated>2020-11-13T00:54:25.197Z</updated>
     
@@ -57,10 +57,10 @@
     
     
     
-    <category term="Canvas" scheme="https://hchh2019.github.io/categories/Canvas/"/>
+    <category term="Canvas" scheme="https://yanyanzio.top/categories/Canvas/"/>
     
     
-    <category term="Canvas" scheme="https://hchh2019.github.io/tags/Canvas/"/>
+    <category term="Canvas" scheme="https://yanyanzio.top/tags/Canvas/"/>
     
   </entry>
   
