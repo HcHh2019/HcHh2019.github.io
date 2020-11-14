@@ -6,7 +6,7 @@
   <link href="https://yanyanzio.top/atom.xml" rel="self"/>
   
   <link href="https://yanyanzio.top/"/>
-  <updated>2020-11-13T07:25:32.059Z</updated>
+  <updated>2020-11-14T02:50:08.805Z</updated>
   <id>https://yanyanzio.top/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Canvas基础教程</title>
+    <link href="https://yanyanzio.top/posts/f7d3.html"/>
+    <id>https://yanyanzio.top/posts/f7d3.html</id>
+    <published>2020-11-14T01:11:06.000Z</published>
+    <updated>2020-11-14T02:50:08.805Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Canvas-创建&quot;&gt;&lt;a href=&quot;#Canvas-创建&quot; class=&quot;headerlink&quot; title=&quot;Canvas 创建&quot;&gt;&lt;/a&gt;Canvas 创建&lt;/h2&gt;&lt;p&gt;因为 canvas 是 HTML 中的一个元素，所以创建一个</summary>
+        
+      
+    
+    
+    
+    <category term="canvas" scheme="https://yanyanzio.top/categories/canvas/"/>
+    
+    
+    <category term="canvas" scheme="https://yanyanzio.top/tags/canvas/"/>
+    
+  </entry>
   
   <entry>
     <title>测试页</title>
@@ -34,33 +59,6 @@
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>Canvas知识点及初级使用技巧</title>
-    <link href="https://yanyanzio.top/posts/d13f.html"/>
-    <id>https://yanyanzio.top/posts/d13f.html</id>
-    <published>2020-11-12T12:01:49.000Z</published>
-    <updated>2020-11-13T09:10:08.806Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;Canvas知识点详解&quot;&gt;&lt;a href=&quot;#Canvas知识点详解&quot; class=&quot;headerlink&quot; title=&quot;Canvas知识点详解&quot;&gt;&lt;/a&gt;Canvas知识点详解&lt;/h1&gt;&lt;hr&gt;
-&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="Canvas" scheme="https://yanyanzio.top/categories/Canvas/"/>
-    
-    
-    <category term="Canvas" scheme="https://yanyanzio.top/tags/Canvas/"/>
     
   </entry>
   
