@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Vue学习笔记</title>
+      <link href="posts/e0b8.html"/>
+      <url>posts/e0b8.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h2><p>Vue.js是一套构建用户界面的渐进式框架</p><p>Vue.js 只关注视图层， 设计时采用自底向上渐进式开发的构架，核心部件只关注用户界面的构建</p><p>Vue.js 的目标是通过尽可能简单的 API 实现响应的数据绑定和组合的视图组件</p><p><strong>注意</strong>： Vue.js 不支持 IE8 及其以下 IE 版本</p><h3 id="为什么要使用Vue"><a href="#为什么要使用Vue" class="headerlink" title="为什么要使用Vue"></a>为什么要使用Vue</h3><p>1.轻量级,体积小是一个重要指标,Vue.Js压缩后只有20多KB<br>2.移动优先,更适合移动端,比如移动端的Touch事件<br>3.易上手,学习曲线平稳,文档齐全<br>4.吸收了Angular(模块化)和React(虚拟DOM的长处),并拥有自己独特的功能<br>5.开源,社区活跃度高<br>…</p><h3 id="学前准备"><a href="#学前准备" class="headerlink" title="学前准备"></a>学前准备</h3><p>在我们继续学习 Vue.js 2 之前，希望对以下知识有一定的了解<br><strong>HTML</strong><br><strong>CSS</strong><br><strong>JavaScript</strong></p><h3 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h3><p><strong>Vue.js</strong> 是一个 <strong>JavaScript</strong> 脚本库，所以安装起来非常简单，只要引用 <strong>vue.min.js</strong> 脚本就可以了</p><p>可以在 Vue.js 的官网上直接下载 vue.min.js 然后使用 <code>&lt;script&gt;</code> 标签引入</p><h3 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h3><ol><li><p><strong>安装 cnpm</strong><br><code>npm install --global cnpm --registry=https://registry.npm.taobao.org</code></p></li><li><p><strong>全局安装 vue-cli</strong><br><code>$ cnpm install --global vue-cli</code></p></li><li><p><strong>创建一个基于 webpack 模板的新项目</strong><br><code>$ vue init webpack yyzvue</code></p></li><li><p>这里需要你进行一些配置，如果不想更改，可以直接回车</p></li></ol><p><code>$ vue init webpack yyzvue</code>  </p><p><code>? Project name yyzvue</code><br><code>? Project description A Vue.js project</code><br><code>? Author sense &lt;yu.fei@gmail.com&gt;</code><br><code>? Vue build standalone</code><br><code>? Install vue-router? Yes</code><br><code>? Use ESLint to lint your code? Yes</code><br><code>? Pick an ESLint preset Standard</code><br><code>? Set up unit tests Yes</code><br><code>? Pick a test runner jest</code><br><code>? Setup e2e tests with Nightwatch? Yes</code></p><p>   <code>vue-cli · Generated "webapp".</code></p><p>   <code>To get started:</code><br>     <code>cd webapp</code><br>     <code>npm install</code><br>     <code>npm run dev</code><br>   <code>Documentation can be found at https://vuejs-templates.github.io/webpack</code></p><ol start="3"><li>安装依赖并运行<br>配置配置完成后，可以进入项目，然后执行以下命令</li></ol><p><code>$ cd webapp</code><br><code>$ cnpm install</code><br>先去喝杯茶，然后调戏小孩，再回来看看是否安装好了…</p><p><code>$ npm run dev</code></p><p> <code>DONE  Compiled successfully in </code></p><p> <code>I  Your application is running here: http://localhost:8080</code></p><p> 成功执行以上命令后访问 <a href="http://localhost:8080/%EF%BC%8C%E8%BE%93%E5%87%BA%E7%BB%93%E6%9E%9C%E5%A6%82%E4%B8%8B%E6%89%80%E7%A4%BA">http://localhost:8080/，输出结果如下所示</a></p><p> <img src="https://gitee.com/OxOYYZi/picgo/raw/master/img/vue_1.png"></p><hr><h2 id="Vue-js-目录结构"><a href="#Vue-js-目录结构" class="headerlink" title="Vue.js 目录结构"></a>Vue.js 目录结构</h2><p>上一章节中，我们使用 vue-cli 工具创建了一个 webapp 的项目</p><p>如果我们使用 IDE（Eclipse、Atom）打开该目录，显示目录结构如下</p><p><img src="https://gitee.com/OxOYYZi/picgo/raw/master/img/vue_2.png"></p><h3 id="目录解析"><a href="#目录解析" class="headerlink" title="目录解析"></a>目录解析</h3><table><thead><tr><th align="left">目录/文件</th><th align="left">说明</th></tr></thead><tbody><tr><td align="left">build</td><td align="left">最终发布的代码存放位置</td></tr><tr><td align="left">config</td><td align="left">配置目录，包括端口号等。我们初学可以使用默认的</td></tr><tr><td align="left">node_modules</td><td align="left">npm 加载的项目依赖模块</td></tr><tr><td align="left">src</td><td align="left">这里是我们要开发的目录，基本上要做的事情都在这个目录里里面包含了几个目录及文件assets: 放置一些图片，如logo等components: 目录里面放了一个组件文件，可以不用App.vue: 项目入口文件，我们也可以直接将组件写这里，而不使用 components 目录main.js: 项目的核心文件</td></tr><tr><td align="left">static</td><td align="left">静态资源目录，如图片、字体等</td></tr><tr><td align="left">test</td><td align="left">初始测试目录，可删除</td></tr><tr><td align="left">.xxxx文件</td><td align="left">这些是一些配置文件，包括语法配置，git配置等</td></tr><tr><td align="left">index.html</td><td align="left">首页入口文件，你可以添加一些 meta 信息或同统计代码啥的</td></tr><tr><td align="left">package.json</td><td align="left">项目配置文件</td></tr><tr><td align="left">README.md</td><td align="left">项目的说明文档，markdown 格式</td></tr></tbody></table><h3 id="用vue写一个hello-word"><a href="#用vue写一个hello-word" class="headerlink" title="用vue写一个hello word"></a>用vue写一个hello word</h3><p>代码如下</p><pre><code>&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt;&lt;head&gt;    &lt;meta charset="UTF-8"&gt;    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;    &lt;title&gt;Document&lt;/title&gt;&lt;/head&gt;&lt;body&gt;      &lt;div id="app"&gt;        {{message}}    &lt;/div&gt;     &lt;script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"&gt;&lt;/script&gt;    &lt;script&gt;        var vue=new Vue({            el:"#app",            data:{                message:"hello word!"            }        });    &lt;/script&gt;&lt;/body&gt;&lt;/html&gt;</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Vue </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Vue </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Canvas基础</title>
       <link href="posts/f7d3.html"/>
       <url>posts/f7d3.html</url>

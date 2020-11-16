@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yanyanzio.top/posts/e0b8.html</loc>
+    
+    <lastmod>2020-11-16</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yanyanzio.top/posts/34d2.html</loc>
+    
+    <lastmod>2020-11-15</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://yanyanzio.top/posts/f7d3.html</loc>
     
     <lastmod>2020-11-15</lastmod>
@@ -12,13 +26,6 @@
     <loc>https://yanyanzio.top/baidu_verify_code-kZUfP0qd84.html</loc>
     
     <lastmod>2020-11-14</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yanyanzio.top/posts/34d2.html</loc>
-    
-    <lastmod>2020-11-13</lastmod>
     
   </url>
   
@@ -74,7 +81,7 @@
 
   <url>
     <loc>https://yanyanzio.top/</loc>
-    <lastmod>2020-11-15</lastmod>
+    <lastmod>2020-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -82,7 +89,14 @@
   
   <url>
     <loc>https://yanyanzio.top/tags/canvas/</loc>
-    <lastmod>2020-11-15</lastmod>
+    <lastmod>2020-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yanyanzio.top/tags/Vue/</loc>
+    <lastmod>2020-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -91,7 +105,14 @@
   
   <url>
     <loc>https://yanyanzio.top/categories/canvas/</loc>
-    <lastmod>2020-11-15</lastmod>
+    <lastmod>2020-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yanyanzio.top/categories/Vue/</loc>
+    <lastmod>2020-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

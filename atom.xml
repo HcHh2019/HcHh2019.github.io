@@ -6,7 +6,7 @@
   <link href="https://yanyanzio.top/atom.xml" rel="self"/>
   
   <link href="https://yanyanzio.top/"/>
-  <updated>2020-11-15T10:06:50.374Z</updated>
+  <updated>2020-11-16T01:05:36.234Z</updated>
   <id>https://yanyanzio.top/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vue学习笔记</title>
+    <link href="https://yanyanzio.top/posts/e0b8.html"/>
+    <id>https://yanyanzio.top/posts/e0b8.html</id>
+    <published>2020-11-15T10:36:04.000Z</published>
+    <updated>2020-11-16T01:05:36.234Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Vue&quot;&gt;&lt;a href=&quot;#Vue&quot; class=&quot;headerlink&quot; title=&quot;Vue&quot;&gt;&lt;/a&gt;Vue&lt;/h2&gt;&lt;p&gt;Vue.js是一套构建用户界面的渐进式框架&lt;/p&gt;
+&lt;p&gt;Vue.js 只关注视图层，</summary>
+        
+      
+    
+    
+    
+    <category term="Vue" scheme="https://yanyanzio.top/categories/Vue/"/>
+    
+    
+    <category term="Vue" scheme="https://yanyanzio.top/tags/Vue/"/>
+    
+  </entry>
   
   <entry>
     <title>Canvas基础</title>
@@ -46,7 +72,7 @@
     <link href="https://yanyanzio.top/posts/34d2.html"/>
     <id>https://yanyanzio.top/posts/34d2.html</id>
     <published>2020-11-12T14:12:35.000Z</published>
-    <updated>2020-11-13T07:25:32.059Z</updated>
+    <updated>2020-11-15T13:04:27.093Z</updated>
     
     
       
