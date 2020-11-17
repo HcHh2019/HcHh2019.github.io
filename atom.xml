@@ -6,7 +6,7 @@
   <link href="https://yanyanzio.top/atom.xml" rel="self"/>
   
   <link href="https://yanyanzio.top/"/>
-  <updated>2020-11-17T06:05:42.705Z</updated>
+  <updated>2020-11-17T11:24:18.397Z</updated>
   <id>https://yanyanzio.top/</id>
   
   <author>
@@ -17,11 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>遗忘的HTML&amp;&amp;CSS</title>
+    <link href="https://yanyanzio.top/posts/e31c.html"/>
+    <id>https://yanyanzio.top/posts/e31c.html</id>
+    <published>2020-11-17T11:11:27.000Z</published>
+    <updated>2020-11-17T11:24:18.397Z</updated>
+    
+    
+    
+    
+    <category term="HTML" scheme="https://yanyanzio.top/categories/HTML/"/>
+    
+    
+    <category term="HTML" scheme="https://yanyanzio.top/tags/HTML/"/>
+    
+    <category term="CSS" scheme="https://yanyanzio.top/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Vue学习笔记</title>
     <link href="https://yanyanzio.top/posts/e0b8.html"/>
     <id>https://yanyanzio.top/posts/e0b8.html</id>
     <published>2020-11-15T10:36:04.000Z</published>
-    <updated>2020-11-17T06:05:42.705Z</updated>
+    <updated>2020-11-17T11:21:22.405Z</updated>
     
     
       
@@ -47,7 +66,7 @@
     <link href="https://yanyanzio.top/posts/f7d3.html"/>
     <id>https://yanyanzio.top/posts/f7d3.html</id>
     <published>2020-11-14T01:11:06.000Z</published>
-    <updated>2020-11-15T10:06:50.374Z</updated>
+    <updated>2020-11-17T11:20:50.917Z</updated>
     
     
       
