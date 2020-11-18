@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>音乐播放器</title>
+      <link href="posts/c06f.html"/>
+      <url>posts/c06f.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Vue </category>
+          
+          <category> CSS </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Vue </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>遗忘的HTML&amp;&amp;CSS</title>
       <link href="posts/e31c.html"/>
       <url>posts/e31c.html</url>

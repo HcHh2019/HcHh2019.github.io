@@ -6,7 +6,7 @@
   <link href="https://yanyanzio.top/atom.xml" rel="self"/>
   
   <link href="https://yanyanzio.top/"/>
-  <updated>2020-11-18T06:27:54.789Z</updated>
+  <updated>2020-11-18T08:27:17.915Z</updated>
   <id>https://yanyanzio.top/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>音乐播放器</title>
+    <link href="https://yanyanzio.top/posts/c06f.html"/>
+    <id>https://yanyanzio.top/posts/c06f.html</id>
+    <published>2020-11-18T08:13:16.000Z</published>
+    <updated>2020-11-18T08:27:17.915Z</updated>
+    
+    
+    
+    
+    <category term="Vue" scheme="https://yanyanzio.top/categories/Vue/"/>
+    
+    <category term="CSS" scheme="https://yanyanzio.top/categories/Vue/CSS/"/>
+    
+    
+    <category term="Vue" scheme="https://yanyanzio.top/tags/Vue/"/>
+    
+  </entry>
   
   <entry>
     <title>遗忘的HTML&amp;&amp;CSS</title>
