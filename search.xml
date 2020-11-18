@@ -8,12 +8,14 @@
       <link href="posts/e31c.html"/>
       <url>posts/e31c.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h3 id="CSS溢出属性-overflow"><a href="#CSS溢出属性-overflow" class="headerlink" title="CSS溢出属性 overflow"></a>CSS溢出属性 overflow</h3><p>该overflow属性指定如果内容溢出元素框会发生什么情况。</p><p>此属性指定在元素的内容太大而无法放入指定区域时是剪辑内容还是添加滚动条。</p><p>/* 默认值。内容不会被修剪，会呈现在元素框之外 */<br>overflow: visible;</p><p>/* 内容会被修剪，并且其余内容不可见 */<br>overflow: hidden;</p><p>/* 内容会被修剪，浏览器会显示滚动条以便查看其余内容 */<br>overflow: scroll;</p><p>/* 由浏览器定夺，如果内容被修剪，就会显示滚动条 */<br>overflow: auto;</p><p>/* 规定从父元素继承overflow属性的值 */<br>overflow: inherit;</p><hr><h3 id="outline"><a href="#outline" class="headerlink" title="outline"></a>outline</h3><p>CSS 的 outline 属性是在一条声明中设置多个轮廓属性的简写属性 ， 例如 outline-style, outline-width 和 outline-color。 </p><p>border 和 outline<br>border 和 outline 很类似，但有如下区别：</p><p>outline不占据空间，绘制于元素内容周围。<br>根据规范，outline通常是矩形，但也可以是非矩形的。</p><p>&lt;’outline-color’&gt;<br>设置轮廓的颜色。没有设置时默认值为 currentcolor。<br>&lt;’outline-style’&gt;<br>设置轮廓的样式。没有设置时默认值为 none。<br>&lt;’outline-width’&gt;<br>设置轮廓的宽度。没有设置时默认值为 medium</p><p>outline:none; 取消选中边框</p><hr><h3 id="选择器-交集选择器"><a href="#选择器-交集选择器" class="headerlink" title="选择器: 交集选择器"></a>选择器: 交集选择器</h3><p>我主要用在绑定一个标签, 如: .Old.Xin  有一个源 <code>&lt;div class="Old"&gt;&lt;/div&gt;</code></p><p>想要在这个<strong>div</strong>中添加一个新的类,即<code>&lt;div class="Old Xin"&gt;&lt;/div&gt;</code></p><p>就用 <strong>.Old.Xin</strong> 交集选择器</p><hr><h3 id="webkit-scrollbar-滚轮样式"><a href="#webkit-scrollbar-滚轮样式" class="headerlink" title="::-webkit-scrollbar 滚轮样式"></a>::-webkit-scrollbar 滚轮样式</h3><p>::-webkit-scrollbar 滚动条整体部分，其中的属性有width,height,background,border（就和一个块级元素一样</p><p>::-webkit-scrollbar-thumb 滚动条里面可以拖动的那部分</p><hr><h3 id="img的边框"><a href="#img的边框" class="headerlink" title="img的边框"></a>img的边框</h3><ol><li><code>&lt;img&gt;</code> 标签的 border 属性规定图像周围的边框的宽度</li></ol><p><code>border: none;</code> // css属性</p><ol start="2"><li><p>当img没有接收到src属性的时候会自动出现边框，border:0/none都不管用的情况下，解决方法：</p><pre><code> img[src=""],img:not([src]){     opacity:0; }</code></pre></li></ol><hr><h3 id=""><a href="#" class="headerlink" title=""></a></h3>]]></content>
       
       
       <categories>
           
           <category> HTML </category>
+          
+          <category> CSS </category>
           
       </categories>
       
