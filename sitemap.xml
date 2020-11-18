@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yanyanzio.top/posts/14a5.html</loc>
+    
+    <lastmod>2020-11-18</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://yanyanzio.top/posts/c06f.html</loc>
     
     <lastmod>2020-11-18</lastmod>
@@ -102,20 +109,6 @@
 
   
   <url>
-    <loc>https://yanyanzio.top/tags/canvas/</loc>
-    <lastmod>2020-11-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://yanyanzio.top/tags/Vue/</loc>
-    <lastmod>2020-11-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://yanyanzio.top/tags/HTML/</loc>
     <lastmod>2020-11-18</lastmod>
     <changefreq>daily</changefreq>
@@ -129,10 +122,31 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://yanyanzio.top/tags/Vue/</loc>
+    <lastmod>2020-11-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yanyanzio.top/tags/JavaScript/</loc>
+    <lastmod>2020-11-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yanyanzio.top/tags/canvas/</loc>
+    <lastmod>2020-11-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   
   <url>
-    <loc>https://yanyanzio.top/categories/canvas/</loc>
+    <loc>https://yanyanzio.top/categories/HTML/</loc>
     <lastmod>2020-11-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -146,7 +160,7 @@
   </url>
   
   <url>
-    <loc>https://yanyanzio.top/categories/HTML/</loc>
+    <loc>https://yanyanzio.top/categories/JavaScript/</loc>
     <lastmod>2020-11-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -161,6 +175,13 @@
   
   <url>
     <loc>https://yanyanzio.top/categories/Vue/CSS/</loc>
+    <lastmod>2020-11-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yanyanzio.top/categories/canvas/</loc>
     <lastmod>2020-11-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
