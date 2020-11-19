@@ -6,7 +6,7 @@
   <link href="https://yanyanzio.top/atom.xml" rel="self"/>
   
   <link href="https://yanyanzio.top/"/>
-  <updated>2020-11-19T12:42:51.600Z</updated>
+  <updated>2020-11-19T12:46:10.738Z</updated>
   <id>https://yanyanzio.top/</id>
   
   <author>
@@ -15,6 +15,19 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>a1</title>
+    <link href="https://yanyanzio.top/posts/44e8.html"/>
+    <id>https://yanyanzio.top/posts/44e8.html</id>
+    <published>2020-11-19T12:46:10.000Z</published>
+    <updated>2020-11-19T12:46:10.738Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>JavaScript高级语言程序设计(一)</title>
