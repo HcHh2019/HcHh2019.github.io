@@ -8,7 +8,7 @@
       <link href="posts/58a1.html"/>
       <url>posts/58a1.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="基本引用类型"><a href="#基本引用类型" class="headerlink" title="基本引用类型"></a>基本引用类型</h1><p>引用值（或者对象）是某个特定引用类型的实例。在 ECMAScript 中，引用类型是把数据和功能组织到一起的结构，经常被人错误地称作“类”。虽然从技术上讲 JavaScript 是一门面向对象语言，但ECMAScript 缺少传统的面向对象编程语言所具备的某些基本结构，包括类和接口。引用类型有时候也被称为对象定义，因为它们描述了自己的对象应有的属性和方法。</p><p><strong>注意</strong> 引用类型虽然有点像类，但跟类并不是一个概念。为避免混淆,本章后面不会使用术语“类”。</p><p><strong>注意</strong> 函数也是一种引用类型，详情请转至 第八章函数章节</p><hr><h2 id="Date"><a href="#Date" class="headerlink" title="Date"></a>Date</h2><p>Date 类型将日期保存为自协调世界时（UTC，Universal Time Coordinated）时间 1970 年 1 月1 日午夜（零时）至今所经过的毫秒数。使用这种存储格式，Date 类型可以精确表示 1970 年 1 月1 日之前及之后的日期。</p><p>要创建日期对象，就使用 new 操作符来调用 Date 构造函数：</p><p><code>let now = new Date();</code></p>]]></content>
       
       
       <categories>
