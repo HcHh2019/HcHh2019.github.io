@@ -6,7 +6,7 @@
   <link href="https://yanyanzio.top/atom.xml" rel="self"/>
   
   <link href="https://yanyanzio.top/"/>
-  <updated>2020-11-21T01:25:25.222Z</updated>
+  <updated>2020-11-21T01:31:57.909Z</updated>
   <id>https://yanyanzio.top/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>B2</title>
+    <link href="https://yanyanzio.top/posts/75b1.html"/>
+    <id>https://yanyanzio.top/posts/75b1.html</id>
+    <published>2020-11-21T01:31:06.000Z</published>
+    <updated>2020-11-21T01:31:57.909Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript高级语言程序设计(三)</title>
+    <link href="https://yanyanzio.top/posts/58a1.html"/>
+    <id>https://yanyanzio.top/posts/58a1.html</id>
+    <published>2020-11-21T01:31:06.000Z</published>
+    <updated>2020-11-21T01:33:49.761Z</updated>
+    
+    
+    
+    
+    <category term="JavaScript" scheme="https://yanyanzio.top/categories/JavaScript/"/>
+    
+    
+    <category term="JavaScript" scheme="https://yanyanzio.top/tags/JavaScript/"/>
+    
+    <category term="JavaScript高级程序设计" scheme="https://yanyanzio.top/tags/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
   
   <entry>
     <title>JavaScript高级语言程序设计(三)</title>
