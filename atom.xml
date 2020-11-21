@@ -6,7 +6,7 @@
   <link href="https://yanyanzio.top/atom.xml" rel="self"/>
   
   <link href="https://yanyanzio.top/"/>
-  <updated>2020-11-21T02:57:34.178Z</updated>
+  <updated>2020-11-21T04:17:01.039Z</updated>
   <id>https://yanyanzio.top/</id>
   
   <author>
@@ -18,10 +18,37 @@
   
   <entry>
     <title>JavaScript高级语言程序设计(三)</title>
+    <link href="https://yanyanzio.top/posts/58a1.html"/>
+    <id>https://yanyanzio.top/posts/58a1.html</id>
+    <published>2020-11-21T04:12:55.000Z</published>
+    <updated>2020-11-21T04:17:01.039Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;基本引用类型&quot;&gt;&lt;a href=&quot;#基本引用类型&quot; class=&quot;headerlink&quot; title=&quot;基本引用类型&quot;&gt;&lt;/a&gt;基本引用类型&lt;/h1&gt;&lt;p&gt;引用值（或者对象）是某个特定引用类型的实例。在 ECMAScript</summary>
+        
+      
+    
+    
+    
+    <category term="JavaScript" scheme="https://yanyanzio.top/categories/JavaScript/"/>
+    
+    <category term="JavaScript高级程序设计" scheme="https://yanyanzio.top/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+    <category term="JavaScript" scheme="https://yanyanzio.top/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript高级语言程序设计(三)</title>
     <link href="https://yanyanzio.top/posts/a0001.html"/>
     <id>https://yanyanzio.top/posts/a0001.html</id>
     <published>2020-11-21T01:31:06.000Z</published>
-    <updated>2020-11-21T02:57:34.178Z</updated>
+    <updated>2020-11-21T04:16:19.806Z</updated>
     
     
       
