@@ -1,0 +1,377 @@
+<!DOCTYPE HTML><html lang="zh-CN"><head><meta charset="utf-8"><meta name="keywords" content="JavaScript高级语言程序设计(四), Hexo"><meta name="description" content="欢迎来到我的小破站(๑╹◡╹)ﾉ&#34;&#34;&#34;"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><meta name="renderer" content="webkit|ie-stand|ie-comp"><meta name="mobile-web-app-capable" content="yes"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><title>JavaScript高级语言程序设计(四) | YanYanZi</title><link rel="icon" type="image/jpeg" href="https://gitee.com/OxOYYZi/picgo/raw/master/img/3.jpg"><link rel="stylesheet" href="/libs/awesome/css/all.css"><link rel="stylesheet" href="/libs/materialize/materialize.min.css"><link rel="stylesheet" href="/libs/aos/aos.css"><link rel="stylesheet" href="/libs/animate/animate.min.css"><link rel="stylesheet" href="/libs/lightGallery/css/lightgallery.min.css"><link rel="stylesheet" href="/css/matery.css"><link rel="stylesheet" href="/css/my.css"><script src="/libs/jquery/jquery.min.js"></script><meta name="generator" content="Hexo 5.2.0"><style>.github-emoji{position:relative;display:inline-block;width:1.2em;min-height:1.2em;overflow:hidden;vertical-align:top;color:transparent}.github-emoji>span{position:relative;z-index:10}.github-emoji .fancybox,.github-emoji img{margin:0!important;padding:0!important;border:none!important;outline:0!important;text-decoration:none!important;user-select:none!important;cursor:auto!important}.github-emoji img{height:1.2em!important;width:1.2em!important;position:absolute!important;left:50%!important;top:50%!important;transform:translate(-50%,-50%)!important;user-select:none!important;cursor:auto!important}.github-emoji-fallback{color:inherit}.github-emoji-fallback img{opacity:0!important}</style><link rel="alternate" href="/atom.xml" title="YanYanZi" type="application/atom+xml"><link rel="stylesheet" href="/css/prism.css"></head><body><header class="navbar-fixed"><nav id="headNav" class="bg-color nav-transparent"><div id="navContainer" class="nav-wrapper container"><div class="brand-logo"><a href="/" class="waves-effect waves-light"><img src="https://gitee.com/OxOYYZi/picgo/raw/master/img/3.jpg" class="logo-img" alt="LOGO"> <span class="logo-span">YanYanZi</span></a></div><a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a><ul class="right nav-menu"><li class="hide-on-med-and-down nav-item"><a href="/" class="waves-effect waves-light"><i class="fas fa-book-dead" style="zoom:.6"></i> <span>主页</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/tags" class="waves-effect waves-light"><i class="fas fa-book-medical" style="zoom:.6"></i> <span>标签</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/categories" class="waves-effect waves-light"><i class="fas fa-quran" style="zoom:.6"></i> <span>分类</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/archives" class="waves-effect waves-light"><i class="fas fa-atlas" style="zoom:.6"></i> <span>文章</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/about" class="waves-effect waves-light"><i class="fas fa-bible" style="zoom:.6"></i> <span>MI</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/contact" class="waves-effect waves-light"><i class="fas fa-journal-whills" style="zoom:.6"></i> <span>LINK</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/friends" class="waves-effect waves-light"><i class="fas fa-torah" style="zoom:.6"></i> <span>FRIENDS</span></a></li><li><a href="#searchModal" class="modal-trigger waves-effect waves-light"><i id="searchIcon" class="fas fa-search" title="搜索" style="zoom:.85"></i></a></li></ul><div id="mobile-nav" class="side-nav sidenav"><div class="mobile-head bg-color"><img src="https://gitee.com/OxOYYZi/picgo/raw/master/img/3.jpg" class="logo-img circle responsive-img"><div class="logo-name">YanYanZi</div><div class="logo-desc">欢迎来到我的小破站(๑╹◡╹)ﾉ&#34;&#34;&#34;</div></div><ul class="menu-list mobile-menu-list"><li class="m-nav-item"><a href="/" class="waves-effect waves-light"><i class="fa-fw fas fa-book-dead"></i> 主页</a></li><li class="m-nav-item"><a href="/tags" class="waves-effect waves-light"><i class="fa-fw fas fa-book-medical"></i> 标签</a></li><li class="m-nav-item"><a href="/categories" class="waves-effect waves-light"><i class="fa-fw fas fa-quran"></i> 分类</a></li><li class="m-nav-item"><a href="/archives" class="waves-effect waves-light"><i class="fa-fw fas fa-atlas"></i> 文章</a></li><li class="m-nav-item"><a href="/about" class="waves-effect waves-light"><i class="fa-fw fas fa-bible"></i> MI</a></li><li class="m-nav-item"><a href="/contact" class="waves-effect waves-light"><i class="fa-fw fas fa-journal-whills"></i> LINK</a></li><li class="m-nav-item"><a href="/friends" class="waves-effect waves-light"><i class="fa-fw fas fa-torah"></i> FRIENDS</a></li><li><div class="divider"></div></li><li><a href="https://github.com/HcHh2019/HcHh2019.github.io" class="waves-effect waves-light" target="_blank"><i class="fab fa-github-square fa-fw"></i> Fork Me</a></li></ul></div></div><style>.nav-transparent .github-corner{display:none!important}.github-corner{position:absolute;z-index:10;top:0;right:0;border:0;transform:scale(1.1)}.github-corner svg{color:#0f9d58;fill:#fff;height:64px;width:64px}.github-corner:hover .octo-arm{animation:a .56s ease-in-out}.github-corner .octo-arm{animation:none}@keyframes a{0%,to{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}</style><a href="https://github.com/HcHh2019/HcHh2019.github.io" class="github-corner tooltipped hide-on-med-and-down" target="_blank" data-tooltip="Fork Me" data-position="left" data-delay="50"><svg viewBox="0 0 250 250" aria-hidden="true"><path d="M0 0 115 115 130 115 142 142 250 250 250 0Z"></path><path d="M128.3 109C113.8 99.7 119 89.6 119 89.6 122 82.7 120.5 78.6 120.5 78.6 119.2 72 123.4 76.3 123.4 76.3 127.3 80.9 125.5 87.3 125.5 87.3 122.9 97.6 130.6 101.9 134.4 103.2" fill="currentColor" style="transform-origin:130px 106px" class="octo-arm"></path><path d="M115 115C114.9 115.1 118.7 116.5 119.8 115.4L133.7 101.6C136.9 99.2 139.9 98.4 142.2 98.6 133.8 88 127.5 74.4 143.8 58 148.5 53.4 154 51.2 159.7 51 160.3 49.4 163.2 43.6 171.4 40.1 171.4 40.1 176.1 42.5 178.8 56.2 183.1 58.6 187.2 61.8 190.9 65.4 194.5 69 197.7 73.2 200.1 77.6 213.8 80.2 216.3 84.9 216.3 84.9 212.7 93.1 206.9 96 205.4 96.6 205.1 102.4 203 107.8 198.3 112.5 181.9 128.9 168.3 122.5 157.7 114.1 157.9 116.9 156.7 120.9 152.7 124.9L141 136.5C139.8 137.7 141.6 141.9 141.8 141.8Z" fill="currentColor" class="octo-body"></path></svg></a></nav></header><div class="bg-cover pd-header post-cover" style="background-image:url('https://gitee.com/OxOYYZi/picgo/raw/master/img/illust_67861832_20201119_074837 - 副本.jpg')"><div class="container" style="right:0;left:0"><div class="row"><div class="col s12 m12 l12"><div class="brand"><h1 class="description center-align post-title">JavaScript高级语言程序设计(四)</h1></div></div></div></div></div><main class="post-container content"><link rel="stylesheet" href="/libs/tocbot/tocbot.css"><style>#articleContent h1::before,#articleContent h2::before,#articleContent h3::before,#articleContent h4::before,#articleContent h5::before,#articleContent h6::before{display:block;content:" ";height:100px;margin-top:-100px;visibility:hidden}#articleContent :focus{outline:0}.toc-fixed{position:fixed;top:64px}.toc-widget{width:345px;padding-left:20px;background-color:rgb(255,255,255,.3)!important;border-radius:10px;box-shadow:0 10px 35px 2px rgba(0,0,0,.15),0 5px 15px rgba(0,0,0,.07),0 2px 5px -5px rgba(0,0,0,.1)!important}.toc-widget .toc-title{margin:35px 0 15px 0;padding-left:17px;font-size:1.5rem;font-weight:700;line-height:1.5rem;color:tomato}.toc-widget ol{padding:0;list-style:none}#toc-content{height:calc(100vh - 250px);overflow:auto}#toc-content ol{padding-left:10px}#toc-content ol li{padding-left:10px}#toc-content .toc-link:hover{color:#70e1f5!important;font-weight:900;font-size:18px;text-decoration:underline;text-decoration:none}#toc-content .toc-link::before{background-color:transparent;max-height:25px;position:absolute;right:23.5vw;display:block}#toc-content .is-active-link{color:#70e1f5}#floating-toc-btn{position:fixed;right:15px;bottom:76px;padding-top:15px;margin-bottom:0;z-index:998}#floating-toc-btn .btn-floating{width:48px;height:48px}#floating-toc-btn .btn-floating i{line-height:48px;font-size:1.4rem}</style><div class="row"><div id="main-content" class="col s12 m12 l9"><div id="artDetail"><div class="card"><div class="card-content article-info"><div class="row tag-cate"><div class="col s7"><div class="article-tag"><a href="/tags/JavaScript/"><span class="chip bg-color">JavaScript</span></a></div></div><div class="col s5 right-align"><div class="post-cate"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/JavaScript/" class="post-category">JavaScript</a> <a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="post-category">JavaScript高级程序设计</a></div></div></div><div class="post-info"><div class="post-date info-break-policy"><i class="far fa-calendar-minus fa-fw"></i> 发布日期:&nbsp;&nbsp; 2020-11-22</div><div class="post-date info-break-policy"><i class="far fa-calendar-check fa-fw"></i> 更新日期:&nbsp;&nbsp; 2020-11-22</div><div class="info-break-policy"><i class="far fa-file-word fa-fw"></i> 文章字数:&nbsp;&nbsp; 7k</div><div class="info-break-policy"><i class="far fa-clock fa-fw"></i> 阅读时长:&nbsp;&nbsp; 27 分</div><div id="busuanzi_container_page_pv" class="info-break-policy"><i class="far fa-eye fa-fw"></i> 阅读次数:&nbsp;&nbsp;<span id="busuanzi_value_page_pv"></span></div></div></div><hr class="clearfix"><div class="card-content article-card-content"><div id="articleContent"><h1 id="集合引用类型"><a href="#集合引用类型" class="headerlink" title="集合引用类型"></a>集合引用类型</h1><p>上篇: <strong><a href="a0004">基本引用类型(一) Object</a></strong><br>本篇: <strong>集合引用类型(二) Array</strong><br>下篇: <strong><a href="a0006">集合引用类型(三) 定型数组</a></strong></p><p><strong><a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">JavaScript高级程序设计</a></strong> 全部合集</p><hr><h1 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h1><p>除了 Object，Array 应该就是 ECMAScript 中最常用的类型了。ECMAScript 数组跟其他编程语言的数组有很大区别。跟其他语言中的数组一样，ECMAScript 数组也是一组有序的数据，但跟其他语言不同的是，数组中每个槽位可以存储任意类型的数据。这意味着可以创建一个数组，它的第一个元素是字符串，第二个元素是数值，第三个是对象。ECMAScript 数组也是动态大小的，会随着数据添加自动增长。</p><h2 id="创建数组"><a href="#创建数组" class="headerlink" title="创建数组"></a>创建数组</h2><p>有几种基本的方式可以创建数组。一种是使用 Array 构造函数，比如：</p><p><code>let colors = new Array();</code></p><p>如果知道数组中元素的数量，那么可以给构造函数传入一个数值，然后 length 属性就会被自动创建并设置为这个值。比如，下面的代码会创建一个初始 length 为 20 的数组：</p><p><code>let colors = new Array(20);</code></p><p>也可以给 Array 构造函数传入要保存的元素。比如，下面的代码会创建一个包含 3 个字符串值的数组：</p><p><code>let colors = new Array("red", "blue", "green");</code></p><p>另一种创建数组的方式是使用数组字面量（array literal）表示法。数组字面量是在中括号中包含以逗号分隔的元素列表，如下面的例子所示：</p><pre><code>let colors = ["red", "blue", "green"]; // 创建一个包含 3 个元素的数组
+let names = []; // 创建一个空数组
+let values = [1,2,]; // 创建一个包含 2 个元素的数组</code></pre><p><strong>注意</strong> 与对象一样，在使用数组字面量表示法创建数组不会调用 Array 构造函数。</p><p>Array 构造函数还有两个 ES6 新增的用于创建数组的静态方法：from()和 of()。from()用于将类数组结构转换为数组实例，而 of()用于将一组参数转换为数组实例。</p><p>Array.from()的第一个参数是一个类数组对象，即任何可迭代的结构，或者有一个 length 属性和可索引元素的结构。这种方式可用于很多场合：</p><pre><code>// 字符串会被拆分为单字符数组
+console.log(Array.from("Matt")); // ["M", "a", "t", "t"]
+
+// 可以使用 from()将集合和映射转换为一个新数组
+const m = new Map().set(1, 2)
+.set(3, 4);
+const s = new Set().add(1)
+.add(2)
+.add(3)
+.add(4);
+console.log(Array.from(m)); // [[1, 2], [3, 4]]
+console.log(Array.from(s)); // [1, 2, 3, 4]
+
+// Array.from()对现有数组执行浅复制
+const a1 = [1, 2, 3, 4];
+const a2 = Array.from(a1);
+console.log(a1); // [1, 2, 3, 4]
+alert(a1 === a2); // false
+
+// 可以使用任何可迭代对象
+const iter = {
+    *[Symbol.iterator]() {
+        yield 1;
+        yield 2;
+        yield 3;
+        yield 4;
+    }
+};
+console.log(Array.from(iter)); // [1, 2, 3, 4] 
+
+// arguments 对象可以被轻松地转换为数组
+function getArgsArray() {
+    return Array.from(arguments);
+}
+console.log(getArgsArray(1, 2, 3, 4)); // [1, 2, 3, 4]
+
+// from()也能转换带有必要属性的自定义对象
+const arrayLikeObject = {
+    0: 1,
+    1: 2,
+    2: 3,
+    3: 4,
+    length: 4
+};
+console.log(Array.from(arrayLikeObject)); // [1, 2, 3, 4]</code></pre><p>Array.from()还接收第二个可选的映射函数参数。这个函数可以直接增强新数组的值，而无须像调用 Array.from().map()那样先创建一个中间数组。还可以接收第三个可选参数，用于指定映射函数中 this 的值。但这个重写的 this 值在箭头函数中不适用。</p><pre><code>const a1 = [1, 2, 3, 4];
+const a2 = Array.from(a1, x =&gt; x**2);
+const a3 = Array.from(a1, function(x) {return x**this.exponent}, {exponent: 2});
+console.log(a2); // [1, 4, 9, 16]
+console.log(a3); // [1, 4, 9, 16] </code></pre><p>Array.of()可以把一组参数转换为数组。这个方法用于替代在 ES6之前常用的 Array.prototype.slice.call(arguments)，一种异常笨拙的将 arguments 对象转换为数组的写法：</p><pre><code>console.log(Array.of(1, 2, 3, 4)); // [1, 2, 3, 4]
+console.log(Array.of(undefined)); // [undefined]</code></pre><h2 id="数组空位"><a href="#数组空位" class="headerlink" title="数组空位"></a>数组空位</h2><p>使用数组字面量初始化数组时，可以使用一串逗号来创建空位（hole）。ECMAScript 会将逗号之间相应索引位置的值当成空位，ES6 规范重新定义了该如何处理这些空位。可以像下面这样创建一个空位数组：</p><pre><code>const options = [,,,,,]; // 创建包含 5 个元素的数组
+console.log(options.length); // 5
+console.log(options); // [,,,,,]</code></pre><p>ES6 新增方法普遍将这些空位当成存在的元素，只不过值为 undefined：</p><pre><code>const options = [1,,,,5];
+for (const option of options) {
+console.log(option === undefined);
+}
+// false
+// true
+// true
+// true
+// false </code></pre><p><strong>注意</strong> 由于行为不一致和存在性能隐患，因此实践中要避免使用数组空位。如果确实需要空位，则可以显式地用 undefined 值代替。</p><h2 id="数组索引"><a href="#数组索引" class="headerlink" title="数组索引"></a>数组索引</h2><p>要取得或设置数组的值，需要使用中括号并提供相应值的数字索引，如下所示：</p><pre><code>let colors = ["red", "blue", "green"]; // 定义一个字符串数组
+alert(colors[0]); // 显示第一项
+colors[2] = "black"; // 修改第三项
+colors[3] = "brown"; // 添加第四项</code></pre><p>使用 length 属性可以方便地向数组末尾添加元素，如下例所示：</p><pre><code>let colors = ["red", "blue", "green"]; // 创建一个包含 3 个字符串的数组
+colors[colors.length] = "black"; // 添加一种颜色（位置 3）
+colors[colors.length] = "brown"; // 再添加一种颜色（位置 4）</code></pre><p>length 属性会更新为位置加上 1，如下例所示：</p><pre><code>let colors = ["red", "blue", "green"]; // 创建一个包含 3 个字符串的数组
+colors[99] = "black"; // 添加一种颜色（位置 99）
+alert(colors.length); // 100</code></pre><p>这里，colors 数组有一个值被插入到位置 99，结果新 length 就变成了 100（99 + 1）。这中间的所有元素，即位置 3~98，实际上并不存在，因此在访问时会返回 undefined。</p><p><strong>注意</strong> 数组最多可以包含 4 294 967 295 个元素，这对于大多数编程任务应该足够了。如果尝试添加更多项，则会导致抛出错误。以这个最大值作为初始值创建数组，可能导致脚本运行时间过长的错误</p><h3 id="检测数组"><a href="#检测数组" class="headerlink" title="检测数组"></a>检测数组</h3><p>一个经典的 ECMAScript 问题是判断一个对象是不是数组。在只有一个网页（因而只有一个全局作用域）的情况下，使用 instanceof 操作符就足矣：</p><pre><code>if (value instanceof Array){
+// 操作数组
+} </code></pre><p>使用 instanceof 的问题是假定只有一个全局执行上下文。如果网页里有多个框架，则可能涉及两个不同的全局执行上下文，因此就会有两个不同版本的 Array 构造函数。如果要把数组从一个框架传给另一个框架，则这个数组的构造函数将有别于在第二个框架内本地创建的数组。</p><p>为解决这个问题，ECMAScript 提供了 Array.isArray()方法。这个方法的目的就是确定一个值是否为数组，而不用管它是在哪个全局执行上下文中创建的。来看下面的例子：</p><pre><code>if (Array.isArray(value)){
+// 操作数组
+} </code></pre><h2 id="迭代器方法"><a href="#迭代器方法" class="headerlink" title="迭代器方法"></a>迭代器方法</h2><p>在 ES6 中，Array 的原型上暴露了 3 个用于检索数组内容的方法：keys()、values()和entries()。keys()返回数组索引的迭代器，values()返回数组元素的迭代器，而 entries()返回索引/值对的迭代器：</p><pre><code>const a = ["foo", "bar", "baz", "qux"];
+// 因为这些方法都返回迭代器，所以可以将它们的内容
+// 通过 Array.from()直接转换为数组实例
+const aKeys = Array.from(a.keys());
+const aValues = Array.from(a.values());
+const aEntries = Array.from(a.entries());
+console.log(aKeys); // [0, 1, 2, 3]
+console.log(aValues); // ["foo", "bar", "baz", "qux"]
+console.log(aEntries); // [[0, "foo"], [1, "bar"], [2, "baz"], [3, "qux"]] </code></pre><p>使用 ES6 的解构可以非常容易地在循环中拆分键/值对：</p><pre><code>const a = ["foo", "bar", "baz", "qux"];
+    for (const [idx, element] of a.entries()) {
+    alert(idx);
+    alert(element);
+}
+// 0
+// foo
+// 1
+// bar
+// 2
+// baz
+// 3
+// qux</code></pre><h2 id="复制和填充方法"><a href="#复制和填充方法" class="headerlink" title="复制和填充方法"></a>复制和填充方法</h2><p>ES6 新增了两个方法：批量复制方法 copyWithin()，以及填充数组方法 fill()。这两个方法的函数签名类似，都需要指定既有数组实例上的一个范围，包含开始索引，不包含结束索引。使用这个方法不会改变数组的大小。</p><p>使用 fill()方法可以向一个已有的数组中插入全部或部分相同的值。开始索引用于指定开始填充的位置，它是可选的。如果不提供结束索引，则一直填充到数组末尾。负值索引从数组末尾开始计算。也可以将负索引想象成数组长度加上它得到的一个正索引：</p><pre><code>const zeroes = [0, 0, 0, 0, 0];
+
+// 用 5 填充整个数组
+zeroes.fill(5);
+console.log(zeroes); // [5, 5, 5, 5, 5]
+zeroes.fill(0); // 重置
+
+// 用 6 填充索引大于等于 3 的元素
+zeroes.fill(6, 3);
+console.log(zeroes); // [0, 0, 0, 6, 6]
+zeroes.fill(0); // 重置
+
+// 用 7 填充索引大于等于 1 且小于 3 的元素
+zeroes.fill(7, 1, 3);
+console.log(zeroes); // [0, 7, 7, 0, 0];
+zeroes.fill(0); // 重置
+
+// 用 8 填充索引大于等于 1 且小于 4 的元素
+// (-4 + zeroes.length = 1)
+// (-1 + zeroes.length = 4)
+zeroes.fill(8, -4, -1);
+console.log(zeroes); // [0, 8, 8, 8, 0];
+
+fill()静默忽略超出数组边界、零长度及方向相反的索引范围：
+const zeroes = [0, 0, 0, 0, 0];
+
+// 索引过低，忽略
+zeroes.fill(1, -10, -6);
+console.log(zeroes); // [0, 0, 0, 0, 0]
+
+// 索引过高，忽略
+zeroes.fill(1, 10, 15);
+console.log(zeroes); // [0, 0, 0, 0, 0]
+
+// 索引反向，忽略
+zeroes.fill(2, 4, 2);
+console.log(zeroes); // [0, 0, 0, 0, 0]
+
+// 索引部分可用，填充可用部分
+zeroes.fill(4, 3, 10)
+console.log(zeroes); // [0, 0, 0, 4, 4] </code></pre><p>与 fill()不同，copyWithin()会按照指定范围浅复制数组中的部分内容，然后将它们插入到指定索引开始的位置。开始索引和结束索引则与 fill()使用同样的计算方法：</p><h2 id="转换方法"><a href="#转换方法" class="headerlink" title="转换方法"></a>转换方法</h2><p>前面提到过，所有对象都有 toLocaleString()、toString()和 valueOf()方法。其中，valueOf()返回的还是数组本身。而 toString()返回由数组中每个值的等效字符串拼接而成的一个逗号分隔的字符串。也就是说，对数组的每个值都会调用其 toString()方法，以得到最终的字符串。来看下面的例子：</p><pre><code>let colors = ["red", "blue", "green"]; // 创建一个包含 3 个字符串的数组
+alert(colors.toString()); // red,blue,green
+alert(colors.valueOf()); // red,blue,green
+alert(colors); // red,blue,green </code></pre><p>首先是被显式调用的 toString()和 valueOf()方法，它们分别返回了数组的字符串表示，即将所有字符串组合起来，以逗号分隔。最后一行代码直接用 alert()显示数组，因为 alert()期待字符串，所以会在后台调用数组的 toString()方法，从而得到跟前面一样的结果。</p><p>在调用数组的 toLocaleString()方法时，会得到一个逗号分隔的数组值的字符串。它与另外两个方法唯一的区别是，为了得到最终的字符串，会调用数组每个值的 toLocaleString()方法，而不是toString()方法。看下面的例子：</p><pre><code>let person1 = {
+    toLocaleString() {
+        return "Nikolaos";
+    },
+    toString() {
+        return "Nicholas";
+    }
+}; 
+
+let person2 = {
+    toLocaleString() {
+        return "Grigorios";
+    },
+    toString() {
+        return "Greg";
+    }
+};
+
+let people = [person1, person2];
+alert(people); // Nicholas,Greg
+alert(people.toString()); // Nicholas,Greg
+alert(people.toLocaleString()); // Nikolaos,Grigorios </code></pre><p>这里定义了两个对象 person1 和 person2，它们都定义了 toString()和 toLocaleString()方法，而且返回不同的值。然后又创建了一个包含这两个对象的数组 people。在将数组传给 alert()时，输出的是”Nicholas,Greg”，这是因为会在数组每一项上调用 toString()方法（与下一行显式调用toString()方法结果一样）。而在调用数组的 toLocaleString()方法时，结果变成了”Nikolaos,Grigorios”，这是因为调用了数组每一项的 toLocaleString()方法。</p><p>继承的方法 toLocaleString()以及 toString()都返回数组值的逗号分隔的字符串。如果想使用不同的分隔符，则可以使用 join()方法。join()方法接收一个参数，即字符串分隔符，返回包含所有项的字符串。来看下面的例子：</p><pre><code>let colors = ["red", "green", "blue"];
+alert(colors.join(",")); // red,green,blue
+alert(colors.join("||")); // red||green||blue</code></pre><p>这里在 colors 数组上调用了 join()方法，得到了与调用 toString()方法相同的结果。传入逗号，结果就是逗号分隔的字符串。最后一行给 join() 传入了双竖线，得到了字符串”red||green||blue”。如果不给 join()传入任何参数，或者传入 undefined，则仍然使用逗号作为分隔符。</p><h2 id="栈方法"><a href="#栈方法" class="headerlink" title="栈方法"></a>栈方法</h2><p>ECMAScript 给数组提供几个方法，让它看起来像是另外一种数据结构。数组对象可以像栈一样，也就是一种限制插入和删除项的数据结构。栈是一种后进先出（LIFO，Last-In-First-Out）的结构，也就是最近添加的项先被删除。数据项的插入（称为推入，push）和删除（称为弹出，pop）只在栈的一个地方发生，即栈顶。ECMAScript 数组提供了 push()和 pop()方法，以实现类似栈的行为。</p><p>push()方法接收任意数量的参数，并将它们添加到数组末尾，返回数组的最新长度。pop()方法则用于删除数组的最后一项，同时减少数组的 length 值，返回被删除的项。来看下面的例子：</p><pre><code>let colors = new Array(); // 创建一个数组
+let count = colors.push("red", "green"); // 推入两项
+alert(count); // 2
+
+count = colors.push("black"); // 再推入一项
+alert(count); // 3
+
+let item = colors.pop(); // 取得最后一项
+alert(item); // black
+alert(colors.length); // 2 </code></pre><p>栈方法可以与数组的其他任何方法一起使用，如下例所示：</p><pre><code>let colors = ["red", "blue"];
+colors.push("brown"); // 再添加一项
+colors[3] = "black"; // 添加一项
+alert(colors.length); // 4
+let item = colors.pop(); // 取得最后一项
+alert(item); // black </code></pre><h2 id="队列方法"><a href="#队列方法" class="headerlink" title="队列方法"></a>队列方法</h2><p>就像栈是以 LIFO 形式限制访问的数据结构一样，队列以先进先出（FIFO，First-In-First-Out）形式限制访问。队列在列表末尾添加数据，但从列表开头获取数据。因为有了在数据末尾添加数据的 push()方法，所以要模拟队列就差一个从数组开头取得数据的方法了。这个数组方法叫 shift()，它会删除数组的第一项并返回它，然后数组长度减 1。使用 shift()和 push()，可以把数组当成队列来使用：</p><pre><code>let colors = new Array(); // 创建一个数组
+let count = colors.push("red", "green"); // 推入两项
+alert(count); // 2
+
+count = colors.push("black"); // 再推入一项
+alert(count); // 3
+
+let item = colors.shift(); // 取得第一项
+alert(item); // red
+alert(colors.length); // 2 </code></pre><p>ECMAScript 也为数组提供了 unshift()方法。顾名思义，unshift()就是执行跟 shift()相反的操作：在数组开头添加任意多个值，然后返回新的数组长度。通过使用 unshift()和 pop()，可以在相反方向上模拟队列，即在数组开头添加新数据，在数组末尾取得数据，如下例所示：</p><pre><code>let colors = new Array(); // 创建一个数组
+let count = colors.unshift("red", "green"); // 从数组开头推入两项
+alert(count); // 2
+
+count = colors.unshift("black"); // 再推入一项
+alert(count); // 3
+
+let item = colors.pop(); // 取得最后一项
+alert(item); // green
+alert(colors.length); // 2 </code></pre><p>这里，先创建一个数组，再通过 unshift()填充数组。首先，给数组添加”red”和”green”，再添<br>加”black”，得到[ “black”,”red”,”green”]。调用 pop()时，删除最后一项”green”并返回它。</p><h2 id="排序方法"><a href="#排序方法" class="headerlink" title="排序方法"></a>排序方法</h2><p>数组有两个方法可以用来对元素重新排序：reverse()和 sort()。顾名思义，reverse()方法就是将数组元素反向排列。比如：</p><pre><code>let values = [1, 2, 3, 4, 5];
+values.reverse();
+alert(values); // 5,4,3,2,1 </code></pre><p>数组有两个方法可以用来对元素重新排序：reverse()和 sort()。顾名思义，reverse()方法就是将数组元素反向排列。比如：</p><pre><code>let values = [1, 2, 3, 4, 5];
+values.reverse();
+alert(values); // 5,4,3,2,1 </code></pre><p>一开始数组中数值的顺序是正确的，但调用 sort()会按照这些数值的字符串形式重新排序。因此，即使 5 小于 10，但字符串”10”在字符串”5”的前头，所以 10 还是会排到 5 前面。很明显，这在多数情况下都不是最合适的。为此，sort()方法可以接收一个比较函数，用于判断哪个值应该排在前面。</p><p>比较函数接收两个参数，如果第一个参数应该排在第二个参数前面，就返回负值；如果两个参数相等，就返回 0；如果第一个参数应该排在第二个参数后面，就返回正值。下面是使用简单比较函数的一个例子：</p><pre><code>function compare(value1, value2) {
+    if (value1 &lt; value2) {
+    return -1;
+    } else if (value1 &gt; value2) {
+        return 1;
+    } else {
+        return 0;
+    }
+} </code></pre><p>这个比较函数可以适用于大多数数据类型，可以把它当作参数传给 sort()方法，如下所示：</p><pre><code>let values = [0, 1, 5, 10, 15];
+values.sort(compare);
+alert(values); // 0,1,5,10,15 </code></pre><p>在给 sort()方法传入比较函数后，数组中的数值在排序后保持了正确的顺序。当然，比较函数也可以产生降序效果，只要把返回值交换一下即可：</p><pre><code>function compare(value1, value2) {
+    if (value1 &lt; value2) {
+        return 1;
+    } else if (value1 &gt; value2) {
+        return -1;
+    } else {
+        return 0;
+    }
+}
+
+let values = [0, 1, 5, 10, 15];
+values.sort(compare);
+alert(values); // 15,10,5,1,0 </code></pre><p>此外，这个比较函数还可简写为一个箭头函数：</p><pre><code>let values = [0, 1, 5, 10, 15];
+values.sort((a, b) =&gt; a &lt; b ? 1 : a &gt; b ? -1 : 0);
+alert(values); // 15,10,5,1,0 </code></pre><p>如果数组的元素是数值，或者是其 valueOf()方法返回数值的对象（如 Date 对象），这个比较函数还可以写得更简单，因为这时可以直接用第二个值减去第一个值：</p><pre><code>function compare(value1, value2){
+    return value2 - value1;
+}</code></pre><p>比较函数就是要返回小于 0、0 和大于 0 的数值，因此减法操作完全可以满足要求。</p><h2 id="操作方法"><a href="#操作方法" class="headerlink" title="操作方法"></a>操作方法</h2><h3 id="concat"><a href="#concat" class="headerlink" title="concat()"></a>concat()</h3><p>concat()方法可以在现有数组全部元素基础上创建一个新数组。它首先会创建一个当前数组的副本，然后再把它的参数添加到副本末尾，最后返回这个新构建的数组。如果传入一个或多个数组，则 concat()会把这些数组的每一项都添加到结果数组。如果参数不是数组，则直接把它们添加到结果数组末尾。来看下面的例子：</p><pre><code>let colors = ["red", "green", "blue"];
+let colors2 = colors.concat("yellow", ["black", "brown"]);
+console.log(colors); // ["red", "green","blue"]
+console.log(colors2); // ["red", "green", "blue", "yellow", "black", "brown"] </code></pre><h3 id="slice"><a href="#slice" class="headerlink" title="slice()"></a>slice()</h3><p>方法 slice()用于创建一个包含原有数组中一个或多个元素的新数组。slice()方法可以接收一个或两个参数：返回元素的开始索引和结束索引。如 果只有一个参数，则 slice()会返回该索引到数组末尾的所有元素。如果有两个参数，则 slice()返回从开始索引到结束索引对应的所有元素，其中不包含结束索引对应的元素。记住，这个操作不影响原始数组。来看下面的例子：</p><pre><code>let colors = ["red", "green", "blue", "yellow", "purple"];
+let colors2 = colors.slice(1);
+let colors3 = colors.slice(1, 4);
+
+alert(colors2); // green,blue,yellow,purple
+alert(colors3); // green,blue,yellow </code></pre><h3 id="splice"><a href="#splice" class="headerlink" title="splice()"></a>splice()</h3><p>splice()方法的主要目的是在数组中间插入元素，但有 3 种不同的方式使用这个方法。</p><ol><li><p>删除。需要给 splice()传 2 个参数：要删除的第一个元素的位置和要删除的元素数量。可以从数组中删除任意多个元素，比如 splice(0, 2)会删除前两个元素。</p></li><li><p>插入。需要给 splice()传 3 个参数：开始位置、0（要删除的元素数量）和要插入的元素，可以在数组中指定的位置插入元素。第三个参数之后还可以传第四个、第五个参数，乃至任意多个要插入的元素。比如，splice(2, 0, “red”, “green”)会从数组位置 2 开始插入字符串”red”和”green”。</p></li><li><p>替换。splice()在删除元素的同时可以在指定位置插入新元素，同样要传入 3 个参数：开始位置、要删除元素的数量和要插入的任意多个元素。要插入的元素数量不一定跟删除的元素数量一致。比如，splice(2, 1, “red”, “green”)会在位置 2 删除一个元素，然后从该位置开始向数组中插入”red”和”green”。</p><p>let colors = [“red”, “green”, “blue”];<br>let removed = colors.splice(0,1); // 删除第一项<br>alert(colors); // green,blue<br>alert(removed); // red，只有一个元素的数组</p><p>removed = colors.splice(1, 0, “yellow”, “orange”); // 在位置 1 插入两个元素<br>alert(colors); // green,yellow,orange,blue<br>alert(removed); // 空数组</p><p>removed = colors.splice(1, 1, “red”, “purple”); // 插入两个值，删除一个元素<br>alert(colors); // green,red,purple,orange,blue<br>alert(removed); // yellow，只有一个元素的数组</p></li></ol><h2 id="搜索和位置方法"><a href="#搜索和位置方法" class="headerlink" title="搜索和位置方法"></a>搜索和位置方法</h2><h3 id="严格相等"><a href="#严格相等" class="headerlink" title="严格相等"></a>严格相等</h3><p>ECMAScript 提供了 3 个严格相等的搜索方法：indexOf()、lastIndexOf()和 includes()。其中，前两个方法在所有版本中都可用，而第三个方法是 ECMAScript 7 新增的。这些方法都接收两个参数：要查找的元素和一个可选的起始搜索位置。indexOf()和 includes()方法从数组前头（第一项）开始向后搜索，而 lastIndexOf()从数组末尾（最后一项）开始向前搜索</p><p>indexOf()和 lastIndexOf()都返回要查找的元素在数组中的位置，如果没找到则返回-1。includes()返回布尔值，表示是否至少找到一个与指定元素匹配的项。在比较第一个参数跟数组每一项时，会使用全等（===）比较，也就是说两项必须严格相等。下面来看一些例子：</p><pre><code>let numbers = [1, 2, 3, 4, 5, 4, 3, 2, 1];
+
+alert(numbers.indexOf(4)); // 3
+alert(numbers.lastIndexOf(4)); // 5
+alert(numbers.includes(4)); // true
+
+alert(numbers.indexOf(4, 4)); // 5
+alert(numbers.lastIndexOf(4, 4)); // 3
+alert(numbers.includes(4, 7)); // false
+
+let person = { name: "Nicholas" };
+let people = [{ name: "Nicholas" }];
+let morePeople = [person];
+
+alert(people.indexOf(person)); // -1
+alert(morePeople.indexOf(person)); // 0
+alert(people.includes(person)); // false
+alert(morePeople.includes(person)); // true </code></pre><h3 id="断言函数"><a href="#断言函数" class="headerlink" title="断言函数"></a>断言函数</h3><p>断言函数接收 3 个参数：元素、索引和数组本身。其中元素是数组中当前搜索的元素，索引是当前元素的索引，而数组就是正在搜索的数组。断言函数返回真值，表示是否匹配。</p><p>find()和 findIndex()方法使用了断言函数。这两个方法都从数组的最小索引开始。find()返回第一个匹配的元素，findIndex()返回第一个匹配元素的索引。这两个方法也都接收第二个可选的参数，用于指定断言函数内部 this 的值。</p><pre><code>const people = [
+    {
+        name: "Matt",
+        age: 27
+    },{
+        name: "Nicholas",
+        age: 29
+    }
+];
+
+alert(people.find((element, index, array) =&gt; element.age &lt; 28));
+// {name: "Matt", age: 27}
+
+alert(people.findIndex((element, index, array) =&gt; element.age &lt; 28));
+// 0 </code></pre><p>找到匹配项后，这两个方法都不再继续搜索。</p><pre><code>const evens = [2, 4, 6];
+
+// 找到匹配后，永远不会检查数组的最后一个元素
+evens.find((element, index, array) =&gt; {
+    console.log(element);
+    console.log(index);
+    console.log(array);
+    return element === 4;
+});
+
+// 2
+// 0
+// [2, 4, 6]
+// 4
+// 1
+// [2, 4, 6] </code></pre><h2 id="迭代方法"><a href="#迭代方法" class="headerlink" title="迭代方法"></a>迭代方法</h2><p>ECMAScript 为数组定义了 5 个迭代方法。每个方法接收两个参数：以每一项为参数运行的函数，以及可选的作为函数运行上下文的作用域对象（影响函数中 this 的值）。传给每个方法的函数接收 3个参数：数组元素、元素索引和数组本身。</p><ol><li><p>every()：对数组每一项都运行传入的函数，如果对每一项函数都返回 true，则这个方法返回 true。</p></li><li><p>filter()：对数组每一项都运行传入的函数，函数返回 true 的项会组成数组之后返回。</p></li><li><p>forEach()：对数组每一项都运行传入的函数，没有返回值。</p></li><li><p>map()：对数组每一项都运行传入的函数，返回由每次函数调用的结果构成的数组。</p></li><li><p>some()：对数组每一项都运行传入的函数，如果有一项函数返回 true，则这个方法返回 true。</p></li></ol><p>这些方法都不改变调用它们的数组。</p><p>在这些方法中，every()和 some()是最相似的，都是从数组中搜索符合某个条件的元素。对 every()来说，传入的函数必须对每一项都返回 true，它才会返回 true；否则，它就返回 false。而对 some()来说，只要有一项让传入的函数返回 true，它就会返回 true。下面是一个例子：</p><pre><code>let numbers = [1, 2, 3, 4, 5, 4, 3, 2, 1];
+
+let everyResult = numbers.every((item, index, array) =&gt; item &gt; 2);
+alert(everyResult); // false
+
+let someResult = numbers.some((item, index, array) =&gt; item &gt; 2);
+alert(someResult); // true </code></pre><p>下面再看一看 filter()方法。这个方法基于给定的函数来决定某一项是否应该包含在它返回的数组中。比如，要返回一个所有数值都大于 2 的数组，可以使用如下代码：</p><pre><code>let numbers = [1, 2, 3, 4, 5, 4, 3, 2, 1];
+
+let filterResult = numbers.filter((item, index, array) =&gt; item &gt; 2);
+alert(filterResult); // 3,4,5,4,3 </code></pre><p>这里，调用 filter()返回的数组包含 3、4、5、4、3，因为只有对这些项传入的函数才返回 true。这个方法非常适合从数组中筛选满足给定条件的元素。</p><p>接下来 map()方法也会返回一个数组。这个数组的每一项都是对原始数组中同样位置的元素运行传入函数而返回的结果。例如，可以将一个数组中的每一项都乘以 2，并返回包含所有结果的数组，如下所示：</p><pre><code>let numbers = [1, 2, 3, 4, 5, 4, 3, 2, 1];
+
+let mapResult = numbers.map((item, index, array) =&gt; item * 2);
+
+alert(mapResult); // 2,4,6,8,10,8,6,4,2</code></pre><p>以上代码返回了一个数组，包含原始数组中每个值乘以 2 的结果。这个方法非常适合创建一个与原始数组元素一一对应的新数组。</p><p>最后，再来看一看 forEach()方法。这个方法只会对每一项运行传入的函数，没有返回值。本质上，forEach()方法相当于使用 for 循环遍历数组。比如：</p><pre><code>let numbers = [1, 2, 3, 4, 5, 4, 3, 2, 1];
+
+numbers.forEach((item, index, array) =&gt; {
+    // 执行某些操作
+}); </code></pre><h2 id="归并方法"><a href="#归并方法" class="headerlink" title="归并方法"></a>归并方法</h2><p>ECMAScript 为数组提供了两个归并方法：reduce()和 reduceRight()。这两个方法都会迭代数组的所有项，并在此基础上构建一个最终返回值。reduce()方法从数组第一项开始遍历到最后一项。而 reduceRight()从最后一项开始遍历至第一项。</p><p>这两个方法都接收两个参数：对每一项都会运行的归并函数，以及可选的以之为归并起点的初始值。传给 reduce()和 reduceRight()的函数接收 4 个参数：上一个归并值、当前项、当前项的索引和数组本身。这个函数返回的任何值都会作为下一次调用同一个函数的第一个参数。</p><p>如果没有给这两个方法传入可选的第二个参数（作为归并起点值），则第一次迭代将从数组的第二项开始，因此传给归并函数的第一个参数是数组的第一项，第二个参数是数组的第二项。</p><p>可以使用 reduce()函数执行累加数组中所有数值的操作，比如：</p><pre><code>let values = [1, 2, 3, 4, 5];
+
+let sum = values.reduce((prev, cur, index, array) =&gt; prev + cur);
+alert(sum); // 15</code></pre><p>reduceRight()方法与之类似，只是方向相反。来看下面的例子：</p><pre><code>let values = [1, 2, 3, 4, 5];
+let sum = values.reduceRight(function(prev, cur, index, array){
+return prev + cur;
+});
+alert(sum); // 15 </code></pre><p>在这里，第一次调用归并函数时 prev 是 5，而 cur 是 4。当然，最终结果相同，因为归并操作都是简单的加法。究竟是使用 reduce()还是 reduceRight()，只取决于遍历数组元素的方向。除此之外，这两个方法没什么区别。</p></div><hr><div class="reprint" id="reprint-statement"><div class="reprint__author"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-user">文章作者:</i></span> <span class="reprint-info"><a href="/about" rel="external nofollow noreferrer">言言子</a></span></div><div class="reprint__type"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-link">文章链接:</i></span> <span class="reprint-info"><a href="https://yanyanzio.top/posts/a0005.html">https://yanyanzio.top/posts/a0005.html</a></span></div><div class="reprint__notice"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-copyright">版权声明:</i></span> <span class="reprint-info">本博客所有文章除特別声明外，均采用 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a> 许可协议。转载请注明来源 <a href="/about" target="_blank">言言子</a> !</span></div></div><script async defer>document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }</script><div class="tag_share" style="display:block"><div class="post-meta__tag-list" style="display:inline-block"><div class="article-tag"><a href="/tags/JavaScript/"><span class="chip bg-color">JavaScript</span></a></div></div><div class="post_share" style="zoom:80%;width:fit-content;display:inline-block;float:right;margin:-.15rem 0"><link rel="stylesheet" href="/libs/share/css/share.min.css"><div id="article-share"><div class="social-share" data-sites="twitter,google,qq,wechat,weibo,douban" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div><script src="/libs/share/js/social-share.min.js"></script></div></div></div></div></div><style>.valine-card{margin:1.5rem auto}.valine-card .card-content{padding:20px 20px 5px 20px}#vcomments textarea{box-sizing:border-box;background:url(/medias/comment_bg.png) 100% 100% no-repeat}#vcomments p{margin:2px 2px 10px;font-size:1.05rem;line-height:1.78rem}#vcomments blockquote p{text-indent:.2rem}#vcomments a{padding:0 2px;color:#4cbf30;font-weight:500;text-decoration:none}#vcomments img{max-width:100%;height:auto;cursor:pointer}#vcomments ol li{list-style-type:decimal}#vcomments ol,ul{display:block;padding-left:2em;word-spacing:.05rem}#vcomments ul li,ol li{display:list-item;line-height:1.8rem;font-size:1rem}#vcomments ul li{list-style-type:disc}#vcomments ul ul li{list-style-type:circle}#vcomments table,td,th{padding:12px 13px;border:1px solid #dfe2e5}#vcomments table,td,th{border:0}table tr:nth-child(2n),thead{background-color:#fafafa}#vcomments table th{background-color:#f2f2f2;min-width:80px}#vcomments table td{min-width:80px}#vcomments h1{font-size:1.85rem;font-weight:700;line-height:2.2rem}#vcomments h2{font-size:1.65rem;font-weight:700;line-height:1.9rem}#vcomments h3{font-size:1.45rem;font-weight:700;line-height:1.7rem}#vcomments h4{font-size:1.25rem;font-weight:700;line-height:1.5rem}#vcomments h5{font-size:1.1rem;font-weight:700;line-height:1.4rem}#vcomments h6{font-size:1rem;line-height:1.3rem}#vcomments p{font-size:1rem;line-height:1.5rem}#vcomments hr{margin:12px 0;border:0;border-top:1px solid #ccc}#vcomments blockquote{margin:15px 0;border-left:5px solid #42b983;padding:1rem .8rem .3rem .8rem;color:#666;background-color:rgba(66,185,131,.1)}#vcomments pre{font-family:monospace,monospace;padding:1.2em;margin:.5em 0;background:#272822;overflow:auto;border-radius:.3em;tab-size:4}#vcomments code{font-family:monospace,monospace;padding:1px 3px;font-size:.92rem;color:#e96900;background-color:#f8f8f8;border-radius:2px}#vcomments pre code{font-family:monospace,monospace;padding:0;color:#e8eaf6;background-color:#272822}#vcomments pre[class*=language-]{padding:1.2em;margin:.5em 0}#vcomments code[class*=language-],pre[class*=language-]{color:#e8eaf6}#vcomments [type=checkbox]:not(:checked),[type=checkbox]:checked{position:inherit;margin-left:-1.3rem;margin-right:.4rem;margin-top:-1px;vertical-align:middle;left:unset;visibility:visible}#vcomments b,strong{font-weight:700}#vcomments dfn{font-style:italic}#vcomments small{font-size:85%}#vcomments cite{font-style:normal}#vcomments mark{background-color:#fcf8e3;padding:.2em}#vcomments table,td,th{padding:12px 13px;border:1px solid #dfe2e5}table tr:nth-child(2n),thead{background-color:#fafafa}#vcomments table th{background-color:#f2f2f2;min-width:80px}#vcomments table td{min-width:80px}#vcomments [type=checkbox]:not(:checked),[type=checkbox]:checked{position:inherit;margin-left:-1.3rem;margin-right:.4rem;margin-top:-1px;vertical-align:middle;left:unset;visibility:visible}</style><div class="card valine-card" data-aos="fade-up"><div class="comment_headling" style="font-size:20px;font-weight:700;position:relative;padding-left:20px;top:15px;padding-bottom:5px"><i class="fas fa-comments fa-fw" aria-hidden="true"></i> <span>评论</span></div><div id="vcomments" class="card-content" style="display:grid"></div></div><script src="/libs/valine/av-min.js"></script><script src="/libs/valine/Valine.min.js"></script><script>new Valine({el:"#vcomments",appId:"LCBNFKIdJy4bxPWERRqiiBC2-gzGzoHsz",appKey:"vCYXYtNrOSYE9UW0XG2K6N89",notify:!0,verify:!1,visitor:!0,avatar:"mm",pageSize:"10",lang:"zh-cn",placeholder:"正确填写邮箱才能及时回复哟！(๑╹◡╹)ﾉ&#34;&#34;&#34;"})</script><article id="prenext-posts" class="prev-next articles"><div class="row article-row"><div class="article col s12 m6" data-aos="fade-up"><div class="article-badge left-badge text-color"><i class="fas fa-chevron-left"></i> &nbsp;上一篇</div><div class="card"><a href="/posts/a0006.html"><div class="card-image"><img src="https://gitee.com/OxOYYZi/picgo/raw/master/img/illust_69553890_20201119_074436.jpg" class="responsive-img" alt="JavaScript高级语言程序设计(四)"> <span class="card-title">JavaScript高级语言程序设计(四)</span></div></a><div class="card-content article-content"><div class="summary block-with-text">JavaScript：集合引用类型(三) 定型数组</div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i> 2020-11-22</span><span class="publish-author"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/JavaScript/" class="post-category">JavaScript</a> <a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="post-category">JavaScript高级程序设计</a></span></div></div><div class="card-action article-tags"><a href="/tags/JavaScript/"><span class="chip bg-color">JavaScript</span></a></div></div></div><div class="article col s12 m6" data-aos="fade-up"><div class="article-badge right-badge text-color">下一篇&nbsp;<i class="fas fa-chevron-right"></i></div><div class="card"><a href="/posts/a0004.html"><div class="card-image"><img src="https://gitee.com/OxOYYZi/picgo/raw/master/img/3c69a15d50WqCjy.jpg" class="responsive-img" alt="JavaScript高级语言程序设计(四)"> <span class="card-title">JavaScript高级语言程序设计(四)</span></div></a><div class="card-content article-content"><div class="summary block-with-text">JavaScript：集合引用类型(一) Object</div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i> 2020-11-22</span><span class="publish-author"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/JavaScript/" class="post-category">JavaScript</a> <a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="post-category">JavaScript高级程序设计</a></span></div></div><div class="card-action article-tags"><a href="/tags/JavaScript/"><span class="chip bg-color">JavaScript</span></a></div></div></div></div></article></div><script>$("#articleContent").on("copy",function(e){if(void 0!==window.getSelection){var n=window.getSelection();if(!((""+n).length<Number.parseInt("120"))){var t=document.getElementsByTagName("body")[0],o=document.createElement("div");o.style.position="absolute",o.style.left="-99999px",t.appendChild(o),o.appendChild(n.getRangeAt(0).cloneContents()),"PRE"===n.getRangeAt(0).commonAncestorContainer.nodeName&&(o.innerHTML="<pre>"+o.innerHTML+"</pre>");var i=document.location.href;o.innerHTML+='<br />来源: YanYanZi<br />文章作者: 言言子哦<br />文章链接: <a href="'+i+'">'+i+"</a><br />本文章著作权归[yanyanzi]所有，任何形式的转载都请注明出处。",n.selectAllChildren(o),window.setTimeout(function(){t.removeChild(o)},200)}}})</script><script src="/libs/codeBlock/codeBlockFuction.js"></script><script src="/libs/codeBlock/codeLang.js"></script><script src="/libs/codeBlock/codeCopy.js"></script><script src="/libs/codeBlock/codeShrink.js"></script></div><div id="toc-aside" class="expanded col l3 hide-on-med-and-down"><div class="toc-widget card" style="background-color:#fff"><div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div><div id="toc-content"></div></div></div></div><div id="floating-toc-btn" class="hide-on-med-and-down"><a class="btn-floating btn-large bg-color"><i class="fas fa-list-ul"></i></a></div><script src="/libs/tocbot/tocbot.min.js"></script><script>$(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h1, h2, h3, h4, h5'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4, h5').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });</script></main><footer class="page-footer bg-color"><link rel="stylesheet" href="/libs/aplayer/APlayer.min.css"><style>.aplayer .aplayer-lrc p{display:none;font-size:12px;font-weight:700;line-height:16px!important}.aplayer .aplayer-lrc p.aplayer-lrc-current{display:none;font-size:15px;color:#42b983}.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body{left:-66px!important}.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover{left:0!important}</style><div><div class="row"><meting-js class="col l8 offset-l2 m10 offset-m1 s12" server="netease" type="playlist" id="711442804" fixed="true" autoplay theme="#42b983" loop order="list" preload="auto" volume="0.5" list-folded="false"></meting-js></div></div><script src="/libs/aplayer/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script><div class="container row center-align" style="margin-bottom:15px!important"><div class="col s12 m8 l8 copy-right">Copyright&nbsp;&copy; <span id="year">2020</span> <span id="year">2020</span> <a href="/about" target="_blank">言言子哦</a> |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a> |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a><br>&nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">55.7k</span>&nbsp;字 <span id="busuanzi_container_site_pv" style="display:none">|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv" class="white-color"></span>&nbsp;次</span> <span id="busuanzi_container_site_uv" style="display:none">|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv" class="white-color"></span>&nbsp;人</span><br><span id="sitetime">载入运行时间...</span><script>function siteTime(){var e=36e5,t=24*e,n=new Date,o="2020",r=n.getFullYear(),a=n.getMonth()+1,i=n.getDate(),l=n.getHours(),m=n.getMinutes(),M=n.getSeconds(),g=Date.UTC(o,"11","10","0","0","0"),d=Date.UTC(r,a,i,l,m,M)-g,s=Math.floor(d/31536e6),u=Math.floor(d/t-365*s),T=Math.floor((d-(365*s+u)*t)/e),c=Math.floor((d-(365*s+u)*t-T*e)/6e4),f=Math.floor((d-(365*s+u)*t-T*e-6e4*c)/1e3);o==r?(document.getElementById("year").innerHTML=r,document.getElementById("sitetime").innerHTML="本站已安全运行 "+u+" 天 "+T+" 小时 "+c+" 分钟 "+f+" 秒"):(document.getElementById("year").innerHTML=o+" - "+r,document.getElementById("sitetime").innerHTML="本站已安全运行 "+s+" 年 "+u+" 天 "+T+" 小时 "+c+" 分钟 "+f+" 秒")}setInterval(siteTime,1e3)</script><br></div><div class="col s12 m4 l4 social-link social-statis"><a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50"><i class="fab fa-github"></i></a><a href="mailto:2533313507@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50"><i class="fas fa-envelope-open"></i></a><a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2533313507" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2533313507" data-position="top" data-delay="50"><i class="fab fa-qq"></i></a></div></div></footer><div class="progress-bar"></div><script>$(document).ready(function(){var e=setInterval(function(){"none"!=document.getElementById("busuanzi_container_site_pv").style.display&&($("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html())+n),clearInterval(e));"none"!=$("#busuanzi_container_site_pv").css("display")&&($("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html())+t),clearInterval(e))},50),n=10,t=10})</script><div id="searchModal" class="modal"><div class="modal-content"><div class="search-header"><span class="title"><i class="fas fa-search"></i> &nbsp;&nbsp;搜索</span> <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字" class="search-input"></div><div id="searchResult"></div></div></div><script src="/js/search.js"></script><script>$(function(){searchFunc("/search.xml","searchInput","searchResult")})</script><div id="backTop" class="top-scroll"><a class="btn-floating btn-large waves-effect waves-light" href="#!"><i class="fas fa-arrow-up"></i></a></div><script src="/libs/materialize/materialize.min.js"></script><script src="/libs/masonry/masonry.pkgd.min.js"></script><script src="/libs/aos/aos.js"></script><script src="/libs/scrollprogress/scrollProgress.min.js"></script><script src="/libs/lightGallery/js/lightgallery-all.min.js"></script><script src="/js/matery.js"></script><script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script><script src="/libs/others/clicklove.js" async></script><script async src="/libs/others/busuanzi.pure.mini.js"></script><script src="//code.tidio.co/hpjvn6njlytsk0ywhqouw4gdndraakka.js"></script><script>$(document).ready(function(){setInterval(function(){var t=$("#tidio-chat iframe");"block"==t.css("display")&&977<$(window).width()?(document.getElementById("tidio-chat-iframe").style.bottom=0<("none"==$("div#backTop.top-scroll").css("display")&&977<$(window).width())?"-40px":0<($("div.toc-title").length&&977<$(window).width())?"85px":"20px",document.getElementById("tidio-chat-iframe").style.right="-15px",document.getElementById("tidio-chat-iframe").style.height=520<=parseInt(t.css("height"))?"520px":t.css("height"),document.getElementById("tidio-chat-iframe").style.zIndex="997"):"block"==t.css("display")&&601<$(window).width()&&$(window).width()<992?(document.getElementById("tidio-chat-iframe").style.bottom=0<("none"==$("div#backTop.top-scroll").css("display")&&601<$(window).width()<992)?"-40px":"20px",document.getElementById("tidio-chat-iframe").style.right="-15px",document.getElementById("tidio-chat-iframe").style.zIndex="997"):"block"==t.css("display")&&$(window).width()<601&&parseInt(t.css("height"))<230&&(document.getElementById("tidio-chat-iframe").style.bottom=0<("none"==$("div#backTop.top-scroll").css("display")&&$(window).width()<601)?"-10px":"45px",document.getElementById("tidio-chat-iframe").style.zIndex="997");"block"==t.css("display")&&$(window).width()<601&&230<=parseInt(t.css("height"))&&(document.getElementById("tidio-chat-iframe").style.zIndex="998")},50)})</script><script src="/libs/instantpage/instantpage.js" type="module"></script></body></html>

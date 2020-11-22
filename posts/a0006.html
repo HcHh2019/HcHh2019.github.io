@@ -1,0 +1,336 @@
+<!DOCTYPE HTML><html lang="zh-CN"><head><meta charset="utf-8"><meta name="keywords" content="JavaScript高级语言程序设计(四), Hexo"><meta name="description" content="欢迎来到我的小破站(๑╹◡╹)ﾉ&#34;&#34;&#34;"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><meta name="renderer" content="webkit|ie-stand|ie-comp"><meta name="mobile-web-app-capable" content="yes"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><title>JavaScript高级语言程序设计(四) | YanYanZi</title><link rel="icon" type="image/jpeg" href="https://gitee.com/OxOYYZi/picgo/raw/master/img/3.jpg"><link rel="stylesheet" href="/libs/awesome/css/all.css"><link rel="stylesheet" href="/libs/materialize/materialize.min.css"><link rel="stylesheet" href="/libs/aos/aos.css"><link rel="stylesheet" href="/libs/animate/animate.min.css"><link rel="stylesheet" href="/libs/lightGallery/css/lightgallery.min.css"><link rel="stylesheet" href="/css/matery.css"><link rel="stylesheet" href="/css/my.css"><script src="/libs/jquery/jquery.min.js"></script><meta name="generator" content="Hexo 5.2.0"><style>.github-emoji{position:relative;display:inline-block;width:1.2em;min-height:1.2em;overflow:hidden;vertical-align:top;color:transparent}.github-emoji>span{position:relative;z-index:10}.github-emoji .fancybox,.github-emoji img{margin:0!important;padding:0!important;border:none!important;outline:0!important;text-decoration:none!important;user-select:none!important;cursor:auto!important}.github-emoji img{height:1.2em!important;width:1.2em!important;position:absolute!important;left:50%!important;top:50%!important;transform:translate(-50%,-50%)!important;user-select:none!important;cursor:auto!important}.github-emoji-fallback{color:inherit}.github-emoji-fallback img{opacity:0!important}</style><link rel="alternate" href="/atom.xml" title="YanYanZi" type="application/atom+xml"><link rel="stylesheet" href="/css/prism.css"></head><body><header class="navbar-fixed"><nav id="headNav" class="bg-color nav-transparent"><div id="navContainer" class="nav-wrapper container"><div class="brand-logo"><a href="/" class="waves-effect waves-light"><img src="https://gitee.com/OxOYYZi/picgo/raw/master/img/3.jpg" class="logo-img" alt="LOGO"> <span class="logo-span">YanYanZi</span></a></div><a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a><ul class="right nav-menu"><li class="hide-on-med-and-down nav-item"><a href="/" class="waves-effect waves-light"><i class="fas fa-book-dead" style="zoom:.6"></i> <span>主页</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/tags" class="waves-effect waves-light"><i class="fas fa-book-medical" style="zoom:.6"></i> <span>标签</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/categories" class="waves-effect waves-light"><i class="fas fa-quran" style="zoom:.6"></i> <span>分类</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/archives" class="waves-effect waves-light"><i class="fas fa-atlas" style="zoom:.6"></i> <span>文章</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/about" class="waves-effect waves-light"><i class="fas fa-bible" style="zoom:.6"></i> <span>MI</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/contact" class="waves-effect waves-light"><i class="fas fa-journal-whills" style="zoom:.6"></i> <span>LINK</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/friends" class="waves-effect waves-light"><i class="fas fa-torah" style="zoom:.6"></i> <span>FRIENDS</span></a></li><li><a href="#searchModal" class="modal-trigger waves-effect waves-light"><i id="searchIcon" class="fas fa-search" title="搜索" style="zoom:.85"></i></a></li></ul><div id="mobile-nav" class="side-nav sidenav"><div class="mobile-head bg-color"><img src="https://gitee.com/OxOYYZi/picgo/raw/master/img/3.jpg" class="logo-img circle responsive-img"><div class="logo-name">YanYanZi</div><div class="logo-desc">欢迎来到我的小破站(๑╹◡╹)ﾉ&#34;&#34;&#34;</div></div><ul class="menu-list mobile-menu-list"><li class="m-nav-item"><a href="/" class="waves-effect waves-light"><i class="fa-fw fas fa-book-dead"></i> 主页</a></li><li class="m-nav-item"><a href="/tags" class="waves-effect waves-light"><i class="fa-fw fas fa-book-medical"></i> 标签</a></li><li class="m-nav-item"><a href="/categories" class="waves-effect waves-light"><i class="fa-fw fas fa-quran"></i> 分类</a></li><li class="m-nav-item"><a href="/archives" class="waves-effect waves-light"><i class="fa-fw fas fa-atlas"></i> 文章</a></li><li class="m-nav-item"><a href="/about" class="waves-effect waves-light"><i class="fa-fw fas fa-bible"></i> MI</a></li><li class="m-nav-item"><a href="/contact" class="waves-effect waves-light"><i class="fa-fw fas fa-journal-whills"></i> LINK</a></li><li class="m-nav-item"><a href="/friends" class="waves-effect waves-light"><i class="fa-fw fas fa-torah"></i> FRIENDS</a></li><li><div class="divider"></div></li><li><a href="https://github.com/HcHh2019/HcHh2019.github.io" class="waves-effect waves-light" target="_blank"><i class="fab fa-github-square fa-fw"></i> Fork Me</a></li></ul></div></div><style>.nav-transparent .github-corner{display:none!important}.github-corner{position:absolute;z-index:10;top:0;right:0;border:0;transform:scale(1.1)}.github-corner svg{color:#0f9d58;fill:#fff;height:64px;width:64px}.github-corner:hover .octo-arm{animation:a .56s ease-in-out}.github-corner .octo-arm{animation:none}@keyframes a{0%,to{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}</style><a href="https://github.com/HcHh2019/HcHh2019.github.io" class="github-corner tooltipped hide-on-med-and-down" target="_blank" data-tooltip="Fork Me" data-position="left" data-delay="50"><svg viewBox="0 0 250 250" aria-hidden="true"><path d="M0 0 115 115 130 115 142 142 250 250 250 0Z"></path><path d="M128.3 109C113.8 99.7 119 89.6 119 89.6 122 82.7 120.5 78.6 120.5 78.6 119.2 72 123.4 76.3 123.4 76.3 127.3 80.9 125.5 87.3 125.5 87.3 122.9 97.6 130.6 101.9 134.4 103.2" fill="currentColor" style="transform-origin:130px 106px" class="octo-arm"></path><path d="M115 115C114.9 115.1 118.7 116.5 119.8 115.4L133.7 101.6C136.9 99.2 139.9 98.4 142.2 98.6 133.8 88 127.5 74.4 143.8 58 148.5 53.4 154 51.2 159.7 51 160.3 49.4 163.2 43.6 171.4 40.1 171.4 40.1 176.1 42.5 178.8 56.2 183.1 58.6 187.2 61.8 190.9 65.4 194.5 69 197.7 73.2 200.1 77.6 213.8 80.2 216.3 84.9 216.3 84.9 212.7 93.1 206.9 96 205.4 96.6 205.1 102.4 203 107.8 198.3 112.5 181.9 128.9 168.3 122.5 157.7 114.1 157.9 116.9 156.7 120.9 152.7 124.9L141 136.5C139.8 137.7 141.6 141.9 141.8 141.8Z" fill="currentColor" class="octo-body"></path></svg></a></nav></header><div class="bg-cover pd-header post-cover" style="background-image:url(https://gitee.com/OxOYYZi/picgo/raw/master/img/illust_69553890_20201119_074436.jpg)"><div class="container" style="right:0;left:0"><div class="row"><div class="col s12 m12 l12"><div class="brand"><h1 class="description center-align post-title">JavaScript高级语言程序设计(四)</h1></div></div></div></div></div><main class="post-container content"><link rel="stylesheet" href="/libs/tocbot/tocbot.css"><style>#articleContent h1::before,#articleContent h2::before,#articleContent h3::before,#articleContent h4::before,#articleContent h5::before,#articleContent h6::before{display:block;content:" ";height:100px;margin-top:-100px;visibility:hidden}#articleContent :focus{outline:0}.toc-fixed{position:fixed;top:64px}.toc-widget{width:345px;padding-left:20px;background-color:rgb(255,255,255,.3)!important;border-radius:10px;box-shadow:0 10px 35px 2px rgba(0,0,0,.15),0 5px 15px rgba(0,0,0,.07),0 2px 5px -5px rgba(0,0,0,.1)!important}.toc-widget .toc-title{margin:35px 0 15px 0;padding-left:17px;font-size:1.5rem;font-weight:700;line-height:1.5rem;color:tomato}.toc-widget ol{padding:0;list-style:none}#toc-content{height:calc(100vh - 250px);overflow:auto}#toc-content ol{padding-left:10px}#toc-content ol li{padding-left:10px}#toc-content .toc-link:hover{color:#70e1f5!important;font-weight:900;font-size:18px;text-decoration:underline;text-decoration:none}#toc-content .toc-link::before{background-color:transparent;max-height:25px;position:absolute;right:23.5vw;display:block}#toc-content .is-active-link{color:#70e1f5}#floating-toc-btn{position:fixed;right:15px;bottom:76px;padding-top:15px;margin-bottom:0;z-index:998}#floating-toc-btn .btn-floating{width:48px;height:48px}#floating-toc-btn .btn-floating i{line-height:48px;font-size:1.4rem}</style><div class="row"><div id="main-content" class="col s12 m12 l9"><div id="artDetail"><div class="card"><div class="card-content article-info"><div class="row tag-cate"><div class="col s7"><div class="article-tag"><a href="/tags/JavaScript/"><span class="chip bg-color">JavaScript</span></a></div></div><div class="col s5 right-align"><div class="post-cate"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/JavaScript/" class="post-category">JavaScript</a> <a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="post-category">JavaScript高级程序设计</a></div></div></div><div class="post-info"><div class="post-date info-break-policy"><i class="far fa-calendar-minus fa-fw"></i> 发布日期:&nbsp;&nbsp; 2020-11-22</div><div class="post-date info-break-policy"><i class="far fa-calendar-check fa-fw"></i> 更新日期:&nbsp;&nbsp; 2020-11-22</div><div class="info-break-policy"><i class="far fa-file-word fa-fw"></i> 文章字数:&nbsp;&nbsp; 3.6k</div><div class="info-break-policy"><i class="far fa-clock fa-fw"></i> 阅读时长:&nbsp;&nbsp; 15 分</div><div id="busuanzi_container_page_pv" class="info-break-policy"><i class="far fa-eye fa-fw"></i> 阅读次数:&nbsp;&nbsp;<span id="busuanzi_value_page_pv"></span></div></div></div><hr class="clearfix"><div class="card-content article-card-content"><div id="articleContent"><h1 id="集合引用类型"><a href="#集合引用类型" class="headerlink" title="集合引用类型"></a>集合引用类型</h1><p>上篇: <strong><a href="a0005">基本引用类型(二) Array</a></strong><br>本篇: <strong>集合引用类型(三) 定型数组</strong><br>下篇: <strong><a href="a0007">集合引用类型(四) Map</a></strong></p><p><strong><a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">JavaScript高级程序设计</a></strong> 全部合集</p><hr><h1 id="定型数组"><a href="#定型数组" class="headerlink" title="定型数组"></a>定型数组</h1><h2 id="ArrayBuffer"><a href="#ArrayBuffer" class="headerlink" title="ArrayBuffer"></a>ArrayBuffer</h2><p>Float32Array 实际上是一种“视图”，可以允许 JavaScript 运行时访问一块名为 ArrayBuffer 的预分配内存。ArrayBuffer 是所有定型数组及视图引用的基本单位。</p><p>ArrayBuffer()是一个普通的 JavaScript 构造函数，可用于在内存中分配特定数量的字节空间。</p><pre><code>const buf = new ArrayBuffer(16); // 在内存中分配 16 字节
+alert(buf.byteLength); // 16 </code></pre><p>ArrayBuffer 一经创建就不能再调整大小。不过，可以使用 slice()复制其全部或部分到一个新实例中：</p><pre><code>const buf1 = new ArrayBuffer(16);
+const buf2 = buf1.slice(4, 12);
+alert(buf2.byteLength); // 8</code></pre><p>ArrayBuffer 某种程度上类似于 C++的 malloc()，但也有几个明显的区别。</p><ol><li><p>malloc()在分配失败时会返回一个 null 指针。ArrayBuffer 在分配失败时会抛出错误。</p></li><li><p>malloc()可以利用虚拟内存，因此最大可分配尺寸只受可寻址系统内存限制。ArrayBuffer分配的内存不能超过 Number.MAX_SAFE_INTEGER（2^53 - 1）字节。</p></li><li><p>malloc()调用成功不会初始化实际的地址。声明 ArrayBuffer 则会将所有二进制位初始化为 0。</p></li><li><p>通过 malloc()分配的堆内存除非调用 free()或程序退出，否则系统不能再使用。而通过声明ArrayBuffer 分配的堆内存可以被当成垃圾回收，不用手动释放。</p></li></ol><p>不能仅通过对 ArrayBuffer 的引用就读取或写入其内容。要读取或写入 ArrayBuffer，就必须通过视图。视图有不同的类型，但引用的都是 ArrayBuffer 中存储的二进制数据。</p><h2 id="DataView"><a href="#DataView" class="headerlink" title="DataView"></a>DataView</h2><p>第一种允许你读写 ArrayBuffer 的视图是 DataView。这个视图专为文件 I/O 和网络 I/O 设计，其API 支持对缓冲数据的高度控制，但相比于其他类型的视图性能也差一些。DataView 对缓冲内容没有任何预设，也不能迭代。</p><p>必须在对已有的 ArrayBuffer 读取或写入时才能创建 DataView 实例。这个实例可以使用全部或部分 ArrayBuffer，且维护着对该缓冲实例的引用，以及视图在缓冲中开始的位置。</p><pre><code>const buf = new ArrayBuffer(16);
+
+// DataView 默认使用整个 ArrayBuffer
+const fullDataView = new DataView(buf);
+alert(fullDataView.byteOffset); // 0
+alert(fullDataView.byteLength); // 16
+alert(fullDataView.buffer === buf); // true
+
+// 构造函数接收一个可选的字节偏移量和字节长度
+// byteOffset=0 表示视图从缓冲起点开始
+// byteLength=8 限制视图为前 8 个字节
+const firstHalfDataView = new DataView(buf, 0, 8);
+alert(firstHalfDataView.byteOffset); // 0
+alert(firstHalfDataView.byteLength); // 8
+alert(firstHalfDataView.buffer === buf); // true
+
+// 如果不指定，则 DataView 会使用剩余的缓冲
+// byteOffset=8 表示视图从缓冲的第 9 个字节开始
+// byteLength 未指定，默认为剩余缓冲
+const secondHalfDataView = new DataView(buf, 8);
+alert(secondHalfDataView.byteOffset); // 8 
+alert(secondHalfDataView.byteLength); // 8
+alert(secondHalfDataView.buffer === buf); // true </code></pre><p>要通过 DataView 读取缓冲，还需要几个组件。</p><ol><li><p>首先是要读或写的字节偏移量。可以看成 DataView 中的某种“地址”。</p></li><li><p>DataView 应该使用 ElementType 来实现 JavaScript 的 Number 类型到缓冲内二进制格式的转换。</p></li><li><p>最后是内存中值的字节序。默认为大端字节序。</p></li></ol><h3 id="ElementType"><a href="#ElementType" class="headerlink" title="ElementType"></a>ElementType</h3><p>DataView 对存储在缓冲内的数据类型没有预设。它暴露的 API 强制开发者在读、写时指定一个ElementType，然后 DataView 就会忠实地为读、写而完成相应的转换。</p><p>ECMAScript 6 支持 8 种不同的 ElementType</p><table><thead><tr><th align="left">ElementType</th><th align="left">字 节</th><th align="left">说 明</th><th align="left">等价的 C 类型</th><th align="left">值的范围</th></tr></thead><tbody><tr><td align="left">Int8</td><td align="left">1</td><td align="left">8 位有符号整数</td><td align="left">signed char</td><td align="left">-128~127</td></tr><tr><td align="left">Uint8</td><td align="left">1</td><td align="left">8 位无符号整数</td><td align="left">unsigned char</td><td align="left">0~255</td></tr><tr><td align="left">Int16</td><td align="left">2</td><td align="left">16 位有符号整数</td><td align="left">short</td><td align="left">-32768~32767</td></tr><tr><td align="left">Uint16</td><td align="left">2</td><td align="left">16 位无符号整数</td><td align="left">unsigned short</td><td align="left">0~65535</td></tr><tr><td align="left">Int32</td><td align="left">4</td><td align="left">32 位有符号整数</td><td align="left">int</td><td align="left">-2147483648~2147483647</td></tr><tr><td align="left">Uint32</td><td align="left">4</td><td align="left">32 位无符号整数</td><td align="left">unsigned int</td><td align="left">0~4294967295</td></tr><tr><td align="left">Float32</td><td align="left">4</td><td align="left">32 位 IEEE-754 浮点数</td><td align="left">float</td><td align="left">-3.4e+38~+3.4e+38</td></tr><tr><td align="left">Float64</td><td align="left">8</td><td align="left">64 位 IEEE-754 浮点数</td><td align="left">double</td><td align="left">-1.7e+308~+1.7e+308</td></tr></tbody></table><p>DataView 为上表中的每种类型都暴露了 get 和 set 方法，这些方法使用 byteOffset（字节偏移量）定位要读取或写入值的位置。类型是可以互换使用的，如下例所示：</p><pre><code>// 在内存中分配两个字节并声明一个 DataView
+const buf = new ArrayBuffer(2);
+const view = new DataView(buf);
+
+// 说明整个缓冲确实所有二进制位都是 0
+// 检查第一个和第二个字符
+alert(view.getInt8(0)); // 0
+alert(view.getInt8(1)); // 0
+// 检查整个缓冲
+alert(view.getInt16(0)); // 0
+
+// 将整个缓冲都设置为 1
+// 255 的二进制表示是 11111111（2^8 - 1）
+view.setUint8(0, 255);
+
+// DataView 会自动将数据转换为特定的 ElementType
+// 255 的十六进制表示是 0xFF
+view.setUint8(1, 0xFF);
+
+// 现在，缓冲里都是 1 了
+// 如果把它当成二补数的有符号整数，则应该是-1
+alert(view.getInt16(0)); // -1 </code></pre><h3 id="字节序"><a href="#字节序" class="headerlink" title="字节序"></a>字节序</h3><p>前面例子中的缓冲有意回避了字节序的问题。“字节序”指的是计算系统维护的一种字节顺序的约定。DataView 只支持两种约定：大端字节序和小端字节序。大端字节序也称为“网络字节序”，意思是最高有效位保存在第一个字节，而最低有效位保存在最后一个字节。小端字节序正好相反，即最低有效位保存在第一个字节，最高有效位保存在最后一个字节。</p><p>JavaScript 运行时所在系统的原生字节序决定了如何读取或写入字节，但 DataView 并不遵守这个约定。对一段内存而言，DataView 是一个中立接口，它会遵循你指定的字节序。DataView 的所有 API 方法都以大端字节序作为默认值，但接收一个可选的布尔值参数，设置为 true 即可启用小端字节序。</p><pre><code>// 在内存中分配两个字节并声明一个 DataView
+const buf = new ArrayBuffer(2);
+const view = new DataView(buf);
+
+// 填充缓冲，让第一位和最后一位都是 1
+view.setUint8(0, 0x80); // 设置最左边的位等于 1
+view.setUint8(1, 0x01); // 设置最右边的位等于 1
+
+// 缓冲内容（为方便阅读，人为加了空格）
+// 0x8 0x0 0x0 0x1
+// 1000 0000 0000 0001
+
+// 按大端字节序读取 Uint16
+// 0x80 是高字节，0x01 是低字节
+// 0x8001 = 2^15 + 2^0 = 32768 + 1 = 32769
+alert(view.getUint16(0)); // 32769
+
+// 按小端字节序读取 Uint16
+// 0x01 是高字节，0x80 是低字节
+// 0x0180 = 2^8 + 2^7 = 256 + 128 = 384
+alert(view.getUint16(0, true)); // 384
+
+// 按大端字节序写入 Uint16
+view.setUint16(0, 0x0004);
+
+// 缓冲内容（为方便阅读，人为加了空格）
+// 0x0 0x0 0x0 0x4
+// 0000 0000 0000 0100
+
+alert(view.getUint8(0)); // 0
+alert(view.getUint8(1)); // 4
+
+// 按小端字节序写入 Uint16
+view.setUint16(0, 0x0002, true);
+
+// 缓冲内容（为方便阅读，人为加了空格）
+// 0x0 0x2 0x0 0x0
+// 0000 0010 0000 0000
+
+alert(view.getUint8(0)); // 2
+alert(view.getUint8(1)); // 0 </code></pre><h3 id="边界情形"><a href="#边界情形" class="headerlink" title="边界情形"></a>边界情形</h3><p>DataView 完成读、写操作的前提是必须有充足的缓冲区，否则就会抛出 RangeError：</p><pre><code>const buf = new ArrayBuffer(6);
+const view = new DataView(buf);
+
+// 尝试读取部分超出缓冲范围的值
+view.getInt32(4);
+// RangeError
+
+// 尝试读取超出缓冲范围的值
+view.getInt32(8);
+// RangeError
+
+// 尝试读取超出缓冲范围的值
+view.getInt32(-1);
+// RangeError
+
+// 尝试写入超出缓冲范围的值
+view.setInt32(4, 123);
+// RangeError </code></pre><p>DataView 在写入缓冲里会尽最大努力把一个值转换为适当的类型，后备为 0。如果无法转换，则抛出错误：</p><pre><code>const buf = new ArrayBuffer(1);
+const view = new DataView(buf);
+
+view.setInt8(0, 1.5);
+alert(view.getInt8(0)); // 1
+
+view.setInt8(0, [4]);
+alert(view.getInt8(0)); // 4
+
+view.setInt8(0, 'f');
+alert(view.getInt8(0)); // 0
+
+view.setInt8(0, Symbol());
+// TypeError </code></pre><h2 id="定型数组-1"><a href="#定型数组-1" class="headerlink" title="定型数组"></a>定型数组</h2><p>定型数组是另一种形式的 ArrayBuffer 视图。虽然概念上与 DataView 接近，但定型数组的区别在于，它特定于一种 ElementType 且遵循系统原生的字节序。相应地，定型数组提供了适用面更广的API 和更高的性能。设计定型数组的目的就是提高与 WebGL 等原生库交换二进制数据的效率。由于定型数组的二进制表示对操作系统而言是一种容易使用的格式，JavaScript 引擎可以重度优化算术运算、按位运算和其他对定型数组的常见操作，因此使用它们速度极快。</p><p>创建定型数组的方式包括读取已有的缓冲、使用自有缓冲、填充可迭代结构，以及填充基于任意类型的定型数组。另外，通过&lt; ElementType&gt;.from()和&lt; ElementType&gt;.of()也可以创建定型数组：</p><pre><code>// 创建一个 12 字节的缓冲
+const buf = new ArrayBuffer(12);
+// 创建一个引用该缓冲的 Int32Array
+const ints = new Int32Array(buf);
+// 这个定型数组知道自己的每个元素需要 4 字节
+// 因此长度为 3
+alert(ints.length); // 3 
+
+// 创建一个长度为 6 的 Int32Array
+const ints2 = new Int32Array(6);
+// 每个数值使用 4 字节，因此 ArrayBuffer 是 24 字节
+alert(ints2.length); // 6
+// 类似 DataView，定型数组也有一个指向关联缓冲的引用
+alert(ints2.buffer.byteLength); // 24
+
+// 创建一个包含[2, 4, 6, 8]的 Int32Array
+const ints3 = new Int32Array([2, 4, 6, 8]);
+alert(ints3.length); // 4
+alert(ints3.buffer.byteLength); // 16
+alert(ints3[2]); // 6
+
+// 通过复制 ints3 的值创建一个 Int16Array
+const ints4 = new Int16Array(ints3);
+// 这个新类型数组会分配自己的缓冲
+// 对应索引的每个值会相应地转换为新格式
+alert(ints4.length); // 4
+alert(ints4.buffer.byteLength); // 8
+alert(ints4[2]); // 6
+
+// 基于普通数组来创建一个 Int16Array
+const ints5 = Int16Array.from([3, 5, 7, 9]);
+alert(ints5.length); // 4
+alert(ints5.buffer.byteLength); // 8
+alert(ints5[2]); // 7
+
+// 基于传入的参数创建一个 Float32Array
+const floats = Float32Array.of(3.14, 2.718, 1.618);
+alert(floats.length); // 3
+alert(floats.buffer.byteLength); // 12
+alert(floats[2]); // 1.6180000305175781 </code></pre><p>定型数组的构造函数和实例都有一个 BYTES_PER_ELEMENT 属性，返回该类型数组中每个元素的大小：</p><pre><code>alert(Int16Array.BYTES_PER_ELEMENT); // 2
+alert(Int32Array.BYTES_PER_ELEMENT); // 4
+
+const ints = new Int32Array(1),
+floats = new Float64Array(1);
+
+alert(ints.BYTES_PER_ELEMENT); // 4
+alert(floats.BYTES_PER_ELEMENT); // 8 </code></pre><p>如果定型数组没有用任何值初始化，则其关联的缓冲会以 0 填充：</p><pre><code>const ints = new Int32Array(4);
+alert(ints[0]); // 0
+alert(ints[1]); // 0
+alert(ints[2]); // 0
+alert(ints[3]); // 0 </code></pre><h3 id="定型数组行为"><a href="#定型数组行为" class="headerlink" title="定型数组行为"></a>定型数组行为</h3><p>从很多方面看，定型数组与普通数组都很相似。定型数组支持如下操作符、方法和属性：</p><ol><li><p>[]</p></li><li><p>copyWithin()</p></li><li><p>entries()</p></li><li><p>every()</p></li><li><p>fill()</p></li><li><p>filter()</p></li><li><p>find()</p></li><li><p>findIndex()</p></li><li><p>forEach()</p></li><li><p>indexOf()</p></li><li><p>join()</p></li><li><p>keys()</p></li><li><p>lastIndexOf()</p></li><li><p>length</p></li><li><p>map()</p></li><li><p>reduce()</p></li><li><p>reduceRight()</p></li><li><p>reverse()</p></li><li><p>slice()</p></li><li><p>some()</p></li><li><p>sort()</p></li><li><p>toLocaleString()</p></li><li><p>toString()</p></li><li><p>values()</p></li></ol><p>其中，返回新数组的方法也会返回包含同样元素类型（element type）的新定型数组：</p><pre><code>const ints = new Int16Array([1, 2, 3]);
+const doubleints = ints.map(x =&gt; 2*x);
+alert(doubleints instanceof Int16Array); // true</code></pre><p>定型数组有一个 Symbol.iterator 符号属性，因此可以通过 for..of 循环和扩展操作符来操作：</p><pre><code>const ints = new Int16Array([1, 2, 3]);
+for (const int of ints) {
+    alert(int);
+}
+// 1
+// 2
+// 3
+alert(Math.max(...ints)); // 3 </code></pre><h3 id="合并、复制和修改定型数组"><a href="#合并、复制和修改定型数组" class="headerlink" title="合并、复制和修改定型数组"></a>合并、复制和修改定型数组</h3><p>定型数组同样使用数组缓冲来存储数据，而数组缓冲无法调整大小。因此，下列方法不适用于定型数组：</p><ol><li><p>concat()</p></li><li><p>pop()</p></li><li><p>push()</p></li><li><p>shift()</p></li><li><p>splice()</p></li><li><p>unshift()</p></li></ol><p>不过，定型数组也提供了两个新方法，可以快速向外或向内复制数据：set()和 subarray()。set()从提供的数组或定型数组中把值复制到当前定型数组中指定的索引位置：</p><pre><code>// 创建长度为 8 的 int16 数组
+const container = new Int16Array(8);
+// 把定型数组复制为前 4 个值
+// 偏移量默认为索引 0
+container.set(Int8Array.of(1, 2, 3, 4));
+console.log(container); // [1,2,3,4,0,0,0,0]
+// 把普通数组复制为后 4 个值
+// 偏移量 4 表示从索引 4 开始插入
+container.set([5,6,7,8], 4);
+console.log(container); // [1,2,3,4,5,6,7,8]
+
+// 溢出会抛出错误
+container.set([5,6,7,8], 7);
+// RangeError </code></pre><p>subarray()执行与 set()相反的操作，它会基于从原始定型数组中复制的值返回一个新定型数组。复制值时的开始索引和结束索引是可选的：</p><pre><code>const source = Int16Array.of(2, 4, 6, 8);
+
+// 把整个数组复制为一个同类型的新数组
+const fullCopy = source.subarray();
+console.log(fullCopy); // [2, 4, 6, 8]
+
+// 从索引 2 开始复制数组
+const halfCopy = source.subarray(2);
+console.log(halfCopy); // [6, 8]
+
+// 从索引 1 开始复制到索引 3
+const partialCopy = source.subarray(1, 3);
+console.log(partialCopy); // [4, 6]</code></pre><p>定型数组没有原生的拼接能力，但使用定型数组 API 提供的很多工具可以手动构建：</p><pre><code>// 第一个参数是应该返回的数组类型
+// 其余参数是应该拼接在一起的定型数组
+function typedArrayConcat(typedArrayConstructor, ...typedArrays) {
+
+    // 计算所有数组中包含的元素总数
+    const numElements = typedArrays.reduce((x,y) =&gt; (x.length || x) + y.length);
+
+    // 按照提供的类型创建一个数组，为所有元素留出空间
+    const resultArray = new typedArrayConstructor(numElements);
+
+    // 依次转移数组
+    let currentOffset = 0;
+    typedArrays.map(x =&gt; {
+        resultArray.set(x, currentOffset);
+        currentOffset += x.length;
+    });
+
+    return resultArray;
+}
+
+const concatArray = typedArrayConcat(Int32Array,
+                                     Int8Array.of(1, 2, 3),
+                                     Int16Array.of(4, 5, 6),
+                                     Float32Array.of(7, 8, 9));
+
+console.log(concatArray); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
+console.log(concatArray instanceof Int32Array); // true</code></pre><h3 id="下溢和上溢"><a href="#下溢和上溢" class="headerlink" title="下溢和上溢"></a>下溢和上溢</h3><p>定型数组中值的下溢和上溢不会影响到其他索引，但仍然需要考虑数组的元素应该是什么类型。定型数组对于可以存储的每个索引只接受一个相关位，而不考虑它们对实际数值的影响。以下代码演示了如何处理下溢和上溢：</p><pre><code>// 长度为 2 的有符号整数数组
+// 每个索引保存一个二补数形式的有符号整数
+// 范围是-128（-1 * 2^7）~127（2^7 - 1）
+const ints = new Int8Array(2);
+
+// 长度为 2 的无符号整数数组
+// 每个索引保存一个无符号整数
+// 范围是 0~255（2^7 - 1）
+const unsignedInts = new Uint8Array(2);
+
+// 上溢的位不会影响相邻索引
+// 索引只取最低有效位上的 8 位
+unsignedInts[1] = 256; // 0x100
+console.log(unsignedInts); // [0, 0]
+unsignedInts[1] = 511; // 0x1FF
+console.log(unsignedInts); // [0, 255]
+
+// 下溢的位会被转换为其无符号的等价值
+// 0xFF 是以二补数形式表示的-1（截取到 8 位）,
+// 但 255 是一个无符号整数
+unsignedInts[1] = -1 // 0xFF (truncated to 8 bits)
+console.log(unsignedInts); // [0, 255]
+
+// 上溢自动变成二补数形式
+// 0x80 是无符号整数的 128，是二补数形式的-128
+ints[1] = 128; // 0x80
+console.log(ints); // [0, -128]
+
+// 下溢自动变成二补数形式
+// 0xFF 是无符号整数的 255，是二补数形式的-1
+ints[1] = 255; // 0xFF
+console.log(ints); // [0, -1] </code></pre></div><hr><div class="reprint" id="reprint-statement"><div class="reprint__author"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-user">文章作者:</i></span> <span class="reprint-info"><a href="/about" rel="external nofollow noreferrer">言言子</a></span></div><div class="reprint__type"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-link">文章链接:</i></span> <span class="reprint-info"><a href="https://yanyanzio.top/posts/a0006.html">https://yanyanzio.top/posts/a0006.html</a></span></div><div class="reprint__notice"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-copyright">版权声明:</i></span> <span class="reprint-info">本博客所有文章除特別声明外，均采用 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a> 许可协议。转载请注明来源 <a href="/about" target="_blank">言言子</a> !</span></div></div><script async defer>document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }</script><div class="tag_share" style="display:block"><div class="post-meta__tag-list" style="display:inline-block"><div class="article-tag"><a href="/tags/JavaScript/"><span class="chip bg-color">JavaScript</span></a></div></div><div class="post_share" style="zoom:80%;width:fit-content;display:inline-block;float:right;margin:-.15rem 0"><link rel="stylesheet" href="/libs/share/css/share.min.css"><div id="article-share"><div class="social-share" data-sites="twitter,google,qq,wechat,weibo,douban" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div><script src="/libs/share/js/social-share.min.js"></script></div></div></div></div></div><style>.valine-card{margin:1.5rem auto}.valine-card .card-content{padding:20px 20px 5px 20px}#vcomments textarea{box-sizing:border-box;background:url(/medias/comment_bg.png) 100% 100% no-repeat}#vcomments p{margin:2px 2px 10px;font-size:1.05rem;line-height:1.78rem}#vcomments blockquote p{text-indent:.2rem}#vcomments a{padding:0 2px;color:#4cbf30;font-weight:500;text-decoration:none}#vcomments img{max-width:100%;height:auto;cursor:pointer}#vcomments ol li{list-style-type:decimal}#vcomments ol,ul{display:block;padding-left:2em;word-spacing:.05rem}#vcomments ul li,ol li{display:list-item;line-height:1.8rem;font-size:1rem}#vcomments ul li{list-style-type:disc}#vcomments ul ul li{list-style-type:circle}#vcomments table,td,th{padding:12px 13px;border:1px solid #dfe2e5}#vcomments table,td,th{border:0}table tr:nth-child(2n),thead{background-color:#fafafa}#vcomments table th{background-color:#f2f2f2;min-width:80px}#vcomments table td{min-width:80px}#vcomments h1{font-size:1.85rem;font-weight:700;line-height:2.2rem}#vcomments h2{font-size:1.65rem;font-weight:700;line-height:1.9rem}#vcomments h3{font-size:1.45rem;font-weight:700;line-height:1.7rem}#vcomments h4{font-size:1.25rem;font-weight:700;line-height:1.5rem}#vcomments h5{font-size:1.1rem;font-weight:700;line-height:1.4rem}#vcomments h6{font-size:1rem;line-height:1.3rem}#vcomments p{font-size:1rem;line-height:1.5rem}#vcomments hr{margin:12px 0;border:0;border-top:1px solid #ccc}#vcomments blockquote{margin:15px 0;border-left:5px solid #42b983;padding:1rem .8rem .3rem .8rem;color:#666;background-color:rgba(66,185,131,.1)}#vcomments pre{font-family:monospace,monospace;padding:1.2em;margin:.5em 0;background:#272822;overflow:auto;border-radius:.3em;tab-size:4}#vcomments code{font-family:monospace,monospace;padding:1px 3px;font-size:.92rem;color:#e96900;background-color:#f8f8f8;border-radius:2px}#vcomments pre code{font-family:monospace,monospace;padding:0;color:#e8eaf6;background-color:#272822}#vcomments pre[class*=language-]{padding:1.2em;margin:.5em 0}#vcomments code[class*=language-],pre[class*=language-]{color:#e8eaf6}#vcomments [type=checkbox]:not(:checked),[type=checkbox]:checked{position:inherit;margin-left:-1.3rem;margin-right:.4rem;margin-top:-1px;vertical-align:middle;left:unset;visibility:visible}#vcomments b,strong{font-weight:700}#vcomments dfn{font-style:italic}#vcomments small{font-size:85%}#vcomments cite{font-style:normal}#vcomments mark{background-color:#fcf8e3;padding:.2em}#vcomments table,td,th{padding:12px 13px;border:1px solid #dfe2e5}table tr:nth-child(2n),thead{background-color:#fafafa}#vcomments table th{background-color:#f2f2f2;min-width:80px}#vcomments table td{min-width:80px}#vcomments [type=checkbox]:not(:checked),[type=checkbox]:checked{position:inherit;margin-left:-1.3rem;margin-right:.4rem;margin-top:-1px;vertical-align:middle;left:unset;visibility:visible}</style><div class="card valine-card" data-aos="fade-up"><div class="comment_headling" style="font-size:20px;font-weight:700;position:relative;padding-left:20px;top:15px;padding-bottom:5px"><i class="fas fa-comments fa-fw" aria-hidden="true"></i> <span>评论</span></div><div id="vcomments" class="card-content" style="display:grid"></div></div><script src="/libs/valine/av-min.js"></script><script src="/libs/valine/Valine.min.js"></script><script>new Valine({el:"#vcomments",appId:"LCBNFKIdJy4bxPWERRqiiBC2-gzGzoHsz",appKey:"vCYXYtNrOSYE9UW0XG2K6N89",notify:!0,verify:!1,visitor:!0,avatar:"mm",pageSize:"10",lang:"zh-cn",placeholder:"正确填写邮箱才能及时回复哟！(๑╹◡╹)ﾉ&#34;&#34;&#34;"})</script><article id="prenext-posts" class="prev-next articles"><div class="row article-row"><div class="article col s12 m6" data-aos="fade-up"><div class="article-badge left-badge text-color"><i class="fas fa-chevron-left"></i> &nbsp;上一篇</div><div class="card"><a href="/posts/a0007.html"><div class="card-image"><img src="https://gitee.com/OxOYYZi/picgo/raw/master/img/illust_83255310_20201119_074250.png" class="responsive-img" alt="JavaScript高级语言程序设计(四)"> <span class="card-title">JavaScript高级语言程序设计(四)</span></div></a><div class="card-content article-content"><div class="summary block-with-text">JavaScript：集合引用类型(四) Map</div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i> 2020-11-22</span><span class="publish-author"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/JavaScript/" class="post-category">JavaScript</a> <a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="post-category">JavaScript高级程序设计</a></span></div></div><div class="card-action article-tags"><a href="/tags/JavaScript/"><span class="chip bg-color">JavaScript</span></a></div></div></div><div class="article col s12 m6" data-aos="fade-up"><div class="article-badge right-badge text-color">下一篇&nbsp;<i class="fas fa-chevron-right"></i></div><div class="card"><a href="/posts/a0005.html"><div class="card-image"><img src="https://gitee.com/OxOYYZi/picgo/raw/master/img/illust_67861832_20201119_074837 - 副本.jpg" class="responsive-img" alt="JavaScript高级语言程序设计(四)"> <span class="card-title">JavaScript高级语言程序设计(四)</span></div></a><div class="card-content article-content"><div class="summary block-with-text">JavaScript：集合引用类型(二) Array</div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i> 2020-11-22</span><span class="publish-author"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/JavaScript/" class="post-category">JavaScript</a> <a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="post-category">JavaScript高级程序设计</a></span></div></div><div class="card-action article-tags"><a href="/tags/JavaScript/"><span class="chip bg-color">JavaScript</span></a></div></div></div></div></article></div><script>$("#articleContent").on("copy",function(e){if(void 0!==window.getSelection){var n=window.getSelection();if(!((""+n).length<Number.parseInt("120"))){var t=document.getElementsByTagName("body")[0],o=document.createElement("div");o.style.position="absolute",o.style.left="-99999px",t.appendChild(o),o.appendChild(n.getRangeAt(0).cloneContents()),"PRE"===n.getRangeAt(0).commonAncestorContainer.nodeName&&(o.innerHTML="<pre>"+o.innerHTML+"</pre>");var i=document.location.href;o.innerHTML+='<br />来源: YanYanZi<br />文章作者: 言言子哦<br />文章链接: <a href="'+i+'">'+i+"</a><br />本文章著作权归[yanyanzi]所有，任何形式的转载都请注明出处。",n.selectAllChildren(o),window.setTimeout(function(){t.removeChild(o)},200)}}})</script><script src="/libs/codeBlock/codeBlockFuction.js"></script><script src="/libs/codeBlock/codeLang.js"></script><script src="/libs/codeBlock/codeCopy.js"></script><script src="/libs/codeBlock/codeShrink.js"></script></div><div id="toc-aside" class="expanded col l3 hide-on-med-and-down"><div class="toc-widget card" style="background-color:#fff"><div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div><div id="toc-content"></div></div></div></div><div id="floating-toc-btn" class="hide-on-med-and-down"><a class="btn-floating btn-large bg-color"><i class="fas fa-list-ul"></i></a></div><script src="/libs/tocbot/tocbot.min.js"></script><script>$(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h1, h2, h3, h4, h5'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4, h5').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });</script></main><footer class="page-footer bg-color"><link rel="stylesheet" href="/libs/aplayer/APlayer.min.css"><style>.aplayer .aplayer-lrc p{display:none;font-size:12px;font-weight:700;line-height:16px!important}.aplayer .aplayer-lrc p.aplayer-lrc-current{display:none;font-size:15px;color:#42b983}.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body{left:-66px!important}.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover{left:0!important}</style><div><div class="row"><meting-js class="col l8 offset-l2 m10 offset-m1 s12" server="netease" type="playlist" id="711442804" fixed="true" autoplay theme="#42b983" loop order="list" preload="auto" volume="0.5" list-folded="false"></meting-js></div></div><script src="/libs/aplayer/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script><div class="container row center-align" style="margin-bottom:15px!important"><div class="col s12 m8 l8 copy-right">Copyright&nbsp;&copy; <span id="year">2020</span> <span id="year">2020</span> <a href="/about" target="_blank">言言子哦</a> |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a> |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a><br>&nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">55.7k</span>&nbsp;字 <span id="busuanzi_container_site_pv" style="display:none">|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv" class="white-color"></span>&nbsp;次</span> <span id="busuanzi_container_site_uv" style="display:none">|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv" class="white-color"></span>&nbsp;人</span><br><span id="sitetime">载入运行时间...</span><script>function siteTime(){var e=36e5,t=24*e,n=new Date,o="2020",r=n.getFullYear(),a=n.getMonth()+1,i=n.getDate(),l=n.getHours(),m=n.getMinutes(),M=n.getSeconds(),g=Date.UTC(o,"11","10","0","0","0"),d=Date.UTC(r,a,i,l,m,M)-g,s=Math.floor(d/31536e6),u=Math.floor(d/t-365*s),T=Math.floor((d-(365*s+u)*t)/e),c=Math.floor((d-(365*s+u)*t-T*e)/6e4),f=Math.floor((d-(365*s+u)*t-T*e-6e4*c)/1e3);o==r?(document.getElementById("year").innerHTML=r,document.getElementById("sitetime").innerHTML="本站已安全运行 "+u+" 天 "+T+" 小时 "+c+" 分钟 "+f+" 秒"):(document.getElementById("year").innerHTML=o+" - "+r,document.getElementById("sitetime").innerHTML="本站已安全运行 "+s+" 年 "+u+" 天 "+T+" 小时 "+c+" 分钟 "+f+" 秒")}setInterval(siteTime,1e3)</script><br></div><div class="col s12 m4 l4 social-link social-statis"><a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50"><i class="fab fa-github"></i></a><a href="mailto:2533313507@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50"><i class="fas fa-envelope-open"></i></a><a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2533313507" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2533313507" data-position="top" data-delay="50"><i class="fab fa-qq"></i></a></div></div></footer><div class="progress-bar"></div><script>$(document).ready(function(){var e=setInterval(function(){"none"!=document.getElementById("busuanzi_container_site_pv").style.display&&($("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html())+n),clearInterval(e));"none"!=$("#busuanzi_container_site_pv").css("display")&&($("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html())+t),clearInterval(e))},50),n=10,t=10})</script><div id="searchModal" class="modal"><div class="modal-content"><div class="search-header"><span class="title"><i class="fas fa-search"></i> &nbsp;&nbsp;搜索</span> <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字" class="search-input"></div><div id="searchResult"></div></div></div><script src="/js/search.js"></script><script>$(function(){searchFunc("/search.xml","searchInput","searchResult")})</script><div id="backTop" class="top-scroll"><a class="btn-floating btn-large waves-effect waves-light" href="#!"><i class="fas fa-arrow-up"></i></a></div><script src="/libs/materialize/materialize.min.js"></script><script src="/libs/masonry/masonry.pkgd.min.js"></script><script src="/libs/aos/aos.js"></script><script src="/libs/scrollprogress/scrollProgress.min.js"></script><script src="/libs/lightGallery/js/lightgallery-all.min.js"></script><script src="/js/matery.js"></script><script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script><script src="/libs/others/clicklove.js" async></script><script async src="/libs/others/busuanzi.pure.mini.js"></script><script src="//code.tidio.co/hpjvn6njlytsk0ywhqouw4gdndraakka.js"></script><script>$(document).ready(function(){setInterval(function(){var t=$("#tidio-chat iframe");"block"==t.css("display")&&977<$(window).width()?(document.getElementById("tidio-chat-iframe").style.bottom=0<("none"==$("div#backTop.top-scroll").css("display")&&977<$(window).width())?"-40px":0<($("div.toc-title").length&&977<$(window).width())?"85px":"20px",document.getElementById("tidio-chat-iframe").style.right="-15px",document.getElementById("tidio-chat-iframe").style.height=520<=parseInt(t.css("height"))?"520px":t.css("height"),document.getElementById("tidio-chat-iframe").style.zIndex="997"):"block"==t.css("display")&&601<$(window).width()&&$(window).width()<992?(document.getElementById("tidio-chat-iframe").style.bottom=0<("none"==$("div#backTop.top-scroll").css("display")&&601<$(window).width()<992)?"-40px":"20px",document.getElementById("tidio-chat-iframe").style.right="-15px",document.getElementById("tidio-chat-iframe").style.zIndex="997"):"block"==t.css("display")&&$(window).width()<601&&parseInt(t.css("height"))<230&&(document.getElementById("tidio-chat-iframe").style.bottom=0<("none"==$("div#backTop.top-scroll").css("display")&&$(window).width()<601)?"-10px":"45px",document.getElementById("tidio-chat-iframe").style.zIndex="997");"block"==t.css("display")&&$(window).width()<601&&230<=parseInt(t.css("height"))&&(document.getElementById("tidio-chat-iframe").style.zIndex="998")},50)})</script><script src="/libs/instantpage/instantpage.js" type="module"></script></body></html>
