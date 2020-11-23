@@ -6,7 +6,7 @@
   <link href="https://yanyanzio.top/atom.xml" rel="self"/>
   
   <link href="https://yanyanzio.top/"/>
-  <updated>2020-11-23T00:57:08.737Z</updated>
+  <updated>2020-11-23T06:15:37.828Z</updated>
   <id>https://yanyanzio.top/</id>
   
   <author>
@@ -17,18 +17,72 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>JavaScript高级语言程序设计(五)</title>
+    <link href="https://yanyanzio.top/posts/a0013.html"/>
+    <id>https://yanyanzio.top/posts/a0013.html</id>
+    <published>2020-11-23T01:07:40.000Z</published>
+    <updated>2020-11-23T06:15:37.828Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;迭代器与生成器&quot;&gt;&lt;a href=&quot;#迭代器与生成器&quot; class=&quot;headerlink&quot; title=&quot;迭代器与生成器&quot;&gt;&lt;/a&gt;迭代器与生成器&lt;/h1&gt;&lt;p&gt;迭代的英文“iteration”源自拉丁文</summary>
+        
+      
+    
+    
+    
+    <category term="JavaScript" scheme="https://yanyanzio.top/categories/JavaScript/"/>
+    
+    <category term="JavaScript高级程序设计" scheme="https://yanyanzio.top/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+    <category term="JavaScript" scheme="https://yanyanzio.top/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript高级语言程序设计(五)</title>
+    <link href="https://yanyanzio.top/posts/a0012.html"/>
+    <id>https://yanyanzio.top/posts/a0012.html</id>
+    <published>2020-11-23T01:07:22.000Z</published>
+    <updated>2020-11-23T04:50:15.660Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;迭代器与生成器&quot;&gt;&lt;a href=&quot;#迭代器与生成器&quot; class=&quot;headerlink&quot; title=&quot;迭代器与生成器&quot;&gt;&lt;/a&gt;迭代器与生成器&lt;/h1&gt;&lt;p&gt;迭代的英文“iteration”源自拉丁文</summary>
+        
+      
+    
+    
+    
+    <category term="JavaScript" scheme="https://yanyanzio.top/categories/JavaScript/"/>
+    
+    <category term="JavaScript高级程序设计" scheme="https://yanyanzio.top/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+    <category term="Javascript" scheme="https://yanyanzio.top/tags/Javascript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JavaScript高级语言程序设计(四)</title>
     <link href="https://yanyanzio.top/posts/a0011.html"/>
     <id>https://yanyanzio.top/posts/a0011.html</id>
     <published>2020-11-22T01:53:34.000Z</published>
-    <updated>2020-11-23T00:57:08.737Z</updated>
+    <updated>2020-11-23T01:21:04.619Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;集合引用类型&quot;&gt;&lt;a href=&quot;#集合引用类型&quot; class=&quot;headerlink&quot; title=&quot;集合引用类型&quot;&gt;&lt;/a&gt;集合引用类型&lt;/h1&gt;&lt;p&gt;上篇: &lt;strong&gt;&lt;a href=&quot;a0010&quot;&gt;基本引用类型(七)</summary>
+    <summary type="html">&lt;h1 id=&quot;集合引用类型&quot;&gt;&lt;a href=&quot;#集合引用类型&quot; class=&quot;headerlink&quot; title=&quot;集合引用类型&quot;&gt;&lt;/a&gt;集合引用类型&lt;/h1&gt;&lt;p&gt;上篇: &lt;strong&gt;&lt;a href=&quot;a0010&quot;&gt;集合引用类型(七)</summary>
         
       
     
@@ -48,14 +102,14 @@
     <link href="https://yanyanzio.top/posts/a0010.html"/>
     <id>https://yanyanzio.top/posts/a0010.html</id>
     <published>2020-11-22T01:53:22.000Z</published>
-    <updated>2020-11-23T00:50:49.577Z</updated>
+    <updated>2020-11-23T01:21:14.712Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;集合引用类型&quot;&gt;&lt;a href=&quot;#集合引用类型&quot; class=&quot;headerlink&quot; title=&quot;集合引用类型&quot;&gt;&lt;/a&gt;集合引用类型&lt;/h1&gt;&lt;p&gt;上篇: &lt;strong&gt;&lt;a href=&quot;a0009&quot;&gt;基本引用类型(六)</summary>
+    <summary type="html">&lt;h1 id=&quot;集合引用类型&quot;&gt;&lt;a href=&quot;#集合引用类型&quot; class=&quot;headerlink&quot; title=&quot;集合引用类型&quot;&gt;&lt;/a&gt;集合引用类型&lt;/h1&gt;&lt;p&gt;上篇: &lt;strong&gt;&lt;a href=&quot;a0009&quot;&gt;集合引用类型(六)</summary>
         
       
     
@@ -75,14 +129,14 @@
     <link href="https://yanyanzio.top/posts/a0009.html"/>
     <id>https://yanyanzio.top/posts/a0009.html</id>
     <published>2020-11-22T01:53:11.000Z</published>
-    <updated>2020-11-23T00:44:33.848Z</updated>
+    <updated>2020-11-23T01:21:27.196Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;集合引用类型&quot;&gt;&lt;a href=&quot;#集合引用类型&quot; class=&quot;headerlink&quot; title=&quot;集合引用类型&quot;&gt;&lt;/a&gt;集合引用类型&lt;/h1&gt;&lt;p&gt;上篇: &lt;strong&gt;&lt;a href=&quot;a0008&quot;&gt;基本引用类型(五)</summary>
+    <summary type="html">&lt;h1 id=&quot;集合引用类型&quot;&gt;&lt;a href=&quot;#集合引用类型&quot; class=&quot;headerlink&quot; title=&quot;集合引用类型&quot;&gt;&lt;/a&gt;集合引用类型&lt;/h1&gt;&lt;p&gt;上篇: &lt;strong&gt;&lt;a href=&quot;a0008&quot;&gt;集合引用类型(五)</summary>
         
       
     
@@ -102,14 +156,14 @@
     <link href="https://yanyanzio.top/posts/a0008.html"/>
     <id>https://yanyanzio.top/posts/a0008.html</id>
     <published>2020-11-22T01:52:59.000Z</published>
-    <updated>2020-11-22T11:56:57.966Z</updated>
+    <updated>2020-11-23T01:21:36.697Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;集合引用类型&quot;&gt;&lt;a href=&quot;#集合引用类型&quot; class=&quot;headerlink&quot; title=&quot;集合引用类型&quot;&gt;&lt;/a&gt;集合引用类型&lt;/h1&gt;&lt;p&gt;上篇: &lt;strong&gt;&lt;a href=&quot;a0007&quot;&gt;基本引用类型(四)</summary>
+    <summary type="html">&lt;h1 id=&quot;集合引用类型&quot;&gt;&lt;a href=&quot;#集合引用类型&quot; class=&quot;headerlink&quot; title=&quot;集合引用类型&quot;&gt;&lt;/a&gt;集合引用类型&lt;/h1&gt;&lt;p&gt;上篇: &lt;strong&gt;&lt;a href=&quot;a0007&quot;&gt;集合引用类型(四)</summary>
         
       
     
@@ -129,14 +183,14 @@
     <link href="https://yanyanzio.top/posts/a0007.html"/>
     <id>https://yanyanzio.top/posts/a0007.html</id>
     <published>2020-11-22T01:52:49.000Z</published>
-    <updated>2020-11-22T11:34:17.872Z</updated>
+    <updated>2020-11-23T01:21:42.539Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;集合引用类型&quot;&gt;&lt;a href=&quot;#集合引用类型&quot; class=&quot;headerlink&quot; title=&quot;集合引用类型&quot;&gt;&lt;/a&gt;集合引用类型&lt;/h1&gt;&lt;p&gt;上篇: &lt;strong&gt;&lt;a href=&quot;a0006&quot;&gt;基本引用类型(三)</summary>
+    <summary type="html">&lt;h1 id=&quot;集合引用类型&quot;&gt;&lt;a href=&quot;#集合引用类型&quot; class=&quot;headerlink&quot; title=&quot;集合引用类型&quot;&gt;&lt;/a&gt;集合引用类型&lt;/h1&gt;&lt;p&gt;上篇: &lt;strong&gt;&lt;a href=&quot;a0006&quot;&gt;集合引用类型(三)</summary>
         
       
     
@@ -156,14 +210,14 @@
     <link href="https://yanyanzio.top/posts/a0006.html"/>
     <id>https://yanyanzio.top/posts/a0006.html</id>
     <published>2020-11-22T01:52:28.000Z</published>
-    <updated>2020-11-22T08:10:07.153Z</updated>
+    <updated>2020-11-23T01:21:48.367Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;集合引用类型&quot;&gt;&lt;a href=&quot;#集合引用类型&quot; class=&quot;headerlink&quot; title=&quot;集合引用类型&quot;&gt;&lt;/a&gt;集合引用类型&lt;/h1&gt;&lt;p&gt;上篇: &lt;strong&gt;&lt;a href=&quot;a0005&quot;&gt;基本引用类型(二)</summary>
+    <summary type="html">&lt;h1 id=&quot;集合引用类型&quot;&gt;&lt;a href=&quot;#集合引用类型&quot; class=&quot;headerlink&quot; title=&quot;集合引用类型&quot;&gt;&lt;/a&gt;集合引用类型&lt;/h1&gt;&lt;p&gt;上篇: &lt;strong&gt;&lt;a href=&quot;a0005&quot;&gt;集合引用类型(二)</summary>
         
       
     
@@ -183,14 +237,14 @@
     <link href="https://yanyanzio.top/posts/a0005.html"/>
     <id>https://yanyanzio.top/posts/a0005.html</id>
     <published>2020-11-22T01:52:16.000Z</published>
-    <updated>2020-11-22T07:59:05.627Z</updated>
+    <updated>2020-11-23T01:21:54.303Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;集合引用类型&quot;&gt;&lt;a href=&quot;#集合引用类型&quot; class=&quot;headerlink&quot; title=&quot;集合引用类型&quot;&gt;&lt;/a&gt;集合引用类型&lt;/h1&gt;&lt;p&gt;上篇: &lt;strong&gt;&lt;a href=&quot;a0004&quot;&gt;基本引用类型(一)</summary>
+    <summary type="html">&lt;h1 id=&quot;集合引用类型&quot;&gt;&lt;a href=&quot;#集合引用类型&quot; class=&quot;headerlink&quot; title=&quot;集合引用类型&quot;&gt;&lt;/a&gt;集合引用类型&lt;/h1&gt;&lt;p&gt;上篇: &lt;strong&gt;&lt;a href=&quot;a0004&quot;&gt;集合引用类型(一)</summary>
         
       
     
@@ -488,60 +542,6 @@
         
         
     <summary type="html">&lt;h1 id=&quot;第一章&quot;&gt;&lt;a href=&quot;#第一章&quot; class=&quot;headerlink&quot; title=&quot;第一章&quot;&gt;&lt;/a&gt;第一章&lt;/h1&gt;&lt;h4 id=&quot;组织结构&quot;&gt;&lt;a href=&quot;#组织结构&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="JavaScript" scheme="https://yanyanzio.top/categories/JavaScript/"/>
-    
-    <category term="JavaScript高级程序设计" scheme="https://yanyanzio.top/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-    
-    <category term="JavaScript" scheme="https://yanyanzio.top/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript高级语言程序设计(一)</title>
-    <link href="https://yanyanzio.top/posts/85be.html"/>
-    <id>https://yanyanzio.top/posts/85be.html</id>
-    <published>2020-11-18T15:41:00.000Z</published>
-    <updated>2020-11-22T07:49:47.620Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;第一章&quot;&gt;&lt;a href=&quot;#第一章&quot; class=&quot;headerlink&quot; title=&quot;第一章&quot;&gt;&lt;/a&gt;第一章&lt;/h2&gt;&lt;h5 id=&quot;组织结构&quot;&gt;&lt;a href=&quot;#组织结构&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="JavaScript" scheme="https://yanyanzio.top/categories/JavaScript/"/>
-    
-    <category term="JavaScript高级程序设计" scheme="https://yanyanzio.top/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-    
-    <category term="JavaScript" scheme="https://yanyanzio.top/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript高级语言程序设计(一)</title>
-    <link href="https://yanyanzio.top/posts/14a5.html"/>
-    <id>https://yanyanzio.top/posts/14a5.html</id>
-    <published>2020-11-18T13:56:20.000Z</published>
-    <updated>2020-11-22T07:45:49.616Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;第一章&quot;&gt;&lt;a href=&quot;#第一章&quot; class=&quot;headerlink&quot; title=&quot;第一章&quot;&gt;&lt;/a&gt;第一章&lt;/h2&gt;&lt;h5 id=&quot;组织结构&quot;&gt;&lt;a href=&quot;#组织结构&quot; class=&quot;headerlink&quot;</summary>
         
       
     

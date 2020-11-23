@@ -1,0 +1,543 @@
+<!DOCTYPE HTML><html lang="zh-CN"><head><meta charset="utf-8"><meta name="keywords" content="JavaScript高级语言程序设计(五), Hexo"><meta name="description" content="欢迎来到我的小破站(๑╹◡╹)ﾉ&#34;&#34;&#34;"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><meta name="renderer" content="webkit|ie-stand|ie-comp"><meta name="mobile-web-app-capable" content="yes"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><title>JavaScript高级语言程序设计(五) | YanYanZi</title><link rel="icon" type="image/jpeg" href="https://gitee.com/OxOYYZi/picgo/raw/master/img/3.jpg"><link rel="stylesheet" href="/libs/awesome/css/all.css"><link rel="stylesheet" href="/libs/materialize/materialize.min.css"><link rel="stylesheet" href="/libs/aos/aos.css"><link rel="stylesheet" href="/libs/animate/animate.min.css"><link rel="stylesheet" href="/libs/lightGallery/css/lightgallery.min.css"><link rel="stylesheet" href="/css/matery.css"><link rel="stylesheet" href="/css/my.css"><script src="/libs/jquery/jquery.min.js"></script><meta name="generator" content="Hexo 5.2.0"><style>.github-emoji{position:relative;display:inline-block;width:1.2em;min-height:1.2em;overflow:hidden;vertical-align:top;color:transparent}.github-emoji>span{position:relative;z-index:10}.github-emoji .fancybox,.github-emoji img{margin:0!important;padding:0!important;border:none!important;outline:0!important;text-decoration:none!important;user-select:none!important;cursor:auto!important}.github-emoji img{height:1.2em!important;width:1.2em!important;position:absolute!important;left:50%!important;top:50%!important;transform:translate(-50%,-50%)!important;user-select:none!important;cursor:auto!important}.github-emoji-fallback{color:inherit}.github-emoji-fallback img{opacity:0!important}</style><link rel="alternate" href="/atom.xml" title="YanYanZi" type="application/atom+xml"><link rel="stylesheet" href="/css/prism.css"></head><body><header class="navbar-fixed"><nav id="headNav" class="bg-color nav-transparent"><div id="navContainer" class="nav-wrapper container"><div class="brand-logo"><a href="/" class="waves-effect waves-light"><img src="https://gitee.com/OxOYYZi/picgo/raw/master/img/3.jpg" class="logo-img" alt="LOGO"> <span class="logo-span">YanYanZi</span></a></div><a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a><ul class="right nav-menu"><li class="hide-on-med-and-down nav-item"><a href="/" class="waves-effect waves-light"><i class="fas fa-book-dead" style="zoom:.6"></i> <span>主页</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/tags" class="waves-effect waves-light"><i class="fas fa-book-medical" style="zoom:.6"></i> <span>标签</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/categories" class="waves-effect waves-light"><i class="fas fa-quran" style="zoom:.6"></i> <span>分类</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/archives" class="waves-effect waves-light"><i class="fas fa-atlas" style="zoom:.6"></i> <span>文章</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/about" class="waves-effect waves-light"><i class="fas fa-bible" style="zoom:.6"></i> <span>MI</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/contact" class="waves-effect waves-light"><i class="fas fa-journal-whills" style="zoom:.6"></i> <span>LINK</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/friends" class="waves-effect waves-light"><i class="fas fa-torah" style="zoom:.6"></i> <span>FRIENDS</span></a></li><li><a href="#searchModal" class="modal-trigger waves-effect waves-light"><i id="searchIcon" class="fas fa-search" title="搜索" style="zoom:.85"></i></a></li></ul><div id="mobile-nav" class="side-nav sidenav"><div class="mobile-head bg-color"><img src="https://gitee.com/OxOYYZi/picgo/raw/master/img/3.jpg" class="logo-img circle responsive-img"><div class="logo-name">YanYanZi</div><div class="logo-desc">欢迎来到我的小破站(๑╹◡╹)ﾉ&#34;&#34;&#34;</div></div><ul class="menu-list mobile-menu-list"><li class="m-nav-item"><a href="/" class="waves-effect waves-light"><i class="fa-fw fas fa-book-dead"></i> 主页</a></li><li class="m-nav-item"><a href="/tags" class="waves-effect waves-light"><i class="fa-fw fas fa-book-medical"></i> 标签</a></li><li class="m-nav-item"><a href="/categories" class="waves-effect waves-light"><i class="fa-fw fas fa-quran"></i> 分类</a></li><li class="m-nav-item"><a href="/archives" class="waves-effect waves-light"><i class="fa-fw fas fa-atlas"></i> 文章</a></li><li class="m-nav-item"><a href="/about" class="waves-effect waves-light"><i class="fa-fw fas fa-bible"></i> MI</a></li><li class="m-nav-item"><a href="/contact" class="waves-effect waves-light"><i class="fa-fw fas fa-journal-whills"></i> LINK</a></li><li class="m-nav-item"><a href="/friends" class="waves-effect waves-light"><i class="fa-fw fas fa-torah"></i> FRIENDS</a></li><li><div class="divider"></div></li><li><a href="https://github.com/HcHh2019/HcHh2019.github.io" class="waves-effect waves-light" target="_blank"><i class="fab fa-github-square fa-fw"></i> Fork Me</a></li></ul></div></div><style>.nav-transparent .github-corner{display:none!important}.github-corner{position:absolute;z-index:10;top:0;right:0;border:0;transform:scale(1.1)}.github-corner svg{color:#0f9d58;fill:#fff;height:64px;width:64px}.github-corner:hover .octo-arm{animation:a .56s ease-in-out}.github-corner .octo-arm{animation:none}@keyframes a{0%,to{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}</style><a href="https://github.com/HcHh2019/HcHh2019.github.io" class="github-corner tooltipped hide-on-med-and-down" target="_blank" data-tooltip="Fork Me" data-position="left" data-delay="50"><svg viewBox="0 0 250 250" aria-hidden="true"><path d="M0 0 115 115 130 115 142 142 250 250 250 0Z"></path><path d="M128.3 109C113.8 99.7 119 89.6 119 89.6 122 82.7 120.5 78.6 120.5 78.6 119.2 72 123.4 76.3 123.4 76.3 127.3 80.9 125.5 87.3 125.5 87.3 122.9 97.6 130.6 101.9 134.4 103.2" fill="currentColor" style="transform-origin:130px 106px" class="octo-arm"></path><path d="M115 115C114.9 115.1 118.7 116.5 119.8 115.4L133.7 101.6C136.9 99.2 139.9 98.4 142.2 98.6 133.8 88 127.5 74.4 143.8 58 148.5 53.4 154 51.2 159.7 51 160.3 49.4 163.2 43.6 171.4 40.1 171.4 40.1 176.1 42.5 178.8 56.2 183.1 58.6 187.2 61.8 190.9 65.4 194.5 69 197.7 73.2 200.1 77.6 213.8 80.2 216.3 84.9 216.3 84.9 212.7 93.1 206.9 96 205.4 96.6 205.1 102.4 203 107.8 198.3 112.5 181.9 128.9 168.3 122.5 157.7 114.1 157.9 116.9 156.7 120.9 152.7 124.9L141 136.5C139.8 137.7 141.6 141.9 141.8 141.8Z" fill="currentColor" class="octo-body"></path></svg></a></nav></header><div class="bg-cover pd-header post-cover" style="background-image:url(https://gitee.com/OxOYYZi/picgo/raw/master/img/illust_83285677_20201119_073959.jpg)"><div class="container" style="right:0;left:0"><div class="row"><div class="col s12 m12 l12"><div class="brand"><h1 class="description center-align post-title">JavaScript高级语言程序设计(五)</h1></div></div></div></div></div><main class="post-container content"><link rel="stylesheet" href="/libs/tocbot/tocbot.css"><style>#articleContent h1::before,#articleContent h2::before,#articleContent h3::before,#articleContent h4::before,#articleContent h5::before,#articleContent h6::before{display:block;content:" ";height:100px;margin-top:-100px;visibility:hidden}#articleContent :focus{outline:0}.toc-fixed{position:fixed;top:64px}.toc-widget{width:345px;padding-left:20px;background-color:rgb(255,255,255,.3)!important;border-radius:10px;box-shadow:0 10px 35px 2px rgba(0,0,0,.15),0 5px 15px rgba(0,0,0,.07),0 2px 5px -5px rgba(0,0,0,.1)!important}.toc-widget .toc-title{margin:35px 0 15px 0;padding-left:17px;font-size:1.5rem;font-weight:700;line-height:1.5rem;color:tomato}.toc-widget ol{padding:0;list-style:none}#toc-content{height:calc(100vh - 250px);overflow:auto}#toc-content ol{padding-left:10px}#toc-content ol li{padding-left:10px}#toc-content .toc-link:hover{color:#70e1f5!important;font-weight:900;font-size:18px;text-decoration:underline;text-decoration:none}#toc-content .toc-link::before{background-color:transparent;max-height:25px;position:absolute;right:23.5vw;display:block}#toc-content .is-active-link{color:#70e1f5}#floating-toc-btn{position:fixed;right:15px;bottom:76px;padding-top:15px;margin-bottom:0;z-index:998}#floating-toc-btn .btn-floating{width:48px;height:48px}#floating-toc-btn .btn-floating i{line-height:48px;font-size:1.4rem}</style><div class="row"><div id="main-content" class="col s12 m12 l9"><div id="artDetail"><div class="card"><div class="card-content article-info"><div class="row tag-cate"><div class="col s7"><div class="article-tag"><a href="/tags/JavaScript/"><span class="chip bg-color">JavaScript</span></a></div></div><div class="col s5 right-align"><div class="post-cate"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/JavaScript/" class="post-category">JavaScript</a> <a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="post-category">JavaScript高级程序设计</a></div></div></div><div class="post-info"><div class="post-date info-break-policy"><i class="far fa-calendar-minus fa-fw"></i> 发布日期:&nbsp;&nbsp; 2020-11-23</div><div class="post-date info-break-policy"><i class="far fa-calendar-check fa-fw"></i> 更新日期:&nbsp;&nbsp; 2020-11-23</div><div class="info-break-policy"><i class="far fa-file-word fa-fw"></i> 文章字数:&nbsp;&nbsp; 3.8k</div><div class="info-break-policy"><i class="far fa-clock fa-fw"></i> 阅读时长:&nbsp;&nbsp; 16 分</div><div id="busuanzi_container_page_pv" class="info-break-policy"><i class="far fa-eye fa-fw"></i> 阅读次数:&nbsp;&nbsp;<span id="busuanzi_value_page_pv"></span></div></div></div><hr class="clearfix"><div class="card-content article-card-content"><div id="articleContent"><h1 id="迭代器与生成器"><a href="#迭代器与生成器" class="headerlink" title="迭代器与生成器"></a>迭代器与生成器</h1><p>迭代的英文“iteration”源自拉丁文 itero，意思是“重复”或“再来”。软件开发领域，“迭代”的意思是按照顺序反复多次执行一段程序，通常会有明确的终止条件。ECMAScript 6 规范新增了两个高级特性：迭代器和生成器。使用这两个特性，能够更清晰、高效、方便地实现迭代。</p><p>上篇: <strong><a href="a0012">迭代器与生成器(一) 迭代器</a></strong><br>本篇: <strong>迭代器与生成器(二) 生成器</strong><br>下篇:<strong><a href="a0014"></a></strong></p><p><strong><a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">JavaScript高级程序设计</a></strong> 全部合集</p><hr><h1 id="生成器"><a href="#生成器" class="headerlink" title="生成器"></a>生成器</h1><p>生成器是 ECMAScript 6 新增的一个极为灵活的结构，拥有在一个函数块内暂停和恢复代码执行的能力。这种新能力具有深远的影响，比如，使用生成器可以自定义迭代器和实现协程</p><h2 id="生成器基础"><a href="#生成器基础" class="headerlink" title="生成器基础"></a>生成器基础</h2><p>生成器的形式是一个函数，函数名称前面加一个星号（*）表示它是一个生成器。只要是可以定义<br>函数的地方，就可以定义生成器。</p><pre><code>// 生成器函数声明
+function* generatorFn() {}
+
+// 生成器函数表达式
+let generatorFn = function* () {}
+
+// 作为对象字面量方法的生成器函数
+let foo = {
+    * generatorFn() {}
+}
+
+// 作为类实例方法的生成器函数
+class Foo {
+    * generatorFn() {}
+}
+
+// 作为类静态方法的生成器函数
+class Bar {
+    static * generatorFn() {}
+} </code></pre><p><strong>注意</strong> 箭头函数不能用来定义生成器函数</p><p>标识生成器函数的星号不受两侧空格的影响：</p><pre><code>// 等价的生成器函数：
+function* generatorFnA() {}
+function *generatorFnB() {}
+function * generatorFnC() {}
+
+// 等价的生成器方法：
+class Foo {
+    *generatorFnD() {}
+    * generatorFnE() {}
+} </code></pre><p>调用生成器函数会产生一个生成器对象。生成器对象一开始处于暂停执行（suspended）的状态。与迭代器相似，生成器对象也实现了 Iterator 接口，因此具有 next()方法。调用这个方法会让生成器开始或恢复执行。</p><pre><code>function* generatorFn() {}
+
+const g = generatorFn();
+
+console.log(g); // generatorFn {&lt;suspended&gt;}
+console.log(g.next); // f next() { [native code] } </code></pre><p>next()方法的返回值类似于迭代器，有一个 done 属性和一个 value 属性。函数体为空的生成器函数中间不会停留，调用一次 next()就会让生成器到达 done: true 状态。</p><pre><code>function* generatorFn() {}
+
+let generatorObject = generatorFn();
+
+console.log(generatorObject); // generatorFn {&lt;suspended&gt;}
+console.log(generatorObject.next()); // { done: true, value: undefined } </code></pre><p>value 属性是生成器函数的返回值，默认值为 undefined，可以通过生成器函数的返回值指定：</p><pre><code>function* generatorFn() {
+    return 'foo';
+}
+
+let generatorObject = generatorFn();
+
+console.log(generatorObject); // generatorFn {&lt;suspended&gt;}
+console.log(generatorObject.next()); // { done: true, value: 'foo' } </code></pre><p>生成器函数只会在初次调用 next()方法后开始执行，如下所示</p><pre><code>function* generatorFn() {
+    console.log('foobar');
+}
+
+// 初次调用生成器函数并不会打印日志
+let generatorObject = generatorFn();
+
+generatorObject.next(); // foobar </code></pre><p>生成器对象实现了 Iterable 接口，它们默认的迭代器是自引用的：</p><pre><code>function* generatorFn() {}
+
+console.log(generatorFn);
+// f* generatorFn() {}
+console.log(generatorFn()[Symbol.iterator]); 
+// f [Symbol.iterator]() {native code}
+console.log(generatorFn());
+// generatorFn {&lt;suspended&gt;}
+console.log(generatorFn()[Symbol.iterator]());
+// generatorFn {&lt;suspended&gt;} 
+
+const g = generatorFn();
+
+console.log(g === g[Symbol.iterator]()); // true</code></pre><h2 id="通过-yield-中断执行"><a href="#通过-yield-中断执行" class="headerlink" title="通过 yield 中断执行"></a>通过 yield 中断执行</h2><p>yield 关键字可以让生成器停止和开始执行，也是生成器最有用的地方。生成器函数在遇到 yield关键字之前会正常执行。遇到这个关键字后，执行会停止，函数作用域的状态会被保留。停止执行的生成器函数只能通过在生成器对象上调用 next()方法来恢复执行：</p><pre><code>function* generatorFn() {
+    yield;
+}
+
+let generatorObject = generatorFn();
+
+console.log(generatorObject.next()); // { done: false, value: undefined }
+console.log(generatorObject.next()); // { done: true, value: undefined }</code></pre><p>此时的yield 关键字有点像函数的中间返回语句，它生成的值会出现在 next()方法返回的对象里。通过 yield 关键字退出的生成器函数会处在 done: false 状态；通过 return 关键字退出的生成器函数会处于 done: true 状态。</p><pre><code>function* generatorFn() {
+    yield 'foo';
+    yield 'bar';
+    return 'baz';
+}
+
+let generatorObject = generatorFn();
+
+console.log(generatorObject.next()); // { done: false, value: 'foo' }
+console.log(generatorObject.next()); // { done: false, value: 'bar' }
+console.log(generatorObject.next()); // { done: true, value: 'baz' }</code></pre><p>生成器函数内部的执行流程会针对每个生成器对象区分作用域。在一个生成器对象上调用 next()不会影响其他生成器：</p><pre><code>function* generatorFn() {
+    yield 'foo';
+    yield 'bar';
+    return 'baz';
+}
+
+let generatorObject1 = generatorFn();
+let generatorObject2 = generatorFn();
+
+console.log(generatorObject1.next()); // { done: false, value: 'foo' }
+console.log(generatorObject2.next()); // { done: false, value: 'foo' } 
+console.log(generatorObject2.next()); // { done: false, value: 'bar' }
+console.log(generatorObject1.next()); // { done: false, value: 'bar' } </code></pre><p>yield 关键字只能在生成器函数内部使用，用在其他地方会抛出错误。类似函数的 return 关键字，yield 关键字必须直接位于生成器函数定义中，出现在嵌套的非生成器函数中会抛出语法错误：</p><pre><code>// 有效
+function* validGeneratorFn() {
+    yield;
+}
+
+// 无效
+function* invalidGeneratorFnA() {
+    function a() {
+        yield;
+    }
+}
+
+// 无效
+function* invalidGeneratorFnB() {
+    const b = () =&gt; {
+        yield;
+    }
+}
+// 无效
+function* invalidGeneratorFnC() {
+    (() =&gt; {
+        yield;
+    })();
+} </code></pre><h3 id="生成器对象作为可迭代对象"><a href="#生成器对象作为可迭代对象" class="headerlink" title="生成器对象作为可迭代对象"></a>生成器对象作为可迭代对象</h3><p>在生成器对象上显式调用 next()方法的用处并不大。其实，如果把生成器对象当成可迭代对象，那么使用起来会更方便：</p><pre><code>function* generatorFn() {
+    yield 1;
+    yield 2;
+    yield 3;
+}
+for (const x of generatorFn()) {
+    console.log(x);
+}
+// 1
+// 2
+// 3</code></pre><p>在需要自定义迭代对象时，这样使用生成器对象会特别有用。比如，我们需要定义一个可迭代对象，而它会产生一个迭代器，这个迭代器会执行指定的次数。使用生成器，可以通过一个简单的循环来实现：</p><pre><code>function* nTimes(n) {
+    while(n--) {
+        yield;
+    }
+} 
+
+for (let _ of nTimes(3)) {
+    console.log('foo');
+}
+// foo
+// foo
+// foo </code></pre><p>传给生成器的函数可以控制迭代循环的次数。在 n 为 0 时，while 条件为假，循环退出，生成器函数返回。</p><h3 id="使用-yield-实现输入和输出"><a href="#使用-yield-实现输入和输出" class="headerlink" title="使用 yield 实现输入和输出"></a>使用 yield 实现输入和输出</h3><p>除了可以作为函数的中间返回语句使用，yield 关键字还可以作为函数的中间参数使用。上一次让生成器函数暂停的 yield 关键字会接收到传给 next()方法的第一个值。这里有个地方不太好理解——第一次调用 next()传入的值不会被使用，因为这一次调用是为了开始执行生成器函数：</p><pre><code>function* generatorFn(initial) {
+    console.log(initial);
+    console.log(yield);
+    console.log(yield);
+}
+
+let generatorObject = generatorFn('foo');
+
+
+generatorObject.next('bar'); // foo
+generatorObject.next('baz'); // baz
+generatorObject.next('qux'); // qux</code></pre><p>yield 关键字可以同时用于输入和输出，如下例所示：</p><pre><code>function* generatorFn() {
+    return yield 'foo';
+}
+
+let generatorObject = generatorFn();
+
+console.log(generatorObject.next()); // { done: false, value: 'foo' }
+console.log(generatorObject.next('bar')); // { done: true, value: 'bar' } </code></pre><p>因为函数必须对整个表达式求值才能确定要返回的值，所以它在遇到 yield 关键字时暂停执行并计算出要产生的值：”foo”。下一次调用 next()传入了”bar”，作为交给同一个 yield 的值。然后这个值被确定为本次生成器函数要返回的值。</p><p>yield 关键字并非只能使用一次。比如，以下代码就定义了一个无穷计数生成器函数：</p><pre><code>function* generatorFn() {
+    for (let i = 0;;++i) {
+        yield i;
+    }
+}
+
+let generatorObject = generatorFn();
+console.log(generatorObject.next().value); // 0
+console.log(generatorObject.next().value); // 1
+console.log(generatorObject.next().value); // 2
+console.log(generatorObject.next().value); // 3
+console.log(generatorObject.next().value); // 4
+console.log(generatorObject.next().value); // 5
+... </code></pre><p>假设我们想定义一个生成器函数，它会根据配置的值迭代相应次数并产生迭代的索引。初始化一个新数组可以实现这个需求，但不用数组也可以实现同样的行为：</p><pre><code>function* nTimes(n) {
+    for (let i = 0; i &lt; n; ++i) {
+        yield i;
+    }
+}
+for (let x of nTimes(3)) {
+    console.log(x);
+}
+// 0
+// 1
+// 2</code></pre><p>另外，使用 while 循环也可以，而且代码稍微简洁一点：</p><pre><code>function* nTimes(n) {
+    let i = 0;
+    while(n--) {
+        yield i++;
+    }
+}
+
+for (let x of nTimes(3)) {
+    console.log(x);
+}
+// 0
+// 1
+// 2 </code></pre><p>这样使用生成器也可以实现范围和填充数组：<br>function* range(start, end) {<br>while(end &gt; start) {<br>yield start++;<br>}<br>}</p><pre><code>for (const x of range(4, 7)) {
+    console.log(x);
+}
+// 4
+// 5
+// 6
+
+function* zeroes(n) {
+    while(n--) {
+        yield 0;
+    }
+}
+
+console.log(Array.from(zeroes(8))); // [0, 0, 0, 0, 0, 0, 0, 0] </code></pre><h3 id="产生可迭代对象"><a href="#产生可迭代对象" class="headerlink" title="产生可迭代对象"></a>产生可迭代对象</h3><p>可以使用星号增强 yield 的行为，让它能够迭代一个可迭代对象，从而一次产出一个值：</p><pre><code>// 等价的 generatorFn：
+// function* generatorFn() {
+// for (const x of [1, 2, 3]) {
+// yield x;
+// }
+// }
+function* generatorFn() {
+    yield* [1, 2, 3];
+}
+
+let generatorObject = generatorFn();
+for (const x of generatorFn()) {
+    console.log(x);
+}
+// 1
+// 2
+// 3 </code></pre><p>与生成器函数的星号类似，yield 星号两侧的空格不影响其行为：</p><pre><code>function* generatorFn() {
+    yield* [1, 2];
+    yield *[3, 4];
+    yield * [5, 6];
+}
+
+for (const x of generatorFn()) {
+    console.log(x);
+}
+// 1
+// 2
+// 3
+// 4
+// 5
+// 6 </code></pre><p>因为 yield*实际上只是将一个可迭代对象序列化为一连串可以单独产出的值，所以这跟把 yield放到一个循环里没什么不同。下面两个生成器函数的行为是等价的：</p><pre><code>function* generatorFnA() {
+    for (const x of [1, 2, 3]) {
+        yield x;
+    }
+}
+
+for (const x of generatorFnA()) {
+    console.log(x);
+}
+// 1
+// 2
+// 3
+
+function* generatorFnB() {
+    yield* [1, 2, 3];
+}
+
+for (const x of generatorFnB()) {
+    console.log(x);
+} 
+//1 2 3 </code></pre><p>yield*的值是关联迭代器返回 done: true 时的 value 属性。对于普通迭代器来说，这个值是undefined：</p><pre><code>function* generatorFn() {
+    console.log('iter value:', yield* [1, 2, 3]);
+}
+
+for (const x of generatorFn()) {
+    console.log('value:', x);
+}
+// value: 1
+// value: 2
+// value: 3
+// iter value: undefined </code></pre><p>对于生成器函数产生的迭代器来说，这个值就是生成器函数返回的值：</p><pre><code>function* innerGeneratorFn() {
+    yield 'foo';
+    return 'bar';
+}
+function* outerGeneratorFn(genObj) {
+    console.log('iter value:', yield* innerGeneratorFn());
+}
+for (const x of outerGeneratorFn()) {
+    console.log('value:', x);
+}
+// value: foo
+// iter value: bar </code></pre><h3 id="使用-yield-实现递归算法"><a href="#使用-yield-实现递归算法" class="headerlink" title="使用 yield*实现递归算法"></a>使用 yield*实现递归算法</h3><p>yield*最有用的地方是实现递归操作，此时生成器可以产生自身。看下面的例子：</p><pre><code>function* nTimes(n) {
+    if (n &gt; 0) {
+        yield* nTimes(n - 1);
+        yield n - 1;
+    }
+}
+
+for (const x of nTimes(3)) {
+    console.log(x);
+}
+// 0
+// 1
+// 2 </code></pre><p>在这个例子中，每个生成器首先都会从新创建的生成器对象产出每个值，然后再产出一个整数。结果就是生成器函数会递归地减少计数器值，并实例化另一个生成器对象。从最顶层来看，这就相当于创建一个可迭代对象并返回递增的整数。</p><p>使用递归生成器结构和 yield*可以优雅地表达递归算法。下面是一个图的实现，用于生成一个随机的双向图：</p><pre><code>class Node {
+    constructor(id) {
+        this.id = id;
+        this.neighbors = new Set();
+    }
+
+    connect(node) {
+        if (node !== this) {
+            this.neighbors.add(node);
+            node.neighbors.add(this);
+        }
+    }
+} 
+
+class RandomGraph {
+    constructor(size) {
+        this.nodes = new Set();
+
+        // 创建节点
+        for (let i = 0; i &lt; size; ++i) {
+            this.nodes.add(new Node(i));
+        }
+
+        // 随机连接节点
+        const threshold = 1 / size;
+        for (const x of this.nodes) {
+            for (const y of this.nodes) {
+                if (Math.random() &lt; threshold) {
+                    x.connect(y);
+                }
+            }
+        }
+    } 
+    for (const node of this.nodes) {
+        const ids = [...node.neighbors]
+                    .map((n) =&gt; n.id)
+                    .join(',');
+        console.log(`${node.id}: ${ids}`);
+    }
+}
+
+const g = new RandomGraph(6);
+
+g.print();
+// 示例输出：
+// 0: 2,3,5
+// 1: 2,3,4,5
+// 2: 1,3
+// 3: 0,1,2,4
+// 4: 2,3
+// 5: 0,4 </code></pre><p>图数据结构非常适合递归遍历，而递归生成器恰好非常合用。为此，生成器函数必须接收一个可迭代对象，产出该对象中的每一个值，并且对每个值进行递归。这个实现可以用来测试某个图是否连通，即是否没有不可到达的节点。只要从一个节点开始，然后尽力访问每个节点就可以了。结果就得到了一个非常简洁的深度优先遍历：</p><pre><code>class Node {
+    constructor(id) {
+        ...
+    }
+    connect(node) {
+        ...
+    }
+}
+
+class RandomGraph {
+    constructor(size) {
+        ...
+    }
+    print() {
+        ...
+    } 
+
+    isConnected() {
+        const visitedNodes = new Set();
+
+        function* traverse(nodes) {
+            for (const node of nodes) {
+                if (!visitedNodes.has(node)) {
+                    yield node;
+                    yield* traverse(node.neighbors);
+                }
+            }
+        }
+
+        // 取得集合中的第一个节点
+        const firstNode = this.nodes[Symbol.iterator]().next().value;
+
+        // 使用递归生成器迭代每个节点
+        for (const node of traverse([firstNode])) {
+            visitedNodes.add(node);
+        }
+
+        return visitedNodes.size === this.nodes.size;
+    }
+}  </code></pre><h2 id="生成器作为默认迭代器"><a href="#生成器作为默认迭代器" class="headerlink" title="生成器作为默认迭代器"></a>生成器作为默认迭代器</h2><p>因为生成器对象实现了 Iterable 接口，而且生成器函数和默认迭代器被调用之后都产生迭代器，所以生成器格外适合作为默认迭代器。下面是一个简单的例子，这个类的默认迭代器可以用一行代码产出类的内容：</p><pre><code>class Foo {
+    constructor() {
+        this.values = [1, 2, 3];
+    } 
+
+    * [Symbol.iterator]() {
+        yield* this.values;
+    }
+}
+
+const f = new Foo();
+
+for (const x of f) {
+    console.log(x);
+}
+// 1
+// 2
+// 3 </code></pre><p>这里，for-of 循环调用了默认迭代器（它恰好又是一个生成器函数）并产生了一个生成器对象。这个生成器对象是可迭代的，所以完全可以在迭代中使用。</p><h2 id="提前终止生成器"><a href="#提前终止生成器" class="headerlink" title="提前终止生成器"></a>提前终止生成器</h2><p>与迭代器类似，生成器也支持“可关闭”的概念。一个实现 Iterator 接口的对象一定有 next()方法，还有一个可选的 return()方法用于提前终止迭代器。生成器对象除了有这两个方法，还有第三个方法：throw()。</p><pre><code>function* generatorFn() {}
+
+const g = generatorFn();
+
+console.log(g); // generatorFn {&lt;suspended&gt;}
+console.log(g.next); // f next() { [native code] }
+console.log(g.return); // f return() { [native code] }
+console.log(g.throw); // f throw() { [native code] }</code></pre><p>return()和 throw()方法都可以用于强制生成器进入关闭状态。</p><h3 id="return"><a href="#return" class="headerlink" title="return()"></a>return()</h3><p>return()方法会强制生成器进入关闭状态。提供给 return()方法的值，就是终止迭代器对象的值：</p><pre><code>function* generatorFn() {
+    for (const x of [1, 2, 3]) {
+        yield x;
+    }
+}
+
+const g = generatorFn();
+
+console.log(g); // generatorFn {&lt;suspended&gt;}
+console.log(g.return(4)); // { done: true, value: 4 }
+console.log(g); // generatorFn {&lt;closed&gt;} </code></pre><p>与迭代器不同，所有生成器对象都有 return()方法，只要通过它进入关闭状态，就无法恢复了。后续调用 next()会显示 done: true 状态，而提供的任何返回值都不会被存储或传播：</p><pre><code>function* generatorFn() {
+    for (const x of [1, 2, 3]) {
+        yield x;
+    }
+}
+
+const g = generatorFn();
+
+console.log(g.next()); // { done: false, value: 1 }
+console.log(g.return(4)); // { done: true, value: 4 }
+console.log(g.next()); // { done: true, value: undefined }
+console.log(g.next()); // { done: true, value: undefined }
+console.log(g.next()); // { done: true, value: undefined }  </code></pre><p>for-of 循环等内置语言结构会忽略状态为 done: true 的 IteratorObject 内部返回的值。</p><pre><code>function* generatorFn() {
+    for (const x of [1, 2, 3]) {
+        yield x;
+    }
+}
+
+const g = generatorFn();
+
+for (const x of g) {
+    if (x &gt; 1) {
+        g.return(4);
+    }
+    console.log(x);
+}
+// 1
+// 2 </code></pre><h3 id="throw"><a href="#throw" class="headerlink" title="throw()"></a>throw()</h3><p>throw()方法会在暂停的时候将一个提供的错误注入到生成器对象中。如果错误未被处理，生成器就会关闭：</p><pre><code>function* generatorFn() {
+    for (const x of [1, 2, 3]) {
+        yield x;
+    }
+}
+
+const g = generatorFn();
+console.log(g); // generatorFn {&lt;suspended&gt;}
+
+try {
+    g.throw('foo');
+} catch (e) {
+    console.log(e); // foo
+}
+
+console.log(g); // generatorFn {&lt;closed&gt;}</code></pre><p>不过，假如生成器函数内部处理了这个错误，那么生成器就不会关闭，而且还可以恢复执行。错误处理会跳过对应的 yield，因此在这个例子中会跳过一个值。比如：</p><pre><code>function* generatorFn() {
+    for (const x of [1, 2, 3]) {
+        try {
+            yield x;
+        } catch(e) {}
+    }
+} 
+
+const g = generatorFn();
+
+console.log(g.next()); // { done: false, value: 1}
+g.throw('foo');
+console.log(g.next()); // { done: false, value: 3}</code></pre><p>在这个例子中，生成器在 try/catch 块中的 yield 关键字处暂停执行。在暂停期间，throw()方法向生成器对象内部注入了一个错误：字符串”foo”。这个错误会被 yield 关键字抛出。因为错误是在生成器的 try/catch 块中抛出的，所以仍然在生成器内部被捕获。可是，由于 yield 抛出了那个错误，生成器就不会再产出值 2。此时，生成器函数继续执行，在下一次迭代再次遇到 yield 关键字时产出了值 3。</p><p><strong>注意</strong> 如果生成器对象还没有开始执行，那么调用 throw()抛出的错误不会在函数内部被捕获，因为这相当于在函数块外部抛出了错误。</p></div><hr><div class="reprint" id="reprint-statement"><div class="reprint__author"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-user">文章作者:</i></span> <span class="reprint-info"><a href="/about" rel="external nofollow noreferrer">言言子</a></span></div><div class="reprint__type"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-link">文章链接:</i></span> <span class="reprint-info"><a href="https://yanyanzio.top/posts/a0013.html">https://yanyanzio.top/posts/a0013.html</a></span></div><div class="reprint__notice"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-copyright">版权声明:</i></span> <span class="reprint-info">本博客所有文章除特別声明外，均采用 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a> 许可协议。转载请注明来源 <a href="/about" target="_blank">言言子</a> !</span></div></div><script async defer>document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }</script><div class="tag_share" style="display:block"><div class="post-meta__tag-list" style="display:inline-block"><div class="article-tag"><a href="/tags/JavaScript/"><span class="chip bg-color">JavaScript</span></a></div></div><div class="post_share" style="zoom:80%;width:fit-content;display:inline-block;float:right;margin:-.15rem 0"><link rel="stylesheet" href="/libs/share/css/share.min.css"><div id="article-share"><div class="social-share" data-sites="twitter,google,qq,wechat,weibo,douban" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div><script src="/libs/share/js/social-share.min.js"></script></div></div></div></div></div><style>.valine-card{margin:1.5rem auto}.valine-card .card-content{padding:20px 20px 5px 20px}#vcomments textarea{box-sizing:border-box;background:url(/medias/comment_bg.png) 100% 100% no-repeat}#vcomments p{margin:2px 2px 10px;font-size:1.05rem;line-height:1.78rem}#vcomments blockquote p{text-indent:.2rem}#vcomments a{padding:0 2px;color:#4cbf30;font-weight:500;text-decoration:none}#vcomments img{max-width:100%;height:auto;cursor:pointer}#vcomments ol li{list-style-type:decimal}#vcomments ol,ul{display:block;padding-left:2em;word-spacing:.05rem}#vcomments ul li,ol li{display:list-item;line-height:1.8rem;font-size:1rem}#vcomments ul li{list-style-type:disc}#vcomments ul ul li{list-style-type:circle}#vcomments table,td,th{padding:12px 13px;border:1px solid #dfe2e5}#vcomments table,td,th{border:0}table tr:nth-child(2n),thead{background-color:#fafafa}#vcomments table th{background-color:#f2f2f2;min-width:80px}#vcomments table td{min-width:80px}#vcomments h1{font-size:1.85rem;font-weight:700;line-height:2.2rem}#vcomments h2{font-size:1.65rem;font-weight:700;line-height:1.9rem}#vcomments h3{font-size:1.45rem;font-weight:700;line-height:1.7rem}#vcomments h4{font-size:1.25rem;font-weight:700;line-height:1.5rem}#vcomments h5{font-size:1.1rem;font-weight:700;line-height:1.4rem}#vcomments h6{font-size:1rem;line-height:1.3rem}#vcomments p{font-size:1rem;line-height:1.5rem}#vcomments hr{margin:12px 0;border:0;border-top:1px solid #ccc}#vcomments blockquote{margin:15px 0;border-left:5px solid #42b983;padding:1rem .8rem .3rem .8rem;color:#666;background-color:rgba(66,185,131,.1)}#vcomments pre{font-family:monospace,monospace;padding:1.2em;margin:.5em 0;background:#272822;overflow:auto;border-radius:.3em;tab-size:4}#vcomments code{font-family:monospace,monospace;padding:1px 3px;font-size:.92rem;color:#e96900;background-color:#f8f8f8;border-radius:2px}#vcomments pre code{font-family:monospace,monospace;padding:0;color:#e8eaf6;background-color:#272822}#vcomments pre[class*=language-]{padding:1.2em;margin:.5em 0}#vcomments code[class*=language-],pre[class*=language-]{color:#e8eaf6}#vcomments [type=checkbox]:not(:checked),[type=checkbox]:checked{position:inherit;margin-left:-1.3rem;margin-right:.4rem;margin-top:-1px;vertical-align:middle;left:unset;visibility:visible}#vcomments b,strong{font-weight:700}#vcomments dfn{font-style:italic}#vcomments small{font-size:85%}#vcomments cite{font-style:normal}#vcomments mark{background-color:#fcf8e3;padding:.2em}#vcomments table,td,th{padding:12px 13px;border:1px solid #dfe2e5}table tr:nth-child(2n),thead{background-color:#fafafa}#vcomments table th{background-color:#f2f2f2;min-width:80px}#vcomments table td{min-width:80px}#vcomments [type=checkbox]:not(:checked),[type=checkbox]:checked{position:inherit;margin-left:-1.3rem;margin-right:.4rem;margin-top:-1px;vertical-align:middle;left:unset;visibility:visible}</style><div class="card valine-card" data-aos="fade-up"><div class="comment_headling" style="font-size:20px;font-weight:700;position:relative;padding-left:20px;top:15px;padding-bottom:5px"><i class="fas fa-comments fa-fw" aria-hidden="true"></i> <span>评论</span></div><div id="vcomments" class="card-content" style="display:grid"></div></div><script src="/libs/valine/av-min.js"></script><script src="/libs/valine/Valine.min.js"></script><script>new Valine({el:"#vcomments",appId:"LCBNFKIdJy4bxPWERRqiiBC2-gzGzoHsz",appKey:"vCYXYtNrOSYE9UW0XG2K6N89",notify:!0,verify:!1,visitor:!0,avatar:"mm",pageSize:"10",lang:"zh-cn",placeholder:"正确填写邮箱才能及时回复哟！(๑╹◡╹)ﾉ&#34;&#34;&#34;"})</script><article id="prenext-posts" class="prev-next articles"><div class="row article-row"><div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up"><div class="article-badge left-badge text-color"><i class="far fa-dot-circle"></i> &nbsp;本篇</div><div class="card"><a href="/posts/a0013.html"><div class="card-image"><img src="https://gitee.com/OxOYYZi/picgo/raw/master/img/illust_83285677_20201119_073959.jpg" class="responsive-img" alt="JavaScript高级语言程序设计(五)"> <span class="card-title">JavaScript高级语言程序设计(五)</span></div></a><div class="card-content article-content"><div class="summary block-with-text">JavaScript：迭代器与生成器(二) 生成器</div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i> 2020-11-23</span><span class="publish-author"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/JavaScript/" class="post-category">JavaScript</a> <a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="post-category">JavaScript高级程序设计</a></span></div></div><div class="card-action article-tags"><a href="/tags/JavaScript/"><span class="chip bg-color">JavaScript</span></a></div></div></div><div class="article col s12 m6" data-aos="fade-up"><div class="article-badge right-badge text-color">下一篇&nbsp;<i class="fas fa-chevron-right"></i></div><div class="card"><a href="/posts/a0012.html"><div class="card-image"><img src="https://gitee.com/OxOYYZi/picgo/raw/master/img/illust_84285665_20201119_073934.jpg" class="responsive-img" alt="JavaScript高级语言程序设计(五)"> <span class="card-title">JavaScript高级语言程序设计(五)</span></div></a><div class="card-content article-content"><div class="summary block-with-text">JavaScript：迭代器与生成器(一) 迭代器</div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i> 2020-11-23</span><span class="publish-author"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/JavaScript/" class="post-category">JavaScript</a> <a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="post-category">JavaScript高级程序设计</a></span></div></div><div class="card-action article-tags"><a href="/tags/Javascript/"><span class="chip bg-color">Javascript</span></a></div></div></div></div></article></div><script>$("#articleContent").on("copy",function(e){if(void 0!==window.getSelection){var n=window.getSelection();if(!((""+n).length<Number.parseInt("120"))){var t=document.getElementsByTagName("body")[0],o=document.createElement("div");o.style.position="absolute",o.style.left="-99999px",t.appendChild(o),o.appendChild(n.getRangeAt(0).cloneContents()),"PRE"===n.getRangeAt(0).commonAncestorContainer.nodeName&&(o.innerHTML="<pre>"+o.innerHTML+"</pre>");var i=document.location.href;o.innerHTML+='<br />来源: YanYanZi<br />文章作者: 言言子哦<br />文章链接: <a href="'+i+'">'+i+"</a><br />本文章著作权归[yanyanzi]所有，任何形式的转载都请注明出处。",n.selectAllChildren(o),window.setTimeout(function(){t.removeChild(o)},200)}}})</script><script src="/libs/codeBlock/codeBlockFuction.js"></script><script src="/libs/codeBlock/codeLang.js"></script><script src="/libs/codeBlock/codeCopy.js"></script><script src="/libs/codeBlock/codeShrink.js"></script></div><div id="toc-aside" class="expanded col l3 hide-on-med-and-down"><div class="toc-widget card" style="background-color:#fff"><div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div><div id="toc-content"></div></div></div></div><div id="floating-toc-btn" class="hide-on-med-and-down"><a class="btn-floating btn-large bg-color"><i class="fas fa-list-ul"></i></a></div><script src="/libs/tocbot/tocbot.min.js"></script><script>$(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h1, h2, h3, h4, h5'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4, h5').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });</script></main><footer class="page-footer bg-color"><link rel="stylesheet" href="/libs/aplayer/APlayer.min.css"><style>.aplayer .aplayer-lrc p{display:none;font-size:12px;font-weight:700;line-height:16px!important}.aplayer .aplayer-lrc p.aplayer-lrc-current{display:none;font-size:15px;color:#42b983}.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body{left:-66px!important}.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover{left:0!important}</style><div><div class="row"><meting-js class="col l8 offset-l2 m10 offset-m1 s12" server="netease" type="playlist" id="711442804" fixed="true" autoplay theme="#42b983" loop order="list" preload="auto" volume="0.5" list-folded="false"></meting-js></div></div><script src="/libs/aplayer/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script><div class="container row center-align" style="margin-bottom:15px!important"><div class="col s12 m8 l8 copy-right">Copyright&nbsp;&copy; <span id="year">2020</span> <span id="year">2020</span> <a href="/about" target="_blank">言言子哦</a> |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a> |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a><br>&nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">68.3k</span>&nbsp;字 <span id="busuanzi_container_site_pv" style="display:none">|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv" class="white-color"></span>&nbsp;次</span> <span id="busuanzi_container_site_uv" style="display:none">|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv" class="white-color"></span>&nbsp;人</span><br><span id="sitetime">载入运行时间...</span><script>function siteTime(){var e=36e5,t=24*e,n=new Date,o="2020",r=n.getFullYear(),a=n.getMonth()+1,i=n.getDate(),l=n.getHours(),m=n.getMinutes(),M=n.getSeconds(),g=Date.UTC(o,"11","10","0","0","0"),d=Date.UTC(r,a,i,l,m,M)-g,s=Math.floor(d/31536e6),u=Math.floor(d/t-365*s),T=Math.floor((d-(365*s+u)*t)/e),c=Math.floor((d-(365*s+u)*t-T*e)/6e4),f=Math.floor((d-(365*s+u)*t-T*e-6e4*c)/1e3);o==r?(document.getElementById("year").innerHTML=r,document.getElementById("sitetime").innerHTML="本站已安全运行 "+u+" 天 "+T+" 小时 "+c+" 分钟 "+f+" 秒"):(document.getElementById("year").innerHTML=o+" - "+r,document.getElementById("sitetime").innerHTML="本站已安全运行 "+s+" 年 "+u+" 天 "+T+" 小时 "+c+" 分钟 "+f+" 秒")}setInterval(siteTime,1e3)</script><br></div><div class="col s12 m4 l4 social-link social-statis"><a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50"><i class="fab fa-github"></i></a><a href="mailto:2533313507@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50"><i class="fas fa-envelope-open"></i></a><a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2533313507" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2533313507" data-position="top" data-delay="50"><i class="fab fa-qq"></i></a></div></div></footer><div class="progress-bar"></div><script>$(document).ready(function(){var e=setInterval(function(){"none"!=document.getElementById("busuanzi_container_site_pv").style.display&&($("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html())+n),clearInterval(e));"none"!=$("#busuanzi_container_site_pv").css("display")&&($("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html())+t),clearInterval(e))},50),n=10,t=10})</script><div id="searchModal" class="modal"><div class="modal-content"><div class="search-header"><span class="title"><i class="fas fa-search"></i> &nbsp;&nbsp;搜索</span> <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字" class="search-input"></div><div id="searchResult"></div></div></div><script src="/js/search.js"></script><script>$(function(){searchFunc("/search.xml","searchInput","searchResult")})</script><div id="backTop" class="top-scroll"><a class="btn-floating btn-large waves-effect waves-light" href="#!"><i class="fas fa-arrow-up"></i></a></div><script src="/libs/materialize/materialize.min.js"></script><script src="/libs/masonry/masonry.pkgd.min.js"></script><script src="/libs/aos/aos.js"></script><script src="/libs/scrollprogress/scrollProgress.min.js"></script><script src="/libs/lightGallery/js/lightgallery-all.min.js"></script><script src="/js/matery.js"></script><script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script><script src="/libs/others/clicklove.js" async></script><script async src="/libs/others/busuanzi.pure.mini.js"></script><script src="//code.tidio.co/hpjvn6njlytsk0ywhqouw4gdndraakka.js"></script><script>$(document).ready(function(){setInterval(function(){var t=$("#tidio-chat iframe");"block"==t.css("display")&&977<$(window).width()?(document.getElementById("tidio-chat-iframe").style.bottom=0<("none"==$("div#backTop.top-scroll").css("display")&&977<$(window).width())?"-40px":0<($("div.toc-title").length&&977<$(window).width())?"85px":"20px",document.getElementById("tidio-chat-iframe").style.right="-15px",document.getElementById("tidio-chat-iframe").style.height=520<=parseInt(t.css("height"))?"520px":t.css("height"),document.getElementById("tidio-chat-iframe").style.zIndex="997"):"block"==t.css("display")&&601<$(window).width()&&$(window).width()<992?(document.getElementById("tidio-chat-iframe").style.bottom=0<("none"==$("div#backTop.top-scroll").css("display")&&601<$(window).width()<992)?"-40px":"20px",document.getElementById("tidio-chat-iframe").style.right="-15px",document.getElementById("tidio-chat-iframe").style.zIndex="997"):"block"==t.css("display")&&$(window).width()<601&&parseInt(t.css("height"))<230&&(document.getElementById("tidio-chat-iframe").style.bottom=0<("none"==$("div#backTop.top-scroll").css("display")&&$(window).width()<601)?"-10px":"45px",document.getElementById("tidio-chat-iframe").style.zIndex="997");"block"==t.css("display")&&$(window).width()<601&&230<=parseInt(t.css("height"))&&(document.getElementById("tidio-chat-iframe").style.zIndex="998")},50)})</script><script src="/libs/instantpage/instantpage.js" type="module"></script></body></html>

@@ -1,0 +1,365 @@
+<!DOCTYPE HTML><html lang="zh-CN"><head><meta charset="utf-8"><meta name="keywords" content="JavaScript高级语言程序设计(五), Hexo"><meta name="description" content="欢迎来到我的小破站(๑╹◡╹)ﾉ&#34;&#34;&#34;"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><meta name="renderer" content="webkit|ie-stand|ie-comp"><meta name="mobile-web-app-capable" content="yes"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><title>JavaScript高级语言程序设计(五) | YanYanZi</title><link rel="icon" type="image/jpeg" href="https://gitee.com/OxOYYZi/picgo/raw/master/img/3.jpg"><link rel="stylesheet" href="/libs/awesome/css/all.css"><link rel="stylesheet" href="/libs/materialize/materialize.min.css"><link rel="stylesheet" href="/libs/aos/aos.css"><link rel="stylesheet" href="/libs/animate/animate.min.css"><link rel="stylesheet" href="/libs/lightGallery/css/lightgallery.min.css"><link rel="stylesheet" href="/css/matery.css"><link rel="stylesheet" href="/css/my.css"><script src="/libs/jquery/jquery.min.js"></script><meta name="generator" content="Hexo 5.2.0"><style>.github-emoji{position:relative;display:inline-block;width:1.2em;min-height:1.2em;overflow:hidden;vertical-align:top;color:transparent}.github-emoji>span{position:relative;z-index:10}.github-emoji .fancybox,.github-emoji img{margin:0!important;padding:0!important;border:none!important;outline:0!important;text-decoration:none!important;user-select:none!important;cursor:auto!important}.github-emoji img{height:1.2em!important;width:1.2em!important;position:absolute!important;left:50%!important;top:50%!important;transform:translate(-50%,-50%)!important;user-select:none!important;cursor:auto!important}.github-emoji-fallback{color:inherit}.github-emoji-fallback img{opacity:0!important}</style><link rel="alternate" href="/atom.xml" title="YanYanZi" type="application/atom+xml"><link rel="stylesheet" href="/css/prism.css"></head><body><header class="navbar-fixed"><nav id="headNav" class="bg-color nav-transparent"><div id="navContainer" class="nav-wrapper container"><div class="brand-logo"><a href="/" class="waves-effect waves-light"><img src="https://gitee.com/OxOYYZi/picgo/raw/master/img/3.jpg" class="logo-img" alt="LOGO"> <span class="logo-span">YanYanZi</span></a></div><a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a><ul class="right nav-menu"><li class="hide-on-med-and-down nav-item"><a href="/" class="waves-effect waves-light"><i class="fas fa-book-dead" style="zoom:.6"></i> <span>主页</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/tags" class="waves-effect waves-light"><i class="fas fa-book-medical" style="zoom:.6"></i> <span>标签</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/categories" class="waves-effect waves-light"><i class="fas fa-quran" style="zoom:.6"></i> <span>分类</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/archives" class="waves-effect waves-light"><i class="fas fa-atlas" style="zoom:.6"></i> <span>文章</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/about" class="waves-effect waves-light"><i class="fas fa-bible" style="zoom:.6"></i> <span>MI</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/contact" class="waves-effect waves-light"><i class="fas fa-journal-whills" style="zoom:.6"></i> <span>LINK</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/friends" class="waves-effect waves-light"><i class="fas fa-torah" style="zoom:.6"></i> <span>FRIENDS</span></a></li><li><a href="#searchModal" class="modal-trigger waves-effect waves-light"><i id="searchIcon" class="fas fa-search" title="搜索" style="zoom:.85"></i></a></li></ul><div id="mobile-nav" class="side-nav sidenav"><div class="mobile-head bg-color"><img src="https://gitee.com/OxOYYZi/picgo/raw/master/img/3.jpg" class="logo-img circle responsive-img"><div class="logo-name">YanYanZi</div><div class="logo-desc">欢迎来到我的小破站(๑╹◡╹)ﾉ&#34;&#34;&#34;</div></div><ul class="menu-list mobile-menu-list"><li class="m-nav-item"><a href="/" class="waves-effect waves-light"><i class="fa-fw fas fa-book-dead"></i> 主页</a></li><li class="m-nav-item"><a href="/tags" class="waves-effect waves-light"><i class="fa-fw fas fa-book-medical"></i> 标签</a></li><li class="m-nav-item"><a href="/categories" class="waves-effect waves-light"><i class="fa-fw fas fa-quran"></i> 分类</a></li><li class="m-nav-item"><a href="/archives" class="waves-effect waves-light"><i class="fa-fw fas fa-atlas"></i> 文章</a></li><li class="m-nav-item"><a href="/about" class="waves-effect waves-light"><i class="fa-fw fas fa-bible"></i> MI</a></li><li class="m-nav-item"><a href="/contact" class="waves-effect waves-light"><i class="fa-fw fas fa-journal-whills"></i> LINK</a></li><li class="m-nav-item"><a href="/friends" class="waves-effect waves-light"><i class="fa-fw fas fa-torah"></i> FRIENDS</a></li><li><div class="divider"></div></li><li><a href="https://github.com/HcHh2019/HcHh2019.github.io" class="waves-effect waves-light" target="_blank"><i class="fab fa-github-square fa-fw"></i> Fork Me</a></li></ul></div></div><style>.nav-transparent .github-corner{display:none!important}.github-corner{position:absolute;z-index:10;top:0;right:0;border:0;transform:scale(1.1)}.github-corner svg{color:#0f9d58;fill:#fff;height:64px;width:64px}.github-corner:hover .octo-arm{animation:a .56s ease-in-out}.github-corner .octo-arm{animation:none}@keyframes a{0%,to{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}</style><a href="https://github.com/HcHh2019/HcHh2019.github.io" class="github-corner tooltipped hide-on-med-and-down" target="_blank" data-tooltip="Fork Me" data-position="left" data-delay="50"><svg viewBox="0 0 250 250" aria-hidden="true"><path d="M0 0 115 115 130 115 142 142 250 250 250 0Z"></path><path d="M128.3 109C113.8 99.7 119 89.6 119 89.6 122 82.7 120.5 78.6 120.5 78.6 119.2 72 123.4 76.3 123.4 76.3 127.3 80.9 125.5 87.3 125.5 87.3 122.9 97.6 130.6 101.9 134.4 103.2" fill="currentColor" style="transform-origin:130px 106px" class="octo-arm"></path><path d="M115 115C114.9 115.1 118.7 116.5 119.8 115.4L133.7 101.6C136.9 99.2 139.9 98.4 142.2 98.6 133.8 88 127.5 74.4 143.8 58 148.5 53.4 154 51.2 159.7 51 160.3 49.4 163.2 43.6 171.4 40.1 171.4 40.1 176.1 42.5 178.8 56.2 183.1 58.6 187.2 61.8 190.9 65.4 194.5 69 197.7 73.2 200.1 77.6 213.8 80.2 216.3 84.9 216.3 84.9 212.7 93.1 206.9 96 205.4 96.6 205.1 102.4 203 107.8 198.3 112.5 181.9 128.9 168.3 122.5 157.7 114.1 157.9 116.9 156.7 120.9 152.7 124.9L141 136.5C139.8 137.7 141.6 141.9 141.8 141.8Z" fill="currentColor" class="octo-body"></path></svg></a></nav></header><div class="bg-cover pd-header post-cover" style="background-image:url(https://gitee.com/OxOYYZi/picgo/raw/master/img/illust_84285665_20201119_073934.jpg)"><div class="container" style="right:0;left:0"><div class="row"><div class="col s12 m12 l12"><div class="brand"><h1 class="description center-align post-title">JavaScript高级语言程序设计(五)</h1></div></div></div></div></div><main class="post-container content"><link rel="stylesheet" href="/libs/tocbot/tocbot.css"><style>#articleContent h1::before,#articleContent h2::before,#articleContent h3::before,#articleContent h4::before,#articleContent h5::before,#articleContent h6::before{display:block;content:" ";height:100px;margin-top:-100px;visibility:hidden}#articleContent :focus{outline:0}.toc-fixed{position:fixed;top:64px}.toc-widget{width:345px;padding-left:20px;background-color:rgb(255,255,255,.3)!important;border-radius:10px;box-shadow:0 10px 35px 2px rgba(0,0,0,.15),0 5px 15px rgba(0,0,0,.07),0 2px 5px -5px rgba(0,0,0,.1)!important}.toc-widget .toc-title{margin:35px 0 15px 0;padding-left:17px;font-size:1.5rem;font-weight:700;line-height:1.5rem;color:tomato}.toc-widget ol{padding:0;list-style:none}#toc-content{height:calc(100vh - 250px);overflow:auto}#toc-content ol{padding-left:10px}#toc-content ol li{padding-left:10px}#toc-content .toc-link:hover{color:#70e1f5!important;font-weight:900;font-size:18px;text-decoration:underline;text-decoration:none}#toc-content .toc-link::before{background-color:transparent;max-height:25px;position:absolute;right:23.5vw;display:block}#toc-content .is-active-link{color:#70e1f5}#floating-toc-btn{position:fixed;right:15px;bottom:76px;padding-top:15px;margin-bottom:0;z-index:998}#floating-toc-btn .btn-floating{width:48px;height:48px}#floating-toc-btn .btn-floating i{line-height:48px;font-size:1.4rem}</style><div class="row"><div id="main-content" class="col s12 m12 l9"><div id="artDetail"><div class="card"><div class="card-content article-info"><div class="row tag-cate"><div class="col s7"><div class="article-tag"><a href="/tags/Javascript/"><span class="chip bg-color">Javascript</span></a></div></div><div class="col s5 right-align"><div class="post-cate"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/JavaScript/" class="post-category">JavaScript</a> <a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="post-category">JavaScript高级程序设计</a></div></div></div><div class="post-info"><div class="post-date info-break-policy"><i class="far fa-calendar-minus fa-fw"></i> 发布日期:&nbsp;&nbsp; 2020-11-23</div><div class="post-date info-break-policy"><i class="far fa-calendar-check fa-fw"></i> 更新日期:&nbsp;&nbsp; 2020-11-23</div><div class="info-break-policy"><i class="far fa-file-word fa-fw"></i> 文章字数:&nbsp;&nbsp; 3.5k</div><div class="info-break-policy"><i class="far fa-clock fa-fw"></i> 阅读时长:&nbsp;&nbsp; 14 分</div><div id="busuanzi_container_page_pv" class="info-break-policy"><i class="far fa-eye fa-fw"></i> 阅读次数:&nbsp;&nbsp;<span id="busuanzi_value_page_pv"></span></div></div></div><hr class="clearfix"><div class="card-content article-card-content"><div id="articleContent"><h1 id="迭代器与生成器"><a href="#迭代器与生成器" class="headerlink" title="迭代器与生成器"></a>迭代器与生成器</h1><p>迭代的英文“iteration”源自拉丁文 itero，意思是“重复”或“再来”。软件开发领域，“迭代”的意思是按照顺序反复多次执行一段程序，通常会有明确的终止条件。ECMAScript 6 规范新增了两个高级特性：迭代器和生成器。使用这两个特性，能够更清晰、高效、方便地实现迭代。</p><p>上篇: <strong><a href="a0011">集合引用类型(八) 迭代与扩展操作</a></strong><br>本篇: <strong>迭代器与生成器(一) 迭代器</strong><br>下篇: <strong><a href="a0013">迭代器与生成器(二) 生成器</a></strong></p><p><strong><a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">JavaScript高级程序设计</a></strong> 全部合集</p><hr><h2 id="理解迭代"><a href="#理解迭代" class="headerlink" title="理解迭代"></a>理解迭代</h2><p>在 JavaScript 中，计数循环就是一种最简单的迭代：</p><pre><code>for (let i = 1; i &lt;= 10; ++i) {
+    console.log(i);
+} </code></pre><p>循环是迭代机制的基础，这是因为它可以指定迭代的次数，以及每次迭代要执行什么操作。每次循环都会在下一次迭代开始之前完成，而每次迭代的顺序都是事先定义好的。</p><p>数组是 JavaScript 中有序集合的最典型例子。</p><pre><code>let collection = ['foo', 'bar', 'baz'];
+for (let index = 0; index &lt; collection.length; ++index) {
+console.log(collection[index]);
+} </code></pre><p>因为数组有已知的长度，且数组每一项都可以通过索引获取，所以整个数组可以通过递增索引来遍历。由于如下原因，通过这种循环来执行例程并不理想。</p><ol><li><p>迭代之前需要事先知道如何使用数据结构。数组中的每一项都只能先通过引用取得数组对象，<br>然后再通过[]操作符取得特定索引位置上的项。这种情况并不适用于所有数据结构。</p></li><li><p>遍历顺序并不是数据结构固有的。通过递增索引来访问数据是特定于数组类型的方式，并不适<br>用于其他具有隐式顺序的数据结构。</p></li></ol><h2 id="迭代器模式"><a href="#迭代器模式" class="headerlink" title="迭代器模式"></a>迭代器模式</h2><p>迭代器模式（特别是在 ECMAScript 这个语境下）描述了一个方案，即可以把有些结构称为“可迭代对象”（iterable），因为它们实现了正式的 Iterable 接口，而且可以通过迭代器 Iterator 消费。</p><p>可迭代对象是一种抽象的说法。基本上，可以把可迭代对象理解成数组或集合这样的集合类型的对象。它们包含的元素都是有限的，而且都具有无歧义的遍历顺序：</p><pre><code>// 数组的元素是有限的
+// 递增索引可以按序访问每个元素
+let arr = [3, 1, 4];
+
+// 集合的元素是有限的
+// 可以按插入顺序访问每个元素
+let set = new Set().add(3).add(1).add(4); </code></pre><p>不过，可迭代对象不一定是集合对象，也可以是仅仅具有类似数组行为的其他数据结构，比如本章开头提到的计数循环。该循环中生成的值是暂时性的，但循环本身是在执行迭代。计数循环和数组都具有可迭代对象的行为。</p><p><strong>注意</strong> 临时性可迭代对象可以实现为生成器</p><p>任何实现 Iterable 接口的数据结构都可以被实现 Iterator 接口的结构“消费”（consume）。迭代器（iterator）是按需创建的一次性对象。每个迭代器都会关联一个可迭代对象，而迭代器会暴露迭代其关联可迭代对象的 API。迭代器无须了解与其关联的可迭代对象的结构，只需要知道如何取得连续的值。这种概念上的分离正是 Iterable 和 Iterator 的强大之处。</p><h3 id="可迭代协议"><a href="#可迭代协议" class="headerlink" title="可迭代协议"></a>可迭代协议</h3><p>实现 Iterable 接口（可迭代协议）要求同时具备两种能力：支持迭代的自我识别能力和创建实现Iterator 接口的对象的能力。在 ECMAScript 中，这意味着必须暴露一个属性作为“默认迭代器”，而且这个属性必须使用特殊的 Symbol.iterator 作为键。这个默认迭代器属性必须引用一个迭代器工厂函数，调用这个工厂函数必须返回一个新迭代器。</p><p>很多内置类型都实现了 Iterable 接口：</p><ol><li>字符串</li><li>数组</li><li>映射</li><li>集合</li><li>arguments 对象</li><li>NodeList 等 DOM 集合类型</li></ol><p>检查是否存在默认迭代器属性可以暴露这个工厂函数：</p><pre><code>let num = 1;
+let obj = {};
+
+// 这两种类型没有实现迭代器工厂函数
+console.log(num[Symbol.iterator]); // undefined
+console.log(obj[Symbol.iterator]); // undefined
+
+let str = 'abc';
+let arr = ['a', 'b', 'c'];
+let map = new Map().set('a', 1).set('b', 2).set('c', 3);
+let set = new Set().add('a').add('b').add('c');
+let els = document.querySelectorAll('div');
+
+// 这些类型都实现了迭代器工厂函数
+console.log(str[Symbol.iterator]); // f values() { [native code] }
+console.log(arr[Symbol.iterator]); // f values() { [native code] }
+console.log(map[Symbol.iterator]); // f values() { [native code] }
+console.log(set[Symbol.iterator]); // f values() { [native code] }
+console.log(els[Symbol.iterator]); // f values() { [native code] }
+
+// 调用这个工厂函数会生成一个迭代器
+console.log(str[Symbol.iterator]()); // StringIterator {}
+console.log(arr[Symbol.iterator]()); // ArrayIterator {}
+console.log(map[Symbol.iterator]()); // MapIterator {}
+console.log(set[Symbol.iterator]()); // SetIterator {}
+console.log(els[Symbol.iterator]()); // ArrayIterator {} </code></pre><p>实际写代码过程中，不需要显式调用这个工厂函数来生成迭代器。实现可迭代协议的所有类型都会自动兼容接收可迭代对象的任何语言特性。接收可迭代对象的原生语言特性包括：</p><ol><li>for-of 循环</li><li>数组解构</li><li>扩展操作符</li><li>Array.from()</li><li>创建集合</li><li>创建映射</li><li>Promise.all()接收由期约组成的可迭代对象</li><li>Promise.race()接收由期约组成的可迭代对象</li><li>yield*操作符，在生成器中使用</li></ol><p>这些原生语言结构会在后台调用提供的可迭代对象的这个工厂函数，从而创建一个迭代器：</p><pre><code>let arr = ['foo', 'bar', 'baz'];
+
+// for-of 循环
+for (let el of arr) {
+    console.log(el); 
+}
+// foo
+// bar
+// baz
+
+// 数组解构
+let [a, b, c] = arr;
+console.log(a, b, c); // foo, bar, baz
+
+// 扩展操作符
+let arr2 = [...arr];
+console.log(arr2); // ['foo', 'bar', 'baz']
+
+// Array.from()
+let arr3 = Array.from(arr);
+console.log(arr3); // ['foo', 'bar', 'baz']
+
+// Set 构造函数
+let set = new Set(arr);
+console.log(set); // Set(3) {'foo', 'bar', 'baz'}
+
+// Map 构造函数
+let pairs = arr.map((x, i) =&gt; [x, i]);
+console.log(pairs); // [['foo', 0], ['bar', 1], ['baz', 2]]
+let map = new Map(pairs);
+console.log(map); // Map(3) { 'foo'=&gt;0, 'bar'=&gt;1, 'baz'=&gt;2 }</code></pre><p>如果对象原型链上的父类实现了 Iterable 接口，那这个对象也就实现了这个接口：</p><pre><code>class FooArray extends Array {}
+let fooArr = new FooArray('foo', 'bar', 'baz');
+
+for (let el of fooArr) {
+    console.log(el);
+}
+// foo
+// bar
+// baz  </code></pre><h3 id="迭代器协议"><a href="#迭代器协议" class="headerlink" title="迭代器协议"></a>迭代器协议</h3><p>迭代器是一种一次性使用的对象，用于迭代与其关联的可迭代对象。迭代器 API 使用 next()方法在可迭代对象中遍历数据。每次成功调用 next()，都会返回一个 IteratorResult 对象，其中包含迭代器返回的下一个值。若不调用 next()，则无法知道迭代器的当前位置。</p><p>next()方法返回的迭代器对象 IteratorResult 包含两个属性：done 和 value。done 是一个布尔值，表示是否还可以再次调用 next()取得下一个值；value 包含可迭代对象的下一个值（done 为false），或者 undefined（done 为 true）。done: true 状态称为“耗尽”。可以通过以下简单的数组来演示：</p><pre><code>// 可迭代对象
+let arr = ['foo', 'bar'];
+
+// 迭代器工厂函数
+console.log(arr[Symbol.iterator]); // f values() { [native code] }
+
+// 迭代器
+let iter = arr[Symbol.iterator]();
+console.log(iter); // ArrayIterator {} 
+
+// 执行迭代
+console.log(iter.next()); // { done: false, value: 'foo' }
+console.log(iter.next()); // { done: false, value: 'bar' }
+console.log(iter.next()); // { done: true, value: undefined }</code></pre><p>这里通过创建迭代器并调用 next()方法按顺序迭代了数组，直至不再产生新值。迭代器并不知道怎么从可迭代对象中取得下一个值，也不知道可迭代对象有多大。只要迭代器到达 done: true 状态，后续调用 next()就一直返回同样的值了：</p><pre><code>let arr = ['foo'];
+let iter = arr[Symbol.iterator]();
+console.log(iter.next()); // { done: false, value: 'foo' }
+console.log(iter.next()); // { done: true, value: undefined }
+console.log(iter.next()); // { done: true, value: undefined }
+console.log(iter.next()); // { done: true, value: undefined } </code></pre><p>每个迭代器都表示对可迭代对象的一次性有序遍历。不同迭代器的实例相互之间没有联系，只会独立地遍历可迭代对象：</p><pre><code>let arr = ['foo', 'bar'];
+let iter1 = arr[Symbol.iterator]();
+let iter2 = arr[Symbol.iterator]();
+
+console.log(iter1.next()); // { done: false, value: 'foo' }
+console.log(iter2.next()); // { done: false, value: 'foo' }
+console.log(iter2.next()); // { done: false, value: 'bar' }
+console.log(iter1.next()); // { done: false, value: 'bar' }</code></pre><p>迭代器并不与可迭代对象某个时刻的快照绑定，而仅仅是使用游标来记录遍历可迭代对象的历程。如果可迭代对象在迭代期间被修改了，那么迭代器也会反映相应的变化：</p><pre><code>    let arr = ['foo', 'baz'];
+    let iter = arr[Symbol.iterator]();
+
+    console.log(iter.next()); // { done: false, value: 'foo' }
+
+    // 在数组中间插入值
+    arr.splice(1, 0, 'bar');
+
+    console.log(iter.next()); // { done: false, value: 'bar' }
+    console.log(iter.next()); // { done: false, value: 'baz' }
+    console.log(iter.next()); // { done: true, value: undefined } </code></pre><p><strong>注意</strong> 迭代器维护着一个指向可迭代对象的引用，因此迭代器会阻止垃圾回收程序回收可迭代对象。</p><p>“迭代器”的概念有时候容易模糊，因为它可以指通用的迭代，也可以指接口，还可以指正式的迭代器类型。下面的例子比较了一个显式的迭代器实现和一个原生的迭代器实现。</p><pre><code>// 这个类实现了可迭代接口（Iterable）
+// 调用默认的迭代器工厂函数会返回
+// 一个实现迭代器接口（Iterator）的迭代器对象
+class Foo {
+    [Symbol.iterator]() {
+        return {
+            next() {
+                return { done: false, value: 'foo' };
+            }
+        }
+    }
+}
+let f = new Foo(); 
+
+// 打印出实现了迭代器接口的对象
+console.log(f[Symbol.iterator]()); // { next: f() {} } 
+
+// Array 类型实现了可迭代接口（Iterable）
+// 调用 Array 类型的默认迭代器工厂函数
+// 会创建一个 ArrayIterator 的实例
+let a = new Array();
+
+// 打印出 ArrayIterator 的实例
+console.log(a[Symbol.iterator]()); // Array Iterator {} </code></pre><h2 id="自定义迭代器"><a href="#自定义迭代器" class="headerlink" title="自定义迭代器"></a>自定义迭代器</h2><p>与 Iterable 接口类似，任何实现 Iterator 接口的对象都可以作为迭代器使用。下面这个例子中的 Counter 类只能被迭代一定的次数：</p><pre><code>class Counter {
+    // Counter 的实例应该迭代 limit 次
+    constructor(limit) {
+        this.count = 1;
+        this.limit = limit;
+    }
+
+    next() {
+        if (this.count &lt;= this.limit) {
+            return { done: false, value: this.count++ };
+        } else {
+            return { done: true, value: undefined };
+        }
+    }
+    [Symbol.iterator]() {
+        return this;
+    }
+}
+
+let counter = new Counter(3);
+
+for (let i of counter) {
+    console.log(i);
+}
+// 1
+// 2
+// 3 </code></pre><p>这个类实现了 Iterator 接口，但不理想。这是因为它的每个实例只能被迭代一次：</p><pre><code>for (let i of counter) { console.log(i); } // 1 2 3
+for (let i of counter) { console.log(i); } // (nothing logged)</code></pre><p>为了让一个可迭代对象能够创建多个迭代器，必须每创建一个迭代器就对应一个新计数器。为此，可以把计数器变量放到闭包里，然后通过闭包返回迭代器：</p><pre><code>class Counter {
+    constructor(limit) {
+        this.limit = limit;
+    }
+
+    [Symbol.iterator]() {
+        let count = 1,
+        limit = this.limit;
+        return {
+            next() {
+                if (count &lt;= limit) {
+                    return { done: false, value: count++ };
+                } else {
+                    return { done: true, value: undefined };
+                }
+            }
+        };
+    }
+} 
+
+let counter = new Counter(3);
+for (let i of counter) { console.log(i); } //1 2 3
+for (let i of counter) { console.log(i); } //1 2 3</code></pre><p>每个以这种方式创建的迭代器也实现了 Iterable 接口。Symbol.iterator 属性引用的工厂函数会返回相同的迭代器：</p><pre><code>let arr = ['foo', 'bar', 'baz'];
+let iter1 = arr[Symbol.iterator]();
+
+console.log(iter1[Symbol.iterator]); // f values() { [native code] }
+let iter2 = iter1[Symbol.iterator]();
+
+console.log(iter1 === iter2); // true </code></pre><p>因为每个迭代器也实现了 Iterable 接口，所以它们可以用在任何期待可迭代对象的地方，比如for-of 循环：</p><pre><code>let arr = [3, 1, 4];
+let iter = arr[Symbol.iterator](); 
+for (let item of arr ) { console.log(item); } //3 1 4 
+for (let item of iter ) { console.log(item); } //3 1 4</code></pre><h2 id="提前终止迭代器"><a href="#提前终止迭代器" class="headerlink" title="提前终止迭代器"></a>提前终止迭代器</h2><p>可选的 return()方法用于指定在迭代器提前关闭时执行的逻辑。执行迭代的结构在想让迭代器知道它不想遍历到可迭代对象耗尽时，就可以“关闭”迭代器。可能的情况包括：</p><ol><li>for-of 循环通过 break、continue、return 或 throw 提前退出；</li><li>解构操作并未消费所有值。</li></ol><p>return()方法必须返回一个有效的 IteratorResult 对象。简单情况下，可以只返回{ done: true }。因为这个返回值只会用在生成器的上下文中，所以本章后面再讨论这种情况。</p><p>如下面的代码所示，内置语言结构在发现还有更多值可以迭代，但不会消费这些值时，会自动调用return()方法。</p><pre><code>class Counter {
+    constructor(limit) {
+        this.limit = limit;
+    }
+
+    [Symbol.iterator]() {
+        let count = 1,
+        limit = this.limit;
+
+        return {
+
+            next() {
+                if (count &lt;= limit) {
+                    return { done: false, value: count++ };
+                } else {
+                    return { done: true };
+                }
+            },
+
+            return() {
+                console.log('Exiting early');
+                return { done: true };
+            }
+        };
+    }
+} 
+
+let counter1 = new Counter(5);
+
+for (let i of counter1) {
+    if (i &gt; 2) {
+        break;
+    }
+    console.log(i);
+} 
+// 1
+// 2
+// Exiting early
+
+let counter2 = new Counter(5);
+
+try {
+    for (let i of counter2) {
+        if (i &gt; 2) {
+            throw 'err';
+        }
+        console.log(i);
+    }
+} catch(e) {}
+// 1
+// 2
+// Exiting early 
+
+let counter3 = new Counter(5);
+
+let [a, b] = counter3;
+// Exiting early</code></pre><p>如果迭代器没有关闭，则还可以继续从上次离开的地方继续迭代。比如，数组的迭代器就是不能关闭的：</p><pre><code>let a = [1, 2, 3, 4, 5];
+let iter = a[Symbol.iterator]();
+
+for (let i of iter) {
+    console.log(i);
+    if (i &gt; 2) {
+        break;
+    }
+}
+// 1
+// 2
+// 3
+
+for (let i of iter) {
+    console.log(i);
+}
+// 4
+// 5 </code></pre><p>因为 return()方法是可选的，所以并非所有迭代器都是可关闭的。要知道某个迭代器是否可关闭，可以测试这个迭代器实例的 return 属性是不是函数对象。不过，仅仅给一个不可关闭的迭代器增加这个方法并不能让它变成可关闭的。这是因为调用 return()不会强制迭代器进入关闭状态。即便如此，return()方法还是会被调用。</p><pre><code>let a = [1, 2, 3, 4, 5];
+let iter = a[Symbol.iterator]();
+
+iter.return = function() {
+    console.log('Exiting early');
+    return { done: true }; 
+};
+
+for (let i of iter) {
+    console.log(i);
+    if (i &gt; 2) {
+        break;
+    }
+}
+// 1
+// 2
+// 3
+// 提前退出
+
+for (let i of iter) {
+    console.log(i);
+}
+// 4
+// 5 </code></pre></div><hr><div class="reprint" id="reprint-statement"><div class="reprint__author"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-user">文章作者:</i></span> <span class="reprint-info"><a href="/about" rel="external nofollow noreferrer">言言子</a></span></div><div class="reprint__type"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-link">文章链接:</i></span> <span class="reprint-info"><a href="https://yanyanzio.top/posts/a0012.html">https://yanyanzio.top/posts/a0012.html</a></span></div><div class="reprint__notice"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-copyright">版权声明:</i></span> <span class="reprint-info">本博客所有文章除特別声明外，均采用 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a> 许可协议。转载请注明来源 <a href="/about" target="_blank">言言子</a> !</span></div></div><script async defer>document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }</script><div class="tag_share" style="display:block"><div class="post-meta__tag-list" style="display:inline-block"><div class="article-tag"><a href="/tags/Javascript/"><span class="chip bg-color">Javascript</span></a></div></div><div class="post_share" style="zoom:80%;width:fit-content;display:inline-block;float:right;margin:-.15rem 0"><link rel="stylesheet" href="/libs/share/css/share.min.css"><div id="article-share"><div class="social-share" data-sites="twitter,google,qq,wechat,weibo,douban" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div><script src="/libs/share/js/social-share.min.js"></script></div></div></div></div></div><style>.valine-card{margin:1.5rem auto}.valine-card .card-content{padding:20px 20px 5px 20px}#vcomments textarea{box-sizing:border-box;background:url(/medias/comment_bg.png) 100% 100% no-repeat}#vcomments p{margin:2px 2px 10px;font-size:1.05rem;line-height:1.78rem}#vcomments blockquote p{text-indent:.2rem}#vcomments a{padding:0 2px;color:#4cbf30;font-weight:500;text-decoration:none}#vcomments img{max-width:100%;height:auto;cursor:pointer}#vcomments ol li{list-style-type:decimal}#vcomments ol,ul{display:block;padding-left:2em;word-spacing:.05rem}#vcomments ul li,ol li{display:list-item;line-height:1.8rem;font-size:1rem}#vcomments ul li{list-style-type:disc}#vcomments ul ul li{list-style-type:circle}#vcomments table,td,th{padding:12px 13px;border:1px solid #dfe2e5}#vcomments table,td,th{border:0}table tr:nth-child(2n),thead{background-color:#fafafa}#vcomments table th{background-color:#f2f2f2;min-width:80px}#vcomments table td{min-width:80px}#vcomments h1{font-size:1.85rem;font-weight:700;line-height:2.2rem}#vcomments h2{font-size:1.65rem;font-weight:700;line-height:1.9rem}#vcomments h3{font-size:1.45rem;font-weight:700;line-height:1.7rem}#vcomments h4{font-size:1.25rem;font-weight:700;line-height:1.5rem}#vcomments h5{font-size:1.1rem;font-weight:700;line-height:1.4rem}#vcomments h6{font-size:1rem;line-height:1.3rem}#vcomments p{font-size:1rem;line-height:1.5rem}#vcomments hr{margin:12px 0;border:0;border-top:1px solid #ccc}#vcomments blockquote{margin:15px 0;border-left:5px solid #42b983;padding:1rem .8rem .3rem .8rem;color:#666;background-color:rgba(66,185,131,.1)}#vcomments pre{font-family:monospace,monospace;padding:1.2em;margin:.5em 0;background:#272822;overflow:auto;border-radius:.3em;tab-size:4}#vcomments code{font-family:monospace,monospace;padding:1px 3px;font-size:.92rem;color:#e96900;background-color:#f8f8f8;border-radius:2px}#vcomments pre code{font-family:monospace,monospace;padding:0;color:#e8eaf6;background-color:#272822}#vcomments pre[class*=language-]{padding:1.2em;margin:.5em 0}#vcomments code[class*=language-],pre[class*=language-]{color:#e8eaf6}#vcomments [type=checkbox]:not(:checked),[type=checkbox]:checked{position:inherit;margin-left:-1.3rem;margin-right:.4rem;margin-top:-1px;vertical-align:middle;left:unset;visibility:visible}#vcomments b,strong{font-weight:700}#vcomments dfn{font-style:italic}#vcomments small{font-size:85%}#vcomments cite{font-style:normal}#vcomments mark{background-color:#fcf8e3;padding:.2em}#vcomments table,td,th{padding:12px 13px;border:1px solid #dfe2e5}table tr:nth-child(2n),thead{background-color:#fafafa}#vcomments table th{background-color:#f2f2f2;min-width:80px}#vcomments table td{min-width:80px}#vcomments [type=checkbox]:not(:checked),[type=checkbox]:checked{position:inherit;margin-left:-1.3rem;margin-right:.4rem;margin-top:-1px;vertical-align:middle;left:unset;visibility:visible}</style><div class="card valine-card" data-aos="fade-up"><div class="comment_headling" style="font-size:20px;font-weight:700;position:relative;padding-left:20px;top:15px;padding-bottom:5px"><i class="fas fa-comments fa-fw" aria-hidden="true"></i> <span>评论</span></div><div id="vcomments" class="card-content" style="display:grid"></div></div><script src="/libs/valine/av-min.js"></script><script src="/libs/valine/Valine.min.js"></script><script>new Valine({el:"#vcomments",appId:"LCBNFKIdJy4bxPWERRqiiBC2-gzGzoHsz",appKey:"vCYXYtNrOSYE9UW0XG2K6N89",notify:!0,verify:!1,visitor:!0,avatar:"mm",pageSize:"10",lang:"zh-cn",placeholder:"正确填写邮箱才能及时回复哟！(๑╹◡╹)ﾉ&#34;&#34;&#34;"})</script><article id="prenext-posts" class="prev-next articles"><div class="row article-row"><div class="article col s12 m6" data-aos="fade-up"><div class="article-badge left-badge text-color"><i class="fas fa-chevron-left"></i> &nbsp;上一篇</div><div class="card"><a href="/posts/a0013.html"><div class="card-image"><img src="https://gitee.com/OxOYYZi/picgo/raw/master/img/illust_83285677_20201119_073959.jpg" class="responsive-img" alt="JavaScript高级语言程序设计(五)"> <span class="card-title">JavaScript高级语言程序设计(五)</span></div></a><div class="card-content article-content"><div class="summary block-with-text">JavaScript：迭代器与生成器(二) 生成器</div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i> 2020-11-23</span><span class="publish-author"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/JavaScript/" class="post-category">JavaScript</a> <a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="post-category">JavaScript高级程序设计</a></span></div></div><div class="card-action article-tags"><a href="/tags/JavaScript/"><span class="chip bg-color">JavaScript</span></a></div></div></div><div class="article col s12 m6" data-aos="fade-up"><div class="article-badge right-badge text-color">下一篇&nbsp;<i class="fas fa-chevron-right"></i></div><div class="card"><a href="/posts/a0011.html"><div class="card-image"><img src="https://gitee.com/OxOYYZi/picgo/raw/master/img/illust_85736944_20201119_074034.jpg" class="responsive-img" alt="JavaScript高级语言程序设计(四)"> <span class="card-title">JavaScript高级语言程序设计(四)</span></div></a><div class="card-content article-content"><div class="summary block-with-text">JavaScript：集合引用类型(八) 迭代与扩展操作</div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i> 2020-11-22</span><span class="publish-author"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/JavaScript/" class="post-category">JavaScript</a> <a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="post-category">JavaScript高级程序设计</a></span></div></div><div class="card-action article-tags"><a href="/tags/JavaScript/"><span class="chip bg-color">JavaScript</span></a></div></div></div></div></article></div><script>$("#articleContent").on("copy",function(e){if(void 0!==window.getSelection){var n=window.getSelection();if(!((""+n).length<Number.parseInt("120"))){var t=document.getElementsByTagName("body")[0],o=document.createElement("div");o.style.position="absolute",o.style.left="-99999px",t.appendChild(o),o.appendChild(n.getRangeAt(0).cloneContents()),"PRE"===n.getRangeAt(0).commonAncestorContainer.nodeName&&(o.innerHTML="<pre>"+o.innerHTML+"</pre>");var i=document.location.href;o.innerHTML+='<br />来源: YanYanZi<br />文章作者: 言言子哦<br />文章链接: <a href="'+i+'">'+i+"</a><br />本文章著作权归[yanyanzi]所有，任何形式的转载都请注明出处。",n.selectAllChildren(o),window.setTimeout(function(){t.removeChild(o)},200)}}})</script><script src="/libs/codeBlock/codeBlockFuction.js"></script><script src="/libs/codeBlock/codeLang.js"></script><script src="/libs/codeBlock/codeCopy.js"></script><script src="/libs/codeBlock/codeShrink.js"></script></div><div id="toc-aside" class="expanded col l3 hide-on-med-and-down"><div class="toc-widget card" style="background-color:#fff"><div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div><div id="toc-content"></div></div></div></div><div id="floating-toc-btn" class="hide-on-med-and-down"><a class="btn-floating btn-large bg-color"><i class="fas fa-list-ul"></i></a></div><script src="/libs/tocbot/tocbot.min.js"></script><script>$(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h1, h2, h3, h4, h5'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4, h5').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });</script></main><footer class="page-footer bg-color"><link rel="stylesheet" href="/libs/aplayer/APlayer.min.css"><style>.aplayer .aplayer-lrc p{display:none;font-size:12px;font-weight:700;line-height:16px!important}.aplayer .aplayer-lrc p.aplayer-lrc-current{display:none;font-size:15px;color:#42b983}.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body{left:-66px!important}.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover{left:0!important}</style><div><div class="row"><meting-js class="col l8 offset-l2 m10 offset-m1 s12" server="netease" type="playlist" id="711442804" fixed="true" autoplay theme="#42b983" loop order="list" preload="auto" volume="0.5" list-folded="false"></meting-js></div></div><script src="/libs/aplayer/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script><div class="container row center-align" style="margin-bottom:15px!important"><div class="col s12 m8 l8 copy-right">Copyright&nbsp;&copy; <span id="year">2020</span> <span id="year">2020</span> <a href="/about" target="_blank">言言子哦</a> |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a> |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a><br>&nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">68.3k</span>&nbsp;字 <span id="busuanzi_container_site_pv" style="display:none">|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv" class="white-color"></span>&nbsp;次</span> <span id="busuanzi_container_site_uv" style="display:none">|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv" class="white-color"></span>&nbsp;人</span><br><span id="sitetime">载入运行时间...</span><script>function siteTime(){var e=36e5,t=24*e,n=new Date,o="2020",r=n.getFullYear(),a=n.getMonth()+1,i=n.getDate(),l=n.getHours(),m=n.getMinutes(),M=n.getSeconds(),g=Date.UTC(o,"11","10","0","0","0"),d=Date.UTC(r,a,i,l,m,M)-g,s=Math.floor(d/31536e6),u=Math.floor(d/t-365*s),T=Math.floor((d-(365*s+u)*t)/e),c=Math.floor((d-(365*s+u)*t-T*e)/6e4),f=Math.floor((d-(365*s+u)*t-T*e-6e4*c)/1e3);o==r?(document.getElementById("year").innerHTML=r,document.getElementById("sitetime").innerHTML="本站已安全运行 "+u+" 天 "+T+" 小时 "+c+" 分钟 "+f+" 秒"):(document.getElementById("year").innerHTML=o+" - "+r,document.getElementById("sitetime").innerHTML="本站已安全运行 "+s+" 年 "+u+" 天 "+T+" 小时 "+c+" 分钟 "+f+" 秒")}setInterval(siteTime,1e3)</script><br></div><div class="col s12 m4 l4 social-link social-statis"><a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50"><i class="fab fa-github"></i></a><a href="mailto:2533313507@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50"><i class="fas fa-envelope-open"></i></a><a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2533313507" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2533313507" data-position="top" data-delay="50"><i class="fab fa-qq"></i></a></div></div></footer><div class="progress-bar"></div><script>$(document).ready(function(){var e=setInterval(function(){"none"!=document.getElementById("busuanzi_container_site_pv").style.display&&($("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html())+n),clearInterval(e));"none"!=$("#busuanzi_container_site_pv").css("display")&&($("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html())+t),clearInterval(e))},50),n=10,t=10})</script><div id="searchModal" class="modal"><div class="modal-content"><div class="search-header"><span class="title"><i class="fas fa-search"></i> &nbsp;&nbsp;搜索</span> <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字" class="search-input"></div><div id="searchResult"></div></div></div><script src="/js/search.js"></script><script>$(function(){searchFunc("/search.xml","searchInput","searchResult")})</script><div id="backTop" class="top-scroll"><a class="btn-floating btn-large waves-effect waves-light" href="#!"><i class="fas fa-arrow-up"></i></a></div><script src="/libs/materialize/materialize.min.js"></script><script src="/libs/masonry/masonry.pkgd.min.js"></script><script src="/libs/aos/aos.js"></script><script src="/libs/scrollprogress/scrollProgress.min.js"></script><script src="/libs/lightGallery/js/lightgallery-all.min.js"></script><script src="/js/matery.js"></script><script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script><script src="/libs/others/clicklove.js" async></script><script async src="/libs/others/busuanzi.pure.mini.js"></script><script src="//code.tidio.co/hpjvn6njlytsk0ywhqouw4gdndraakka.js"></script><script>$(document).ready(function(){setInterval(function(){var t=$("#tidio-chat iframe");"block"==t.css("display")&&977<$(window).width()?(document.getElementById("tidio-chat-iframe").style.bottom=0<("none"==$("div#backTop.top-scroll").css("display")&&977<$(window).width())?"-40px":0<($("div.toc-title").length&&977<$(window).width())?"85px":"20px",document.getElementById("tidio-chat-iframe").style.right="-15px",document.getElementById("tidio-chat-iframe").style.height=520<=parseInt(t.css("height"))?"520px":t.css("height"),document.getElementById("tidio-chat-iframe").style.zIndex="997"):"block"==t.css("display")&&601<$(window).width()&&$(window).width()<992?(document.getElementById("tidio-chat-iframe").style.bottom=0<("none"==$("div#backTop.top-scroll").css("display")&&601<$(window).width()<992)?"-40px":"20px",document.getElementById("tidio-chat-iframe").style.right="-15px",document.getElementById("tidio-chat-iframe").style.zIndex="997"):"block"==t.css("display")&&$(window).width()<601&&parseInt(t.css("height"))<230&&(document.getElementById("tidio-chat-iframe").style.bottom=0<("none"==$("div#backTop.top-scroll").css("display")&&$(window).width()<601)?"-10px":"45px",document.getElementById("tidio-chat-iframe").style.zIndex="997");"block"==t.css("display")&&$(window).width()<601&&230<=parseInt(t.css("height"))&&(document.getElementById("tidio-chat-iframe").style.zIndex="998")},50)})</script><script src="/libs/instantpage/instantpage.js" type="module"></script></body></html>
