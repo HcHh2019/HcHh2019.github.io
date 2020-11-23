@@ -1,0 +1,439 @@
+<!DOCTYPE HTML><html lang="zh-CN"><head><meta charset="utf-8"><meta name="keywords" content="JavaScript高级语言程序设计(六), Hexo"><meta name="description" content="欢迎来到我的小破站(๑╹◡╹)ﾉ&#34;&#34;&#34;"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><meta name="renderer" content="webkit|ie-stand|ie-comp"><meta name="mobile-web-app-capable" content="yes"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><title>JavaScript高级语言程序设计(六) | YanYanZi</title><link rel="icon" type="image/jpeg" href="https://gitee.com/OxOYYZi/picgo/raw/master/img/3.jpg"><link rel="stylesheet" href="/libs/awesome/css/all.css"><link rel="stylesheet" href="/libs/materialize/materialize.min.css"><link rel="stylesheet" href="/libs/aos/aos.css"><link rel="stylesheet" href="/libs/animate/animate.min.css"><link rel="stylesheet" href="/libs/lightGallery/css/lightgallery.min.css"><link rel="stylesheet" href="/css/matery.css"><link rel="stylesheet" href="/css/my.css"><script src="/libs/jquery/jquery.min.js"></script><meta name="generator" content="Hexo 5.2.0"><style>.github-emoji{position:relative;display:inline-block;width:1.2em;min-height:1.2em;overflow:hidden;vertical-align:top;color:transparent}.github-emoji>span{position:relative;z-index:10}.github-emoji .fancybox,.github-emoji img{margin:0!important;padding:0!important;border:none!important;outline:0!important;text-decoration:none!important;user-select:none!important;cursor:auto!important}.github-emoji img{height:1.2em!important;width:1.2em!important;position:absolute!important;left:50%!important;top:50%!important;transform:translate(-50%,-50%)!important;user-select:none!important;cursor:auto!important}.github-emoji-fallback{color:inherit}.github-emoji-fallback img{opacity:0!important}</style><link rel="alternate" href="/atom.xml" title="YanYanZi" type="application/atom+xml"><link rel="stylesheet" href="/css/prism.css"></head><body><header class="navbar-fixed"><nav id="headNav" class="bg-color nav-transparent"><div id="navContainer" class="nav-wrapper container"><div class="brand-logo"><a href="/" class="waves-effect waves-light"><img src="https://gitee.com/OxOYYZi/picgo/raw/master/img/3.jpg" class="logo-img" alt="LOGO"> <span class="logo-span">YanYanZi</span></a></div><a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a><ul class="right nav-menu"><li class="hide-on-med-and-down nav-item"><a href="/" class="waves-effect waves-light"><i class="fas fa-book-dead" style="zoom:.6"></i> <span>主页</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/tags" class="waves-effect waves-light"><i class="fas fa-book-medical" style="zoom:.6"></i> <span>标签</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/categories" class="waves-effect waves-light"><i class="fas fa-quran" style="zoom:.6"></i> <span>分类</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/archives" class="waves-effect waves-light"><i class="fas fa-atlas" style="zoom:.6"></i> <span>文章</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/about" class="waves-effect waves-light"><i class="fas fa-bible" style="zoom:.6"></i> <span>MI</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/contact" class="waves-effect waves-light"><i class="fas fa-journal-whills" style="zoom:.6"></i> <span>LINK</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/friends" class="waves-effect waves-light"><i class="fas fa-torah" style="zoom:.6"></i> <span>FRIENDS</span></a></li><li><a href="#searchModal" class="modal-trigger waves-effect waves-light"><i id="searchIcon" class="fas fa-search" title="搜索" style="zoom:.85"></i></a></li></ul><div id="mobile-nav" class="side-nav sidenav"><div class="mobile-head bg-color"><img src="https://gitee.com/OxOYYZi/picgo/raw/master/img/3.jpg" class="logo-img circle responsive-img"><div class="logo-name">YanYanZi</div><div class="logo-desc">欢迎来到我的小破站(๑╹◡╹)ﾉ&#34;&#34;&#34;</div></div><ul class="menu-list mobile-menu-list"><li class="m-nav-item"><a href="/" class="waves-effect waves-light"><i class="fa-fw fas fa-book-dead"></i> 主页</a></li><li class="m-nav-item"><a href="/tags" class="waves-effect waves-light"><i class="fa-fw fas fa-book-medical"></i> 标签</a></li><li class="m-nav-item"><a href="/categories" class="waves-effect waves-light"><i class="fa-fw fas fa-quran"></i> 分类</a></li><li class="m-nav-item"><a href="/archives" class="waves-effect waves-light"><i class="fa-fw fas fa-atlas"></i> 文章</a></li><li class="m-nav-item"><a href="/about" class="waves-effect waves-light"><i class="fa-fw fas fa-bible"></i> MI</a></li><li class="m-nav-item"><a href="/contact" class="waves-effect waves-light"><i class="fa-fw fas fa-journal-whills"></i> LINK</a></li><li class="m-nav-item"><a href="/friends" class="waves-effect waves-light"><i class="fa-fw fas fa-torah"></i> FRIENDS</a></li><li><div class="divider"></div></li><li><a href="https://github.com/HcHh2019/HcHh2019.github.io" class="waves-effect waves-light" target="_blank"><i class="fab fa-github-square fa-fw"></i> Fork Me</a></li></ul></div></div><style>.nav-transparent .github-corner{display:none!important}.github-corner{position:absolute;z-index:10;top:0;right:0;border:0;transform:scale(1.1)}.github-corner svg{color:#0f9d58;fill:#fff;height:64px;width:64px}.github-corner:hover .octo-arm{animation:a .56s ease-in-out}.github-corner .octo-arm{animation:none}@keyframes a{0%,to{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}</style><a href="https://github.com/HcHh2019/HcHh2019.github.io" class="github-corner tooltipped hide-on-med-and-down" target="_blank" data-tooltip="Fork Me" data-position="left" data-delay="50"><svg viewBox="0 0 250 250" aria-hidden="true"><path d="M0 0 115 115 130 115 142 142 250 250 250 0Z"></path><path d="M128.3 109C113.8 99.7 119 89.6 119 89.6 122 82.7 120.5 78.6 120.5 78.6 119.2 72 123.4 76.3 123.4 76.3 127.3 80.9 125.5 87.3 125.5 87.3 122.9 97.6 130.6 101.9 134.4 103.2" fill="currentColor" style="transform-origin:130px 106px" class="octo-arm"></path><path d="M115 115C114.9 115.1 118.7 116.5 119.8 115.4L133.7 101.6C136.9 99.2 139.9 98.4 142.2 98.6 133.8 88 127.5 74.4 143.8 58 148.5 53.4 154 51.2 159.7 51 160.3 49.4 163.2 43.6 171.4 40.1 171.4 40.1 176.1 42.5 178.8 56.2 183.1 58.6 187.2 61.8 190.9 65.4 194.5 69 197.7 73.2 200.1 77.6 213.8 80.2 216.3 84.9 216.3 84.9 212.7 93.1 206.9 96 205.4 96.6 205.1 102.4 203 107.8 198.3 112.5 181.9 128.9 168.3 122.5 157.7 114.1 157.9 116.9 156.7 120.9 152.7 124.9L141 136.5C139.8 137.7 141.6 141.9 141.8 141.8Z" fill="currentColor" class="octo-body"></path></svg></a></nav></header><div class="bg-cover pd-header post-cover" style="background-image:url(https://gitee.com/OxOYYZi/picgo/raw/master/img/illust_56316511_20201119_073900.jpg)"><div class="container" style="right:0;left:0"><div class="row"><div class="col s12 m12 l12"><div class="brand"><h1 class="description center-align post-title">JavaScript高级语言程序设计(六)</h1></div></div></div></div></div><main class="post-container content"><link rel="stylesheet" href="/libs/tocbot/tocbot.css"><style>#articleContent h1::before,#articleContent h2::before,#articleContent h3::before,#articleContent h4::before,#articleContent h5::before,#articleContent h6::before{display:block;content:" ";height:100px;margin-top:-100px;visibility:hidden}#articleContent :focus{outline:0}.toc-fixed{position:fixed;top:64px}.toc-widget{width:345px;padding-left:20px;background-color:rgb(255,255,255,.3)!important;border-radius:10px;box-shadow:0 10px 35px 2px rgba(0,0,0,.15),0 5px 15px rgba(0,0,0,.07),0 2px 5px -5px rgba(0,0,0,.1)!important}.toc-widget .toc-title{margin:35px 0 15px 0;padding-left:17px;font-size:1.5rem;font-weight:700;line-height:1.5rem;color:tomato}.toc-widget ol{padding:0;list-style:none}#toc-content{height:calc(100vh - 250px);overflow:auto}#toc-content ol{padding-left:10px}#toc-content ol li{padding-left:10px}#toc-content .toc-link:hover{color:#70e1f5!important;font-weight:900;font-size:18px;text-decoration:underline;text-decoration:none}#toc-content .toc-link::before{background-color:transparent;max-height:25px;position:absolute;right:23.5vw;display:block}#toc-content .is-active-link{color:#70e1f5}#floating-toc-btn{position:fixed;right:15px;bottom:76px;padding-top:15px;margin-bottom:0;z-index:998}#floating-toc-btn .btn-floating{width:48px;height:48px}#floating-toc-btn .btn-floating i{line-height:48px;font-size:1.4rem}</style><div class="row"><div id="main-content" class="col s12 m12 l9"><div id="artDetail"><div class="card"><div class="card-content article-info"><div class="row tag-cate"><div class="col s7"><div class="article-tag"><a href="/tags/JavaScript/"><span class="chip bg-color">JavaScript</span></a></div></div><div class="col s5 right-align"><div class="post-cate"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/JavaScript/" class="post-category">JavaScript</a> <a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="post-category">JavaScript高级程序设计</a></div></div></div><div class="post-info"><div class="post-date info-break-policy"><i class="far fa-calendar-minus fa-fw"></i> 发布日期:&nbsp;&nbsp; 2020-11-23</div><div class="post-date info-break-policy"><i class="far fa-calendar-check fa-fw"></i> 更新日期:&nbsp;&nbsp; 2020-11-23</div><div class="info-break-policy"><i class="far fa-file-word fa-fw"></i> 文章字数:&nbsp;&nbsp; 4.4k</div><div class="info-break-policy"><i class="far fa-clock fa-fw"></i> 阅读时长:&nbsp;&nbsp; 17 分</div><div id="busuanzi_container_page_pv" class="info-break-policy"><i class="far fa-eye fa-fw"></i> 阅读次数:&nbsp;&nbsp;<span id="busuanzi_value_page_pv"></span></div></div></div><hr class="clearfix"><div class="card-content article-card-content"><div id="articleContent"><h1 id="对象、类与面向对象编程"><a href="#对象、类与面向对象编程" class="headerlink" title="对象、类与面向对象编程"></a>对象、类与面向对象编程</h1><p>ECMA-262 将对象定义为一组属性的无序集合。严格来说，这意味着对象就是一组没有特定顺序的值。对象的每个属性或方法都由一个名称来标识，这个名称映射到一个值。正因为如此可以把 ECMAScript 的对象想象成一张散列表，其中的内容就是一组名/值对，值可以是数据或者函数。</p><p>上篇: <strong><a href="a0013">迭代器与生成器(二) 生成器</a></strong><br>本篇: <strong>对象、类与面向对象编程(一) 理解对象</strong><br>下篇: <strong><a href="a0015">对象、类与面向对象编程(二) 创建对象</a></strong></p><p><strong><a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">JavaScript高级程序设计</a></strong> 全部合集</p><hr><h1 id="理解对象"><a href="#理解对象" class="headerlink" title="理解对象"></a>理解对象</h1><p>创建自定义对象的通常方式是创建 Object 的一个新实例，然后再给它添加属性和方法，如下例所示：</p><pre><code>let person = new Object();
+person.name = "Nicholas";
+person.age = 29;
+person.job = "Software Engineer";
+person.sayName = function() {
+    console.log(this.name);
+}; </code></pre><p>前面的例子如果使用对象字面量则可以这样写：</p><pre><code>let person = {
+    name: "Nicholas",
+    age: 29,
+    job: "Software Engineer",
+    sayName() {
+        console.log(this.name);
+    }
+}; </code></pre><h2 id="属性的类型"><a href="#属性的类型" class="headerlink" title="属性的类型"></a>属性的类型</h2><p>ECMA-262 使用一些内部特性来描述属性的特征。这些特性是由为 JavaScript 实现引擎的规范定义的。因此，开发者不能在 JavaScript 中直接访问这些特性。为了将某个特性标识为内部特性，规范会用两个中括号把特性的名称括起来，比如[[ Enumerable]]。</p><p>属性分两种：数据属性和访问器属性。</p><h3 id="数据属性"><a href="#数据属性" class="headerlink" title="数据属性"></a>数据属性</h3><p>数据属性包含一个保存数据值的位置。值会从这个位置读取，也会写入到这个位置。数据属性有 4个特性描述它们的行为。</p><ol><li><p>[[ Configurable]]：表示属性是否可以通过 delete 删除并重新定义，是否可以修改它的特性，以及是否可以把它改为访问器属性。默认情况下，所有直接定义在对象上的属性的这个特<br>性都是 true，如前面的例子所示。</p></li><li><p>[[ Enumerable]]：表示属性是否可以通过 for-in 循环返回。默认情况下，所有直接定义在对象上的属性的这个特性都是 true，如前面的例子所示。</p></li><li><p>[[ Writable]]：表示属性的值是否可以被修改。默认情况下，所有直接定义在对象上的属性的这个特性都是 true，如前面的例子所示。</p></li><li><p>[[ Value]]：包含属性实际的值。这就是前面提到的那个读取和写入属性值的位置。这个特性的默认值为 undefined。</p></li></ol><p>要修改属性的默认特性，就必须使用 Object.defineProperty()方法。这个方法接收 3 个参数：要给其添加属性的对象、属性的名称和一个描述符对象。最后一个参数，即描述符对象上的属性可以包含：configurable、enumerable、writable 和 value，跟相关特性的名称一一对应。根据要修改的特性，可以设置其中一个或多个值。比如：</p><pre><code>let person = {};
+Object.defineProperty(person, "name", {
+    writable: false,
+    value: "Nicholas"
+});
+
+console.log(person.name); // "Nicholas"
+person.name = "Greg";
+console.log(person.name); // "Nicholas" </code></pre><p>这个例子创建了一个名为 name 的属性并给它赋予了一个只读的值”Nicholas”。这个属性的值就<br>不能再修改了，在非严格模式下尝试给这个属性重新赋值会被忽略。在严格模式下，尝试修改只读属性的值会抛出错误。</p><p>类似的规则也适用于创建不可配置的属性。比如：</p><pre><code>let person = {};
+Object.defineProperty(person, "name", {
+configurable: false,
+value: "Nicholas"
+});
+console.log(person.name); // "Nicholas"
+delete person.name;
+console.log(person.name); // "Nicholas"</code></pre><p>这个例子把 configurable 设置为 false，意味着这个属性不能从对象上删除。非严格模式下对这个属性调用 delete 没有效果，严格模式下会抛出错误。此外，一个属性被定义为不可配置之后，就不能再变回可配置的了。再次调用 Object.defineProperty()并修改任何非 writable 属性会导致错误：</p><pre><code>let person = {};
+Object.defineProperty(person, "name", {
+configurable: false,
+value: "Nicholas"
+});
+// 抛出错误
+Object.defineProperty(person, "name", {
+configurable: true,
+value: "Nicholas"
+}); </code></pre><p>因此，虽然可以对同一个属性多次调用 Object.defineProperty()，但在把 configurable 设置为 false 之后就会受限制了。</p><p>在调用 Object.defineProperty()时，configurable、enumerable 和 writable 的值如果不指定，则都默认为 false。多数情况下，可能都不需要 Object.defineProperty()提供的这些强大的设置，但要理解 JavaScript 对象，就要理解这些概念。</p><h3 id="访问器属性"><a href="#访问器属性" class="headerlink" title="访问器属性"></a>访问器属性</h3><p>访问器属性不包含数据值。相反，它们包含一个获取（getter）函数和一个设置（setter）函数，不过这两个函数不是必需的。在读取访问器属性时，会调用获取函数，这个函数的责任就是返回一个有效的值。在写入访问器属性时，会调用设置函数并传入新值，这个函数必须决定对数据做出什么修改。访问器属性有 4 个特性描述它们的行为。</p><ol><li><p>[[ Configurable]]：表示属性是否可以通过 delete 删除并重新定义，是否可以修改它的特性，以及是否可以把它改为数据属性。默认情况下，所有直接定义在对象上的属性的这个特性都是 true。</p></li><li><p>[[ Enumerable]]：表示属性是否可以通过 for-in 循环返回。默认情况下，所有直接定义在对象上的属性的这个特性都是 true。</p></li><li><p>[[ Get]]：获取函数，在读取属性时调用。默认值为 undefined。</p></li><li><p>[[ Set]]：设置函数，在写入属性时调用。默认值为 undefined。</p></li></ol><p>访问器属性是不能直接定义的，必须使用 Object.defineProperty()。下面是一个例子：</p><pre><code>// 定义一个对象，包含伪私有成员 year_和公共成员 edition
+let book = {
+    year_: 2017,
+    edition: 1 
+};
+
+Object.defineProperty(book, "year", {
+    get() {
+        return this.year_;
+    },
+    set(newValue) {
+        if (newValue &gt; 2017) {
+            this.year_ = newValue;
+            this.edition += newValue - 2017;
+        }
+    }
+});
+book.year = 2018;
+console.log(book.edition); // 2 </code></pre><p>在这个例子中，对象 book 有两个默认属性：year_和 edition。year_中的下划线常用来表示该属性并不希望在对象方法的外部被访问。另一个属性 year 被定义为一个访问器属性，其中获取函数简单地返回 year_的值，而设置函数会做一些计算以决定正确的版本（edition）。因此，把 year 属性修改为 2018 会导致 year_变成 2018，edition 变成 2。这是访问器属性的典型使用场景，即设置一个属性值会导致一些其他变化发生。</p><p>获取函数和设置函数不一定都要定义。只定义获取函数意味着属性是只读的，尝试修改属性会被忽略。在严格模式下，尝试写入只定义了获取函数的属性会抛出错误。类似地，只有一个设置函数的属性是不能读取的，非严格模式下读取会返回 undefined，严格模式下会抛出错误。</p><h2 id="定义多个属性"><a href="#定义多个属性" class="headerlink" title="定义多个属性"></a>定义多个属性</h2><p>在一个对象上同时定义多个属性的可能性是非常大的。为此，ECMAScript 提供了 Object.defineProperties()方法。这个方法可以通过多个描述符一次性定义多个属性。它接收两个参数：要为之添加或修改属性的对象和另一个描述符对象，其属性与要添加或修改的属性一一对应。比如：</p><pre><code>let book = {};
+
+Object.defineProperties(book, {
+    year_: {
+        value: 2017
+    },
+
+    edition: {
+        value: 1
+    },
+
+    year: {
+        get() {
+            return this.year_;
+        },
+        set(newValue) {
+            if (newValue &gt; 2017) {
+                this.year_ = newValue;
+                this.edition += newValue - 2017;
+            }
+        }
+    }
+}); </code></pre><p>这段代码在 book 对象上定义了两个数据属性 year_和 edition，还有一个访问器属性 year。最终的对象跟上一节示例中的一样。唯一的区别是所有属性都是同时定义的，并且数据属性的configurable、enumerable 和 writable 特性值都是 false。</p><h2 id="读取属性的特性"><a href="#读取属性的特性" class="headerlink" title="读取属性的特性"></a>读取属性的特性</h2><p>使用 Object.getOwnPropertyDescriptor()方法可以取得指定属性的属性描述符。这个方法接收两个参数：属性所在的对象和要取得其描述符的属性名。返回值是一个对象，对于访问器属性包含configurable、enumerable、get 和 set 属性，对于数据属性包含 configurable、enumerable、writable 和 value 属性。比如：</p><pre><code>let book = {};
+Object.defineProperties(book, {
+    year_: {
+        value: 2017
+    },
+
+    edition: {
+        value: 1
+    },
+
+    year: {
+        get: function() {
+            return this.year_;
+        },
+        set: function(newValue){
+            if (newValue &gt; 2017) {
+                this.year_ = newValue;
+                this.edition += newValue - 2017;
+            }
+        }
+    }
+}); 
+
+let descriptor = Object.getOwnPropertyDescriptor(book, "year_");
+console.log(descriptor.value); // 2017
+console.log(descriptor.configurable); // false
+console.log(typeof descriptor.get); // "undefined"
+
+let descriptor = Object.getOwnPropertyDescriptor(book, "year");
+console.log(descriptor.value); // undefined
+console.log(descriptor.enumerable); // false
+console.log(typeof descriptor.get); // "function" </code></pre><h2 id="合并对象"><a href="#合并对象" class="headerlink" title="合并对象"></a>合并对象</h2><p>JavaScript 开发者经常觉得“合并”（merge）两个对象很有用。更具体地说，就是把源对象所有的本地属性一起复制到目标对象上。有时候这种操作也被称为“混入”（mixin），因为目标对象通过混入源对象的属性得到了增强。</p><p>ECMAScript 6 专门为合并对象提供了 Object.assign()方法。这个方法接收一个目标对象和一个或多个源对象作为参数，然后将每个源对象中可枚举（Object.propertyIsEnumerable()返回 true）和自有（Object.hasOwnProperty()返回 true）属性复制到目标对象。以字符串和符号为键的属性会被复制。对每个符合条件的属性，这个方法会使用源对象上的[[ Get]]取得属性的值，然后使用目标对象上的[[ Set]]设置属性的值。</p><pre><code>let dest, src, result;
+
+/**
+* 简单复制
+*/
+
+dest = {};
+src = { id: 'src' };
+result = Object.assign(dest, src); 
+
+// Object.assign 修改目标对象
+// 也会返回修改后的目标对象
+console.log(dest === result); // true
+console.log(dest !== src); // true
+console.log(result); // { id: src }
+console.log(dest); // { id: src } 
+
+/**
+* 多个源对象
+*/
+dest = {};
+result = Object.assign(dest, { a: 'foo' }, { b: 'bar' });
+console.log(result); // { a: foo, b: bar }
+
+/**
+* 获取函数与设置函数
+*/
+dest = {
+    set a(val) {
+        console.log(`Invoked dest setter with param ${val}`);
+    }
+};
+
+src = {
+    get a() {
+        console.log('Invoked src getter');
+        return 'foo';
+    }
+}; 
+
+Object.assign(dest, src);
+// 调用 src 的获取方法
+// 调用 dest 的设置方法并传入参数"foo"
+// 因为这里的设置函数不执行赋值操作
+// 所以实际上并没有把值转移过来
+
+console.log(dest); // { set a(val) {...} } </code></pre><p>Object.assign()实际上对每个源对象执行的是浅复制。如果多个源对象都有相同的属性，则使用最后一个复制的值。此外，从源对象访问器属性取得的值，比如获取函数，会作为一个静态值赋给目标对象。换句话说，不能在两个对象间转移获取函数和设置函数。</p><pre><code>let dest, src, result;、
+
+/**
+* 覆盖属性
+*/
+
+dest = { id: 'dest' };
+result = Object.assign(dest, { id: 'src1', a: 'foo' }, { id: 'src2', b: 'bar' });
+
+// Object.assign 会覆盖重复的属性
+console.log(result); // { id: src2, a: foo, b: bar }
+
+// 可以通过目标对象上的设置函数观察到覆盖的过程：
+dest = {
+    set id(x) {
+        console.log(x);
+    }
+};
+Object.assign(dest, { id: 'first' }, { id: 'second' }, { id: 'third' });
+// first
+// second
+// third 
+
+/**
+* 对象引用
+*/
+
+dest = {};
+src = { a: {} };
+
+Object.assign(dest, src);
+
+// 浅复制意味着只会复制对象的引用
+console.log(dest); // { a :{} }
+console.log(dest.a === src.a); // true </code></pre><p>如果赋值期间出错，则操作会中止并退出，同时抛出错误。Object.assign()没有“回滚”之前赋值的概念，因此它是一个尽力而为、可能只会完成部分复制的方法。</p><pre><code>let dest, src, result;
+
+/**
+* 错误处理
+*/
+
+dest = {};
+
+src = {
+    a: 'foo',
+    get b() {
+        // Object.assign()在调用这个获取函数时会抛出错误
+        throw new Error();
+    }, 
+    c: 'bar'
+};
+
+try {
+    Object.assign(dest, src);
+} catch(e) {}
+
+// Object.assign()没办法回滚已经完成的修改
+// 因此在抛出错误之前，目标对象上已经完成的修改会继续存在：
+console.log(dest); // { a: foo } </code></pre><h2 id="对象标识及相等判定"><a href="#对象标识及相等判定" class="headerlink" title="对象标识及相等判定"></a>对象标识及相等判定</h2><p>在 ECMAScript 6 之前，有些特殊情况即使是===操作符也无能为力：</p><pre><code>// 这些是===符合预期的情况
+console.log(true === 1); // false
+console.log({} === {}); // false
+console.log("2" === 2); // false
+
+// 这些情况在不同 JavaScript 引擎中表现不同，但仍被认为相等
+console.log(+0 === -0); // true
+console.log(+0 === 0); // true
+console.log(-0 === 0); // true
+
+// 要确定 NaN 的相等性，必须使用极为讨厌的 isNaN()
+console.log(NaN === NaN); // false
+console.log(isNaN(NaN)); // true </code></pre><p>为改善这类情况，ECMAScript 6 规范新增了 Object.is()，这个方法与===很像，但同时也考虑到了上述边界情形。这个方法必须接收两个参数：</p><pre><code>console.log(Object.is(true, 1)); // false
+console.log(Object.is({}, {})); // false
+console.log(Object.is("2", 2)); // false
+
+// 正确的 0、-0、+0 相等/不等判定
+console.log(Object.is(+0, -0)); // false
+console.log(Object.is(+0, 0)); // true
+console.log(Object.is(-0, 0)); // false
+
+// 正确的 NaN 相等判定
+console.log(Object.is(NaN, NaN)); // true </code></pre><p>要检查超过两个值，递归地利用相等性传递即可：</p><pre><code>function recursivelyCheckEqual(x, ...rest) {
+return Object.is(x, rest[0]) &amp;&amp;
+       (rest.length &lt; 2 || recursivelyCheckEqual(...rest));
+} </code></pre><h2 id="增强的对象语法"><a href="#增强的对象语法" class="headerlink" title="增强的对象语法"></a>增强的对象语法</h2><p>ECMAScript 6 为定义和操作对象新增了很多极其有用的语法糖特性。这些特性都没有改变现有引擎的行为，但极大地提升了处理对象的方便程度。</p><p>本节介绍的所有对象语法同样适用于 ECMAScript 6 的类，本章后面会讨论。</p><h3 id="属性值简写"><a href="#属性值简写" class="headerlink" title="属性值简写"></a>属性值简写</h3><p>在给对象添加变量的时候，开发者经常会发现属性名和变量名是一样的。例如：</p><pre><code>let name = 'Matt';
+let person = {
+    name: name
+};
+console.log(person); // { name: 'Matt' } </code></pre><p>为此，简写属性名语法出现了。简写属性名只要使用变量名（不用再写冒号）就会自动被解释为同名的属性键。如果没有找到同名变量，则会抛出 ReferenceError。以下代码和之前的代码是等价的：</p><pre><code>let name = 'Matt';
+let person = {
+    name
+};
+console.log(person); // { name: 'Matt' } </code></pre><p>代码压缩程序会在不同作用域间保留属性名，以防止找不到引用。以下面的代码为例：</p><pre><code>function makePerson(name) {
+    return {
+        name
+    };
+}
+let person = makePerson('Matt');
+
+console.log(person.name); // Matt</code></pre><p>在这里，即使参数标识符只限定于函数作用域，编译器也会保留初始的 name 标识符。</p><h3 id="可计算属性"><a href="#可计算属性" class="headerlink" title="可计算属性"></a>可计算属性</h3><p>在引入可计算属性之前，如果想使用变量的值作为属性，那么必须先声明对象，然后使用中括号语法来添加属性。换句话说，不能在对象字面量中直接动态命名属性。比如：</p><pre><code>const nameKey = 'name';
+const ageKey = 'age'; 
+const jobKey = 'job';
+
+let person = {};
+person[nameKey] = 'Matt';
+person[ageKey] = 27;
+person[jobKey] = 'Software engineer';
+
+console.log(person); 
+// { name: 'Matt', age: 27, job: 'Software engineer' }</code></pre><p>有了可计算属性，就可以在对象字面量中完成动态属性赋值。中括号包围的对象属性键告诉运行时将其作为 JavaScript 表达式而不是字符串来求值：</p><pre><code>const nameKey = 'name';
+const ageKey = 'age';
+const jobKey = 'job';
+
+let person = {
+    [nameKey]: 'Matt',
+    [ageKey]: 27,
+    [jobKey]: 'Software engineer'
+};
+
+console.log(person);
+// { name: 'Matt', age: 27, job: 'Software engineer' } </code></pre><p>因为被当作 JavaScript 表达式求值，所以可计算属性本身可以是复杂的表达式，在实例化时再求值：</p><pre><code>const nameKey = 'name';
+const ageKey = 'age';
+const jobKey = 'job';
+let uniqueToken = 0;
+
+function getUniqueKey(key) {
+    return `${key}_${uniqueToken++}`;
+}
+
+let person = {
+    [getUniqueKey(nameKey)]: 'Matt',
+    [getUniqueKey(ageKey)]: 27,
+    [getUniqueKey(jobKey)]: 'Software engineer'
+};
+
+console.log(person); 
+// { name_0: 'Matt', age_1: 27, job_2: 'Software engineer' } </code></pre><h3 id="简写方法名"><a href="#简写方法名" class="headerlink" title="简写方法名"></a>简写方法名</h3><p>在给对象定义方法时，通常都要写一个方法名、冒号，然后再引用一个匿名函数表达式，如下所示：</p><pre><code>let person = {
+    sayName: function(name) {
+        console.log(`My name is ${name}`);
+    }
+};
+person.sayName('Matt'); // My name is Matt</code></pre><p>新的简写方法的语法遵循同样的模式，但开发者要放弃给函数表达式命名。相应地，这样也可以明显缩短方法声明。 以下代码和之前的代码在行为上是等价的：</p><pre><code>let person = {
+    sayName(name) {
+        console.log(`My name is ${name}`);
+    }
+};
+person.sayName('Matt'); // My name is Matt </code></pre><p>简写方法名对获取函数和设置函数也是适用的：</p><pre><code>let person = {
+    name_: '',
+    get name() {
+        return this.name_;
+    },
+    set name(name) {
+        this.name_ = name;
+    },
+    sayName() {
+        console.log(`My name is ${this.name_}`);
+    }
+};
+person.name = 'Matt';
+person.sayName(); // My name is Matt</code></pre><p>简写方法名与可计算属性键相互兼容：</p><pre><code>const methodKey = 'sayName';
+let person = {
+    [methodKey](name) {
+        console.log(`My name is ${name}`);
+    }
+}
+person.sayName('Matt'); // My name is Matt</code></pre><h2 id="对象解构"><a href="#对象解构" class="headerlink" title="对象解构"></a>对象解构</h2><p>ECMAScript 6 新增了对象解构语法，可以在一条语句中使用嵌套数据实现一个或多个赋值操作。简单地说，对象解构就是使用与对象匹配的结构来实现对象属性赋值。</p><p>下面的例子展示了两段等价的代码，首先是不使用对象解构的：</p><pre><code>// 不使用对象解构
+let person = {
+    name: 'Matt',
+    age: 27
+}; 
+
+let personName = person.name,
+    personAge = person.age;
+
+console.log(personName); // Matt
+console.log(personAge); // 27 </code></pre><p>然后，是使用对象解构的：</p><pre><code>// 使用对象解构
+let person = {
+    name: 'Matt',
+    age: 27
+};
+
+let { name: personName, age: personAge } = person;
+
+console.log(personName); // Matt
+console.log(personAge); // 27 </code></pre><p>使用解构，可以在一个类似对象字面量的结构中，声明多个变量，同时执行多个赋值操作。如果想让变量直接使用属性的名称，那么可以使用简写语法，比如：</p><pre><code>let person = {
+    name: 'Matt',
+    age: 27
+};
+
+let { name, age } = person;
+
+console.log(name); // Matt
+console.log(age); // 27 </code></pre><p>解构赋值不一定与对象的属性匹配。赋值的时候可以忽略某些属性，而如果引用的属性不存在，则该变量的值就是 undefined：</p><pre><code>let person = {
+    name: 'Matt',
+    age: 27
+};
+
+let { name, job } = person;
+
+console.log(name); // Matt
+console.log(job); // undefined </code></pre><p>也可以在解构赋值的同时定义默认值，这适用于前面刚提到的引用的属性不存在于源对象中的情况：</p><pre><code>let person = {
+    name: 'Matt',
+    age: 27
+};
+
+let { name, job='Software engineer' } = person;
+
+console.log(name); // Matt
+console.log(job); // Software engineer</code></pre></div><hr><div class="reprint" id="reprint-statement"><div class="reprint__author"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-user">文章作者:</i></span> <span class="reprint-info"><a href="/about" rel="external nofollow noreferrer">言言子</a></span></div><div class="reprint__type"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-link">文章链接:</i></span> <span class="reprint-info"><a href="https://yanyanzio.top/posts/a0014.html">https://yanyanzio.top/posts/a0014.html</a></span></div><div class="reprint__notice"><span class="reprint-meta" style="font-weight:700"><i class="fas fa-copyright">版权声明:</i></span> <span class="reprint-info">本博客所有文章除特別声明外，均采用 <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a> 许可协议。转载请注明来源 <a href="/about" target="_blank">言言子</a> !</span></div></div><script async defer>document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }</script><div class="tag_share" style="display:block"><div class="post-meta__tag-list" style="display:inline-block"><div class="article-tag"><a href="/tags/JavaScript/"><span class="chip bg-color">JavaScript</span></a></div></div><div class="post_share" style="zoom:80%;width:fit-content;display:inline-block;float:right;margin:-.15rem 0"><link rel="stylesheet" href="/libs/share/css/share.min.css"><div id="article-share"><div class="social-share" data-sites="twitter,google,qq,wechat,weibo,douban" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div><script src="/libs/share/js/social-share.min.js"></script></div></div></div></div></div><style>.valine-card{margin:1.5rem auto}.valine-card .card-content{padding:20px 20px 5px 20px}#vcomments textarea{box-sizing:border-box;background:url(/medias/comment_bg.png) 100% 100% no-repeat}#vcomments p{margin:2px 2px 10px;font-size:1.05rem;line-height:1.78rem}#vcomments blockquote p{text-indent:.2rem}#vcomments a{padding:0 2px;color:#4cbf30;font-weight:500;text-decoration:none}#vcomments img{max-width:100%;height:auto;cursor:pointer}#vcomments ol li{list-style-type:decimal}#vcomments ol,ul{display:block;padding-left:2em;word-spacing:.05rem}#vcomments ul li,ol li{display:list-item;line-height:1.8rem;font-size:1rem}#vcomments ul li{list-style-type:disc}#vcomments ul ul li{list-style-type:circle}#vcomments table,td,th{padding:12px 13px;border:1px solid #dfe2e5}#vcomments table,td,th{border:0}table tr:nth-child(2n),thead{background-color:#fafafa}#vcomments table th{background-color:#f2f2f2;min-width:80px}#vcomments table td{min-width:80px}#vcomments h1{font-size:1.85rem;font-weight:700;line-height:2.2rem}#vcomments h2{font-size:1.65rem;font-weight:700;line-height:1.9rem}#vcomments h3{font-size:1.45rem;font-weight:700;line-height:1.7rem}#vcomments h4{font-size:1.25rem;font-weight:700;line-height:1.5rem}#vcomments h5{font-size:1.1rem;font-weight:700;line-height:1.4rem}#vcomments h6{font-size:1rem;line-height:1.3rem}#vcomments p{font-size:1rem;line-height:1.5rem}#vcomments hr{margin:12px 0;border:0;border-top:1px solid #ccc}#vcomments blockquote{margin:15px 0;border-left:5px solid #42b983;padding:1rem .8rem .3rem .8rem;color:#666;background-color:rgba(66,185,131,.1)}#vcomments pre{font-family:monospace,monospace;padding:1.2em;margin:.5em 0;background:#272822;overflow:auto;border-radius:.3em;tab-size:4}#vcomments code{font-family:monospace,monospace;padding:1px 3px;font-size:.92rem;color:#e96900;background-color:#f8f8f8;border-radius:2px}#vcomments pre code{font-family:monospace,monospace;padding:0;color:#e8eaf6;background-color:#272822}#vcomments pre[class*=language-]{padding:1.2em;margin:.5em 0}#vcomments code[class*=language-],pre[class*=language-]{color:#e8eaf6}#vcomments [type=checkbox]:not(:checked),[type=checkbox]:checked{position:inherit;margin-left:-1.3rem;margin-right:.4rem;margin-top:-1px;vertical-align:middle;left:unset;visibility:visible}#vcomments b,strong{font-weight:700}#vcomments dfn{font-style:italic}#vcomments small{font-size:85%}#vcomments cite{font-style:normal}#vcomments mark{background-color:#fcf8e3;padding:.2em}#vcomments table,td,th{padding:12px 13px;border:1px solid #dfe2e5}table tr:nth-child(2n),thead{background-color:#fafafa}#vcomments table th{background-color:#f2f2f2;min-width:80px}#vcomments table td{min-width:80px}#vcomments [type=checkbox]:not(:checked),[type=checkbox]:checked{position:inherit;margin-left:-1.3rem;margin-right:.4rem;margin-top:-1px;vertical-align:middle;left:unset;visibility:visible}</style><div class="card valine-card" data-aos="fade-up"><div class="comment_headling" style="font-size:20px;font-weight:700;position:relative;padding-left:20px;top:15px;padding-bottom:5px"><i class="fas fa-comments fa-fw" aria-hidden="true"></i> <span>评论</span></div><div id="vcomments" class="card-content" style="display:grid"></div></div><script src="/libs/valine/av-min.js"></script><script src="/libs/valine/Valine.min.js"></script><script>new Valine({el:"#vcomments",appId:"LCBNFKIdJy4bxPWERRqiiBC2-gzGzoHsz",appKey:"vCYXYtNrOSYE9UW0XG2K6N89",notify:!0,verify:!1,visitor:!0,avatar:"mm",pageSize:"10",lang:"zh-cn",placeholder:"正确填写邮箱才能及时回复哟！(๑╹◡╹)ﾉ&#34;&#34;&#34;"})</script><article id="prenext-posts" class="prev-next articles"><div class="row article-row"><div class="article col s12 m6" data-aos="fade-up"><div class="article-badge left-badge text-color"><i class="fas fa-chevron-left"></i> &nbsp;上一篇</div><div class="card"><a href="/posts/a0015.html"><div class="card-image"><img src="https://gitee.com/OxOYYZi/picgo/raw/master/img/illust_56809346_20201119_073913.jpg" class="responsive-img" alt="JavaScript高级语言程序设计(六)"> <span class="card-title">JavaScript高级语言程序设计(六)</span></div></a><div class="card-content article-content"><div class="summary block-with-text">JavaScript：对象、类与面向对象编程(二) 创建对象</div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i> 2020-11-23</span><span class="publish-author"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/JavaScript/" class="post-category">JavaScript</a> <a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="post-category">JavaScript高级程序设计</a></span></div></div><div class="card-action article-tags"><a href="/tags/JavaScript/"><span class="chip bg-color">JavaScript</span></a></div></div></div><div class="article col s12 m6" data-aos="fade-up"><div class="article-badge right-badge text-color">下一篇&nbsp;<i class="fas fa-chevron-right"></i></div><div class="card"><a href="/posts/a0013.html"><div class="card-image"><img src="https://gitee.com/OxOYYZi/picgo/raw/master/img/illust_83285677_20201119_073959.jpg" class="responsive-img" alt="JavaScript高级语言程序设计(五)"> <span class="card-title">JavaScript高级语言程序设计(五)</span></div></a><div class="card-content article-content"><div class="summary block-with-text">JavaScript：迭代器与生成器(二) 生成器</div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i> 2020-11-23</span><span class="publish-author"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/JavaScript/" class="post-category">JavaScript</a> <a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="post-category">JavaScript高级程序设计</a></span></div></div><div class="card-action article-tags"><a href="/tags/JavaScript/"><span class="chip bg-color">JavaScript</span></a></div></div></div></div></article></div><script>$("#articleContent").on("copy",function(e){if(void 0!==window.getSelection){var n=window.getSelection();if(!((""+n).length<Number.parseInt("120"))){var t=document.getElementsByTagName("body")[0],o=document.createElement("div");o.style.position="absolute",o.style.left="-99999px",t.appendChild(o),o.appendChild(n.getRangeAt(0).cloneContents()),"PRE"===n.getRangeAt(0).commonAncestorContainer.nodeName&&(o.innerHTML="<pre>"+o.innerHTML+"</pre>");var i=document.location.href;o.innerHTML+='<br />来源: YanYanZi<br />文章作者: 言言子哦<br />文章链接: <a href="'+i+'">'+i+"</a><br />本文章著作权归[yanyanzi]所有，任何形式的转载都请注明出处。",n.selectAllChildren(o),window.setTimeout(function(){t.removeChild(o)},200)}}})</script><script src="/libs/codeBlock/codeBlockFuction.js"></script><script src="/libs/codeBlock/codeLang.js"></script><script src="/libs/codeBlock/codeCopy.js"></script><script src="/libs/codeBlock/codeShrink.js"></script></div><div id="toc-aside" class="expanded col l3 hide-on-med-and-down"><div class="toc-widget card" style="background-color:#fff"><div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div><div id="toc-content"></div></div></div></div><div id="floating-toc-btn" class="hide-on-med-and-down"><a class="btn-floating btn-large bg-color"><i class="fas fa-list-ul"></i></a></div><script src="/libs/tocbot/tocbot.min.js"></script><script>$(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h1, h2, h3, h4, h5'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4, h5').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });</script></main><footer class="page-footer bg-color"><link rel="stylesheet" href="/libs/aplayer/APlayer.min.css"><style>.aplayer .aplayer-lrc p{display:none;font-size:12px;font-weight:700;line-height:16px!important}.aplayer .aplayer-lrc p.aplayer-lrc-current{display:none;font-size:15px;color:#42b983}.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body{left:-66px!important}.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover{left:0!important}</style><div><div class="row"><meting-js class="col l8 offset-l2 m10 offset-m1 s12" server="netease" type="playlist" id="711442804" fixed="true" autoplay theme="#42b983" loop order="list" preload="auto" volume="0.5" list-folded="false"></meting-js></div></div><script src="/libs/aplayer/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script><div class="container row center-align" style="margin-bottom:15px!important"><div class="col s12 m8 l8 copy-right">Copyright&nbsp;&copy; <span id="year">2020</span> <span id="year">2020</span> <a href="/about" target="_blank">言言子哦</a> |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a> |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a><br>&nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">77k</span>&nbsp;字 <span id="busuanzi_container_site_pv" style="display:none">|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv" class="white-color"></span>&nbsp;次</span> <span id="busuanzi_container_site_uv" style="display:none">|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv" class="white-color"></span>&nbsp;人</span><br><span id="sitetime">载入运行时间...</span><script>function siteTime(){var e=36e5,t=24*e,n=new Date,o="2020",r=n.getFullYear(),a=n.getMonth()+1,i=n.getDate(),l=n.getHours(),m=n.getMinutes(),M=n.getSeconds(),g=Date.UTC(o,"11","10","0","0","0"),d=Date.UTC(r,a,i,l,m,M)-g,s=Math.floor(d/31536e6),u=Math.floor(d/t-365*s),T=Math.floor((d-(365*s+u)*t)/e),c=Math.floor((d-(365*s+u)*t-T*e)/6e4),f=Math.floor((d-(365*s+u)*t-T*e-6e4*c)/1e3);o==r?(document.getElementById("year").innerHTML=r,document.getElementById("sitetime").innerHTML="本站已安全运行 "+u+" 天 "+T+" 小时 "+c+" 分钟 "+f+" 秒"):(document.getElementById("year").innerHTML=o+" - "+r,document.getElementById("sitetime").innerHTML="本站已安全运行 "+s+" 年 "+u+" 天 "+T+" 小时 "+c+" 分钟 "+f+" 秒")}setInterval(siteTime,1e3)</script><br></div><div class="col s12 m4 l4 social-link social-statis"><a href="https://github.com/blinkfox" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50"><i class="fab fa-github"></i></a><a href="mailto:2533313507@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50"><i class="fas fa-envelope-open"></i></a><a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2533313507" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2533313507" data-position="top" data-delay="50"><i class="fab fa-qq"></i></a></div></div></footer><div class="progress-bar"></div><script>$(document).ready(function(){var e=setInterval(function(){"none"!=document.getElementById("busuanzi_container_site_pv").style.display&&($("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html())+n),clearInterval(e));"none"!=$("#busuanzi_container_site_pv").css("display")&&($("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html())+t),clearInterval(e))},50),n=10,t=10})</script><div id="searchModal" class="modal"><div class="modal-content"><div class="search-header"><span class="title"><i class="fas fa-search"></i> &nbsp;&nbsp;搜索</span> <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字" class="search-input"></div><div id="searchResult"></div></div></div><script src="/js/search.js"></script><script>$(function(){searchFunc("/search.xml","searchInput","searchResult")})</script><div id="backTop" class="top-scroll"><a class="btn-floating btn-large waves-effect waves-light" href="#!"><i class="fas fa-arrow-up"></i></a></div><script src="/libs/materialize/materialize.min.js"></script><script src="/libs/masonry/masonry.pkgd.min.js"></script><script src="/libs/aos/aos.js"></script><script src="/libs/scrollprogress/scrollProgress.min.js"></script><script src="/libs/lightGallery/js/lightgallery-all.min.js"></script><script src="/js/matery.js"></script><script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script><script src="/libs/others/clicklove.js" async></script><script async src="/libs/others/busuanzi.pure.mini.js"></script><script src="//code.tidio.co/hpjvn6njlytsk0ywhqouw4gdndraakka.js"></script><script>$(document).ready(function(){setInterval(function(){var t=$("#tidio-chat iframe");"block"==t.css("display")&&977<$(window).width()?(document.getElementById("tidio-chat-iframe").style.bottom=0<("none"==$("div#backTop.top-scroll").css("display")&&977<$(window).width())?"-40px":0<($("div.toc-title").length&&977<$(window).width())?"85px":"20px",document.getElementById("tidio-chat-iframe").style.right="-15px",document.getElementById("tidio-chat-iframe").style.height=520<=parseInt(t.css("height"))?"520px":t.css("height"),document.getElementById("tidio-chat-iframe").style.zIndex="997"):"block"==t.css("display")&&601<$(window).width()&&$(window).width()<992?(document.getElementById("tidio-chat-iframe").style.bottom=0<("none"==$("div#backTop.top-scroll").css("display")&&601<$(window).width()<992)?"-40px":"20px",document.getElementById("tidio-chat-iframe").style.right="-15px",document.getElementById("tidio-chat-iframe").style.zIndex="997"):"block"==t.css("display")&&$(window).width()<601&&parseInt(t.css("height"))<230&&(document.getElementById("tidio-chat-iframe").style.bottom=0<("none"==$("div#backTop.top-scroll").css("display")&&$(window).width()<601)?"-10px":"45px",document.getElementById("tidio-chat-iframe").style.zIndex="997");"block"==t.css("display")&&$(window).width()<601&&230<=parseInt(t.css("height"))&&(document.getElementById("tidio-chat-iframe").style.zIndex="998")},50)})</script><script src="/libs/instantpage/instantpage.js" type="module"></script></body></html>
