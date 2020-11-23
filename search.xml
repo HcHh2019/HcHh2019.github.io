@@ -4,6 +4,72 @@
   
     
     <entry>
+      <title>E4</title>
+      <link href="posts/4733.html"/>
+      <url>posts/4733.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>E3</title>
+      <link href="posts/8572.html"/>
+      <url>posts/8572.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>E2</title>
+      <link href="posts/45b3.html"/>
+      <url>posts/45b3.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>JavaScript高级语言程序设计(六)</title>
+      <link href="posts/682a.html"/>
+      <url>posts/682a.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="对象、类与面向对象编程"><a href="#对象、类与面向对象编程" class="headerlink" title="对象、类与面向对象编程"></a>对象、类与面向对象编程</h1><p>ECMA-262 将对象定义为一组属性的无序集合。严格来说，这意味着对象就是一组没有特定顺序的值。对象的每个属性或方法都由一个名称来标识，这个名称映射到一个值。正因为如此可以把 ECMAScript 的对象想象成一张散列表，其中的内容就是一组名/值对，值可以是数据或者函数。</p><p>上篇: <strong><a href="a0013">迭代器与生成器(二) 生成器</a></strong><br>本篇: <strong>对象、类与面向对象编程(一) 理解对象</strong><br>下篇: <strong><a href="a0015">对象、类与面向对象编程(二) 创建对象</a></strong></p><p><strong><a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">JavaScript高级程序设计</a></strong> 全部合集</p><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> JavaScript </category>
+          
+          <category> JavaScript高级程序设计 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JavaScript高级语言程序设计(五)</title>
       <link href="posts/a0013.html"/>
       <url>posts/a0013.html</url>
@@ -614,9 +680,9 @@
       
         <tags>
             
-            <tag> CSS </tag>
-            
             <tag> Vue </tag>
+            
+            <tag> CSS </tag>
             
         </tags>
       
@@ -641,9 +707,9 @@
       
         <tags>
             
-            <tag> HTML </tag>
-            
             <tag> CSS </tag>
+            
+            <tag> HTML </tag>
             
         </tags>
       
