@@ -2,7 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://yanyanzio.top/posts/5a5b.html</loc>
+    <loc>https://yanyanzio.top/posts/d0002.html</loc>
+    
+    <lastmod>2020-11-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yanyanzio.top/posts/h0001.html</loc>
+    
+    <lastmod>2020-11-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yanyanzio.top/posts/g0001.html</loc>
+    
+    <lastmod>2020-11-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yanyanzio.top/posts/f0002.html</loc>
+    
+    <lastmod>2020-11-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yanyanzio.top/posts/f0001.html</loc>
+    
+    <lastmod>2020-11-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yanyanzio.top/posts/e0001.html</loc>
+    
+    <lastmod>2020-11-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yanyanzio.top/posts/d0001.html</loc>
     
     <lastmod>2020-11-25</lastmod>
     
@@ -10,13 +52,6 @@
   
   <url>
     <loc>https://yanyanzio.top/posts/50b4.html</loc>
-    
-    <lastmod>2020-11-25</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yanyanzio.top/posts/JSJ0001.html</loc>
     
     <lastmod>2020-11-25</lastmod>
     
@@ -317,13 +352,6 @@
   </url>
   
   <url>
-    <loc>https://yanyanzio.top/posts/e31c.html</loc>
-    
-    <lastmod>2020-11-24</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://yanyanzio.top/posts/b0001.html</loc>
     
     <lastmod>2020-11-24</lastmod>
@@ -334,27 +362,6 @@
     <loc>https://yanyanzio.top/posts/14a5.html</loc>
     
     <lastmod>2020-11-24</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yanyanzio.top/posts/c06f.html</loc>
-    
-    <lastmod>2020-11-20</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yanyanzio.top/posts/e0b8.html</loc>
-    
-    <lastmod>2020-11-18</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yanyanzio.top/posts/f7d3.html</loc>
-    
-    <lastmod>2020-11-17</lastmod>
     
   </url>
   
@@ -525,6 +532,13 @@
   
   <url>
     <loc>https://yanyanzio.top/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/</loc>
+    <lastmod>2020-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yanyanzio.top/categories/HTML/</loc>
     <lastmod>2020-11-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
