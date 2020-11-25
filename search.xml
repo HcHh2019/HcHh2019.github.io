@@ -4,9 +4,9 @@
   
     
     <entry>
-      <title></title>
-      <link href="posts/0.html"/>
-      <url>posts/0.html</url>
+      <title>J16</title>
+      <link href="posts/50b4.html"/>
+      <url>posts/50b4.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -297,8 +297,8 @@
     
     <entry>
       <title>水涨船高技术栈</title>
-      <link href="posts/JSJ.html"/>
-      <url>posts/JSJ.html</url>
+      <link href="posts/JSJ0001.html"/>
+      <url>posts/JSJ0001.html</url>
       
         <content type="html"><![CDATA[<h1 id="水涨船高技术集"><a href="#水涨船高技术集" class="headerlink" title="水涨船高技术集"></a>水涨船高技术集</h1><p><strong>世上的事，最令人回味的，是始和终这俩端，善终者寡，善始者众</strong></p><hr><h2 id="在github上在线演示项目"><a href="#在github上在线演示项目" class="headerlink" title="在github上在线演示项目"></a>在github上在线演示项目</h2><h3 id="一、创建一个新的项目"><a href="#一、创建一个新的项目" class="headerlink" title="一、创建一个新的项目"></a>一、创建一个新的项目</h3><p>首先点击右上角+号创建一个新的项目</p><p><img src="https://gitee.com/OxOYYZi/picgo/raw/master/img/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20201125103923.png"></p><p>再根据自己的需求填写相应的项目名称及简介</p><p><img src="https://gitee.com/OxOYYZi/picgo/raw/master/img/20190111104913413.png"></p><p>完成以上两步我们已经成功创建了一个名为project的项目，接下来我们就需要将远程仓库clone到我们本地来。</p><p>可以新建一个文件夹</p><p><img src="https://gitee.com/OxOYYZi/picgo/raw/master/img/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20201125104815.png"></p><p>点击文件夹右击，进入 <code>Git Bash Here</code></p><p><img src="https://gitee.com/OxOYYZi/picgo/raw/master/img/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20201125105034.png"></p><p>输入以下内容： <code>git clone git@github.com:github名称/刚刚新建的仓库名.git</code></p><p>例如我的是：<code> git clone git@github.com:HcHh2019/Project.git</code></p><p>因为我已经建过一次了，所以提示出错</p><p><img src="https://gitee.com/OxOYYZi/picgo/raw/master/img/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20201125105529.png"></p><p>发一下别的博主正常图片</p><p><img src="https://gitee.com/OxOYYZi/picgo/raw/master/img/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20201125105824.png"></p><p>这事我们就会多一个Project的文件夹，</p><p>将终端切换到Project文件夹下。执行    cd Project/</p><p>此时发现我们是在master(或者是main主分支)主分支上。（当前是只有master/main分支的）</p><p><img src="https://gitee.com/OxOYYZi/picgo/raw/master/img/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20201125110121.png"></p><p>接下来我们创建一个新的gh-pages分支</p><p>执行   git checkout –orphan gh-pages</p><p><img src="https://gitee.com/OxOYYZi/picgo/raw/master/img/%E6%90%9C%E7%8B%97%E6%88%AA%E5%9B%BE20201125110337.png"></p><p>此时本地gh-pages分支已经创建好了，并且已经切换到了gh-pages分支上了。</p><p>接下来我们创建一个YYZMusic.html并写上内容测试一下。</p><p><img src="https://gitee.com/OxOYYZi/picgo/raw/master/img/20190111110430979.png"></p><pre><code>&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;    &lt;title&gt;我成功的演示啦&lt;/title&gt;&lt;/head&gt;&lt;body&gt;    &lt;h1&gt;hello World&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;</code></pre><p>然后我们将代码push到远程仓库.</p><p>在终端中依次执行（此时是在gh-pages分支上</p><pre><code>git add .git commit -m "demo"git push -u origin gh-pages</code></pre><p>接下来就可以成功访问啦!</p><p>访问地址:https://用户名.github.io/项目名称/文件路径</p><p>例如我的访问地址为      <a href="https://hchh2019.github.io/Project/One/YYZMusic.html">https://HcHh2019.github.io/Project/One/YYZMusic.html</a></p><p>买了域名之后可以：  <a href="https://yanyanzio.top/Project/One/YYZMusic.html">https://yanyanzio.top/Project/One/YYZMusic.html</a></p>]]></content>
       
@@ -406,7 +406,7 @@
       <link href="posts/5a5b.html"/>
       <url>posts/5a5b.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="面试专题"><a href="#面试专题" class="headerlink" title="面试专题"></a>面试专题</h1><p><strong>人生得也罢，失也罢，成也罢，败也吧，只是心灵的那泓清泉不能没有月辉</strong></p><h2 id="HTML篇"><a href="#HTML篇" class="headerlink" title="HTML篇"></a>HTML篇</h2><ol><li><code>DOCTYPE</code>有什么作用？标准模式与混杂模式如何区分？它们有何意义？</li></ol><p>告诉浏览器使用哪些版本的HTML规范来渲染文档。<code>DOCTYPE</code>不存在或形式不正确会导致HTML文档混乱模式呈现。<br>标准模式以浏览器支持的最高标准运行；混杂模式中页面是一种比较宽松的向后兼容的方法显示。</p><ol start="2"><li>HTML5为什么只需要写<code>&lt;!DOCTYPE HTML&gt;</code></li></ol><p>HTML5不基于SGML，因此不需要对DTD进行引用，但需要DOCTYPE来规范浏览器行为。<br>HTML4.0基于SGML，所以需要引用DTD，才能告诉浏览器文档所使用的文档类型。</p><ol start="3"><li>行内元素有哪些？块级元素有哪些？空元素有哪些？</li></ol><p>行内元素: a span img input select<br>块级元素: div ul ol li dl dt dd h1~h6 p<br>空元素: <code>&lt;br&gt;</code> <code>&lt;hr&gt;</code> <code>&lt;link&gt;</code> <code>&lt;meta&gt;</code></p>]]></content>
       
       
       <categories>
