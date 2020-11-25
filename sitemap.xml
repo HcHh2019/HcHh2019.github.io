@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yanyanzio.top/posts/f138.html</loc>
+    
+    <lastmod>2020-11-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yanyanzio.top/posts/g0001.html</loc>
+    
+    <lastmod>2020-11-25</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://yanyanzio.top/posts/d0002.html</loc>
     
     <lastmod>2020-11-25</lastmod>
@@ -10,13 +24,6 @@
   
   <url>
     <loc>https://yanyanzio.top/posts/h0001.html</loc>
-    
-    <lastmod>2020-11-25</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yanyanzio.top/posts/g0001.html</loc>
     
     <lastmod>2020-11-25</lastmod>
     
@@ -438,14 +445,14 @@
 
   
   <url>
-    <loc>https://yanyanzio.top/tags/%E7%A7%AF%E7%B4%AF%E5%B0%8F%E7%9F%A5%E8%AF%86%E7%82%B9/</loc>
+    <loc>https://yanyanzio.top/tags/HTML/</loc>
     <lastmod>2020-11-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://yanyanzio.top/tags/HTML/</loc>
+    <loc>https://yanyanzio.top/tags/%E7%A7%AF%E7%B4%AF%E5%B0%8F%E7%9F%A5%E8%AF%86%E7%82%B9/</loc>
     <lastmod>2020-11-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -487,6 +494,13 @@
   </url>
   
 
+  
+  <url>
+    <loc>https://yanyanzio.top/categories/HTML/</loc>
+    <lastmod>2020-11-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
   <url>
     <loc>https://yanyanzio.top/categories/%E6%B0%B4%E6%B6%A8%E8%88%B9%E9%AB%98%E6%8A%80%E6%9C%AF%E9%9B%86/</loc>
@@ -532,13 +546,6 @@
   
   <url>
     <loc>https://yanyanzio.top/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/</loc>
-    <lastmod>2020-11-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://yanyanzio.top/categories/HTML/</loc>
     <lastmod>2020-11-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

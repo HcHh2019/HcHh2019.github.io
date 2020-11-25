@@ -6,7 +6,7 @@
   <link href="https://yanyanzio.top/atom.xml" rel="self"/>
   
   <link href="https://yanyanzio.top/"/>
-  <updated>2020-11-25T10:34:59.552Z</updated>
+  <updated>2020-11-25T22:58:57.819Z</updated>
   <id>https://yanyanzio.top/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>HTML5+CSS3权威指南</title>
+    <link href="https://yanyanzio.top/posts/f138.html"/>
+    <id>https://yanyanzio.top/posts/f138.html</id>
+    <published>2020-11-25T10:52:29.000Z</published>
+    <updated>2020-11-25T22:58:57.819Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;HTML5的结构&quot;&gt;&lt;a href=&quot;#HTML5的结构&quot; class=&quot;headerlink&quot; title=&quot;HTML5的结构&quot;&gt;&lt;/a&gt;HTML5的结构&lt;/h1&gt;&lt;h2 id=&quot;新增的主体结构元素&quot;&gt;&lt;a href=&quot;#新增的主体结构元素&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="HTML" scheme="https://yanyanzio.top/categories/HTML/"/>
+    
+    
+    <category term="HTML" scheme="https://yanyanzio.top/tags/HTML/"/>
+    
+  </entry>
+  
+  <entry>
     <title>HTML基础</title>
     <link href="https://yanyanzio.top/posts/d0002.html"/>
     <id>https://yanyanzio.top/posts/d0002.html</id>
     <published>2020-11-25T07:27:02.000Z</published>
-    <updated>2020-11-25T10:34:59.552Z</updated>
+    <updated>2020-11-25T10:48:46.068Z</updated>
     
     
       
@@ -374,33 +399,6 @@
     
     
     <category term="CSS" scheme="https://yanyanzio.top/tags/CSS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript高级语言程序设计(七)</title>
-    <link href="https://yanyanzio.top/posts/a0019.html"/>
-    <id>https://yanyanzio.top/posts/a0019.html</id>
-    <published>2020-11-24T07:51:21.000Z</published>
-    <updated>2020-11-25T00:32:47.037Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;代理与反射&quot;&gt;&lt;a href=&quot;#代理与反射&quot; class=&quot;headerlink&quot; title=&quot;代理与反射&quot;&gt;&lt;/a&gt;代理与反射&lt;/h1&gt;&lt;p&gt;ECMAScript 6</summary>
-        
-      
-    
-    
-    
-    <category term="JavaScript" scheme="https://yanyanzio.top/categories/JavaScript/"/>
-    
-    <category term="JavaScript高级程序设计" scheme="https://yanyanzio.top/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
-    
-    
-    <category term="JavaScript" scheme="https://yanyanzio.top/tags/JavaScript/"/>
     
   </entry>
   
