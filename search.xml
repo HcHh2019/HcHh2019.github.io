@@ -4,11 +4,49 @@
   
     
     <entry>
-      <title>HTML5+CSS3权威指南</title>
-      <link href="posts/f138.html"/>
-      <url>posts/f138.html</url>
+      <title>水涨船高技术栈</title>
+      <link href="posts/f0003.html"/>
+      <url>posts/f0003.html</url>
       
-        <content type="html"><![CDATA[<h1 id="HTML5的结构"><a href="#HTML5的结构" class="headerlink" title="HTML5的结构"></a>HTML5的结构</h1><h2 id="新增的主体结构元素"><a href="#新增的主体结构元素" class="headerlink" title="新增的主体结构元素"></a>新增的主体结构元素</h2><h3 id="article元素"><a href="#article元素" class="headerlink" title="article元素"></a>article元素</h3><p><code>article</code> 元素代表文档、页面或应用程序中独立的、完整的、可以独自被外部引用的内容。它可以是一篇博客或报刊中的文章、一篇论坛帖子、一段用户评论或独立的插件，或其他任何独立的内容。除了内容部分，一个 <code>article</code> 元素通常有它自己的标题（一般放在一个<code> header</code> 元素里面） , 有时还有自己的脚注。现在，让我们以博客为例来看一段关于 <code>article</code> 元素的代码示例</p><pre><code>&lt;article&gt;    &lt;header&gt;        &lt;h1&gt;苹果&lt;/h1&gt;        &lt;p&gt;发表日期:2020/11/26&lt;/p&gt;    &lt;/header&gt;    &lt;p&gt;苹果，我爱吃&lt;/p&gt;    &lt;footer&gt;        &lt;small&gt;著作归我所有&lt;/small&gt;    &lt;/footer&gt;&lt;/article&gt;</code></pre><p>这个示例是一篇讲述苹果的博客文章，在 <code>header</code> 元素中嵌入了文章的标题部分，在这部分中，文章的标题“苹果”被镶嵌在 <code>hl</code> 元素中，文章的发表日期镶嵌在 <code>p</code> 元素中。在标题下部的 <code>p</code> 元素中，嵌入了一大段该博客文章的正文，在结尾处的 <code>footer</code> 元素中，嵌入了文章的著作权，作为脚注。整个示例的内容相对比较独立、完整，因此，对这部分内容使用了 <code>article</code> 元素。</p><p> <code>article</code> 元素是可以嵌套用的，内层的内容在原则上需要与外层的内容相关联．例如，一篇博客文章中，针对该文章的评论就可以使用嵌套 <code>article</code> 元素的方式．用来呈现评论的 <code>article</code> 元素被包含在表示整体内容的 <code>article</code> 元素里面。</p><pre><code>&lt;article&gt;    &lt;header&gt;        &lt;h1&gt;苹果&lt;/h1&gt;        &lt;p&gt;发表日期:2020/11/26&lt;/p&gt;    &lt;/header&gt;    &lt;p&gt;苹果，我爱吃&lt;/p&gt;    &lt;footer&gt;        &lt;small&gt;著作归我所有&lt;/small&gt;    &lt;/footer&gt;    &lt;section&gt;        &lt;h2&gt;评论&lt;/h2&gt;        &lt;article&gt;            &lt;header&gt;                &lt;h3&gt;发表者:QA&lt;/h3&gt;            &lt;/header&gt;            &lt;p&gt;我喜欢苹果&lt;/p&gt;        &lt;/article&gt;    &lt;/section&gt;&lt;/article&gt;</code></pre><h3 id="section元素"><a href="#section元素" class="headerlink" title="section元素"></a>section元素</h3><p><code>section</code> 元素用于对网站或应用程序中页面上的内容进行分块，一个<code> sectinn</code> 元素通常由内容及其标题组成。但 <code>section</code> 元素并非一个普通的容器元素．当一个容器需要被直接定义样式或通过脚本定义行为时，推荐使用 <code>div</code> 而非 <code>section</code> 元素。我们可以这样理解： <code>section</code> 元素中的内容可以单独存储到数据库中或输出到 W6rd 文档中。</p><p><code>section</code>元素的作用是对页面上的内容进行分块，或者说对文章进行分段，不要与”有独立自己的完整的内容”的article元素混淆。下面，我们来看 <code>article</code> 元素与 <code>section</code> 元素结合使用的两个示例，希望能够帮助你更好地理解 <code>article</code> 元素与 <code>section</code> 元素的区别。首先来看一个带有 <code>section</code> 元素的 <code>artide</code> 元素示例</p><pre><code>&lt;article&gt;    &lt;header&gt;        &lt;h1&gt;苹果&lt;/h1&gt;        &lt;p&gt;发表日期:2020/11/26&lt;/p&gt;    &lt;/header&gt;    &lt;p&gt;苹果，我爱吃&lt;/p&gt;    &lt;section&gt;        &lt;h2&gt;富士康&lt;/h2&gt;        &lt;p&gt;富士康的红苹果好好吃&lt;/p&gt;    &lt;/section&gt;    &lt;section&gt;        &lt;h2&gt;国光&lt;/h2&gt;        &lt;p&gt;又叫小国光，原产美国，不好吃&lt;/p&gt;    &lt;/section&gt;    &lt;footer&gt;        &lt;small&gt;著作归我所有&lt;/small&gt;    &lt;/footer&gt;&lt;/article&gt;</code></pre><p>上面内容首先是一段独立的、完整的内容，因此使用<code> article</code> 元素。该内容是一篇关于苹果的文章，该文章分为 3 段，每一段都有一个独立的标题，因此使用了两个 <code>section</code> 元素。请记住，对<strong>文章分段的工作</strong>也是使用 <code>section</code> 元素完成的。可能有人会问，为什么没有对第一段使用 <code>section</code> 元素，这里其实是可以使用 <code>section</code> 元素的，但是由于其结构比较清晰，分析器可以识别第一段内容在一个<code> section</code> 元素里，所以也可以将第一个 section 元素略，但是如果第一个 <code>scction</code> 元素里还要包含子 <code>section</code> 元素或子<code> article</code> 元素，那么就必须写明第一个 <code>section</code> 元素了。接着，我们来看一个包含叭 <code>article</code> 元素的 <code>section</code> 元素示例</p><pre><code>&lt;section&gt;    &lt;h1&gt;水果&lt;/h1&gt;    &lt;article&gt;        &lt;h2&gt;苹果&lt;/h2&gt;        &lt;p&gt;我爱吃苹果&lt;/p&gt;    &lt;/article&gt;    &lt;article&gt;        &lt;h2&gt;橘子&lt;/h2&gt;        &lt;p&gt;我爱吃橘子&lt;/p&gt;    &lt;/article&gt;&lt;/section&gt;</code></pre><p>这个示例首先是一篇文章中的一段，一次最初没有使用<code>article</code>元素。但是在这段中有几块独立的内容，因此嵌入了几个独立的<code>article</code>元素。这俩个元素能相互使用吗?实际上，在HTML5中，<code>article</code>元素可以看成是一种特殊种类的<code>section</code>元素，它比<code>section</code>元素更强调独立性。即<code>section</code>元素强调分段或分块，<code>article</code>强调独立性。具体来说，如果一块内容相对来说比较独立、完整的时候用<code>article</code>，但是如果你想将一块内容分成几段的时候用<code>section</code>。</p><p>另外，HTML5中div变成了一种容器，当使用CSS样式1的时候，可以对这个容器进行一个总体的CSS样式调用。</p><p>可以将所有页面的从属部分，譬如导航条、菜单、版权说明等包含在一个统一的页面中，方便使用CSS样式来进行调整。</p><p><strong>注意</strong></p><ol><li>不要将<code>section</code>元素用作1设置样式的页面容器，那是<code>div</code>元素的工作</li><li>如果<code>article</code>、<code>aside</code>、<code>nav</code>更适合，不要使用<code>section</code></li><li>不要为没有标题的内容区块使用<code>section</code>元素</li></ol><h3 id="nav元素"><a href="#nav元素" class="headerlink" title="nav元素"></a>nav元素</h3><p><code>nav</code>元素是一个可以用作页面导航的链接组，其中的导航元素链接到其他页面或当前页面的其他部分。</p><pre><code>&lt;nav&gt;    &lt;ul&gt;        &lt;li&gt;&lt;a href="/"&gt;主页&lt;/a&gt;&lt;/li&gt;        &lt;li&gt;&lt;a href="/"&gt;标签&lt;/a&gt;&lt;/li&gt;        &lt;li&gt;&lt;a href="/"&gt;分类&lt;/a&gt;&lt;/li&gt;    &lt;/ul&gt;&lt;/nav&gt;&lt;article&gt;    &lt;header&gt;&lt;/header&gt;    &lt;p&gt;&lt;/p&gt;    &lt;footer&gt;&lt;/footer&gt;&lt;/article&gt;</code></pre><p>具体来说，<code>nav</code>元素可以用于以下这些场合： </p><ol><li><p>传统导航条。现在主流网站上都有不同层级的导航条，其作用是将当前画面跳转到网站的其他主要页面上去。 </p></li><li><p>侧边栏导航。现在主流博客网站及商品网站上都有侧边栏导航，其作用是将页面从当前文章或当前商品跳转到其他文章或其他商品页面上去。 </p></li><li><p>页内导航。页内导航的作用是在本页面儿个主要的组成部分之间进行跳转。 </p></li><li><p>翻页操作。翻页操作是指在多个页面的前后页或博客网站的前后篇文章滚动。 </p></li><li><p>除此之外，<code>nav</code>元素也可以用于其他所有你觉得是重要的、基本的导航链接组中。 </p></li></ol><h3 id="aside元素"><a href="#aside元素" class="headerlink" title="aside元素"></a>aside元素</h3><p><code>aside</code>元素用来表示当前页面或文章的附属信息部分，它可以包含当前页面或主要内容相关的引用、侧边栏、广告、导航栏，以及其他类似的有别于主要内容的部分。</p><p>有种使用方法：</p><ol><li><p>被包含在article元素中作为主要内容的附属信息部分，其中的内容可能是与当前文章有关的参考资料、名词解释等等。</p></li><li><p>在article元素之外使用，作为页面或站点全局的附属信息部分。最典型的是侧边栏，如友情链接，博客中其他文章列表、广告单元等。</p></li></ol><h2 id="新增的非主体结构元素"><a href="#新增的非主体结构元素" class="headerlink" title="新增的非主体结构元素"></a>新增的非主体结构元素</h2><h3 id="header元素"><a href="#header元素" class="headerlink" title="header元素"></a>header元素</h3><h2 id="HTML5结构"><a href="#HTML5结构" class="headerlink" title="HTML5结构"></a>HTML5结构</h2>]]></content>
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 水涨船高技术集 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 水涨船高技术集 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>MRJS_2</title>
+      <link href="posts/3de8.html"/>
+      <url>posts/3de8.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HTML5+CSS3权威指南</title>
+      <link href="posts/d0003.html"/>
+      <url>posts/d0003.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="HTML5-CSS3权威指南"><a href="#HTML5-CSS3权威指南" class="headerlink" title="HTML5+CSS3权威指南"></a>HTML5+CSS3权威指南</h1><p>上篇: <strong><a href="d0002">HTML基础</a></strong><br>本篇: <strong>HTML5的结构</strong><br>下篇: <strong><a href="d0004">表单与文件</a></strong></p><hr><h1 id="HTML5的结构"><a href="#HTML5的结构" class="headerlink" title="HTML5的结构"></a>HTML5的结构</h1><h2 id="新增的主体结构元素"><a href="#新增的主体结构元素" class="headerlink" title="新增的主体结构元素"></a>新增的主体结构元素</h2><h3 id="article元素"><a href="#article元素" class="headerlink" title="article元素"></a>article元素</h3><p><code>article</code> 元素代表文档、页面或应用程序中独立的、完整的、可以独自被外部引用的内容。它可以是一篇博客或报刊中的文章、一篇论坛帖子、一段用户评论或独立的插件，或其他任何独立的内容。除了内容部分，一个 <code>article</code> 元素通常有它自己的标题（一般放在一个<code> header</code> 元素里面） , 有时还有自己的脚注。现在，让我们以博客为例来看一段关于 <code>article</code> 元素的代码示例</p><pre><code>&lt;article&gt;    &lt;header&gt;        &lt;h1&gt;苹果&lt;/h1&gt;        &lt;p&gt;发表日期:2020/11/26&lt;/p&gt;    &lt;/header&gt;    &lt;p&gt;苹果，我爱吃&lt;/p&gt;    &lt;footer&gt;        &lt;small&gt;著作归我所有&lt;/small&gt;    &lt;/footer&gt;&lt;/article&gt;</code></pre><p>这个示例是一篇讲述苹果的博客文章，在 <code>header</code> 元素中嵌入了文章的标题部分，在这部分中，文章的标题“苹果”被镶嵌在 <code>hl</code> 元素中，文章的发表日期镶嵌在 <code>p</code> 元素中。在标题下部的 <code>p</code> 元素中，嵌入了一大段该博客文章的正文，在结尾处的 <code>footer</code> 元素中，嵌入了文章的著作权，作为脚注。整个示例的内容相对比较独立、完整，因此，对这部分内容使用了 <code>article</code> 元素。</p><p> <code>article</code> 元素是可以嵌套用的，内层的内容在原则上需要与外层的内容相关联．例如，一篇博客文章中，针对该文章的评论就可以使用嵌套 <code>article</code> 元素的方式．用来呈现评论的 <code>article</code> 元素被包含在表示整体内容的 <code>article</code> 元素里面。</p><pre><code>&lt;article&gt;    &lt;header&gt;        &lt;h1&gt;苹果&lt;/h1&gt;        &lt;p&gt;发表日期:2020/11/26&lt;/p&gt;    &lt;/header&gt;    &lt;p&gt;苹果，我爱吃&lt;/p&gt;    &lt;footer&gt;        &lt;small&gt;著作归我所有&lt;/small&gt;    &lt;/footer&gt;    &lt;section&gt;        &lt;h2&gt;评论&lt;/h2&gt;        &lt;article&gt;            &lt;header&gt;                &lt;h3&gt;发表者:QA&lt;/h3&gt;            &lt;/header&gt;            &lt;p&gt;我喜欢苹果&lt;/p&gt;        &lt;/article&gt;    &lt;/section&gt;&lt;/article&gt;</code></pre><h3 id="section元素"><a href="#section元素" class="headerlink" title="section元素"></a>section元素</h3><p><code>section</code> 元素用于对网站或应用程序中页面上的内容进行分块，一个<code> sectinn</code> 元素通常由内容及其标题组成。但 <code>section</code> 元素并非一个普通的容器元素．当一个容器需要被直接定义样式或通过脚本定义行为时，推荐使用 <code>div</code> 而非 <code>section</code> 元素。我们可以这样理解： <code>section</code> 元素中的内容可以单独存储到数据库中或输出到 W6rd 文档中。</p><p><code>section</code>元素的作用是对页面上的内容进行分块，或者说对文章进行分段，不要与”有独立自己的完整的内容”的article元素混淆。下面，我们来看 <code>article</code> 元素与 <code>section</code> 元素结合使用的两个示例，希望能够帮助你更好地理解 <code>article</code> 元素与 <code>section</code> 元素的区别。首先来看一个带有 <code>section</code> 元素的 <code>artide</code> 元素示例</p><pre><code>&lt;article&gt;    &lt;header&gt;        &lt;h1&gt;苹果&lt;/h1&gt;        &lt;p&gt;发表日期:2020/11/26&lt;/p&gt;    &lt;/header&gt;    &lt;p&gt;苹果，我爱吃&lt;/p&gt;    &lt;section&gt;        &lt;h2&gt;富士康&lt;/h2&gt;        &lt;p&gt;富士康的红苹果好好吃&lt;/p&gt;    &lt;/section&gt;    &lt;section&gt;        &lt;h2&gt;国光&lt;/h2&gt;        &lt;p&gt;又叫小国光，原产美国，不好吃&lt;/p&gt;    &lt;/section&gt;    &lt;footer&gt;        &lt;small&gt;著作归我所有&lt;/small&gt;    &lt;/footer&gt;&lt;/article&gt;</code></pre><p>上面内容首先是一段独立的、完整的内容，因此使用<code> article</code> 元素。该内容是一篇关于苹果的文章，该文章分为 3 段，每一段都有一个独立的标题，因此使用了两个 <code>section</code> 元素。请记住，对<strong>文章分段的工作</strong>也是使用 <code>section</code> 元素完成的。可能有人会问，为什么没有对第一段使用 <code>section</code> 元素，这里其实是可以使用 <code>section</code> 元素的，但是由于其结构比较清晰，分析器可以识别第一段内容在一个<code> section</code> 元素里，所以也可以将第一个 section 元素略，但是如果第一个 <code>scction</code> 元素里还要包含子 <code>section</code> 元素或子<code> article</code> 元素，那么就必须写明第一个 <code>section</code> 元素了。接着，我们来看一个包含叭 <code>article</code> 元素的 <code>section</code> 元素示例</p><pre><code>&lt;section&gt;    &lt;h1&gt;水果&lt;/h1&gt;    &lt;article&gt;        &lt;h2&gt;苹果&lt;/h2&gt;        &lt;p&gt;我爱吃苹果&lt;/p&gt;    &lt;/article&gt;    &lt;article&gt;        &lt;h2&gt;橘子&lt;/h2&gt;        &lt;p&gt;我爱吃橘子&lt;/p&gt;    &lt;/article&gt;&lt;/section&gt;</code></pre><p>这个示例首先是一篇文章中的一段，一次最初没有使用<code>article</code>元素。但是在这段中有几块独立的内容，因此嵌入了几个独立的<code>article</code>元素。这俩个元素能相互使用吗?实际上，在HTML5中，<code>article</code>元素可以看成是一种特殊种类的<code>section</code>元素，它比<code>section</code>元素更强调独立性。即<code>section</code>元素强调分段或分块，<code>article</code>强调独立性。具体来说，如果一块内容相对来说比较独立、完整的时候用<code>article</code>，但是如果你想将一块内容分成几段的时候用<code>section</code>。</p><p>另外，HTML5中div变成了一种容器，当使用CSS样式1的时候，可以对这个容器进行一个总体的CSS样式调用。</p><p>可以将所有页面的从属部分，譬如导航条、菜单、版权说明等包含在一个统一的页面中，方便使用CSS样式来进行调整。</p><p><strong>注意</strong></p><ol><li>不要将<code>section</code>元素用作1设置样式的页面容器，那是<code>div</code>元素的工作</li><li>如果<code>article</code>、<code>aside</code>、<code>nav</code>更适合，不要使用<code>section</code></li><li>不要为没有标题的内容区块使用<code>section</code>元素</li></ol><h3 id="nav元素"><a href="#nav元素" class="headerlink" title="nav元素"></a>nav元素</h3><p><code>nav</code>元素是一个可以用作页面导航的链接组，其中的导航元素链接到其他页面或当前页面的其他部分。</p><pre><code>&lt;nav&gt;    &lt;ul&gt;        &lt;li&gt;&lt;a href="/"&gt;主页&lt;/a&gt;&lt;/li&gt;        &lt;li&gt;&lt;a href="/"&gt;标签&lt;/a&gt;&lt;/li&gt;        &lt;li&gt;&lt;a href="/"&gt;分类&lt;/a&gt;&lt;/li&gt;    &lt;/ul&gt;&lt;/nav&gt;&lt;article&gt;    &lt;header&gt;&lt;/header&gt;    &lt;p&gt;&lt;/p&gt;    &lt;footer&gt;&lt;/footer&gt;&lt;/article&gt;</code></pre><p>具体来说，<code>nav</code>元素可以用于以下这些场合： </p><ol><li><p>传统导航条。现在主流网站上都有不同层级的导航条，其作用是将当前画面跳转到网站的其他主要页面上去。 </p></li><li><p>侧边栏导航。现在主流博客网站及商品网站上都有侧边栏导航，其作用是将页面从当前文章或当前商品跳转到其他文章或其他商品页面上去。 </p></li><li><p>页内导航。页内导航的作用是在本页面儿个主要的组成部分之间进行跳转。 </p></li><li><p>翻页操作。翻页操作是指在多个页面的前后页或博客网站的前后篇文章滚动。 </p></li><li><p>除此之外，<code>nav</code>元素也可以用于其他所有你觉得是重要的、基本的导航链接组中。 </p></li></ol><h3 id="aside元素"><a href="#aside元素" class="headerlink" title="aside元素"></a>aside元素</h3><p><code>aside</code>元素用来表示当前页面或文章的附属信息部分，它可以包含当前页面或主要内容相关的引用、侧边栏、广告、导航栏，以及其他类似的有别于主要内容的部分。</p><p>有种使用方法：</p><ol><li><p>被包含在article元素中作为主要内容的附属信息部分，其中的内容可能是与当前文章有关的参考资料、名词解释等等。</p></li><li><p>在article元素之外使用，作为页面或站点全局的附属信息部分。最典型的是侧边栏，如友情链接，博客中其他文章列表、广告单元等。</p></li></ol><h2 id="新增的非主体结构元素"><a href="#新增的非主体结构元素" class="headerlink" title="新增的非主体结构元素"></a>新增的非主体结构元素</h2><h3 id="header元素"><a href="#header元素" class="headerlink" title="header元素"></a>header元素</h3><p><code>header</code>元素是一种具有引导和导航作用的结构元素，通常用来放置整个页面或页面内的一个内容区块的标题，但也可以包含其他内容，例如数据列表、搜索表单或相关的logo图片。</p><p>一个网页并未限制<code>header</code>元素的个数，可以拥有多个，可以为每个内容区块加一个<code>header</code>元素。<br>一个<code>haeder</code>元素包括至少一个(h1~h6)元素，也可以包括<code>table</code>元素、<code>form</code>元素、<code>nav</code>元素。</p><h3 id="footer元素"><a href="#footer元素" class="headerlink" title="footer元素"></a>footer元素</h3><p><code>footer</code>元素可以作为其上层父级内容内容区块或是一个根区块的脚注。<code>footer</code>通常包括其相关区块的脚注信息，如作者、相关阅读链接及版本信息等。与<code>header</code>元素一样，一个页面中也未限制<code>footer</code>元素的个数。</p><h3 id="address元素"><a href="#address元素" class="headerlink" title="address元素"></a>address元素</h3><p><code>address</code>元素用来在文档中呈现联系信息，包括文档作者或者文档维护者的信息、他们的网站链接、电子邮箱、真实地址、电话号码等。</p><h2 id="HTML5结构"><a href="#HTML5结构" class="headerlink" title="HTML5结构"></a>HTML5结构</h2><h3 id="大纲"><a href="#大纲" class="headerlink" title="大纲"></a>大纲</h3><p>通过使用HTML5的文档结构比大量使用HTML4的文档结构清晰、明确了很多。</p><p>所谓大纲简单说就是文档中各个内容区块的结构编排。内容块的编排可以分为“显示编排”和“隐式编排”俩种方式。</p><p>显示编排是指明确使用section等元素创建文档结构。<br>隐式编排就是不明确使用section等元素，而是根据页面中所书写的各级标题(h1~h6)等自动创建</p><pre><code>&lt;body&gt;    &lt;header&gt;        &lt;!--网站导航链接--&gt;        &lt;nav&gt;            &lt;ul&gt;                &lt;li&gt;&lt;a href="##"&gt;首页&lt;/a&gt;&lt;/li&gt;                &lt;li&gt;&lt;a href="##"&gt;帮助&lt;/a&gt;&lt;/li&gt;            &lt;/ul&gt;        &lt;/nav&gt;    &lt;/header&gt;    &lt;!--文章正文--&gt;&gt;    &lt;article&gt;        &lt;header&gt;            &lt;h1&gt;HHH&lt;/h1&gt;            &lt;h2&gt;hhh&lt;/h2&gt;        &lt;/header&gt;        &lt;p&gt;为什么为什么&lt;/p&gt;        &lt;section class="comments"&gt;            &lt;article&gt;                &lt;h1&gt;评论&lt;/h1&gt;                &lt;p&gt;很好啊&lt;/p&gt;            &lt;/article&gt;        &lt;/section&gt;    &lt;/article&gt;    &lt;!--版权信息--&gt;&gt;    &lt;footer&gt;        &lt;small&gt;版权所有归我&lt;/small&gt;    &lt;/footer&gt;&lt;/body&gt;</code></pre><h3 id="对新的结构元素使用样式"><a href="#对新的结构元素使用样式" class="headerlink" title="对新的结构元素使用样式"></a>对新的结构元素使用样式</h3><p>因为很多浏览器尚未对HTML5中新增的结构元素提供支持，多以需要使用CSS追加如下声明，目的是通知浏览器页面中使用的新元素都是以块方式显示的。</p><p><code>artical、aside、footer、header、nav、section {display: block;}</code></p><p>另外，IE8及之前浏览器是不支持用CSS的方法来使用这些尚未支持的结构元素的，需要使用JS脚本如下：</p><pre><code>&lt;script&gt;    document.createElement("header");    document.createElement("footer");    document.createElement("nav");    document.createElement("article");&lt;/script&gt;</code></pre>]]></content>
       
       
       <categories>
@@ -21,6 +59,8 @@
         <tags>
             
             <tag> HTML </tag>
+            
+            <tag> HTML5+CSS3权威指南 </tag>
             
         </tags>
       
@@ -33,7 +73,7 @@
       <link href="posts/d0002.html"/>
       <url>posts/d0002.html</url>
       
-        <content type="html"><![CDATA[<h1 id="HTML基础"><a href="#HTML基础" class="headerlink" title="HTML基础"></a>HTML基础</h1><h2 id="常用标签语法"><a href="#常用标签语法" class="headerlink" title="常用标签语法"></a>常用标签语法</h2><h3 id="p"><a href="#p" class="headerlink" title="p"></a>p</h3><p>以下代码标记了一个段落：<br><code>&lt;p&gt;这是一个段落。&lt;/p&gt;</code></p><p><code>&lt;p&gt;</code> 标签定义段落。</p><p><code>&lt;p&gt;</code>元素会自动在其前后创建一些空白。浏览器会自动添加这些空间，您也可以在样式表中规定。</p><p><code>&lt;p&gt;</code> 标签支持全局属性<br><code>&lt;p&gt;</code> 标签支持所有 HTML事件属性</p><h3 id="h1-h6"><a href="#h1-h6" class="headerlink" title="h1~h6"></a>h1~h6</h3><p>六个不同的 HTML 标题：</p><p><code>&lt;h1&gt;这是标题 1&lt;/h1&gt;</code><br><code>&lt;h2&gt;这是标题 2&lt;/h2&gt; </code><br><code>&lt;h3&gt;这是标题 3&lt;/h3&gt; </code><br><code>&lt;h4&gt;这是标题 4&lt;/h4&gt; </code><br><code>&lt;h5&gt;这是标题 5&lt;/h5&gt; </code><br><code>&lt;h6&gt;这是标题 6&lt;/h6&gt;</code></p><p><code>&lt;h1&gt; - &lt;h6&gt;</code> 标签被用来定义 HTML 标题。</p><p><code>&lt;h1&gt;</code> 定义重要等级最高的标题。<code>&lt;h6&gt;</code> 定义重要等级最低的标题。</p><p><code>&lt;h1&gt; - &lt;h6&gt;</code> 标签支持 HTML 的全局属性。<br><code>&lt;h1&gt; - &lt;h6&gt;</code> 标签支持 HTML 的事件属性。</p><h3 id="span"><a href="#span" class="headerlink" title="span"></a>span</h3><p>使用 <code>&lt;span&gt;</code> 元素对文本中的一部分进行着色：<br><code>&lt;p&gt;我的母亲有 &lt;span style="color:blue"&gt;蓝色&lt;/span&gt; 的眼睛。&lt;/p&gt;</code></p><p><code>&lt;span&gt;</code> 用于对文档中的行内元素进行组合。</p><p><code>&lt;span&gt;</code> 标签没有固定的格式表现。当对它应用样式时，它才会产生视觉上的变化。如果不对 <code>&lt;span&gt;</code> 应用样式，那么 <code>&lt;span&gt;</code> 元素中的文本与其他文本不会任何视觉上的差异。</p><p><code>&lt;span&gt;</code> 标签提供了一种将文本的一部分或者文档的一部分独立出来的方式。</p><p>被 <code>&lt;span&gt;</code> 元素包含的文本，您可以使用 CSS 对它定义样式，或者使用 JavaScript 对它进行操作。</p><p><code>&lt;span&gt;</code> 标签支持 HTML 的全局属性<br><code>&lt;span&gt;</code> 标签支持 HTML 的事件属性。</p><h3 id="img"><a href="#img" class="headerlink" title="img"></a>img</h3><p>如何插入图像：</p><p><code>&lt;img loading="lazy" src="smiley-2.gif" alt="Smiley face" width="42" height="42"&gt;</code></p><p><code>&lt;img&gt;</code> 标签定义 HTML 页面中的图像。</p><p><code>&lt;img&gt;</code> 标签有两个必需的属性：<code>src</code> 和 <code>alt</code>。</p><p>注释：从技术上讲，图像并不会插入 HTML 页面中，而是链接到 HTML 页面上。<code>&lt;img&gt;</code> 标签的作用是为被引用的图像创建占位符。</p><p><strong>提示</strong>：通过在 <code>&lt;a&gt;</code> 标签中嵌套 <code>&lt;img&gt;</code> 标签，给图像添加到另一个文档的链接。</p><h4 id="alt属性"><a href="#alt属性" class="headerlink" title="alt属性"></a>alt属性</h4><p><code>alt</code> 属性是一个必需的属性，它规定在图像无法显示时的替代文本。</p><p>假设由于一些原因（比如网速太慢、<code>src</code> 属性中的错误、浏览器禁用图像、用户使用的是屏幕阅读器）用户无法查看图像，<code>alt</code> 属性可以为图像提供替代的信息。</p><h4 id="src属性"><a href="#src属性" class="headerlink" title="src属性"></a>src属性</h4><p>图像的 URL。<br>可能的值：</p><p>绝对 URL - 指向另一个网站（比如 <code>src="http://www.example.com/image.gif"</code>）<br>相对 URL - 指向网站内的一个文件（比如 <code>src="image.gif"</code>）</p><h4 id="height属性"><a href="#height属性" class="headerlink" title="height属性"></a>height属性</h4><p>height 属性规定图像的高度，以像素计。</p><p>提示：为图像指定 <code>height</code> 和 <code>width</code> 属性是一个好习惯。如果设置了这些属性，就可以在页面加载时为图像预留空间。如果没有这些属性，浏览器就无法了解图像的尺寸，也就无法为图像保留合适的空间，因此当图像加载时，页面的布局就会发生变化。</p><p>提示：请不要通过 <code>height</code> 和 <code>width</code> 属性来缩放图像。如果通过 <code>height</code> 和 <code>width</code> 属性来缩小图像，那么用户就必须下载大容量的图像（即使图像在页面上看上去很小）。正确的做法是，在网页上使用图像之前，应该通过软件把图像处理为合适的尺寸。</p><h4 id="width"><a href="#width" class="headerlink" title="width"></a>width</h4><p><code>width</code> 属性规定图像的宽度，以像素计。</p><h3 id="a"><a href="#a" class="headerlink" title="a"></a>a</h3><p>链接到菜鸟教程 ：<br><code>&lt;a href=""&gt;访问xxx!&lt;/a&gt;</code></p><p><code>&lt;a&gt;</code> 标签定义超链接，用于从一个页面链接到另一个页面。</p><p><code>&lt;a&gt;</code> 元素最重要的属性是<code> href</code> 属性，它指定链接的目标。</p><p>在所有浏览器中，链接的默认外观如下：</p><ol><li>未被访问的链接带有下划线而且是蓝色的</li><li>已被访问的链接带有下划线而且是紫色的</li><li>活动链接带有下划线而且是红色的</li></ol><p>提示：如果没有使用 <code>href</code> 属性，则不能使用 hreflang、media、rel、target 以及 type 属性。</p><p>提示：通常在当前浏览器窗口中显示被链接页面，除非规定了其他 target。</p><p>提示：请使用 CSS 来改变链接的样式。</p><h4 id="download属性"><a href="#download属性" class="headerlink" title="download属性"></a>download属性</h4><p><code>download</code> 属性定义了下载链接的地址。</p><p>href 属性必须在 <code>&lt;a&gt;</code> 标签中指定。</p><p>属性同样可以指定下载文件的名称。文件名称没有限定值，浏览器会自动在文件名称末尾添加该下载文件的后缀 (.img, .pdf, .txt, .html, 等)。</p><p>语法<br><code>&lt;a download="filename"&gt;</code></p><h4 id="href属性"><a href="#href属性" class="headerlink" title="href属性"></a>href属性</h4><p><code>a</code> 标签的 <code>href</code> 属性用于指定超链接目标的 URL。</p><p>如果 <code>href</code> 属性没有被指定链接，<code>&lt;a&gt;</code> 标签将不是一个链接。</p><p>超链接的 URL。可能的值：</p><ol><li>绝对 URL - 指向另一个站点（比如 href=”<a href="http://www.example.com/index.htm&quot;%EF%BC%89">http://www.example.com/index.htm"）</a></li><li>相对 URL - 指向站点内的某个文件（href=”index.htm”）</li><li>锚 URL - 指向页面中的锚（href=”#top”）</li></ol><h4 id="target属性"><a href="#target属性" class="headerlink" title="target属性"></a>target属性</h4><p><code>&lt;a&gt;</code> 标签的 <code>target</code> 属性规定在何处打开链接文档。</p><table><thead><tr><th align="left">值</th><th align="left">描述</th></tr></thead><tbody><tr><td align="left">_blank</td><td align="left">在新窗口中打开被链接文档。</td></tr><tr><td align="left">_self</td><td align="left">默认。在相同的框架中打开被链接文档。</td></tr><tr><td align="left">_parent</td><td align="left">在父框架集中打开被链接文档。</td></tr><tr><td align="left">_top</td><td align="left">在整个窗口中打开被链接文档。</td></tr><tr><td align="left">framename</td><td align="left">在指定的框架中打开被链接文档。</td></tr></tbody></table><h3 id="div"><a href="#div" class="headerlink" title="div"></a>div</h3><p>文档中的一个区域将显示为蓝色：</p><pre><code>&lt;div style="color:#0000FF"&gt;&lt;h3&gt;这是一个在 div 元素中的标题。&lt;/h3&gt;&lt;p&gt;这是一个在 div 元素中的文本。&lt;/p&gt;&lt;/div&gt;</code></pre><p><code>&lt;div&gt;</code> 标签定义 HTML 文档中的一个分隔区块或者一个区域部分。</p><p><code>&lt;div&gt;</code>标签常用于组合块级元素，以便通过 CSS 来对这些元素进行格式化。</p><p><strong>提示</strong>：<code>&lt;div&gt;</code> 元素经常与 CSS 一起使用，用来布局网页。</p><p><strong>注释</strong>：默认情况下，浏览器通常会在 <code>&lt;div&gt;</code> 元素前后放置一个换行符。然而，您可以通过使用 CSS 改变这种情况</p><h3 id="ul"><a href="#ul" class="headerlink" title="ul"></a>ul</h3><p>无序 HTML 列表：</p><pre><code>&lt;ul&gt;    &lt;li&gt;Coffee&lt;/li&gt;    &lt;li&gt;Tea&lt;/li&gt;    &lt;li&gt;Milk&lt;/li&gt;&lt;/ul&gt;</code></pre><p><code>&lt;ul&gt;</code> 标签定义无序列表。</p><p>将 <code>&lt;ul&gt;</code> 标签与 <code>&lt;li&gt;</code> 标签一起使用，创建无序列表。</p><p><strong>提示</strong>：使用<code>&lt;ol&gt;</code> 标签创建有序列表。</p><h3 id="li"><a href="#li" class="headerlink" title="li"></a>li</h3><p><code>&lt;li&gt;</code> 标签定义列表项目。</p><p><code>&lt;li&gt;</code> 标签可用在有序列表<code>&lt;ol&gt;</code>、无序列表<code>&lt;ul&gt;</code>和菜单列表<code>&lt;menu&gt;</code> 中。</p><h3 id="form"><a href="#form" class="headerlink" title="form"></a>form</h3><p>带有两个输入字段和一个提交按钮的 HTML 表单：</p><pre><code>&lt;form action="demo_form.php" method="get"&gt;First name: &lt;input type="text" name="fname"&gt;&lt;br&gt;Last name: &lt;input type="text" name="lname"&gt;&lt;br&gt;&lt;input type="submit" value="提交"&gt;&lt;/form&gt;</code></pre><p><code>&lt;form&gt;</code> 标签用于创建供用户输入的 HTML 表单。</p><p><code>&lt;form&gt; </code>元素包含一个或多个如下的表单元素：</p><ol><li><code>&lt;input&gt;</code></li><li><code>&lt;textarea&gt;</code></li><li><code>&lt;button&gt;</code></li><li><code>&lt;select&gt;</code></li><li><code>&lt;option&gt;</code></li><li><code>&lt;optgroup&gt;</code></li><li><code>&lt;fieldset&gt;</code></li><li><code>&lt;label&gt;</code></li></ol><h4 id="action属性"><a href="#action属性" class="headerlink" title="action属性"></a>action属性</h4><p><code>action</code> 属性规定当提交表单时，向何处发送表单数据。</p><p>URL    当表单提交时向何处发送表单数据。<br>可能的值：<br>绝对 URL - 指向另一个网站（比如 <code>action="http://www.example.com/example.htm"</code>）<br>相对 URL - 指向网站内的一个文件（比如 <code>action="example.htm"</code>）</p><h4 id="autocomplete"><a href="#autocomplete" class="headerlink" title="autocomplete"></a>autocomplete</h4><p><code>autocomplete</code> 属性规定表单是否应该启用自动完成功能。</p><p>自动完成允许浏览器预测对字段的输入。当用户在字段开始键入时，浏览器基于之前键入过的值，应该显示出在字段中填写的选项。</p><p>提示：<code>autocomplete</code> <strong>“on”</strong> 适用于表单，**”off”** 适用于特定的输入字段，反之亦然。</p><p>语法<br><code>&lt;form autocomplete="on|off"&gt;</code></p><h4 id="method属性"><a href="#method属性" class="headerlink" title="method属性"></a>method属性</h4><p><code>method</code> 方法规定如何发送表单数据（form-data）（表单数据会被发送到在 <code>action</code> 属性中规定的页面中）。</p><p>表单数据可被作为 URL 变量的形式来发送（method=”get”）或者作为 HTTP post 事务的形式来发送（method=”post”）。</p><h4 id="name属性"><a href="#name属性" class="headerlink" title="name属性"></a>name属性</h4><p><code>name</code> 属性规定表单的名称。</p><p><code>name</code> 属性用于在 JavaScript 中引用元素，或者在表单提交之后引用表单数据</p><h4 id="novalidate属性"><a href="#novalidate属性" class="headerlink" title="novalidate属性"></a>novalidate属性</h4><p>novalidate 属性是一个布尔属性。</p><p>novalidate 属性规定当提交表单时不对表单数据（输入）进行验证。</p><h4 id="target属性-1"><a href="#target属性-1" class="headerlink" title="target属性"></a>target属性</h4><p>规定在何处打开 <code>action</code> URL。</p><p>语法<br><code>&lt;form target="_blank|_self|_parent|_top|framename"&gt;</code></p><table><thead><tr><th align="left">值</th><th align="left">描述</th></tr></thead><tbody><tr><td align="left">_blank</td><td align="left">在新窗口/选项卡中打开。</td></tr><tr><td align="left">_self</td><td align="left">在同一框架中打开。（默认）</td></tr><tr><td align="left">_parent</td><td align="left">在父框架中打开。</td></tr><tr><td align="left">_top</td><td align="left">在整个窗口中打开。</td></tr><tr><td align="left">framename</td><td align="left">在指定的 iframe 中打开。</td></tr></tbody></table><h3 id="input"><a href="#input" class="headerlink" title="input"></a>input</h3><p><code>&lt;input&gt;</code> 标签规定了用户可以在其中输入数据的输入字段。</p><p><code>&lt;input&gt;</code> 元素在 <code>&lt;form&gt;</code> 元素中使用，用来声明允许用户输入数据的 input 控件。</p><p>输入字段可通过多种方式改变，取决于 <code>type</code> 属性。</p><p><strong>注意</strong>: <code>&lt;input&gt;</code> 元素是空的,它只包含标签属性。</p><p><strong>提示</strong>: 你可以使用 <code>&lt;label&gt;</code> 元素来定义 <code>&lt;input&gt;</code> 元素的标注。</p><p><code>&lt;input&gt;</code> 标签支持所有 HTML事件属性。</p><h4 id="accept属性"><a href="#accept属性" class="headerlink" title="accept属性"></a>accept属性</h4><p><code>accept</code> 属性规定了可通过文件上传提交的服务器接受的文件类型。</p><p>注意：<code>accept</code> 属性仅适用于 <code>&lt;input type="file"&gt;</code>。</p><p>语法<br><code>&lt;input accept="audio/*|video/*|image/*|MIME_type"&gt;</code></p><h4 id="alt属性-1"><a href="#alt属性-1" class="headerlink" title="alt属性"></a>alt属性</h4><p>定义图像输入的替代文本。 (只针对type=”image”)</p><h4 id="autocomplete属性"><a href="#autocomplete属性" class="headerlink" title="autocomplete属性"></a>autocomplete属性</h4><p>on/off</p><p><code>autocomplete</code> 属性规定 <code>&lt;input&gt;</code> 元素输入字段是否应该启用自动完成功能。</p><h4 id="autofocus属性"><a href="#autofocus属性" class="headerlink" title="autofocus属性"></a>autofocus属性</h4><p>语法</p><p><code>&lt;input autofocus&gt;</code></p><p><code>autofocus</code> 属性规定当页面加载时 <code>&lt;input&gt;</code> 元素应该自动获得焦点。</p><h4 id="checked属性"><a href="#checked属性" class="headerlink" title="checked属性"></a>checked属性</h4><p><code>checked</code> 属性规定在页面加载时应该被预先选定的 <code>&lt;input&gt;</code> 元素。</p><p><code>checked</code> 属性适用于 <code>&lt;input type="checkbox"&gt;</code> 和 <code>&lt;input type="radio"&gt;</code>。</p><p><code>checked</code> 属性也可以在页面加载后，通过 JavaScript 代码进行设置。</p><h4 id="max属性"><a href="#max属性" class="headerlink" title="max属性"></a>max属性</h4><p>属性规定 <code>&lt;input&gt;</code> 元素的最大值。</p><h4 id="maxlength属性"><a href="#maxlength属性" class="headerlink" title="maxlength属性"></a>maxlength属性</h4><p>属性规定 <code>&lt;input&gt;</code> 元素中允许的最大字符数</p><h4 id="min属性"><a href="#min属性" class="headerlink" title="min属性"></a>min属性</h4><p>属性规定 <code>&lt;input&gt;</code>元素的最小值。</p><h4 id="name属性-1"><a href="#name属性-1" class="headerlink" title="name属性"></a>name属性</h4><p>name 属性规定 <code>&lt;input&gt;</code> 元素的名称。</p><h4 id="placeholder属性"><a href="#placeholder属性" class="headerlink" title="placeholder属性"></a>placeholder属性</h4><p>placeholder 属性规定可描述输入 <code>&lt;input&gt;</code> 字段预期值的简短的提示信息 。</p><h4 id="required属性"><a href="#required属性" class="headerlink" title="required属性"></a>required属性</h4><p>属性规定必需在提交表单之前填写输入字段</p><h4 id="size属性"><a href="#size属性" class="headerlink" title="size属性"></a>size属性</h4><p>size 属性规定以字符数计的 <code>&lt;input&gt;</code> 元素的可见宽度。</p><h4 id="src属性-1"><a href="#src属性-1" class="headerlink" title="src属性"></a>src属性</h4><p><code>src</code> 属性规定显示为提交按钮的图像的 URL。 (只针对 type=”image”)</p><h4 id="value-属性"><a href="#value-属性" class="headerlink" title="value 属性"></a>value 属性</h4><p><code>value</code> 属性对于不同 input 类型，用法也不同：</p><p>对于 “button”、”reset”、”submit” 类型 - 定义按钮上的文本<br>对于 “text”、”password”、”hidden” 类型 - 定义输入字段的初始（默认）值<br>对于 “checkbox”、”radio”、”image” 类型 - 定义与 input 元素相关的值，当提交表单时该值会发送到表单的 action URL。<br>注意：value 属性对于 <code>&lt;input type="checkbox"&gt;</code> 和 <code>&lt;input type="radio"&gt;</code> 是必需的。</p><h4 id="type属性"><a href="#type属性" class="headerlink" title="type属性"></a>type属性</h4><table><thead><tr><th align="left">值</th><th align="left">描述</th></tr></thead><tbody><tr><td align="left">button</td><td align="left">定义可点击的按钮（通常与 JavaScript 一起使用来启动脚本）。</td></tr><tr><td align="left">checkbox</td><td align="left">定义复选框。</td></tr><tr><td align="left">colorNew</td><td align="left">定义拾色器。</td></tr><tr><td align="left">dateNew</td><td align="left">定义 date 控件（包括年、月、日，不包括时间）。</td></tr><tr><td align="left">datetimeNew</td><td align="left">定义 date 和 time 控件（包括年、月、日、时、分、秒、几分之一秒，基于 UTC 时区）。</td></tr><tr><td align="left">datetime-localNew</td><td align="left">定义 date 和 time 控件（包括年、月、日、时、分、秒、几分之一秒，不带时区）。</td></tr><tr><td align="left">emailNew</td><td align="left">定义用于 e-mail 地址的字段。</td></tr><tr><td align="left">file</td><td align="left">定义文件选择字段和 “浏览…” 按钮，供文件上传。</td></tr><tr><td align="left">hidden</td><td align="left">定义隐藏输入字段。</td></tr><tr><td align="left">image</td><td align="left">定义图像作为提交按钮。</td></tr><tr><td align="left">monthNew</td><td align="left">定义 month 和 year 控件（不带时区）。</td></tr><tr><td align="left">numberNew</td><td align="left">定义用于输入数字的字段。</td></tr><tr><td align="left">password</td><td align="left">定义密码字段（字段中的字符会被遮蔽）。</td></tr><tr><td align="left">radio</td><td align="left">定义单选按钮。</td></tr><tr><td align="left">rangeNew</td><td align="left">定义用于精确值不重要的输入数字的控件（比如 slider 控件）。</td></tr><tr><td align="left">reset</td><td align="left">定义重置按钮（重置所有的表单值为默认值）。</td></tr><tr><td align="left">searchNew</td><td align="left">定义用于输入搜索字符串的文本字段。</td></tr><tr><td align="left">submit</td><td align="left">定义提交按钮。</td></tr><tr><td align="left">telNew</td><td align="left">定义用于输入电话号码的字段。</td></tr><tr><td align="left">text</td><td align="left">默认。定义一个单行的文本字段（默认宽度为 20 个字符）。</td></tr><tr><td align="left">timeNew</td><td align="left">定义用于输入时间的控件（不带时区）。</td></tr><tr><td align="left">urlNew</td><td align="left">定义用于输入 URL 的字段。</td></tr><tr><td align="left">weekNew</td><td align="left">定义 week 和 year 控件（不带时区）。</td></tr></tbody></table><h3 id="label"><a href="#label" class="headerlink" title="label"></a>label</h3><p><code>&lt;label&gt; </code>标签为 <code>input</code> 元素定义标注（标记）。</p><p><code>label</code> 元素不会向用户呈现任何特殊效果。不过，它为鼠标用户改进了可用性。如果您在 <code>label</code> 元素内点击文本，就会触发此控件。就是说，当用户选择该标签时，浏览器就会自动将焦点转到和标签相关的表单控件上。</p><p><code>&lt;label&gt; </code>标签的 <code>for</code> 属性应当与相关元素的 <code>id</code> 属性相同。</p><h4 id="for属性"><a href="#for属性" class="headerlink" title="for属性"></a>for属性</h4><p>规定 label 与哪个表单元素绑定</p><h3 id="textarea"><a href="#textarea" class="headerlink" title="textarea"></a>textarea</h3><p><code>&lt;textarea&gt;</code> 标签定义一个多行的文本输入控件。</p><p>文本区域中可容纳无限数量的文本，其中的文本的默认字体是等宽字体（通常是 Courier）。</p><h4 id="autofocus属性-1"><a href="#autofocus属性-1" class="headerlink" title="autofocus属性"></a>autofocus属性</h4><p>规定当页面加载时，文本区域自动获得焦点。</p><h4 id="maxlength属性-1"><a href="#maxlength属性-1" class="headerlink" title="maxlength属性"></a>maxlength属性</h4><p>规定文本区域允许的最大字符数</p><h4 id="name属性-2"><a href="#name属性-2" class="headerlink" title="name属性"></a>name属性</h4><p>规定文本区域的名称</p><h4 id="placeholder属性-1"><a href="#placeholder属性-1" class="headerlink" title="placeholder属性"></a>placeholder属性</h4><p>规定一个简短的提示，描述文本区域期望的输入值</p><h4 id="readonly属性"><a href="#readonly属性" class="headerlink" title="readonly属性"></a>readonly属性</h4><p>规定文本区域为只读</p><h4 id="required属性-1"><a href="#required属性-1" class="headerlink" title="required属性"></a>required属性</h4><p>规定文本区域是必需的/必填的</p><h3 id="button"><a href="#button" class="headerlink" title="button"></a>button</h3><p><code>&lt;button&gt;</code> 标签定义一个按钮。</p><p>在 <code>&lt;button&gt;</code> 元素内部，您可以放置内容，比如文本或图像。这是该元素与使用 <code>&lt;input&gt;</code> 元素创建的按钮之间的不同之处。</p><p>提示：请始终为 <code>&lt;button&gt;</code> 元素规定 type 属性。不同的浏览器对 <code>&lt;button&gt;</code> 元素的 type 属性使用不同的默认值。</p><h4 id="name属性-3"><a href="#name属性-3" class="headerlink" title="name属性"></a>name属性</h4><p>规定按钮的名称。</p><h4 id="type属性-1"><a href="#type属性-1" class="headerlink" title="type属性"></a>type属性</h4><table><thead><tr><th align="left">值</th><th align="left">描述</th></tr></thead><tbody><tr><td align="left">submit</td><td align="left">该按钮是提交按钮（除了 Internet Explorer，该值是其他浏览器的默认值）</td></tr><tr><td align="left">button</td><td align="left">该按钮是可点击的按钮（Internet Explorer 的默认值）。</td></tr><tr><td align="left">reset</td><td align="left">该按钮是重置按钮（清除表单数据）。</td></tr></tbody></table><h4 id="value属性"><a href="#value属性" class="headerlink" title="value属性"></a>value属性</h4><p>规定按钮的初始值。可由脚本进行修改</p><h3 id="select"><a href="#select" class="headerlink" title="select"></a>select</h3><p><code>&lt;select&gt;</code> 元素用来创建下拉列表。</p><p><code>&lt;select&gt;</code> 元素中的 <code>&lt;option&gt;</code> 标签定义了列表中的可用选项。</p><p><strong>提示</strong>：<code>&lt;select&gt;</code> 元素是一种表单控件，可用于在表单中接受用户输入</p><h4 id="name属性-4"><a href="#name属性-4" class="headerlink" title="name属性"></a>name属性</h4><p>定义下拉列表的名称</p><h4 id="required属性-2"><a href="#required属性-2" class="headerlink" title="required属性"></a>required属性</h4><p>规定用户在提交表单前必须选择一个下拉列表中的选项</p><h4 id="size属性-1"><a href="#size属性-1" class="headerlink" title="size属性"></a>size属性</h4><p>规定下拉列表中可见选项的数目</p><h4 id="multiple属性"><a href="#multiple属性" class="headerlink" title="multiple属性"></a>multiple属性</h4><p>当该属性为 true 时，可选择多个选项。</p><h4 id="autofocus属性-2"><a href="#autofocus属性-2" class="headerlink" title="autofocus属性"></a>autofocus属性</h4><p>规定在页面加载时下拉列表自动获得焦点。</p><h3 id="table"><a href="#table" class="headerlink" title="table"></a>table</h3><p><code>&lt;table&gt; </code>标签定义 HTML 表格</p><p>一个 HTML 表格包括 <code>&lt;table&gt;</code> 元素，一个或多个 <code>&lt;tr&gt;</code>、<code>&lt;th&gt;</code> 以及 <code>&lt;td&gt;</code> 元素。</p><p><code>&lt;tr&gt; </code>元素定义表格行，<code>&lt;th&gt;</code> 元素定义表头，<code>&lt;td&gt;</code> 元素定义表格单元。</p><h4 id="border属性"><a href="#border属性" class="headerlink" title="border属性"></a>border属性</h4><p><code>border</code> 属性规定表格单元周围是否显示边框。</p><p>值 “1” 指示应该显示边框，且表格不用于布局目的。</p><h3 id="b"><a href="#b" class="headerlink" title="b"></a>b</h3><p><code>&lt;b&gt;</code> 标签定义粗体的文本</p><p>注释：根据 HTML 5 的规范，<code>&lt;b&gt;</code> 标签应该做为最后的选择，只有在没有其他标记比较合适时才使用它。HTML 5 规范声明：标题应该用 <code>&lt;h1&gt; - &lt;h6&gt;</code> 标签表示，被强调的文本应该用 <code>&lt;em&gt;</code> 标签表示，重要的文本应该用 <code>&lt;strong&gt;</code> 标签表示，被标记的或者高亮显示的文本应该用 <code>&lt;mark&gt;</code> 标签表示。</p><p>提示：您也可以使用 CSS 的 <code>"font-weight"</code> 属性设置粗体文本。</p><h3 id="em"><a href="#em" class="headerlink" title="em"></a>em</h3><p><code>&lt;em&gt;</code> 标签是一个短语标签，用来呈现为被强调的文本。</p><p>提示：我们并不反对使用这个标签，但是如果您只是为了达到某种视觉效果而使用这个标签的话，我们建议您使用 CSS ，这样可能会取得更丰富的效果。</p><h3 id="i"><a href="#i" class="headerlink" title="i"></a>i</h3><p><code>&lt;i&gt;</code> 定义与文本中其余部分不同的部分，并把这部分文本呈现为斜体文本。</p><p><code>&lt;i&gt;</code> 标签被用来表示科技术语、其他语种的成语俗语、想法、宇宙飞船的名字等等。</p><p>在没有其他适当语义的元素可以使用时，请使用 <code>&lt;i&gt;</code> 元素。</p><h3 id="strong"><a href="#strong" class="headerlink" title="strong"></a>strong</h3><p><code>&lt;strong&gt;</code> 标签是一个短语标签，用来定义计算机程序的样本重要的文本。</p><p>提示：我们并不反对使用这个标签，但是如果您只是为了达到某种视觉效果而使用这个标签的话，我们建议您使用 CSS ，这样可能会取得更丰富的效果。</p><h3 id="small"><a href="#small" class="headerlink" title="small"></a>small</h3><p><code>&lt;small&gt;</code> 标签定义小型文本（和旁注）</p><h3 id="style"><a href="#style" class="headerlink" title="style"></a>style</h3><p><code>&lt;style&gt;</code> 标签定义 HTML 文档的样式信息。</p><p>在 <code>&lt;style&gt;</code> 元素中，您可以规定在浏览器中如何呈现 HTML 文档。</p><p>每个 HTML 文档能包含多个 <code>&lt;style&gt;</code> 标签。</p><h3 id="link"><a href="#link" class="headerlink" title="link"></a>link</h3><p><code>&lt;link&gt;</code> 标签定义文档与外部资源的关系。</p><p><code>&lt;link&gt;</code> 标签最常见的用途是链接样式表。</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="HTML5-CSS3权威指南"><a href="#HTML5-CSS3权威指南" class="headerlink" title="HTML5+CSS3权威指南"></a>HTML5+CSS3权威指南</h1><p>本篇: <strong>HTML基础</strong><br>下篇: <strong><a href="d0003">HTML5的结构</a></strong></p><hr><h1 id="HTML基础"><a href="#HTML基础" class="headerlink" title="HTML基础"></a>HTML基础</h1><h2 id="常用标签语法"><a href="#常用标签语法" class="headerlink" title="常用标签语法"></a>常用标签语法</h2><h3 id="p"><a href="#p" class="headerlink" title="p"></a>p</h3><p>以下代码标记了一个段落：<br><code>&lt;p&gt;这是一个段落。&lt;/p&gt;</code></p><p><code>&lt;p&gt;</code> 标签定义段落。</p><p><code>&lt;p&gt;</code>元素会自动在其前后创建一些空白。浏览器会自动添加这些空间，您也可以在样式表中规定。</p><p><code>&lt;p&gt;</code> 标签支持全局属性<br><code>&lt;p&gt;</code> 标签支持所有 HTML事件属性</p><h3 id="h1-h6"><a href="#h1-h6" class="headerlink" title="h1~h6"></a>h1~h6</h3><p>六个不同的 HTML 标题：</p><p><code>&lt;h1&gt;这是标题 1&lt;/h1&gt;</code><br><code>&lt;h2&gt;这是标题 2&lt;/h2&gt; </code><br><code>&lt;h3&gt;这是标题 3&lt;/h3&gt; </code><br><code>&lt;h4&gt;这是标题 4&lt;/h4&gt; </code><br><code>&lt;h5&gt;这是标题 5&lt;/h5&gt; </code><br><code>&lt;h6&gt;这是标题 6&lt;/h6&gt;</code></p><p><code>&lt;h1&gt; - &lt;h6&gt;</code> 标签被用来定义 HTML 标题。</p><p><code>&lt;h1&gt;</code> 定义重要等级最高的标题。<code>&lt;h6&gt;</code> 定义重要等级最低的标题。</p><p><code>&lt;h1&gt; - &lt;h6&gt;</code> 标签支持 HTML 的全局属性。<br><code>&lt;h1&gt; - &lt;h6&gt;</code> 标签支持 HTML 的事件属性。</p><h3 id="span"><a href="#span" class="headerlink" title="span"></a>span</h3><p>使用 <code>&lt;span&gt;</code> 元素对文本中的一部分进行着色：<br><code>&lt;p&gt;我的母亲有 &lt;span style="color:blue"&gt;蓝色&lt;/span&gt; 的眼睛。&lt;/p&gt;</code></p><p><code>&lt;span&gt;</code> 用于对文档中的行内元素进行组合。</p><p><code>&lt;span&gt;</code> 标签没有固定的格式表现。当对它应用样式时，它才会产生视觉上的变化。如果不对 <code>&lt;span&gt;</code> 应用样式，那么 <code>&lt;span&gt;</code> 元素中的文本与其他文本不会任何视觉上的差异。</p><p><code>&lt;span&gt;</code> 标签提供了一种将文本的一部分或者文档的一部分独立出来的方式。</p><p>被 <code>&lt;span&gt;</code> 元素包含的文本，您可以使用 CSS 对它定义样式，或者使用 JavaScript 对它进行操作。</p><p><code>&lt;span&gt;</code> 标签支持 HTML 的全局属性<br><code>&lt;span&gt;</code> 标签支持 HTML 的事件属性。</p><h3 id="img"><a href="#img" class="headerlink" title="img"></a>img</h3><p>如何插入图像：</p><p><code>&lt;img loading="lazy" src="smiley-2.gif" alt="Smiley face" width="42" height="42"&gt;</code></p><p><code>&lt;img&gt;</code> 标签定义 HTML 页面中的图像。</p><p><code>&lt;img&gt;</code> 标签有两个必需的属性：<code>src</code> 和 <code>alt</code>。</p><p>注释：从技术上讲，图像并不会插入 HTML 页面中，而是链接到 HTML 页面上。<code>&lt;img&gt;</code> 标签的作用是为被引用的图像创建占位符。</p><p><strong>提示</strong>：通过在 <code>&lt;a&gt;</code> 标签中嵌套 <code>&lt;img&gt;</code> 标签，给图像添加到另一个文档的链接。</p><h4 id="alt属性"><a href="#alt属性" class="headerlink" title="alt属性"></a>alt属性</h4><p><code>alt</code> 属性是一个必需的属性，它规定在图像无法显示时的替代文本。</p><p>假设由于一些原因（比如网速太慢、<code>src</code> 属性中的错误、浏览器禁用图像、用户使用的是屏幕阅读器）用户无法查看图像，<code>alt</code> 属性可以为图像提供替代的信息。</p><h4 id="src属性"><a href="#src属性" class="headerlink" title="src属性"></a>src属性</h4><p>图像的 URL。<br>可能的值：</p><p>绝对 URL - 指向另一个网站（比如 <code>src="http://www.example.com/image.gif"</code>）<br>相对 URL - 指向网站内的一个文件（比如 <code>src="image.gif"</code>）</p><h4 id="height属性"><a href="#height属性" class="headerlink" title="height属性"></a>height属性</h4><p>height 属性规定图像的高度，以像素计。</p><p>提示：为图像指定 <code>height</code> 和 <code>width</code> 属性是一个好习惯。如果设置了这些属性，就可以在页面加载时为图像预留空间。如果没有这些属性，浏览器就无法了解图像的尺寸，也就无法为图像保留合适的空间，因此当图像加载时，页面的布局就会发生变化。</p><p>提示：请不要通过 <code>height</code> 和 <code>width</code> 属性来缩放图像。如果通过 <code>height</code> 和 <code>width</code> 属性来缩小图像，那么用户就必须下载大容量的图像（即使图像在页面上看上去很小）。正确的做法是，在网页上使用图像之前，应该通过软件把图像处理为合适的尺寸。</p><h4 id="width"><a href="#width" class="headerlink" title="width"></a>width</h4><p><code>width</code> 属性规定图像的宽度，以像素计。</p><h3 id="a"><a href="#a" class="headerlink" title="a"></a>a</h3><p>链接到菜鸟教程 ：<br><code>&lt;a href=""&gt;访问xxx!&lt;/a&gt;</code></p><p><code>&lt;a&gt;</code> 标签定义超链接，用于从一个页面链接到另一个页面。</p><p><code>&lt;a&gt;</code> 元素最重要的属性是<code> href</code> 属性，它指定链接的目标。</p><p>在所有浏览器中，链接的默认外观如下：</p><ol><li>未被访问的链接带有下划线而且是蓝色的</li><li>已被访问的链接带有下划线而且是紫色的</li><li>活动链接带有下划线而且是红色的</li></ol><p>提示：如果没有使用 <code>href</code> 属性，则不能使用 hreflang、media、rel、target 以及 type 属性。</p><p>提示：通常在当前浏览器窗口中显示被链接页面，除非规定了其他 target。</p><p>提示：请使用 CSS 来改变链接的样式。</p><h4 id="download属性"><a href="#download属性" class="headerlink" title="download属性"></a>download属性</h4><p><code>download</code> 属性定义了下载链接的地址。</p><p>href 属性必须在 <code>&lt;a&gt;</code> 标签中指定。</p><p>属性同样可以指定下载文件的名称。文件名称没有限定值，浏览器会自动在文件名称末尾添加该下载文件的后缀 (.img, .pdf, .txt, .html, 等)。</p><p>语法<br><code>&lt;a download="filename"&gt;</code></p><h4 id="href属性"><a href="#href属性" class="headerlink" title="href属性"></a>href属性</h4><p><code>a</code> 标签的 <code>href</code> 属性用于指定超链接目标的 URL。</p><p>如果 <code>href</code> 属性没有被指定链接，<code>&lt;a&gt;</code> 标签将不是一个链接。</p><p>超链接的 URL。可能的值：</p><ol><li>绝对 URL - 指向另一个站点（比如 href=”<a href="http://www.example.com/index.htm&quot;%EF%BC%89">http://www.example.com/index.htm"）</a></li><li>相对 URL - 指向站点内的某个文件（href=”index.htm”）</li><li>锚 URL - 指向页面中的锚（href=”#top”）</li></ol><h4 id="target属性"><a href="#target属性" class="headerlink" title="target属性"></a>target属性</h4><p><code>&lt;a&gt;</code> 标签的 <code>target</code> 属性规定在何处打开链接文档。</p><table><thead><tr><th align="left">值</th><th align="left">描述</th></tr></thead><tbody><tr><td align="left">_blank</td><td align="left">在新窗口中打开被链接文档。</td></tr><tr><td align="left">_self</td><td align="left">默认。在相同的框架中打开被链接文档。</td></tr><tr><td align="left">_parent</td><td align="left">在父框架集中打开被链接文档。</td></tr><tr><td align="left">_top</td><td align="left">在整个窗口中打开被链接文档。</td></tr><tr><td align="left">framename</td><td align="left">在指定的框架中打开被链接文档。</td></tr></tbody></table><h3 id="div"><a href="#div" class="headerlink" title="div"></a>div</h3><p>文档中的一个区域将显示为蓝色：</p><pre><code>&lt;div style="color:#0000FF"&gt;&lt;h3&gt;这是一个在 div 元素中的标题。&lt;/h3&gt;&lt;p&gt;这是一个在 div 元素中的文本。&lt;/p&gt;&lt;/div&gt;</code></pre><p><code>&lt;div&gt;</code> 标签定义 HTML 文档中的一个分隔区块或者一个区域部分。</p><p><code>&lt;div&gt;</code>标签常用于组合块级元素，以便通过 CSS 来对这些元素进行格式化。</p><p><strong>提示</strong>：<code>&lt;div&gt;</code> 元素经常与 CSS 一起使用，用来布局网页。</p><p><strong>注释</strong>：默认情况下，浏览器通常会在 <code>&lt;div&gt;</code> 元素前后放置一个换行符。然而，您可以通过使用 CSS 改变这种情况</p><h3 id="ul"><a href="#ul" class="headerlink" title="ul"></a>ul</h3><p>无序 HTML 列表：</p><pre><code>&lt;ul&gt;    &lt;li&gt;Coffee&lt;/li&gt;    &lt;li&gt;Tea&lt;/li&gt;    &lt;li&gt;Milk&lt;/li&gt;&lt;/ul&gt;</code></pre><p><code>&lt;ul&gt;</code> 标签定义无序列表。</p><p>将 <code>&lt;ul&gt;</code> 标签与 <code>&lt;li&gt;</code> 标签一起使用，创建无序列表。</p><p><strong>提示</strong>：使用<code>&lt;ol&gt;</code> 标签创建有序列表。</p><h3 id="li"><a href="#li" class="headerlink" title="li"></a>li</h3><p><code>&lt;li&gt;</code> 标签定义列表项目。</p><p><code>&lt;li&gt;</code> 标签可用在有序列表<code>&lt;ol&gt;</code>、无序列表<code>&lt;ul&gt;</code>和菜单列表<code>&lt;menu&gt;</code> 中。</p><h3 id="form"><a href="#form" class="headerlink" title="form"></a>form</h3><p>带有两个输入字段和一个提交按钮的 HTML 表单：</p><pre><code>&lt;form action="demo_form.php" method="get"&gt;First name: &lt;input type="text" name="fname"&gt;&lt;br&gt;Last name: &lt;input type="text" name="lname"&gt;&lt;br&gt;&lt;input type="submit" value="提交"&gt;&lt;/form&gt;</code></pre><p><code>&lt;form&gt;</code> 标签用于创建供用户输入的 HTML 表单。</p><p><code>&lt;form&gt; </code>元素包含一个或多个如下的表单元素：</p><ol><li><code>&lt;input&gt;</code></li><li><code>&lt;textarea&gt;</code></li><li><code>&lt;button&gt;</code></li><li><code>&lt;select&gt;</code></li><li><code>&lt;option&gt;</code></li><li><code>&lt;optgroup&gt;</code></li><li><code>&lt;fieldset&gt;</code></li><li><code>&lt;label&gt;</code></li></ol><h4 id="action属性"><a href="#action属性" class="headerlink" title="action属性"></a>action属性</h4><p><code>action</code> 属性规定当提交表单时，向何处发送表单数据。</p><p>URL    当表单提交时向何处发送表单数据。<br>可能的值：<br>绝对 URL - 指向另一个网站（比如 <code>action="http://www.example.com/example.htm"</code>）<br>相对 URL - 指向网站内的一个文件（比如 <code>action="example.htm"</code>）</p><h4 id="autocomplete"><a href="#autocomplete" class="headerlink" title="autocomplete"></a>autocomplete</h4><p><code>autocomplete</code> 属性规定表单是否应该启用自动完成功能。</p><p>自动完成允许浏览器预测对字段的输入。当用户在字段开始键入时，浏览器基于之前键入过的值，应该显示出在字段中填写的选项。</p><p>提示：<code>autocomplete</code> <strong>“on”</strong> 适用于表单，**”off”** 适用于特定的输入字段，反之亦然。</p><p>语法<br><code>&lt;form autocomplete="on|off"&gt;</code></p><h4 id="method属性"><a href="#method属性" class="headerlink" title="method属性"></a>method属性</h4><p><code>method</code> 方法规定如何发送表单数据（form-data）（表单数据会被发送到在 <code>action</code> 属性中规定的页面中）。</p><p>表单数据可被作为 URL 变量的形式来发送（method=”get”）或者作为 HTTP post 事务的形式来发送（method=”post”）。</p><h4 id="name属性"><a href="#name属性" class="headerlink" title="name属性"></a>name属性</h4><p><code>name</code> 属性规定表单的名称。</p><p><code>name</code> 属性用于在 JavaScript 中引用元素，或者在表单提交之后引用表单数据</p><h4 id="novalidate属性"><a href="#novalidate属性" class="headerlink" title="novalidate属性"></a>novalidate属性</h4><p>novalidate 属性是一个布尔属性。</p><p>novalidate 属性规定当提交表单时不对表单数据（输入）进行验证。</p><h4 id="target属性-1"><a href="#target属性-1" class="headerlink" title="target属性"></a>target属性</h4><p>规定在何处打开 <code>action</code> URL。</p><p>语法<br><code>&lt;form target="_blank|_self|_parent|_top|framename"&gt;</code></p><table><thead><tr><th align="left">值</th><th align="left">描述</th></tr></thead><tbody><tr><td align="left">_blank</td><td align="left">在新窗口/选项卡中打开。</td></tr><tr><td align="left">_self</td><td align="left">在同一框架中打开。（默认）</td></tr><tr><td align="left">_parent</td><td align="left">在父框架中打开。</td></tr><tr><td align="left">_top</td><td align="left">在整个窗口中打开。</td></tr><tr><td align="left">framename</td><td align="left">在指定的 iframe 中打开。</td></tr></tbody></table><h3 id="input"><a href="#input" class="headerlink" title="input"></a>input</h3><p><code>&lt;input&gt;</code> 标签规定了用户可以在其中输入数据的输入字段。</p><p><code>&lt;input&gt;</code> 元素在 <code>&lt;form&gt;</code> 元素中使用，用来声明允许用户输入数据的 input 控件。</p><p>输入字段可通过多种方式改变，取决于 <code>type</code> 属性。</p><p><strong>注意</strong>: <code>&lt;input&gt;</code> 元素是空的,它只包含标签属性。</p><p><strong>提示</strong>: 你可以使用 <code>&lt;label&gt;</code> 元素来定义 <code>&lt;input&gt;</code> 元素的标注。</p><p><code>&lt;input&gt;</code> 标签支持所有 HTML事件属性。</p><h4 id="accept属性"><a href="#accept属性" class="headerlink" title="accept属性"></a>accept属性</h4><p><code>accept</code> 属性规定了可通过文件上传提交的服务器接受的文件类型。</p><p>注意：<code>accept</code> 属性仅适用于 <code>&lt;input type="file"&gt;</code>。</p><p>语法<br><code>&lt;input accept="audio/*|video/*|image/*|MIME_type"&gt;</code></p><h4 id="alt属性-1"><a href="#alt属性-1" class="headerlink" title="alt属性"></a>alt属性</h4><p>定义图像输入的替代文本。 (只针对type=”image”)</p><h4 id="autocomplete属性"><a href="#autocomplete属性" class="headerlink" title="autocomplete属性"></a>autocomplete属性</h4><p>on/off</p><p><code>autocomplete</code> 属性规定 <code>&lt;input&gt;</code> 元素输入字段是否应该启用自动完成功能。</p><h4 id="autofocus属性"><a href="#autofocus属性" class="headerlink" title="autofocus属性"></a>autofocus属性</h4><p>语法</p><p><code>&lt;input autofocus&gt;</code></p><p><code>autofocus</code> 属性规定当页面加载时 <code>&lt;input&gt;</code> 元素应该自动获得焦点。</p><h4 id="checked属性"><a href="#checked属性" class="headerlink" title="checked属性"></a>checked属性</h4><p><code>checked</code> 属性规定在页面加载时应该被预先选定的 <code>&lt;input&gt;</code> 元素。</p><p><code>checked</code> 属性适用于 <code>&lt;input type="checkbox"&gt;</code> 和 <code>&lt;input type="radio"&gt;</code>。</p><p><code>checked</code> 属性也可以在页面加载后，通过 JavaScript 代码进行设置。</p><h4 id="max属性"><a href="#max属性" class="headerlink" title="max属性"></a>max属性</h4><p>属性规定 <code>&lt;input&gt;</code> 元素的最大值。</p><h4 id="maxlength属性"><a href="#maxlength属性" class="headerlink" title="maxlength属性"></a>maxlength属性</h4><p>属性规定 <code>&lt;input&gt;</code> 元素中允许的最大字符数</p><h4 id="min属性"><a href="#min属性" class="headerlink" title="min属性"></a>min属性</h4><p>属性规定 <code>&lt;input&gt;</code>元素的最小值。</p><h4 id="name属性-1"><a href="#name属性-1" class="headerlink" title="name属性"></a>name属性</h4><p>name 属性规定 <code>&lt;input&gt;</code> 元素的名称。</p><h4 id="placeholder属性"><a href="#placeholder属性" class="headerlink" title="placeholder属性"></a>placeholder属性</h4><p>placeholder 属性规定可描述输入 <code>&lt;input&gt;</code> 字段预期值的简短的提示信息 。</p><h4 id="required属性"><a href="#required属性" class="headerlink" title="required属性"></a>required属性</h4><p>属性规定必需在提交表单之前填写输入字段</p><h4 id="size属性"><a href="#size属性" class="headerlink" title="size属性"></a>size属性</h4><p>size 属性规定以字符数计的 <code>&lt;input&gt;</code> 元素的可见宽度。</p><h4 id="src属性-1"><a href="#src属性-1" class="headerlink" title="src属性"></a>src属性</h4><p><code>src</code> 属性规定显示为提交按钮的图像的 URL。 (只针对 type=”image”)</p><h4 id="value-属性"><a href="#value-属性" class="headerlink" title="value 属性"></a>value 属性</h4><p><code>value</code> 属性对于不同 input 类型，用法也不同：</p><p>对于 “button”、”reset”、”submit” 类型 - 定义按钮上的文本<br>对于 “text”、”password”、”hidden” 类型 - 定义输入字段的初始（默认）值<br>对于 “checkbox”、”radio”、”image” 类型 - 定义与 input 元素相关的值，当提交表单时该值会发送到表单的 action URL。<br>注意：value 属性对于 <code>&lt;input type="checkbox"&gt;</code> 和 <code>&lt;input type="radio"&gt;</code> 是必需的。</p><h4 id="type属性"><a href="#type属性" class="headerlink" title="type属性"></a>type属性</h4><table><thead><tr><th align="left">值</th><th align="left">描述</th></tr></thead><tbody><tr><td align="left">button</td><td align="left">定义可点击的按钮（通常与 JavaScript 一起使用来启动脚本）。</td></tr><tr><td align="left">checkbox</td><td align="left">定义复选框。</td></tr><tr><td align="left">colorNew</td><td align="left">定义拾色器。</td></tr><tr><td align="left">dateNew</td><td align="left">定义 date 控件（包括年、月、日，不包括时间）。</td></tr><tr><td align="left">datetimeNew</td><td align="left">定义 date 和 time 控件（包括年、月、日、时、分、秒、几分之一秒，基于 UTC 时区）。</td></tr><tr><td align="left">datetime-localNew</td><td align="left">定义 date 和 time 控件（包括年、月、日、时、分、秒、几分之一秒，不带时区）。</td></tr><tr><td align="left">emailNew</td><td align="left">定义用于 e-mail 地址的字段。</td></tr><tr><td align="left">file</td><td align="left">定义文件选择字段和 “浏览…” 按钮，供文件上传。</td></tr><tr><td align="left">hidden</td><td align="left">定义隐藏输入字段。</td></tr><tr><td align="left">image</td><td align="left">定义图像作为提交按钮。</td></tr><tr><td align="left">monthNew</td><td align="left">定义 month 和 year 控件（不带时区）。</td></tr><tr><td align="left">numberNew</td><td align="left">定义用于输入数字的字段。</td></tr><tr><td align="left">password</td><td align="left">定义密码字段（字段中的字符会被遮蔽）。</td></tr><tr><td align="left">radio</td><td align="left">定义单选按钮。</td></tr><tr><td align="left">rangeNew</td><td align="left">定义用于精确值不重要的输入数字的控件（比如 slider 控件）。</td></tr><tr><td align="left">reset</td><td align="left">定义重置按钮（重置所有的表单值为默认值）。</td></tr><tr><td align="left">searchNew</td><td align="left">定义用于输入搜索字符串的文本字段。</td></tr><tr><td align="left">submit</td><td align="left">定义提交按钮。</td></tr><tr><td align="left">telNew</td><td align="left">定义用于输入电话号码的字段。</td></tr><tr><td align="left">text</td><td align="left">默认。定义一个单行的文本字段（默认宽度为 20 个字符）。</td></tr><tr><td align="left">timeNew</td><td align="left">定义用于输入时间的控件（不带时区）。</td></tr><tr><td align="left">urlNew</td><td align="left">定义用于输入 URL 的字段。</td></tr><tr><td align="left">weekNew</td><td align="left">定义 week 和 year 控件（不带时区）。</td></tr></tbody></table><h3 id="label"><a href="#label" class="headerlink" title="label"></a>label</h3><p><code>&lt;label&gt; </code>标签为 <code>input</code> 元素定义标注（标记）。</p><p><code>label</code> 元素不会向用户呈现任何特殊效果。不过，它为鼠标用户改进了可用性。如果您在 <code>label</code> 元素内点击文本，就会触发此控件。就是说，当用户选择该标签时，浏览器就会自动将焦点转到和标签相关的表单控件上。</p><p><code>&lt;label&gt; </code>标签的 <code>for</code> 属性应当与相关元素的 <code>id</code> 属性相同。</p><h4 id="for属性"><a href="#for属性" class="headerlink" title="for属性"></a>for属性</h4><p>规定 label 与哪个表单元素绑定</p><h3 id="textarea"><a href="#textarea" class="headerlink" title="textarea"></a>textarea</h3><p><code>&lt;textarea&gt;</code> 标签定义一个多行的文本输入控件。</p><p>文本区域中可容纳无限数量的文本，其中的文本的默认字体是等宽字体（通常是 Courier）。</p><h4 id="autofocus属性-1"><a href="#autofocus属性-1" class="headerlink" title="autofocus属性"></a>autofocus属性</h4><p>规定当页面加载时，文本区域自动获得焦点。</p><h4 id="maxlength属性-1"><a href="#maxlength属性-1" class="headerlink" title="maxlength属性"></a>maxlength属性</h4><p>规定文本区域允许的最大字符数</p><h4 id="name属性-2"><a href="#name属性-2" class="headerlink" title="name属性"></a>name属性</h4><p>规定文本区域的名称</p><h4 id="placeholder属性-1"><a href="#placeholder属性-1" class="headerlink" title="placeholder属性"></a>placeholder属性</h4><p>规定一个简短的提示，描述文本区域期望的输入值</p><h4 id="readonly属性"><a href="#readonly属性" class="headerlink" title="readonly属性"></a>readonly属性</h4><p>规定文本区域为只读</p><h4 id="required属性-1"><a href="#required属性-1" class="headerlink" title="required属性"></a>required属性</h4><p>规定文本区域是必需的/必填的</p><h3 id="button"><a href="#button" class="headerlink" title="button"></a>button</h3><p><code>&lt;button&gt;</code> 标签定义一个按钮。</p><p>在 <code>&lt;button&gt;</code> 元素内部，您可以放置内容，比如文本或图像。这是该元素与使用 <code>&lt;input&gt;</code> 元素创建的按钮之间的不同之处。</p><p>提示：请始终为 <code>&lt;button&gt;</code> 元素规定 type 属性。不同的浏览器对 <code>&lt;button&gt;</code> 元素的 type 属性使用不同的默认值。</p><h4 id="name属性-3"><a href="#name属性-3" class="headerlink" title="name属性"></a>name属性</h4><p>规定按钮的名称。</p><h4 id="type属性-1"><a href="#type属性-1" class="headerlink" title="type属性"></a>type属性</h4><table><thead><tr><th align="left">值</th><th align="left">描述</th></tr></thead><tbody><tr><td align="left">submit</td><td align="left">该按钮是提交按钮（除了 Internet Explorer，该值是其他浏览器的默认值）</td></tr><tr><td align="left">button</td><td align="left">该按钮是可点击的按钮（Internet Explorer 的默认值）。</td></tr><tr><td align="left">reset</td><td align="left">该按钮是重置按钮（清除表单数据）。</td></tr></tbody></table><h4 id="value属性"><a href="#value属性" class="headerlink" title="value属性"></a>value属性</h4><p>规定按钮的初始值。可由脚本进行修改</p><h3 id="select"><a href="#select" class="headerlink" title="select"></a>select</h3><p><code>&lt;select&gt;</code> 元素用来创建下拉列表。</p><p><code>&lt;select&gt;</code> 元素中的 <code>&lt;option&gt;</code> 标签定义了列表中的可用选项。</p><p><strong>提示</strong>：<code>&lt;select&gt;</code> 元素是一种表单控件，可用于在表单中接受用户输入</p><h4 id="name属性-4"><a href="#name属性-4" class="headerlink" title="name属性"></a>name属性</h4><p>定义下拉列表的名称</p><h4 id="required属性-2"><a href="#required属性-2" class="headerlink" title="required属性"></a>required属性</h4><p>规定用户在提交表单前必须选择一个下拉列表中的选项</p><h4 id="size属性-1"><a href="#size属性-1" class="headerlink" title="size属性"></a>size属性</h4><p>规定下拉列表中可见选项的数目</p><h4 id="multiple属性"><a href="#multiple属性" class="headerlink" title="multiple属性"></a>multiple属性</h4><p>当该属性为 true 时，可选择多个选项。</p><h4 id="autofocus属性-2"><a href="#autofocus属性-2" class="headerlink" title="autofocus属性"></a>autofocus属性</h4><p>规定在页面加载时下拉列表自动获得焦点。</p><h3 id="table"><a href="#table" class="headerlink" title="table"></a>table</h3><p><code>&lt;table&gt; </code>标签定义 HTML 表格</p><p>一个 HTML 表格包括 <code>&lt;table&gt;</code> 元素，一个或多个 <code>&lt;tr&gt;</code>、<code>&lt;th&gt;</code> 以及 <code>&lt;td&gt;</code> 元素。</p><p><code>&lt;tr&gt; </code>元素定义表格行，<code>&lt;th&gt;</code> 元素定义表头，<code>&lt;td&gt;</code> 元素定义表格单元。</p><h4 id="border属性"><a href="#border属性" class="headerlink" title="border属性"></a>border属性</h4><p><code>border</code> 属性规定表格单元周围是否显示边框。</p><p>值 “1” 指示应该显示边框，且表格不用于布局目的。</p><h3 id="b"><a href="#b" class="headerlink" title="b"></a>b</h3><p><code>&lt;b&gt;</code> 标签定义粗体的文本</p><p>注释：根据 HTML 5 的规范，<code>&lt;b&gt;</code> 标签应该做为最后的选择，只有在没有其他标记比较合适时才使用它。HTML 5 规范声明：标题应该用 <code>&lt;h1&gt; - &lt;h6&gt;</code> 标签表示，被强调的文本应该用 <code>&lt;em&gt;</code> 标签表示，重要的文本应该用 <code>&lt;strong&gt;</code> 标签表示，被标记的或者高亮显示的文本应该用 <code>&lt;mark&gt;</code> 标签表示。</p><p>提示：您也可以使用 CSS 的 <code>"font-weight"</code> 属性设置粗体文本。</p><h3 id="em"><a href="#em" class="headerlink" title="em"></a>em</h3><p><code>&lt;em&gt;</code> 标签是一个短语标签，用来呈现为被强调的文本。</p><p>提示：我们并不反对使用这个标签，但是如果您只是为了达到某种视觉效果而使用这个标签的话，我们建议您使用 CSS ，这样可能会取得更丰富的效果。</p><h3 id="i"><a href="#i" class="headerlink" title="i"></a>i</h3><p><code>&lt;i&gt;</code> 定义与文本中其余部分不同的部分，并把这部分文本呈现为斜体文本。</p><p><code>&lt;i&gt;</code> 标签被用来表示科技术语、其他语种的成语俗语、想法、宇宙飞船的名字等等。</p><p>在没有其他适当语义的元素可以使用时，请使用 <code>&lt;i&gt;</code> 元素。</p><h3 id="strong"><a href="#strong" class="headerlink" title="strong"></a>strong</h3><p><code>&lt;strong&gt;</code> 标签是一个短语标签，用来定义计算机程序的样本重要的文本。</p><p>提示：我们并不反对使用这个标签，但是如果您只是为了达到某种视觉效果而使用这个标签的话，我们建议您使用 CSS ，这样可能会取得更丰富的效果。</p><h3 id="small"><a href="#small" class="headerlink" title="small"></a>small</h3><p><code>&lt;small&gt;</code> 标签定义小型文本（和旁注）</p><h3 id="style"><a href="#style" class="headerlink" title="style"></a>style</h3><p><code>&lt;style&gt;</code> 标签定义 HTML 文档的样式信息。</p><p>在 <code>&lt;style&gt;</code> 元素中，您可以规定在浏览器中如何呈现 HTML 文档。</p><p>每个 HTML 文档能包含多个 <code>&lt;style&gt;</code> 标签。</p><h3 id="link"><a href="#link" class="headerlink" title="link"></a>link</h3><p><code>&lt;link&gt;</code> 标签定义文档与外部资源的关系。</p><p><code>&lt;link&gt;</code> 标签最常见的用途是链接样式表。</p>]]></content>
       
       
       <categories>
@@ -47,6 +87,8 @@
             
             <tag> HTML </tag>
             
+            <tag> HTML5+CSS3权威指南 </tag>
+            
         </tags>
       
     </entry>
@@ -54,130 +96,270 @@
     
     
     <entry>
-      <title>J16</title>
-      <link href="posts/50b4.html"/>
-      <url>posts/50b4.html</url>
+      <title>JavaScript高级语言程序设计(八)</title>
+      <link href="posts/a0035.html"/>
+      <url>posts/a0035.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
+      <categories>
+          
+          <category> JavaScript </category>
+          
+          <category> JavaScript高级程序设计 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
       
     </entry>
     
     
     
     <entry>
-      <title>J15</title>
-      <link href="posts/51f4.html"/>
-      <url>posts/51f4.html</url>
+      <title>JavaScript高级语言程序设计(八)</title>
+      <link href="posts/a0034.html"/>
+      <url>posts/a0034.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
+      <categories>
+          
+          <category> JavaScript </category>
+          
+          <category> JavaScript高级程序设计 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
       
     </entry>
     
     
     
     <entry>
-      <title>J14</title>
-      <link href="posts/9135.html"/>
-      <url>posts/9135.html</url>
+      <title>JavaScript高级语言程序设计(八)</title>
+      <link href="posts/a0033.html"/>
+      <url>posts/a0033.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
+      <categories>
+          
+          <category> JavaScript </category>
+          
+          <category> JavaScript高级程序设计 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
       
     </entry>
     
     
     
     <entry>
-      <title>J13</title>
-      <link href="posts/5374.html"/>
-      <url>posts/5374.html</url>
+      <title>JavaScript高级语言程序设计(八)</title>
+      <link href="posts/a0032.html"/>
+      <url>posts/a0032.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
+      <categories>
+          
+          <category> JavaScript </category>
+          
+          <category> JavaScript高级程序设计 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
       
     </entry>
     
     
     
     <entry>
-      <title>J12</title>
-      <link href="posts/93b5.html"/>
-      <url>posts/93b5.html</url>
+      <title>JavaScript高级语言程序设计(八)</title>
+      <link href="posts/a0031.html"/>
+      <url>posts/a0031.html</url>
       
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>J11</title>
-      <link href="posts/92f5.html"/>
-      <url>posts/92f5.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><p>上篇： <strong><a href="a0030">函数(十一) 函数表达式</a></strong><br>本篇： <strong>函数(十二) 递归</strong><br>下篇： <strong><a href="a0032">函数(十三) 尾调用优化</a></strong></p><p><strong><a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">JavaScript高级程序设计</a></strong> 全部合集</p><hr>]]></content>
       
       
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>J10</title>
-      <link href="posts/5234.html"/>
-      <url>posts/5234.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
+      <categories>
+          
+          <category> JavaScript </category>
+          
+          <category> JavaScript高级程序设计 </category>
+          
+      </categories>
       
       
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
       
     </entry>
     
     
     
     <entry>
-      <title>J9</title>
-      <link href="posts/72f7.html"/>
-      <url>posts/72f7.html</url>
+      <title>JavaScript高级语言程序设计(八)</title>
+      <link href="posts/a0030.html"/>
+      <url>posts/a0030.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><p>上篇： <strong><a href="a0029">函数(十) 函数属性与方法</a></strong><br>本篇： <strong>函数(十一) 函数表达式</strong><br>下篇： <strong><a href="a0031">函数(十二) 递归</a></strong></p><p><strong><a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">JavaScript高级程序设计</a></strong> 全部合集</p><hr><h1 id="函数表达式"><a href="#函数表达式" class="headerlink" title="函数表达式"></a>函数表达式</h1><p>函数表达式虽然更强大，但也更容易让人迷惑。我们知道，定义函数有两种方式：函数声明和函数表达式。函数声明是这样的：</p><pre><code>function functionName(arg0, arg1, arg2) {// 函数体} </code></pre><p>函数声明的关键特点是函数声明提升，即函数声明会在代码执行之前获得定义。这意味着函数声明可以出现在调用它的代码之后：</p><pre><code>sayHi();function sayHi() {    console.log("Hi!");}</code></pre><p>这个例子不会抛出错误，因为 JavaScript 引擎会先读取函数声明，然后再执行代码。第二种创建函数的方式就是函数表达式。函数表达式有几种不同的形式，最常见的是这样的：</p><pre><code>let functionName = function(arg0, arg1, arg2) {// 函数体}; </code></pre><p>函数表达式看起来就像一个普通的变量定义和赋值，即创建一个函数再把它赋值给一个变量<br>functionName。这样创建的函数叫作匿名函数（anonymous funtion），因为 function 关键字后面没有标识符。（匿名函数有也时候也被称为兰姆达函数）。未赋值给其他变量的匿名函数的 name 属性是空字符串。</p><p>函数表达式跟 JavaScript 中的其他表达式一样，需要先赋值再使用。下面的例子会导致错误：</p><pre><code>sayHi(); // Error! function doesn't exist yetlet sayHi = function() {    console.log("Hi!");}; </code></pre><p>理解函数声明与函数表达式之间的区别，关键是理解提升。比如，以下代码的执行结果可能会出乎意料：</p><pre><code>// 千万别这样做！if (condition) {    function sayHi() {        console.log('Hi!');    }} else {    function sayHi() {        console.log('Yo!');    }} </code></pre><p>这段代码看起来很正常，就是如果 condition 为 true，则使用第一个 sayHi()定义；否则，就使用第二个。事实上，这种写法在 ECAMScript 中不是有效的语法。JavaScript 引擎会尝试将其纠正为适当的声明。问题在于浏览器纠正这个问题的方式并不一致。多数浏览器会忽略 condition 直接返回第二个声明。Firefox 会在 condition 为 true 时返回第一个声明。这种写法很危险，不要使用。不过，如果把上面的函数声明换成函数表达式就没问题了：</p><pre><code>// 没问题let sayHi;if (condition) {    sayHi = function() {        console.log("Hi!");    };} else {    sayHi = function() {        console.log("Yo!");    };}</code></pre><p>这个例子可以如预期一样，根据 condition 的值为变量 sayHi 赋予相应的函数。创建函数并赋值给变量的能力也可以用于在一个函数中把另一个函数当作值返回： </p><pre><code>function createComparisonFunction(propertyName) {     return function(object1, object2) {        let value1 = object1[propertyName];        let value2 = object2[propertyName];        if (value1 &lt; value2) {            return -1;        } else if (value1 &gt; value2) {            return 1;        } else {             return 0;        }    };}</code></pre><p>这里的 createComparisonFunction()函数返回一个匿名函数，这个匿名函数要么被赋值给一个变量，要么可以直接调用。但在 createComparisonFunction()内部，那个函数是匿名的。任何时候，只要函数被当作值来使用，它就是一个函数表达式。本章后面会介绍，这并不是使用函数表达式的唯一方式。 </p>]]></content>
       
       
+      <categories>
+          
+          <category> JavaScript </category>
+          
+          <category> JavaScript高级程序设计 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
       
     </entry>
     
     
     
     <entry>
-      <title>J8</title>
-      <link href="posts/b236.html"/>
-      <url>posts/b236.html</url>
+      <title>JavaScript高级语言程序设计(八)</title>
+      <link href="posts/a0029.html"/>
+      <url>posts/a0029.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><p>上篇： <strong><a href="a0028">函数(九) 函数内部</a></strong><br>本篇： <strong>函数(十) 函数属性与方法</strong><br>下篇： <strong><a href="a0030">函数(十一) 函数表达式</a></strong></p><p><strong><a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">JavaScript高级程序设计</a></strong> 全部合集</p><hr><h1 id="函数属性与方法"><a href="#函数属性与方法" class="headerlink" title="函数属性与方法"></a>函数属性与方法</h1><p>前面提到过，ECMAScript 中的函数是对象，因此有属性和方法。每个函数都有两个属性：length和 prototype。其中，length 属性保存函数定义的命名参数的个数，如下例所示：</p><pre><code>function sayName(name) {    console.log(name);}function sum(num1, num2) {    return num1 + num2;}function sayHi() {    console.log("hi");}console.log(sayName.length); // 1console.log(sum.length); // 2console.log(sayHi.length); // 0 </code></pre><p>prototype 属性也许是 ECMAScript 核心中最有趣的部分。prototype 是保存引用类型所有实例方法的地方，这意味着 toString()、valueOf()等方法实际上都保存在 prototype 上，进而由所有实例共享。这个属性在自定义类型时特别重要。（相关内容已经在第 6 章详细介绍过了。）在 ECMAScript 5中，prototype 属性是不可枚举的，因此使用 for-in 循环不会返回这个属性。</p><p>函数还有两个方法：apply()和 call()。这两个方法都会以指定的 this 值来调用函数，即会设置调用函数时函数体内 this 对象的值。apply()方法接收两个参数：函数内 this 的值和一个参数数组。第二个参数可以是 Array 的实例，但也可以是 arguments 对象。来看下面的例子：</p><pre><code>function sum(num1, num2) {    return num1 + num2;}function callSum1(num1, num2) {    return sum.apply(this, arguments); // 传入 arguments 对象}function callSum2(num1, num2) {    return sum.apply(this, [num1, num2]); // 传入数组}console.log(callSum1(10, 10)); // 20console.log(callSum2(10, 10)); // 20 </code></pre><p>在这个例子中，callSum1()会调用 sum()函数，将 this 作为函数体内的 this 值（这里等于window，因为是在全局作用域中调用的）传入，同时还传入了 arguments 对象。callSum2()也会调用 sum()函数，但会传入参数的数组。这两个函数都会执行并返回正确的结果。</p><p>注意 在严格模式下，调用函数时如果没有指定上下文对象，则 this 值不会指向 window。<br>除非使用 apply()或 call()把函数指定给一个对象，否则 this 的值会变成 undefined。</p><p>call()方法与 apply()的作用一样，只是传参的形式不同。第一个参数跟 apply()一样，也是 this值，而剩下的要传给被调用函数的参数则是逐个传递的。换句话说，通过 call()向函数传参时，必须将参数一个一个地列出来，比如：</p><pre><code>function sum(num1, num2) {    return num1 + num2;}    function callSum(num1, num2) {return sum.call(this, num1, num2);}console.log(callSum(10, 10)); // 20</code></pre><p>这里的 callSum()函数必须逐个地把参数传给 call()方法。结果跟 apply()的例子一样。到底是使用 apply()还是 call()，完全取决于怎么给要调用的函数传参更方便。如果想直接传 arguments对象或者一个数组，那就用 apply()；否则，就用 call()。当然，如果不用给被调用的函数传参，则使用哪个方法都一样。</p><p>apply()和 call()真正强大的地方并不是给函数传参，而是控制函数调用上下文即函数体内 this值的能力。考虑下面的例子：</p><pre><code>window.color = 'red';    let o = {        color: 'blue'    };    function sayColor() {        console.log(this.color);    }sayColor(); // redsayColor.call(this); // redsayColor.call(window); // redsayColor.call(o); // blue </code></pre><p>这个例子是在之前那个关于 this 对象的例子基础上修改而成的。同样，sayColor()是一个全局函数，如果在全局作用域中调用它，那么会显示”red”。这是因为 this.color 会求值为 window.color。如果在全局作用域中显式调用 sayColor.call(this)或者 sayColor.call(window)，则同样都会显示”red”。而在使用 sayColor.call(o)把函数的执行上下文即 this 切换为对象 o 之后，结果就变成了显示”blue”了。</p><p>使用 call()或 apply()的好处是可以将任意对象设置为任意函数的作用域，这样对象可以不用关心方法。在前面例子最初的版本中，为切换上下文需要先把 sayColor()直接赋值为 o 的属性，然后再调用。而在这个修改后的版本中，就不需要这一步操作了。</p><p>ECMAScript 5 出于同样的目的定义了一个新方法：bind()。bind()方法会创建一个新的函数实例，其 this 值会被绑定到传给 bind()的对象。比如：</p><pre><code>window.color = 'red';var o = {    color: 'blue'};function sayColor() {    console.log(this.color);}let objectSayColor = sayColor.bind(o);objectSayColor(); // blue</code></pre><p>这里，在 sayColor()上调用 bind()并传入对象 o 创建了一个新函数 objectSayColor()。objectSayColor()中的 this 值被设置为 o，因此直接调用这个函数，即使是在全局作用域中调用，也会返回字符串”blue”。对函数而言，继承的方法 toLocaleString()和 toString()始终返回函数的代码。返回代码的具体格式因浏览器而异。有的返回源代码，包含注释，而有的只返回代码的内部形式，会删除注释，甚至代码可能被解释器修改过。由于这些差异，因此不能在重要功能中依赖这些方法返回的值，而只应在调试中使用它们。继承的方法 valueOf()返回函数本身。</p>]]></content>
       
       
+      <categories>
+          
+          <category> JavaScript </category>
+          
+          <category> JavaScript高级程序设计 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
       
     </entry>
     
     
     
     <entry>
-      <title>J7</title>
-      <link href="posts/b676.html"/>
-      <url>posts/b676.html</url>
+      <title>JavaScript高级语言程序设计(八)</title>
+      <link href="posts/a0028.html"/>
+      <url>posts/a0028.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><p>上篇： <strong><a href="a0027">函数(八) 函数作为值</a></strong><br>本篇： <strong>函数(九) 函数内部</strong><br>下篇： <strong><a href="a0029">函数(十) 函数属性与方法</a></strong></p><p><strong><a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">JavaScript高级程序设计</a></strong> 全部合集</p><hr><h1 id="函数内部"><a href="#函数内部" class="headerlink" title="函数内部"></a>函数内部</h1><p>在 ECMAScript 5 中，函数内部存在两个特殊的对象：arguments 和 this。ECMAScript 6 又新增了 new.target 属性。</p><h2 id="arguments"><a href="#arguments" class="headerlink" title="arguments"></a>arguments</h2><p>arguments 对象前面讨论过多次了，它是一个类数组对象，包含调用函数时传入的所有参数。这个对象只有以 function 关键字定义函数（相对于使用箭头语法创建函数）时才会有。虽然主要用于包含函数参数，但 arguments 对象其实还有一个 callee 属性，是一个指向 arguments 对象所在函数的指针。来看下面这个经典的阶乘函数：</p><pre><code>function factorial(num) {    if (num &lt;= 1) {        return 1;    } else {        return num * factorial(num - 1);    }} </code></pre><p>阶乘函数一般定义成递归调用的，就像上面这个例子一样。只要给函数一个名称，而且这个名称不会变，这样定义就没有问题。但是，这个函数要正确执行就必须保证函数名是 factorial，从而导致了紧密耦合。使用 arguments.callee 就可以让函数逻辑与函数名解耦：</p><pre><code>function factorial(num) {    if (num &lt;= 1) {        return 1;    } else {        return num * arguments.callee(num - 1);    }} </code></pre><p>这个重写之后的 factorial()函数已经用 arguments.callee 代替了之前硬编码的 factorial。这意味着无论函数叫什么名称，都可以引用正确的函数。考虑下面的情况：</p><pre><code>let trueFactorial = factorial;factorial = function() {    return 0;};console.log(trueFactorial(5)); // 120console.log(factorial(5)); // 0 </code></pre><p>这里，trueFactorial 变量被赋值为 factorial，实际上把同一个函数的指针又保存到了另一个位置。然后，factorial 函数又被重写为一个返回 0 的函数。如果像 factorial()最初的版本那样不使用 arguments.callee，那么像上面这样调用 trueFactorial()就会返回 0。不过，通过将函数与名称解耦，trueFactorial()就可以正确计算阶乘，而 factorial()则只能返回 0。</p><h2 id="this"><a href="#this" class="headerlink" title="this"></a>this</h2><p>另一个特殊的对象是 this，它在标准函数和箭头函数中有不同的行为。在标准函数中，this 引用的是把函数当成方法调用的上下文对象，这时候通常称其为 this 值（在网页的全局上下文中调用函数时，this 指向 windows）。来看下面的例子：</p><pre><code>window.color = 'red';let o = {    color: 'blue'};function sayColor() {    console.log(this.color);}sayColor(); // 'red'o.sayColor = sayColor;o.sayColor(); // 'blue' </code></pre><p>定义在全局上下文中的函数 sayColor()引用了 this 对象。这个 this 到底引用哪个对象必须到函数被调用时才能确定。因此这个值在代码执行的过程中可能会变。如果在全局上下文中调用sayColor()，这结果会输出”red”，因为 this 指向 window，而 this.color 相当于 window.color。而在把 sayColor()赋值给 o 之后再调用 o.sayColor()，this 会指向 o，即 this.color 相当于o.color，所以会显示”blue”。</p><p>在箭头函数中，this引用的是定义箭头函数的上下文。下面的例子演示了这一点。在对sayColor()的两次调用中，this 引用的都是 window 对象，因为这个箭头函数是在 window 上下文中定义的：</p><pre><code>window.color = 'red';let o = {    color: 'blue'};let sayColor = () =&gt; console.log(this.color);sayColor(); // 'red'o.sayColor = sayColor;o.sayColor(); // 'red' </code></pre><p>在事件回调或定时回调中调用某个函数时，this 值指向的并非想要的对象。此时将回调函数写成箭头函数就可以解决问题。这是因为箭头函数中的 this 会保留定义该函数时的上下文：</p><pre><code>function King() {    this.royaltyName = 'Henry';    // this 引用 King 的实例    setTimeout(() =&gt; console.log(this.royaltyName), 1000);} function Queen() {     this.royaltyName = 'Elizabeth';    // this 引用 window 对象    setTimeout(function() { console.log(this.royaltyName); }, 1000);}new King(); // Henrynew Queen(); // undefined</code></pre><p><strong>注意</strong> 函数名只是保存指针的变量。因此全局定义的 sayColor()函数和 o.sayColor()是同一个函数，只不过执行的上下文不同。 </p><h2 id="caller"><a href="#caller" class="headerlink" title="caller"></a>caller</h2><p>ECMAScript 5 也会给函数对象上添加一个属性：caller。虽然 ECMAScript 3 中并没有定义，但所有浏览器除了早期版本的 Opera 都支持这个属性。这个属性引用的是调用当前函数的函数，或者如果是在全局作用域中调用的则为 null。比如：</p><pre><code>function outer() {    inner();}function inner() {    console.log(inner.caller);}outer();</code></pre><p>以上代码会显示 outer()函数的源代码。这是因为 ourter()调用了 inner()，inner.caller指向 outer()。如果要降低耦合度，则可以通过 arguments.callee.caller 来引用同样的值：</p><pre><code>function outer() {    inner();}function inner() {    console.log(arguments.callee.caller);}outer();</code></pre><p>在严格模式下访问 arguments.callee 会报错。ECMAScript 5 也定义了 arguments.caller，但在严格模式下访问它会报错，在非严格模式下则始终是 undefined。这是为了分清 arguments.caller和函数的 caller 而故意为之的。而作为对这门语言的安全防护，这些改动也让第三方代码无法检测同一上下文中运行的其他代码。</p><p>严格模式下还有一个限制，就是不能给函数的 caller 属性赋值，否则会导致错误。</p><h2 id="new-target"><a href="#new-target" class="headerlink" title="new.target"></a>new.target</h2><p>ECMAScript 中的函数始终可以作为构造函数实例化一个新对象，也可以作为普通函数被调用。ECMAScript 6 新增了检测函数是否使用 new 关键字调用的 new.target 属性。如果函数是正常调用的，则 new.target 的值是 undefined；如果是使用 new 关键字调用的，则 new.target 将引用被调用的构造函数。</p><pre><code>function King() {    if (!new.target) {        throw 'King must be instantiated using "new"'    }    console.log('King instantiated using "new"');}new King(); // King instantiated using "new"King(); // Error: King must be instantiated using "new" </code></pre>]]></content>
       
       
+      <categories>
+          
+          <category> JavaScript </category>
+          
+          <category> JavaScript高级程序设计 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>JavaScript高级语言程序设计(八)</title>
+      <link href="posts/a0027.html"/>
+      <url>posts/a0027.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><p>上篇： <strong><a href="a0026">函数(七) 函数声明与函数表达式</a></strong><br>本篇： <strong>函数(八) 函数作为值</strong><br>下篇： <strong><a href="a0028">函数(九) 函数内部</a></strong></p><p><strong><a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">JavaScript高级程序设计</a></strong> 全部合集</p><hr><h1 id="函数作为值"><a href="#函数作为值" class="headerlink" title="函数作为值"></a>函数作为值</h1><p>因为函数名在 ECMAScript 中就是变量，所以函数可以用在任何可以使用变量的地方。这意味着不仅可以把函数作为参数传给另一个函数，而且还可以在一个函数中返回另一个函数。来看下面的例子：</p><pre><code>function callSomeFunction(someFunction, someArgument) {    return someFunction(someArgument);}</code></pre><p>这个函数接收两个参数。第一个参数应该是一个函数，第二个参数应该是要传给这个函数的值。任何函数都可以像下面这样作为参数传递：</p><pre><code>function add10(num) {    return num + 10;}let result1 = callSomeFunction(add10, 10);console.log(result1); // 20function getGreeting(name) {    return "Hello, " + name;}let result2 = callSomeFunction(getGreeting, "Nicholas");console.log(result2); // "Hello, Nicholas" </code></pre><p>callSomeFunction()函数是通用的，第一个参数传入的是什么函数都可以，而且它始终返回调用作为第一个参数传入的函数的结果。要注意的是，如果是访问函数而不是调用函数，那就必须不带括号，所以传给 callSomeFunction()的必须是 add10 和 getGreeting，而不能是它们的执行结果。</p><p>从一个函数中返回另一个函数也是可以的，而且非常有用。例如，假设有一个包含对象的数组，而我们想按照任意对象属性对数组进行排序。为此，可以定义一个 sort()方法需要的比较函数，它接收两个参数，即要比较的值。但这个比较函数还需要想办法确定根据哪个属性来排序。这个问题可以通过定义一个根据属性名来创建比较函数的函数来解决。比如：</p><pre><code>return function(object1, object2) {    let value1 = object1[propertyName];    let value2 = object2[propertyName];    if (value1 &lt; value2) {        return -1;    } else if (value1 &gt; value2) {        return 1;    } else {        return 0;    }    };} </code></pre><p>这个函数的语法乍一看比较复杂，但实际上就是在一个函数中返回另一个函数，注意那个 return操作符。内部函数可以访问 propertyName 参数，并通过中括号语法取得要比较的对象的相应属性值。取得属性值以后，再按照 sort()方法的需要返回比较值就行了。这个函数可以像下面这样使用：</p><pre><code>let data = [    {name: "Zachary", age: 28},    {name: "Nicholas", age: 29}];data.sort(createComparisonFunction("name"));console.log(data[0].name); // Nicholas data.sort(createComparisonFunction("age"));console.log(data[0].name); // Zachary </code></pre><p>在上面的代码中，数组 data 中包含两个结构相同的对象。每个对象都有一个 name 属性和一个 age属性。默认情况下，sort()方法要对这两个对象执行 toString()，然后再决定它们的顺序，但这样得不到有意义的结果。而通过调用 createComparisonFunction(“name”)来创建一个比较函数，就可以根据个对象 name 属性的值来排序，结果 name 属性值为”Nicholas”、age 属性值为 29 的对象会排在前面。而调用 createComparisonFunction(“age”)则会创建一个根据每个对象 age 属性的值来排序的比较函数，结果 name 属性值为”Zachary”、age 属性值为 28 的对象会排在前面。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> JavaScript </category>
+          
+          <category> JavaScript高级程序设计 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>JavaScript高级语言程序设计(八)</title>
+      <link href="posts/a0026.html"/>
+      <url>posts/a0026.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><p>上篇： <strong><a href="a0025">函数(六) 函数扩展与收集</a></strong><br>本篇： <strong>函数(七) 函数声明与函数表达式</strong><br>下篇： <strong><a href="a0027">函数(八) 函数作为值</a></strong></p><p><strong><a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">JavaScript高级程序设计</a></strong> 全部合集</p><hr><h1 id="函数声明与函数表达式"><a href="#函数声明与函数表达式" class="headerlink" title="函数声明与函数表达式"></a>函数声明与函数表达式</h1><p>本章到现在一直没有把函数声明和函数表达式区分得很清楚。事实上，JavaScript 引擎在加载数据时对它们是区别对待的。JavaScript 引擎在任何代码执行之前，会先读取函数声明，并在执行上下文中生成函数定义。而函数表达式必须等到代码执行到它那一行，才会在执行上下文中生成函数定义。来看下面的例子：</p><pre><code>// 没问题console.log(sum(10, 10));function sum(num1, num2) {    return num1 + num2;} </code></pre><p>以上代码可以正常运行，因为函数声明会在任何代码执行之前先被读取并添加到执行上下文。这个过程叫作<strong>函数声明提升</strong>（function declaration hoisting）。在执行代码时，JavaScript 引擎会先执行一遍扫描，把发现的函数声明提升到源代码树的顶部。因此即使函数定义出现在调用它们的代码之后，引擎也会把函数声明提升到顶部。如果把前面代码中的函数声明改为等价的函数表达式，那么执行的时候就会出错：</p><pre><code>// 会出错console.log(sum(10, 10));let sum = function(num1, num2) {    return num1 + num2;}; </code></pre><p>上面的代码之所以会出错，是因为这个函数定义包含在一个变量初始化语句中，而不是函数声明中。这意味着代码如果没有执行到加粗的那一行，那么执行上下文中就没有函数的定义，所以上面的代码会出错。这并不是因为使用 let 而导致的，使用 var 关键字也会碰到同样的问题：</p><pre><code>console.log(sum(10, 10));var sum = function(num1, num2) {    return num1 + num2;}; </code></pre><p>除了函数什么时候真正有定义这个区别之外，这两种语法是等价的。</p><p><strong>注意</strong> 在使用函数表达式初始化变量时，也可以给函数一个名称，比如 let sum =function sum() {}。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> JavaScript </category>
+          
+          <category> JavaScript高级程序设计 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
       
     </entry>
     
@@ -188,7 +370,7 @@
       <link href="posts/a0025.html"/>
       <url>posts/a0025.html</url>
       
-        <content type="html"><![CDATA[<h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><p>上篇： <strong><a href="a0024">函数(五) 默认参数值</a></strong><br>本篇： <strong>函数(六) 函数扩展与收集</strong><br>下篇： <strong><a href="a0026">函数(七) 函数声明与函数表达式</a></strong></p><p><strong><a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">JavaScript高级程序设计</a></strong> 全部合集</p><hr><h1 id="函数扩展与收集"><a href="#函数扩展与收集" class="headerlink" title="函数扩展与收集"></a>函数扩展与收集</h1><p>ECMAScript 6 新增了扩展操作符，使用它可以非常简洁地操作和组合集合数据。扩展操作符最有用的场景就是函数定义中的参数列表，在这里它可以充分利用这门语言的弱类型及参数长度可变的特点。扩展操作符既可以用于调用函数时传参，也可以用于定义函数参数。</p><h2 id="扩展参数"><a href="#扩展参数" class="headerlink" title="扩展参数"></a>扩展参数</h2><p>在给函数传参时，有时候可能不需要传一个数组，而是要分别传入数组的元素。</p><p>假设有如下函数定义，它会将所有传入的参数累加起来：</p><pre><code>let values = [1, 2, 3, 4];function getSum() {    let sum = 0;    for (let i = 0; i &lt; arguments.length; ++i) {        sum += arguments[i];    }    return sum;} </code></pre><p>这个函数希望将所有加数逐个传进来，然后通过迭代 arguments 对象来实现累加。如果不使用扩展操作符，想把定义在这个函数这面的数组拆分，那么就得求助于 apply()方法：</p><p><code>console.log(getSum.apply(null, values)); // 10</code></p><p>但在 ECMAScript 6 中，可以通过扩展操作符极为简洁地实现这种操作。对可迭代对象应用扩展操作符，并将其作为一个参数传入，可以将可迭代对象拆分，并将迭代返回的每个值单独传入。</p><p>比如，使用扩展操作符可以将前面例子中的数组像这样直接传给函数：</p><p><code>console.log(getSum(...values)); // 10</code></p><p>因为数组的长度已知，所以在使用扩展操作符传参的时候，并不妨碍在其前面或后面再传其他的值，包括使用扩展操作符传其他参数：</p><pre><code>console.log(getSum(-1, ...values)); // 9console.log(getSum(...values, 5)); // 15console.log(getSum(-1, ...values, 5)); // 14console.log(getSum(...values, ...[5,6,7])); // 28 </code></pre><p>对函数中的 arguments 对象而言，它并不知道扩展操作符的存在，而是按照调用函数时传入的参数接收每一个值：</p><pre><code>let values = [1,2,3,4]function countArguments() {    console.log(arguments.length);}countArguments(-1, ...values); // 5countArguments(...values, 5); // 5countArguments(-1, ...values, 5); // 6countArguments(...values, ...[5,6,7]); // 7 </code></pre><p>arguments 对象只是消费扩展操作符的一种方式。在普通函数和箭头函数中，也可以将扩展操作符用于命名参数，当然同时也可以使用默认参数：</p><pre><code>function getProduct(a, b, c = 1) {    return a * b * c;}let getSum = (a, b, c = 0) =&gt; {    return a + b + c;}console.log(getProduct(...[1,2])); // 2console.log(getProduct(...[1,2,3])); // 6console.log(getProduct(...[1,2,3,4])); // 6console.log(getSum(...[0,1])); // 1console.log(getSum(...[0,1,2])); // 3console.log(getSum(...[0,1,2,3])); // 3 </code></pre><h2 id="收集参数"><a href="#收集参数" class="headerlink" title="收集参数"></a>收集参数</h2>]]></content>
+        <content type="html"><![CDATA[<h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><p>上篇： <strong><a href="a0024">函数(五) 默认参数值</a></strong><br>本篇： <strong>函数(六) 函数扩展与收集</strong><br>下篇： <strong><a href="a0026">函数(七) 函数声明与函数表达式</a></strong></p><p><strong><a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">JavaScript高级程序设计</a></strong> 全部合集</p><hr><h1 id="函数扩展与收集"><a href="#函数扩展与收集" class="headerlink" title="函数扩展与收集"></a>函数扩展与收集</h1><p>ECMAScript 6 新增了扩展操作符，使用它可以非常简洁地操作和组合集合数据。扩展操作符最有用的场景就是函数定义中的参数列表，在这里它可以充分利用这门语言的弱类型及参数长度可变的特点。扩展操作符既可以用于调用函数时传参，也可以用于定义函数参数。</p><h2 id="扩展参数"><a href="#扩展参数" class="headerlink" title="扩展参数"></a>扩展参数</h2><p>在给函数传参时，有时候可能不需要传一个数组，而是要分别传入数组的元素。</p><p>假设有如下函数定义，它会将所有传入的参数累加起来：</p><pre><code>let values = [1, 2, 3, 4];function getSum() {    let sum = 0;    for (let i = 0; i &lt; arguments.length; ++i) {        sum += arguments[i];    }    return sum;} </code></pre><p>这个函数希望将所有加数逐个传进来，然后通过迭代 arguments 对象来实现累加。如果不使用扩展操作符，想把定义在这个函数这面的数组拆分，那么就得求助于 apply()方法：</p><p><code>console.log(getSum.apply(null, values)); // 10</code></p><p>但在 ECMAScript 6 中，可以通过扩展操作符极为简洁地实现这种操作。对可迭代对象应用扩展操作符，并将其作为一个参数传入，可以将可迭代对象拆分，并将迭代返回的每个值单独传入。</p><p>比如，使用扩展操作符可以将前面例子中的数组像这样直接传给函数：</p><p><code>console.log(getSum(...values)); // 10</code></p><p>因为数组的长度已知，所以在使用扩展操作符传参的时候，并不妨碍在其前面或后面再传其他的值，包括使用扩展操作符传其他参数：</p><pre><code>console.log(getSum(-1, ...values)); // 9console.log(getSum(...values, 5)); // 15console.log(getSum(-1, ...values, 5)); // 14console.log(getSum(...values, ...[5,6,7])); // 28 </code></pre><p>对函数中的 arguments 对象而言，它并不知道扩展操作符的存在，而是按照调用函数时传入的参数接收每一个值：</p><pre><code>let values = [1,2,3,4]function countArguments() {    console.log(arguments.length);}countArguments(-1, ...values); // 5countArguments(...values, 5); // 5countArguments(-1, ...values, 5); // 6countArguments(...values, ...[5,6,7]); // 7 </code></pre><p>arguments 对象只是消费扩展操作符的一种方式。在普通函数和箭头函数中，也可以将扩展操作符用于命名参数，当然同时也可以使用默认参数：</p><pre><code>function getProduct(a, b, c = 1) {    return a * b * c;}let getSum = (a, b, c = 0) =&gt; {    return a + b + c;}console.log(getProduct(...[1,2])); // 2console.log(getProduct(...[1,2,3])); // 6console.log(getProduct(...[1,2,3,4])); // 6console.log(getSum(...[0,1])); // 1console.log(getSum(...[0,1,2])); // 3console.log(getSum(...[0,1,2,3])); // 3 </code></pre><h2 id="收集参数"><a href="#收集参数" class="headerlink" title="收集参数"></a>收集参数</h2><p>在构思函数定义时，可以使用扩展操作符把不同长度的独立参数组合为一个数组。这有点类似arguments 对象的构造机制，只不过收集参数的结果会得到一个 Array 实例。</p><pre><code>function getSum(...values) {    // 顺序累加 values 中的所有值    // 初始值的总和为 0    return values.reduce((x, y) =&gt; x + y, 0);}console.log(getSum(1,2,3)); // 6 </code></pre><p>收集参数的前面如果还有命名参数，则只会收集其余的参数；如果没有则会得到空数组。因为收集参数的结果可变，所以只能把它作为最后一个参数：</p><pre><code>// 不可以function getProduct(...values, lastValue) {}// 可以function ignoreFirst(firstValue, ...values) {    console.log(values);}ignoreFirst(); // []ignoreFirst(1); // []ignoreFirst(1,2); // [2]ignoreFirst(1,2,3); // [2, 3] </code></pre><p>箭头函数虽然不支持 arguments 对象，但支持收集参数的定义方式，因此也可以实现与使用arguments 一样的逻辑：</p><pre><code>let getSum = (...values) =&gt; {    return values.reduce((x, y) =&gt; x + y, 0);}console.log(getSum(1,2,3)); // 6 </code></pre><p>另外，使用收集参数并不影响 arguments 对象，它仍然反映调用时传给函数的参数：</p><pre><code>function getSum(...values) {    console.log(arguments.length); // 3    console.log(arguments); // [1, 2, 3]    console.log(values); // [1, 2, 3]}console.log(getSum(1,2,3)); </code></pre>]]></content>
       
       
       <categories>
@@ -362,7 +544,7 @@
       
         <tags>
             
-            <tag> 积累小知识点 </tag>
+            <tag> 水涨船高技术集 </tag>
             
         </tags>
       
