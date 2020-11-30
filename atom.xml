@@ -6,7 +6,7 @@
   <link href="https://yanyanzio.top/atom.xml" rel="self"/>
   
   <link href="https://yanyanzio.top/"/>
-  <updated>2020-11-30T09:00:32.846Z</updated>
+  <updated>2020-11-30T10:45:00.522Z</updated>
   <id>https://yanyanzio.top/</id>
   
   <author>
@@ -17,37 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>J3</title>
-    <link href="https://yanyanzio.top/posts/7577.html"/>
-    <id>https://yanyanzio.top/posts/7577.html</id>
-    <published>2020-11-30T08:51:20.000Z</published>
-    <updated>2020-11-30T09:00:32.846Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>J2</title>
-    <link href="https://yanyanzio.top/posts/b5b6.html"/>
-    <id>https://yanyanzio.top/posts/b5b6.html</id>
+    <title>JavaScript高级语言程序设计(十五)</title>
+    <link href="https://yanyanzio.top/posts/a0043.html"/>
+    <id>https://yanyanzio.top/posts/a0043.html</id>
     <published>2020-11-30T08:51:09.000Z</published>
-    <updated>2020-11-30T09:00:32.837Z</updated>
+    <updated>2020-11-30T10:45:00.522Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;DOM扩展&quot;&gt;&lt;a href=&quot;#DOM扩展&quot; class=&quot;headerlink&quot; title=&quot;DOM扩展&quot;&gt;&lt;/a&gt;DOM扩展&lt;/h1&gt;&lt;p&gt;上篇： &lt;strong&gt;&lt;a href=&quot;a0042&quot;&gt;DOM扩展(一)：Selectors API</summary>
+        
+      
     
     
     
+    <category term="JavaScript" scheme="https://yanyanzio.top/categories/JavaScript/"/>
     
+    <category term="JavaScript高级程序设计" scheme="https://yanyanzio.top/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+    <category term="JavaScript" scheme="https://yanyanzio.top/tags/JavaScript/"/>
     
   </entry>
   
   <entry>
     <title>JavaScript高级语言程序设计(十五)</title>
-    <link href="https://yanyanzio.top/posts/d12e.html"/>
-    <id>https://yanyanzio.top/posts/d12e.html</id>
+    <link href="https://yanyanzio.top/posts/a0042.html"/>
+    <id>https://yanyanzio.top/posts/a0042.html</id>
     <published>2020-11-30T08:50:53.000Z</published>
-    <updated>2020-11-30T09:00:32.840Z</updated>
+    <updated>2020-11-30T09:34:30.925Z</updated>
     
     
       
@@ -74,7 +75,7 @@
     <link href="https://yanyanzio.top/posts/a0041.html"/>
     <id>https://yanyanzio.top/posts/a0041.html</id>
     <published>2020-11-30T02:37:39.000Z</published>
-    <updated>2020-11-30T08:56:10.568Z</updated>
+    <updated>2020-11-30T09:14:52.293Z</updated>
     
     
       
@@ -512,6 +513,33 @@
         
         
     <summary type="html">&lt;h1 id=&quot;函数&quot;&gt;&lt;a href=&quot;#函数&quot; class=&quot;headerlink&quot; title=&quot;函数&quot;&gt;&lt;/a&gt;函数&lt;/h1&gt;&lt;p&gt;上篇： &lt;strong&gt;&lt;a href=&quot;a0028&quot;&gt;函数(九) 函数内部&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;本篇：</summary>
+        
+      
+    
+    
+    
+    <category term="JavaScript" scheme="https://yanyanzio.top/categories/JavaScript/"/>
+    
+    <category term="JavaScript高级程序设计" scheme="https://yanyanzio.top/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+    
+    <category term="JavaScript" scheme="https://yanyanzio.top/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript高级语言程序设计(八)</title>
+    <link href="https://yanyanzio.top/posts/a0028.html"/>
+    <id>https://yanyanzio.top/posts/a0028.html</id>
+    <published>2020-11-24T23:25:00.000Z</published>
+    <updated>2020-11-26T09:37:08.562Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;函数&quot;&gt;&lt;a href=&quot;#函数&quot; class=&quot;headerlink&quot; title=&quot;函数&quot;&gt;&lt;/a&gt;函数&lt;/h1&gt;&lt;p&gt;上篇： &lt;strong&gt;&lt;a href=&quot;a0027&quot;&gt;函数(八) 函数作为值&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;本篇：</summary>
         
       
     

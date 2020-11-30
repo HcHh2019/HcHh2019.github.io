@@ -4,26 +4,27 @@
   
     
     <entry>
-      <title>J3</title>
-      <link href="posts/7577.html"/>
-      <url>posts/7577.html</url>
+      <title>JavaScript高级语言程序设计(十五)</title>
+      <link href="posts/a0043.html"/>
+      <url>posts/a0043.html</url>
       
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>J2</title>
-      <link href="posts/b5b6.html"/>
-      <url>posts/b5b6.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h1 id="DOM扩展"><a href="#DOM扩展" class="headerlink" title="DOM扩展"></a>DOM扩展</h1><p>上篇： <strong><a href="a0042">DOM扩展(一)：Selectors API &amp;&amp; 元素遍历</a></strong><br>本篇： <strong>DOM扩展(二)：HTML5</strong><br>下篇： <strong><a href="a0044">DOM扩展(三)：专有扩展</a></strong></p><p><strong><a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">JavaScript高级程序设计</a></strong> 全部合集</p><hr><h1 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h1><p>HTML5 代表着与以前的 HTML 截然不同的方向。在所有以前的 HTML 规范中，从未出现过描述<br>JavaScript 接口的情形，HTML 就是一个纯标记语言。JavaScript 绑定的事，一概交给 DOM 规范去定义。</p><p>然而，HTML5 规范却包含了与标记相关的大量 JavaScript API 定义。其中有的 API 与 DOM 重合，定义了浏览器应该提供的 DOM 扩展。</p><h2 id="CSS-类扩展"><a href="#CSS-类扩展" class="headerlink" title="CSS 类扩展"></a>CSS 类扩展</h2><h3 id="getElementsByClassName"><a href="#getElementsByClassName" class="headerlink" title="getElementsByClassName()"></a>getElementsByClassName()</h3><p>getElementsByClassName()方法接收一个参数，即包含一个或多个类名的字符串，返回类名中包含相应类的元素的 NodeList。如果提供了多个类名，则顺序无关紧要。下面是几个示例：</p><pre><code>// 取得所有类名中包含"username"和"current"元素// 这两个类名的顺序无关紧要let allCurrentUsernames = document.getElementsByClassName("username current");// 取得 ID 为"myDiv"的元素子树中所有包含"selected"类的元素let selected = document.getElementById("myDiv").getElementsByClassName("selected"); </code></pre><p>这个方法只会返回以调用它的对象为根元素的子树中所有匹配的元素。在 document 上调用getElementsByClassName()返回文档中所有匹配的元素，而在特定元素上调用 getElementsByClassName()则返回该元素后代中匹配的元素。</p><p>如果要给包含特定类（而不是特定 ID 或标签）的元素添加事件处理程序，使用这个方法会很方便。不过要记住，因为返回值是 NodeList，所以使用这个方法会遇到跟使用getElementsByTagName()和其他返回 NodeList 对象的 DOM 方法同样的问题。</p><h3 id="classList-属性"><a href="#classList-属性" class="headerlink" title="classList 属性"></a>classList 属性</h3><p>要操作类名，可以通过 className 属性实现添加、删除和替换。但 className 是一个字符串，所以每次操作之后都需要重新设置这个值才能生效，即使只改动了部分字符串也一样。以下面的 HTML代码为例：</p><p><code>&lt;div class="bd user disabled"&gt;...&lt;/div&gt;</code></p><p>这个<code>&lt;div&gt;</code>元素有 3 个类名。要想删除其中一个，就得先把 className 拆开，删除不想要的那个，再把包含剩余类的字符串设置回去。比如：</p><pre><code>// 要删除"user"类let targetClass = "user";// 把类名拆成数组let classNames = div.className.split(/\s+/);// 找到要删除类名的索引let idx = classNames.indexOf(targetClass);// 如果有则删除if (idx &gt; -1) {    classNames.splice(i,1);}// 重新设置类名div.className = classNames.join(" ");</code></pre><p>HTML5 通过给所有元素增加 classList 属性为这些操作提供了更简单也更安全的实现方式。classList 是一个新的集合类型 DOMTokenList 的实例。与其他 DOM 集合类型一样，DOMTokenList也有 length 属性表示自己包含多少项，也可以通过 item()或中括号取得个别的元素。此外，DOMTokenList 还增加了以下方法。</p><ol><li>add(value)，向类名列表中添加指定的字符串值 value。如果这个值已经存在，则什么也不做。</li><li>contains(value)，返回布尔值，表示给定的 value 是否存在。</li><li>remove(value)，从类名列表中删除指定的字符串值 value。</li><li>toggle(value)，如果类名列表中已经存在指定的 value，则删除；如果不存在，则添加。</li></ol><p>这样以来，前面的例子中那么多行代码就可以简化成下面的一行：</p><p><code>div.classList.remove("user"); </code></p><h2 id="焦点管理"><a href="#焦点管理" class="headerlink" title="焦点管理"></a>焦点管理</h2><p>HTML5 增加了辅助 DOM 焦点管理的功能。首先是 document.activeElement，始终包含当前拥有焦点的 DOM 元素。页面加载时，可以通过用户输入（按 Tab 键或代码中使用 focus()方法）让某个元素自动获得焦点。例如：</p><pre><code>let button = document.getElementById("myButton");button.focus();console.log(document.activeElement === button); // true</code></pre><p>默认情况下，document.activeElement 在页面刚加载完之后会设置为 document.body。而在页面完全加载之前，document.activeElement 的值为 null。其次是 document.hasFocus()方法，该方法返回布尔值，表示文档是否拥有焦点：</p><pre><code>let button = document.getElementById("myButton");button.focus();console.log(document.hasFocus()); // true</code></pre><p>确定文档是否获得了焦点，就可以帮助确定用户是否在操作页面。第一个方法可以用来查询文档，确定哪个元素拥有焦点，第二个方法可以查询文档是否获得了焦点，而这对于保证 Web 应用程序的无障碍使用是非常重要的。无障碍 Web 应用程序的一个重要方面就是焦点管理，而能够确定哪个元素当前拥有焦点（相比于之前的猜测）是一个很大的进步。</p><h2 id="自定义数据属性"><a href="#自定义数据属性" class="headerlink" title="自定义数据属性"></a>自定义数据属性</h2><p>HTML5 允许给元素指定非标准的属性，但要使用前缀 data-以便告诉浏览器，这些属性既不包含与渲染有关的信息，也不包含元素的语义信息。除了前缀，自定义属性对命名是没有限制的data-后面跟什么都可以。下面是一个例子：</p><p><code>&lt;div id="myDiv" data-appId="12345" data-myname="Nicholas"&gt;&lt;/div&gt;</code></p><p>定义了自定义数据属性后，可以通过元素的 dataset 属性来访问。dataset 属性是一个DOMStringMap 的实例，包含一组键/值对映射。元素的每个 data-name 属性在 dataset 中都可以通过 data-后面的字符串作为键来访问（例如，属性 data-myname、data-myName 可以通过 myname 访问，但要注意 data-my-name、data-My-Name 要通过 myName 来访问）。下面是一个使用自定义数据属性的例子：</p><pre><code>// 本例中使用的方法仅用于示范let div = document.getElementById("myDiv");// 取得自定义数据属性的值let appId = div.dataset.appId;let myName = div.dataset.myname;// 设置自定义数据属性的值div.dataset.appId = 23456;div.dataset.myname = "Michael";// 有"myname"吗？if (div.dataset.myname){    console.log(`Hello, ${div.dataset.myname}`);}</code></pre><p>自定义数据属性非常适合需要给元素附加某些数据的场景，比如链接追踪和在聚合应用程序中标识页面的不同部分。另外，单页应用程序框架也非常多地使用了自定义数据属性。 </p><h2 id="插入标记"><a href="#插入标记" class="headerlink" title="插入标记"></a>插入标记</h2><h3 id="innerHTML属性"><a href="#innerHTML属性" class="headerlink" title="innerHTML属性"></a>innerHTML属性</h3><p>在读取 innerHTML 属性时，会返回元素所有后代的 HTML 字符串，包括元素、注释和文本节点。而在写入 innerHTML 时，则会根据提供的字符串值以新的 DOM 子树替代元素中原来包含的所有节点。比如下面的 HTML 代码：</p><pre><code>&lt;div id="content"&gt;    &lt;p&gt;This is a &lt;strong&gt;paragraph&lt;/strong&gt; with a list following it.&lt;/p&gt;    &lt;ul&gt;        &lt;li&gt;Item 1&lt;/li&gt;        &lt;li&gt;Item 2&lt;/li&gt;        &lt;li&gt;Item 3&lt;/li&gt;    &lt;/ul&gt;&lt;/div&gt;</code></pre><p>对于这里的</p><div>元素而言，其 innerHTML 属性会返回以下字符串：</div><p></p><pre><code>&lt;p&gt;This is a &lt;strong&gt;paragraph&lt;/strong&gt; with a list following it.&lt;/p&gt;&lt;ul&gt;    &lt;li&gt;Item 1&lt;/li&gt;    &lt;li&gt;Item 2&lt;/li&gt;    &lt;li&gt;Item 3&lt;/li&gt;&lt;/ul&gt; </code></pre><p>在写入模式下，赋给 innerHTML 属性的值会被解析为 DOM 子树，并替代元素之前的所有节点。因为所赋的值默认为 HTML，所以其中的所有标签都会以浏览器处理 HTML 的方式转换为元素（同样，转换结果也会因浏览器不同而不同）。如果赋值中不包含任何 HTML 标签，则直接生成一个文本节点，如下所示：</p><p><code>div.innerHTML = "Hello world!";</code></p>]]></content>
       
       
+      <categories>
+          
+          <category> JavaScript </category>
+          
+          <category> JavaScript高级程序设计 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
       
     </entry>
     
@@ -31,10 +32,10 @@
     
     <entry>
       <title>JavaScript高级语言程序设计(十五)</title>
-      <link href="posts/d12e.html"/>
-      <url>posts/d12e.html</url>
+      <link href="posts/a0042.html"/>
+      <url>posts/a0042.html</url>
       
-        <content type="html"><![CDATA[<h1 id="DOM扩展"><a href="#DOM扩展" class="headerlink" title="DOM扩展"></a>DOM扩展</h1><p>上篇： <strong><a href="a0041">DOM(三) MutationObserver接口</a></strong><br>本篇： <strong>DOM扩展(一)：Selectors API</strong><br>下篇： <strong><a href="a0043">DOM扩展(二)：HTML5</a></strong></p><p><strong><a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">JavaScript高级程序设计</a></strong> 全部合集</p><hr><h1 id="Selectors-API"><a href="#Selectors-API" class="headerlink" title="Selectors API"></a>Selectors API</h1>]]></content>
+        <content type="html"><![CDATA[<h1 id="DOM扩展"><a href="#DOM扩展" class="headerlink" title="DOM扩展"></a>DOM扩展</h1><p>上篇： <strong><a href="a0041">DOM(三) MutationObserver接口</a></strong><br>本篇： <strong>DOM扩展(一)：Selectors API &amp;&amp; 元素遍历</strong><br>下篇： <strong><a href="a0043">DOM扩展(二)：HTML5</a></strong></p><p><strong><a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">JavaScript高级程序设计</a></strong> 全部合集</p><hr><h1 id="Selectors-API"><a href="#Selectors-API" class="headerlink" title="Selectors API"></a>Selectors API</h1><h2 id="querySelector"><a href="#querySelector" class="headerlink" title="querySelector()"></a>querySelector()</h2><p>querySelector()方法接收 CSS 选择符参数，返回匹配该模式的第一个后代元素，如果没有匹配项则返回 null。下面是一些例子：</p><pre><code>// 取得&lt;body&gt;元素let body = document.querySelector("body");// 取得 ID 为"myDiv"的元素let myDiv = document.querySelector("#myDiv"); // 取得类名为"selected"的第一个元素let selected = document.querySelector(".selected");// 取得类名为"button"的图片let img = document.body.querySelector("img.button");</code></pre><h2 id="querySelectorAll"><a href="#querySelectorAll" class="headerlink" title="querySelectorAll()"></a>querySelectorAll()</h2><p>querySelectorAll()方法跟 querySelector()一样，也接收一个用于查询的参数，但它会返回所有匹配的节点，而不止一个。这个方法返回的是一个 NodeList 的静态实例。</p><p>再强调一次，querySelectorAll()返回的 NodeList 实例一个属性和方法都不缺，但它是一个静态的“快照”，而非“实时”的查询。这样的底层实现避免了使用 NodeList 对象可能造成的性能问题。</p><p>以有效 CSS 选择符调用 querySelectorAll()都会返回 NodeList，无论匹配多少个元素都可以。如果没有匹配项，则返回空的 NodeList 实例。与 querySelector()一样querySelectorAll()也可以在 Document、DocumentFragment 和Element 类型上使用。下面是几个例子：</p><pre><code>// 取得 ID 为"myDiv"的&lt;div&gt;元素中的所有&lt;em&gt;元素let ems = document.getElementById("myDiv").querySelectorAll("em");// 取得所有类名中包含"selected"的元素let selecteds = document.querySelectorAll(".selected");// 取得所有是&lt;p&gt;元素子元素的&lt;strong&gt;元素let strongs = document.querySelectorAll("p strong"); </code></pre><p>返回的 NodeList 对象可以通过 for-of 循环、item()方法或中括号语法取得个别元素。比如：</p><pre><code>let strongElements = document.querySelectorAll("p strong");// 以下 3 个循环的效果一样for (let strong of strongElements) {    strong.className = "important";}for (let i = 0; i &lt; strongElements.length; ++i) {    strongElements.item(i).className = "important";}for (let i = 0; i &lt; strongElements.length; ++i) {    strongElements[i].className = "important";} </code></pre><h1 id="元素遍历"><a href="#元素遍历" class="headerlink" title="元素遍历"></a>元素遍历</h1><p>Element Traversal API 为 DOM 元素添加了 5 个属性：</p><ol><li><p>childElementCount，返回子元素数量（不包含文本节点和注释）；</p></li><li><p>firstElementChild，指向第一个 Element 类型的子元素（Element 版 firstChild）；</p></li><li><p>lastElementChild，指向最后一个 Element 类型的子元素（Element 版 lastChild）；</p></li><li><p>previousElementSibling ，指向前一个 Element 类型的同胞元素（ Element 版previousSibling）；</p></li><li><p>nextElementSibling，指向后一个 Element 类型的同胞元素（Element 版 nextSibling）。</p></li></ol><p>在支持的浏览器中，所有 DOM 元素都会有这些属性，为遍历 DOM 元素提供便利。这样开发者就不用担心空白文本节点的问题了。</p><p>举个例子，过去要以跨浏览器方式遍历特定元素的所有子元素，代码大致是这样写的：</p><pre><code>let parentElement = document.getElementById('parent');let currentChildNode = parentElement.firstChild;// 没有子元素，firstChild 返回 null，跳过循环while (currentChildNode) {    if (currentChildNode.nodeType === 1) {        // 如果有元素节点，则做相应处理        processChild(currentChildNode);    }    if (currentChildNode === parentElement.lastChild) {        break;    }    currentChildNode = currentChildNode.nextSibling;} </code></pre><p>使用 Element Traversal 属性之后，以上代码可以简化如下：</p><pre><code>let parentElement = document.getElementById('parent');let currentChildElement = parentElement.firstElementChild; // 没有子元素，firstElementChild 返回 null，跳过循环while (currentChildElement) {    // 这就是元素节点，做相应处理    processChild(currentChildElement);    if (currentChildElement === parentElement.lastElementChild) {        break;    }    currentChildElement = currentChildElement.nextElementSibling;} </code></pre>]]></content>
       
       
       <categories>
@@ -61,7 +62,7 @@
       <link href="posts/a0041.html"/>
       <url>posts/a0041.html</url>
       
-        <content type="html"><![CDATA[<h1 id="DOM"><a href="#DOM" class="headerlink" title="DOM"></a>DOM</h1><p>上篇： <strong><a href="a0040">DOM(二) DOM编程</a></strong><br>本篇： <strong>DOM(三) MutationObserver接口</strong><br>下篇： <strong><a href="a0042">DOM扩展(一)：Selectors API</a></strong></p><p><strong><a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">JavaScript高级程序设计</a></strong> 全部合集</p><hr>]]></content>
+        <content type="html"><![CDATA[<h1 id="DOM"><a href="#DOM" class="headerlink" title="DOM"></a>DOM</h1><p>上篇： <strong><a href="a0040">DOM(二) DOM编程</a></strong><br>本篇： <strong>DOM(三) MutationObserver接口</strong><br>下篇： <strong><a href="a0042">DOM扩展(一)：Selectors API &amp;&amp; 元素遍历</a></strong></p><p><strong><a href="/categories/JavaScript/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">JavaScript高级程序设计</a></strong> 全部合集</p><hr>]]></content>
       
       
       <categories>
