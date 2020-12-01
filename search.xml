@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>CSS特效演示总结</title>
+      <link href="posts/c0000.html"/>
+      <url>posts/c0000.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="CSS特效演示总结"><a href="#CSS特效演示总结" class="headerlink" title="CSS特效演示总结"></a>CSS特效演示总结</h1><h2 id="1-半透明边框"><a href="#1-半透明边框" class="headerlink" title="[1]半透明边框"></a>[1]半透明边框</h2><br><blockquote><p><a href="c0001">文章</a></p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> CSS </category>
+          
+          <category> CSS特效 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CSS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>A10</title>
       <link href="posts/9045.html"/>
       <url>posts/9045.html</url>
@@ -125,7 +152,7 @@
       <link href="posts/c0001.html"/>
       <url>posts/c0001.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<blockquote><p>收录于<a href="c0000">CSS特效演示总结</a></p></blockquote><br><br><h1 id="半透明边框"><a href="#半透明边框" class="headerlink" title="半透明边框"></a>半透明边框</h1><blockquote><p>默认情况下，背景的颜色会延伸至边框下层，这意味着我们设置的透明边框效果会被覆盖掉，在css3中，我们可以通过设置<strong>background-clip:padding-box</strong>来改变背景的默认行为，达到我们想要的效果。</p></blockquote><p><strong><a href="https://yanyanzio.top/Project/CSS/A1.html">半透明边框展示效果 &lt;= 点击这里</a></strong></p><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><pre><code>&lt;body&gt;    &lt;main&gt;        &lt;input type="radio" name="check" id="padding-box" checked&gt;        &lt;label for="padding-box"&gt;padding-box(默认)&lt;/label&gt;        &lt;input type="radio" name="check" id="border-box"&gt;        &lt;label for="border-box"&gt;border-box&lt;/label&gt;        &lt;input type="radio" name="check" id="content-box"&gt;        &lt;label for="content-box"&gt;content-box&lt;/label&gt;        &lt;p&gt;诗酒趁年华&lt;/p&gt;    &lt;/main&gt;    &lt;style&gt;        *{            padding: 0;            margin: 0;        }        main{            width: 71%;            padding: 50px;            background-color: #a29bfe;            transform: translate(15%,80%);            border-radius: 50px;        }        p{            padding: 15px;            margin: 25px auto;            background-color: white;     /*#95afc0; */            border: 10px solid hsla(0, 0%, 100%, 0.5);            font-weight: 700;            font-size: 24px;        }        label{            color: indianred;        }        input[id="padding-box"]:checked ~ p {            background-clip: padding-box;        }        input[id="border-box"]:checked ~ p {            background-clip: border-box;        }        input[id="content-box"]:checked ~ p {            background-clip: content-box;        }    &lt;/style&gt;&lt;/body&gt;</code></pre><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><h4 id="background-clip"><a href="#background-clip" class="headerlink" title="background-clip"></a>background-clip</h4><blockquote><p><code>background-clip</code>  设置元素的背景(<strong>背景图片或颜色</strong>)是否延伸到边框、内边距盒子、内容盒子下面。</p></blockquote><br><p>如果没有设置背景图片(<code>background-image</code>)或背景颜色(<code>background-color</code>)，那么这个属性只有在边框(<code>border</code>)被设置为非固实(<code>soild</code>)、透明或半透明时才能看到视觉效果(与 <code>border-style 或 border-image</code> 有关)，否则，本属性产生的样式变化会被边框覆盖。</p><br><p>这个案例没有准备图片，所以就是用了半透明的边框。</p><br><p><strong>border-box</strong><br>背景延伸至边框外沿（但是在边框下层）</p><p><strong>padding-box</strong><br>背景延伸至内边距（padding）外沿。不会绘制到边框处</p><p><strong>content-box</strong><br>背景被裁剪至内容区（content box）外沿</p><h4 id="CSS-hsla-函数"><a href="#CSS-hsla-函数" class="headerlink" title="CSS hsla()函数"></a>CSS hsla()函数</h4><p>hsla() 函数使用色相、饱和度、亮度、透明度来定义颜色。</p><ol><li>色相(H)：是色彩的基本属性，就是平常所说的颜色名称，如红色、黄色等。</li><li>饱和度(S)：是指色彩的纯度，越高色彩越纯，低则逐渐变灰，取 0-100% 的数值。</li><li>亮度(L)：取 0-100%，增加亮度，颜色会向白色变化；减少亮度，颜色会向黑色变化。</li><li>透明度(A)：取值 0~1 之间， 代表透明度。</li></ol><table><thead><tr><th align="left">值</th><th align="left">描述</th></tr></thead><tbody><tr><td align="left">hue - 色相</td><td align="left">定义色相 (0 到 360) - 0 (或 360) 为红色, 120 为绿色, 240 为蓝色</td></tr><tr><td align="left">saturation - 饱和度</td><td align="left">定义饱和度; 0% 为灰色， 100% 全色</td></tr><tr><td align="left">lightness - 亮度</td><td align="left">定义亮度 0% 为暗, 50% 为普通, 100% 为白</td></tr><tr><td align="left">alpha - 透明度</td><td align="left">定义透明度 0（透完全明） ~ 1（完全不透明）</td></tr></tbody></table><br><p>定义 HSL 颜色，并设置透明度：</p><pre><code>#p1 {background-color:hsl(120,100%,50%,0.3);} /* 绿色 */#p2 {background-color:hsl(120,100%,75%,0.3);} /* 浅绿  */#p3 {background-color:hsl(120,100%,25%,0.3);} /* 暗绿  */#p4 {background-color:hsl(120,60%,70%,0.3);} /* 柔和的绿色 */</code></pre>]]></content>
       
       
       <categories>
