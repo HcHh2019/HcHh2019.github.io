@@ -8,7 +8,7 @@
       <link href="posts/c0000.html"/>
       <url>posts/c0000.html</url>
       
-        <content type="html"><![CDATA[<h1 id="CSS特效演示总结"><a href="#CSS特效演示总结" class="headerlink" title="CSS特效演示总结"></a>CSS特效演示总结</h1><h2 id="1-半透明边框"><a href="#1-半透明边框" class="headerlink" title="[1]半透明边框"></a>[1]半透明边框</h2><br><blockquote><p><a href="c0001">文章</a></p></blockquote>]]></content>
+        <content type="html"><![CDATA[<h1 id="CSS特效演示总结"><a href="#CSS特效演示总结" class="headerlink" title="CSS特效演示总结"></a>CSS特效演示总结</h1><br><h2 id="1-半透明边框"><a href="#1-半透明边框" class="headerlink" title="[1]半透明边框"></a>[1]半透明边框</h2><blockquote><p><a href="c0001">文章</a></p></blockquote><br><h2 id="2-多重边框"><a href="#2-多重边框" class="headerlink" title="[2]多重边框"></a>[2]多重边框</h2><blockquote><p><a href="c0002">文章</a></p></blockquote><br><h2 id="3-边框内圆角"><a href="#3-边框内圆角" class="headerlink" title="[3]边框内圆角"></a>[3]边框内圆角</h2><blockquote><p><a href="c0003">文章</a></p></blockquote><br><h2 id="4-背景定位"><a href="#4-背景定位" class="headerlink" title="[4]背景定位"></a>[4]背景定位</h2><blockquote><p><a href="c0004">文章</a></p></blockquote><br><h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content>
       
       
       <categories>
@@ -109,39 +109,81 @@
     
     
     <entry>
-      <title>A4</title>
-      <link href="posts/8731.html"/>
-      <url>posts/8731.html</url>
+      <title>You-Need-To-Know-CSS</title>
+      <link href="posts/c0003.html"/>
+      <url>posts/c0003.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<blockquote><p>收录于<a href="c0000">CSS特效演示总结</a></p></blockquote><br><br><h1 id="边框内圆角"><a href="#边框内圆角" class="headerlink" title="边框内圆角"></a>边框内圆角</h1><p>我们知道<code>box-shadow</code>是会紧贴<code>border-radius</code>圆角边的，但是，描边<code>outline</code>并不会与圆角边<code>border-radius</code>贴合，我们可以将两者组合，通过<code>box-shadow</code>去填补描边<code>outline</code>所产生的间隙来达到我们想要的效果。</p><p><a href="https://yanyanzio.top/Project/CSS/A3.html">边框内圆角展示效果</a></p><br><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><pre><code>&lt;body&gt;      &lt;main&gt;        &lt;input type="checkbox" id="box-shadow" checked&gt;        &lt;label for="box-shadow"&gt;box-shadow&lt;/label&gt;        &lt;p&gt;hjdfhgjhjjhkjkldfdsfd&lt;/p&gt;    &lt;/main&gt;    &lt;style&gt;        *{            padding: 0;            margin: 0;        }        main{            width: 100%;            padding: 20px;        }        label{            color: cadetblue;        }        p{            width: 200px;            padding: 20px;            margin: 10px auto;            background-color:  #f4f0ea;            border-radius: 8px;            outline: 6px solid wheat;        }        input[id="box-shadow"]:checked ~ p {            box-shadow: 0 0 0 6px wheat;        }    &lt;/style&gt;&lt;/body&gt;</code></pre><br>]]></content>
       
       
+      <categories>
+          
+          <category> CSS </category>
+          
+          <category> CSS特效 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CSS </tag>
+            
+        </tags>
       
     </entry>
     
     
     
     <entry>
-      <title>A3</title>
-      <link href="posts/4570.html"/>
-      <url>posts/4570.html</url>
+      <title>You-Need-To-Know-CSS</title>
+      <link href="posts/c0004.html"/>
+      <url>posts/c0004.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<blockquote><p>收录于<a href="c0000">CSS特效演示总结</a></p></blockquote><br><br><h1 id="背景定位"><a href="#背景定位" class="headerlink" title="背景定位"></a>背景定位</h1>]]></content>
       
       
+      <categories>
+          
+          <category> CSS </category>
+          
+          <category> CSS特效 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CSS </tag>
+            
+        </tags>
       
     </entry>
     
     
     
     <entry>
-      <title>A2</title>
-      <link href="posts/85b1.html"/>
-      <url>posts/85b1.html</url>
+      <title>You-Need-To-Know-CSS</title>
+      <link href="posts/c0002.html"/>
+      <url>posts/c0002.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<blockquote><p>收录于<a href="c0000">CSS特效演示总结</a></p></blockquote><br><br><h1 id="多重边框"><a href="#多重边框" class="headerlink" title="多重边框"></a>多重边框</h1><p><code>box-shadow</code>相信很多人都已经用透了，可用来给元素添加各种阴影效果，反过来，也只有我们需要实现阴影时才会想起它</p><p>其实，<code>box-shadow</code>还接受第四个参数作为阴影扩张半径，当我们只设置扩张半径时，零偏移，零模糊，产生的效果其实相当于一条实线“边框”。</p><p><code>box-shadow</code>只能模拟实线边框效果，某些情况下，我们可能需要生成虚线的边框效果，我们可以通过类似于<code>border</code>的描边<code>outline</code>和对应的描边偏移<code>outline-offset</code>来实现</p><br><p><a href="https://yanyanzio.top/Project/CSS/A2.html">多重边框展示效果</a></p><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><pre><code>&lt;main&gt;        &lt;div&gt;&lt;/div&gt;        &lt;div&gt;&lt;/div&gt;    &lt;/main&gt;    &lt;style&gt;        main{            width: 70%;            background-color: gray;            display: flex;            align-items: center;            justify-content: space-around;        }        div:nth-of-type(1){            width: 60px;            height: 60px;            border-radius: 50%;            background-color: white;            margin: 105px 29px;            box-shadow: 0 0 0 10px #E8E2D6,                        0 0 0 20PX #E1D9C9,                        0 0 0 30px #D9CFBB,                        0 0 0 40px #D2C6AE,                        0 0 0 50px #CABCA0,                        0 0 0 60px #C3B393,                        0 0 0 70px #BBA984,                        0 0 0 80px #B4A078;        }        div:nth-of-type(2){            width: 200px;            height: 120px;            background: rgb(240, 210, 155);            border: 10px solid rgb(116, 77, 5);            outline: 1px dashed  rgb(153, 115, 44);            outline-offset: -17px;        }    &lt;/style&gt;</code></pre><br><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>CSS <code>box-shadow</code> 属性用于在元素的框架上添加阴影效果。你可以在同一个元素上设置多个阴影效果，并用逗号将他们分隔开。该属性可设置的值包括阴影的X轴偏移量、Y轴偏移量、模糊半径、扩散半径和颜色。</p><br><p>CSS 的 <code>outline</code> 属性是在一条声明中设置多个轮廓属性的简写属性 ， 例如 outline-style, outline-width 和 outline-color。 </p><p><code>border</code> 和 <code>outline</code> 很类似，但有如下区别：</p><ol><li><code>outline</code>不占据空间，绘制于元素内容周围。</li><li>根据规范，<code>outline</code>通常是矩形，但也可以是非矩形的</li></ol><br><p><code>outline-offset</code> CSS 属性用于设置 outline 与一个元素边缘或边框之间的间隙。</p>]]></content>
       
       
+      <categories>
+          
+          <category> CSS </category>
+          
+          <category> CSS特效 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CSS </tag>
+            
+        </tags>
       
     </entry>
     
@@ -1104,9 +1146,9 @@
       
         <tags>
             
-            <tag> HTML </tag>
-            
             <tag> CSS </tag>
+            
+            <tag> HTML </tag>
             
             <tag> JavaScript </tag>
             
@@ -1862,9 +1904,9 @@
       
         <tags>
             
-            <tag> HTML </tag>
-            
             <tag> CSS </tag>
+            
+            <tag> HTML </tag>
             
         </tags>
       
