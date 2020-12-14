@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yanyanzio.top/posts/6317.html</loc>
+    
+    <lastmod>2020-12-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yanyanzio.top/posts/192e.html</loc>
+    
+    <lastmod>2020-12-14</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://yanyanzio.top/posts/h0003.html</loc>
     
     <lastmod>2020-12-14</lastmod>
@@ -703,6 +717,13 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://yanyanzio.top/tags/%E6%8F%92%E4%BB%B6%E5%BA%93/</loc>
+    <lastmod>2020-12-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   
   <url>
@@ -784,6 +805,13 @@
   
   <url>
     <loc>https://yanyanzio.top/categories/HTML/Canvas/</loc>
+    <lastmod>2020-12-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yanyanzio.top/categories/%E6%8F%92%E4%BB%B6%E5%BA%93/</loc>
     <lastmod>2020-12-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

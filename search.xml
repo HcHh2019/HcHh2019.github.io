@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>Dome_5</title>
+      <link href="posts/192e.html"/>
+      <url>posts/192e.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>scroll-out库</title>
+      <link href="posts/6317.html"/>
+      <url>posts/6317.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p><a href="https://github.com/scroll-out/scroll-out">scroll-out库</a></p></blockquote><p>ScrollOut可以检测滚动的变化，以显示，视差和CSS可变效果！</p><p>用npm i scroll-out -s或安装 <a href="https://github.com/scroll-out/scroll-out/archive/master.zip">下载.zip</a></p><h1 id="ScrollOut是什么"><a href="#ScrollOut是什么" class="headerlink" title="ScrollOut是什么"></a>ScrollOut是什么</h1><p>ScrollOut是一个JavaScript微库，可检测浏览器中的滚动/调整大小变化，并为滚动元素和目标列表分配属性和实时CSS变量。<br><br><br>ScrollOut库不处理任何动画，但是为您提供了使用JavaScript动画库或仅CSS创建动画和过渡所需要的元素和工具！<br><br><br>一般流程为：</p><ol><li>用data-scroll属性装饰目标</li><li>从JavaScript调用ScrollOut（）</li><li>data-scroll当它们进入或离开视图时，每个都设置为进入或退出</li><li>随着元素滚动，它会翻转进出</li><li>cssProps在配置中启用以添加实时CSS变量</li><li>用CSS或JavaScript对这些元素进行动画处理！</li></ol><h2 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h2><hr><h3 id="从CDN安装"><a href="#从CDN安装" class="headerlink" title="从CDN安装"></a>从CDN安装</h3><p>在文档的开头添加以下脚本</p><pre><code>[html]&lt;script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"&gt;&lt;/script&gt;</code></pre><p>在加载/就绪或在文档底部的脚本中&lt; body &gt;，执行以下操作：</p><pre><code>[js]ScrollOut({/* options */});</code></pre><br><h3 id="从NPM安装"><a href="#从NPM安装" class="headerlink" title="从NPM安装"></a>从NPM安装</h3><p>从NPM安装卷展栏：</p><pre><code>[sh]npm i scroll-out -S</code></pre><p>然后从包中导入ScrollOut并调用它</p><pre><code>[js]import ScrollOut from "scroll-out";ScrollOut({/* options */});</code></pre><br>]]></content>
+      
+      
+      <categories>
+          
+          <category> 插件库 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 插件库 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>贤者</title>
       <link href="posts/h0003.html"/>
       <url>posts/h0003.html</url>
