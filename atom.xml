@@ -6,7 +6,7 @@
   <link href="https://yanyanzio.top/atom.xml" rel="self"/>
   
   <link href="https://yanyanzio.top/"/>
-  <updated>2020-12-14T11:17:04.467Z</updated>
+  <updated>2020-12-16T03:27:26.849Z</updated>
   <id>https://yanyanzio.top/</id>
   
   <author>
@@ -17,24 +17,43 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Dome_5</title>
-    <link href="https://yanyanzio.top/posts/192e.html"/>
-    <id>https://yanyanzio.top/posts/192e.html</id>
+    <title>RELLAX 库</title>
+    <link href="https://yanyanzio.top/posts/h0005.html"/>
+    <id>https://yanyanzio.top/posts/h0005.html</id>
     <published>2020-12-14T10:52:11.000Z</published>
-    <updated>2020-12-14T11:17:04.467Z</updated>
+    <updated>2020-12-16T03:27:26.849Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://dixonandmoe.com/rellax/&quot;&gt;RELLAX库&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;用RELLAX库做的项目&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a</summary>
+        
+      
     
     
     
+    <category term="小项目" scheme="https://yanyanzio.top/categories/%E5%B0%8F%E9%A1%B9%E7%9B%AE/"/>
     
+    
+    <category term="小项目" scheme="https://yanyanzio.top/tags/%E5%B0%8F%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="插件库" scheme="https://yanyanzio.top/tags/%E6%8F%92%E4%BB%B6%E5%BA%93/"/>
     
   </entry>
   
   <entry>
-    <title>scroll-out库</title>
+    <title>ScrollOut 库</title>
     <link href="https://yanyanzio.top/posts/h0004.html"/>
     <id>https://yanyanzio.top/posts/h0004.html</id>
     <published>2020-12-14T10:51:58.000Z</published>
-    <updated>2020-12-15T14:42:56.870Z</updated>
+    <updated>2020-12-16T00:47:54.547Z</updated>
     
     
       
@@ -114,11 +133,11 @@
   </entry>
   
   <entry>
-    <title>A3</title>
+    <title>JavaScript高级语言程序设计(十七)</title>
     <link href="https://yanyanzio.top/posts/a0049.html"/>
     <id>https://yanyanzio.top/posts/a0049.html</id>
     <published>2020-12-11T02:57:20.000Z</published>
-    <updated>2020-12-12T09:57:52.752Z</updated>
+    <updated>2020-12-16T00:35:04.723Z</updated>
     
     
       
@@ -145,7 +164,7 @@
     <link href="https://yanyanzio.top/posts/a0048.html"/>
     <id>https://yanyanzio.top/posts/a0048.html</id>
     <published>2020-12-08T00:18:29.000Z</published>
-    <updated>2020-12-12T09:56:52.420Z</updated>
+    <updated>2020-12-16T00:34:28.342Z</updated>
     
     
       
@@ -172,7 +191,7 @@
     <link href="https://yanyanzio.top/posts/a0047.html"/>
     <id>https://yanyanzio.top/posts/a0047.html</id>
     <published>2020-12-08T00:18:20.000Z</published>
-    <updated>2020-12-11T01:40:46.635Z</updated>
+    <updated>2020-12-16T00:34:12.475Z</updated>
     
     
       
@@ -195,15 +214,19 @@
   </entry>
   
   <entry>
-    <title>A2</title>
-    <link href="https://yanyanzio.top/posts/85b1.html"/>
-    <id>https://yanyanzio.top/posts/85b1.html</id>
+    <title>水涨船高技术栈</title>
+    <link href="https://yanyanzio.top/posts/f0005.html"/>
+    <id>https://yanyanzio.top/posts/f0005.html</id>
     <published>2020-12-02T13:40:39.000Z</published>
-    <updated>2020-12-03T00:38:01.620Z</updated>
+    <updated>2020-12-16T00:45:09.962Z</updated>
     
     
     
     
+    <category term="水涨船高技术集" scheme="https://yanyanzio.top/categories/%E6%B0%B4%E6%B6%A8%E8%88%B9%E9%AB%98%E6%8A%80%E6%9C%AF%E9%9B%86/"/>
+    
+    
+    <category term="水涨船高技术集" scheme="https://yanyanzio.top/tags/%E6%B0%B4%E6%B6%A8%E8%88%B9%E9%AB%98%E6%8A%80%E6%9C%AF%E9%9B%86/"/>
     
   </entry>
   

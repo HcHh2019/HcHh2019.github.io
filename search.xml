@@ -4,20 +4,34 @@
   
     
     <entry>
-      <title>Dome_5</title>
-      <link href="posts/192e.html"/>
-      <url>posts/192e.html</url>
+      <title>RELLAX 库</title>
+      <link href="posts/h0005.html"/>
+      <url>posts/h0005.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<blockquote><p><a href="https://dixonandmoe.com/rellax/">RELLAX库</a></p></blockquote><p>用RELLAX库做的项目</p><blockquote><p><a href="https://yanyanzio.top/Project/Pages/A5/index.html">Pages-A5</a></p></blockquote><h1 id="RELLAX库"><a href="#RELLAX库" class="headerlink" title="RELLAX库"></a>RELLAX库</h1><h2 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h2><p><strong>安装</strong></p><pre><code>npm install rellax --save</code></pre><p>或 <a href="https://github.com/dixonandmoe/rellax">下载.zip</a></p><br><p><strong>JavaScript（接受任何类名）</strong></p><pre><code>var rellax = new Rellax('.rellax');</code></pre><br><p><strong>基本标记（默认速度：-2）</strong></p><pre><code>&lt;div class="rellax"&gt;    I’m slow and smooth&lt;/div&gt;</code></pre><p><strong>可选速度（-10至+10）</strong></p><pre><code>&lt;div class="rellax" data-rellax-speed="-3"&gt;    I’m slow and smooth&lt;/div&gt;&lt;div class="rellax" data-rellax-speed="7"&gt;    I’m super fast!!&lt;/div&gt;&lt;div class="rellax" data-rellax-speed="-5"&gt;    I’m extra slow and smooth&lt;/div&gt;</code></pre><br><h2 id="Speed-速度"><a href="#Speed-速度" class="headerlink" title="Speed(速度)"></a>Speed(速度)</h2><p>使用该data-rellax-speed属性可以将.rellax元素的速度设置为 默认值（-2）以外的其他值。负值将使其移动速度比常规滚动慢，正值将使其移动速度更快。我们建议将速度保持在之间-10 and +10</p><p><strong>响应速度</strong></p><p>对需要不同速度的断点级别使用响应速度属性。默认为data-rellax-speed未指定断点中的设置。</p><pre><code>&lt;div    class="rellax"    data-rellax-speed="7"    data-rellax-xs-speed="-5"    data-rellax-mobile-speed="3"    data-rellax-tablet-speed="-8"    data-rellax-desktop-speed="1"&gt;        I parallax at all different speeds depending on your screen width.&lt;/div</code></pre><p>传递一组断点。每个断点值分别代表移动设备，平板电脑和台式机的分辨率。查看演示的响应能力。</p><pre><code>&lt;script&gt;    //default JS Setting    var rellax = new Rellax('.rellax', {        breakpoints:[576, 768, 1201]    });&lt;/script&gt;</code></pre><br><h2 id="Centering"><a href="#Centering" class="headerlink" title="Centering"></a>Centering</h2><p>有两种实现居中的方法，可以在特定元素上或作为全局选项。</p><pre><code>&lt;div class="rellax" data-rellax-percentage="0.5"&gt;    I’m that default chill speed of "-2" and "centered"&lt;/div&gt;&lt;div class="rellax" data-rellax-speed="7"    data-rellax-percentage="0.5"&gt;    I’m super fast!! And super centered!!&lt;/div&gt;&lt;div class="rellax" data-rellax-speed="-4"    data-rellax-percentage="0.5"&gt;    I’m extra slow and smooth, and hella centered.&lt;/div&gt;&lt;script&gt;    //default JS Setting    var rellax = new Rellax('.rellax', {        center:true    });&lt;/script&gt;</code></pre><br><h2 id="Z-Index"><a href="#Z-Index" class="headerlink" title="Z-Index"></a>Z-Index</h2><p>如果要在Z空间中正确排序元素，可以使用data-rellax-zindex属性</p><pre><code>&lt;div class="rellax"&gt;    I’m that default chill speed of "-2" and default   z-index of 0&lt;/div&gt;&lt;div class="rellax" data-rellax-speed="7"    data-rellax-zindex="5"&gt;    I’m super fast!! And on top of the previous   element, I'm z-index 5!!&lt;/div&gt;</code></pre><br><h2 id="水平视差"><a href="#水平视差" class="headerlink" title="水平视差"></a>水平视差</h2><p>默认情况下禁用水平视差。您可以通过传入horizontal: true设置块来启用它 。此功能适用于全景样式的网站，其中用户水平滚动而不是垂直滚动。请注意，这可以与默认垂直视差同时使用。如果您不希望这样做，请通过vertical: false</p><pre><code>&lt;script&gt;    //Enable Horizontal Parallax Scrolling    var rellax = new Rellax('.rellax', {        horizontal:true        //Disable vertical Parallax Scrolling     vertical:false    });&lt;/script&gt;</code></pre><br><h2 id="定制包装"><a href="#定制包装" class="headerlink" title="定制包装"></a>定制包装</h2><p>默认情况下，视差元素的位置是通过主体的滚动位置确定的。在wrapper settings块中传递属性将告诉Rellax观看该元素</p><pre><code>&lt;script&gt;    //Set wrapper to .custom-element instead of the body    var rellax = new Rellax('.rellax', {        wrapper:'.custom-element'    });&lt;/script&gt;</code></pre><br><h2 id="目标节点"><a href="#目标节点" class="headerlink" title="目标节点"></a>目标节点</h2><p>除了使用className之外，还可以使用一个节点，在使用React时很方便，并且您想使用refs 而不是className</p><pre><code>&lt;div ref = {ref =&gt; { this.rellaxRef = ref}}&gt;    I’m that default chill speed of "-2"&lt;/div&gt;&lt;script&gt;    var rellax = new Rellax(this.rellaxRef);&lt;/script&gt;</code></pre><br><h2 id="刷新"><a href="#刷新" class="headerlink" title="刷新"></a>刷新</h2><pre><code>&lt;script&gt;    // Start Rellax    var rellax = new Rellax('.rellax');    // Destroy and create again parallax with previous settings    rellax.refresh();&lt;/script&gt;</code></pre><br><h2 id="破坏"><a href="#破坏" class="headerlink" title="破坏"></a>破坏</h2><pre><code>&lt;script&gt;    // Start Rellax    var rellax = new Rellax('.rellax');    // End Rellax and reset parallax elements to their original positions    rellax.destroy();&lt;/script&gt;</code></pre>]]></content>
       
       
+      <categories>
+          
+          <category> 小项目 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 小项目 </tag>
+            
+            <tag> 插件库 </tag>
+            
+        </tags>
       
     </entry>
     
     
     
     <entry>
-      <title>scroll-out库</title>
+      <title>ScrollOut 库</title>
       <link href="posts/h0004.html"/>
       <url>posts/h0004.html</url>
       
@@ -94,7 +108,7 @@
     
     
     <entry>
-      <title>A3</title>
+      <title>JavaScript高级语言程序设计(十七)</title>
       <link href="posts/a0049.html"/>
       <url>posts/a0049.html</url>
       
@@ -175,13 +189,25 @@
     
     
     <entry>
-      <title>A2</title>
-      <link href="posts/85b1.html"/>
-      <url>posts/85b1.html</url>
+      <title>水涨船高技术栈</title>
+      <link href="posts/f0005.html"/>
+      <url>posts/f0005.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
+      <categories>
+          
+          <category> 水涨船高技术集 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 水涨船高技术集 </tag>
+            
+        </tags>
       
     </entry>
     
